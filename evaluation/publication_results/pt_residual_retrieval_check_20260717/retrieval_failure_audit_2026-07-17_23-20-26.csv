@@ -1,0 +1,2 @@
+id,pair_id,language,category,answerable,failure_types,question,gold_citations,retrieved_citations,answer,human_adjudication,human_root_cause,human_notes
+DIRECT_24_PT,DIRECT_24,pt,direct_article,True,incomplete_article_retrieval;low_evidence_term_coverage,Quais são os formatos exigidos para a documentação no ato do protocolo de solicitação de registro de um produto biológico?,"RDC 55/2010, Art. 9","RDC 55/2010, Art. 43;RDC 55/2010, Art. 30;RDC 55/2010, Art. 46;RDC 55/2010, Art. 34;RDC 55/2010, Art. 33",,,,

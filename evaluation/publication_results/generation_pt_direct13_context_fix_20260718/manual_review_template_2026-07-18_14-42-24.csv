@@ -1,0 +1,87 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+DIRECT_13_PT,DIRECT_13,pt,direct_article,True,"Quais documentos específicos, além dos formulários e taxas, devem ser apresentados no protocolo de registro de um produto biológico novo?","A empresa deve apresentar: declaração de porte da empresa, Licença de Funcionamento/Alvará Sanitário, Certificado de Autorização de Funcionamento, Certificado de Responsabilidade Técnica, justificativa técnica, CBPF (da Anvisa e do país de origem) para todos os fabricantes, histórico de registro, comprovante de registro no país de origem, modelos de bula e embalagens, dados de farmacovigilância, código de barras (GTIN), especificações do produto, informações sobre controle de EET, relatório técnico, relatório de experimentação terapêutica e relatório de farmacovigilância.","RDC 55/2010, Art. 30","Art. 30. No ato do protocolo de pedido de registro de um produto biológico novo ou produto biológico, a empresa solicitante deverá protocolar um processo único, apresentando os seguintes documentos: I - formulários de petição de registro - FP1 e FP2, devidamente preenchidos; II - via original do comprovante de pagamento da taxa de fiscalização de vigilância sanitária, devidamente autenticada e/ou carimbada pelo banco, ou comprovante de isenção quando for o caso; III - declaração do enquadramento do porte (capacidade econômica) da empresa; IV - cópia da Licença de Funcionamento da Empresa e/ou do Alvará Sanitário; V - cópia do Certificado de Autorização de Funcionamento da Empresa ou de sua publicação em Diário Oficial da União (DOU); VI - cópia do Certificado de Responsabilidade Técnica atualizado, emitido pelo Conselho Regional de Farmácia, comprovando que a empresa solicitante e/ou fabricante tem assistência do farmacêutico responsável habilitado para aquele fim; VII - justificativa técnica para o registro do produto; VIII - cópia do Certificado de Boas Práticas de Fabricação (CBPF) expedido pela Anvisa para todos os fabricantes do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; IX - cópia do CBPF, emitido pela autoridade sanitária competente do país onde se localiza o fabricante do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; X - histórico da situação de registro do produto biológico em outros países, quando for o caso; XI - cópia do comprovante de registro no país de origem do produto biológico, emitido pela respectiva Autoridade Sanitária competente; XII - cópia do modelo de bula aprovada pela autoridade sanitária competente do país de origem, acompanhada de tradução juramentada; XIII - modelos de bula e embalagens primária e secundária, de acordo com a legislação vigente; XIV - dados de farmacovigilância atualizados, de acordo com a legislação sanitária vigente, obtidos de estudos clínicos e da comercialização do produto, quando aplicável; XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem o rastreamento do produto de acordo com a legislação sanitária vigente; XVI - cópia do compêndio nacional, internacional ou interno da empresa com a determinação das especificações do produto biológico terminado; XVII - informações adicionais de acordo com a legislação vigente sobre o controle de EET, quando aplicável; XVIII - relatório técnico; XIX - relatório de experimentação terapêutica; e XX - relatório de farmacovigilância. Biológico","No ato do protocolo de pedido de registro de um produto biológico novo, a empresa solicitante deve apresentar um processo único contendo os seguintes documentos, além dos formulários de petição (FP1 e FP2) e do comprovante de pagamento da taxa de fiscalização (ou comprovante de isenção):
+
+*   Declaração do enquadramento do porte (capacidade econômica) da empresa [RDC 55/2010, Art. 30];
+*   Cópia da Licença de Funcionamento da Empresa e/ou do Alvará Sanitário [RDC 55/2010, Art. 30];
+*   Cópia do Certificado de Autorização de Funcionamento da Empresa ou de sua publicação no Diário Oficial da União (DOU) [RDC 55/2010, Art. 30];
+*   Cópia do Certificado de Responsabilidade Técnica atualizado, emitido pelo Conselho Regional de Farmácia [RDC 55/2010, Art. 30];
+*   Justificativa técnica para o registro do produto [RDC 55/2010, Art. 30];
+*   Cópia do Certificado de Boas Práticas de Fabricação (CBPF) expedido pela Anvisa para todos os fabricantes do princípio ativo, produto a granel, produto em embalagem primária, produto terminado, diluente e adjuvante [RDC 55/2010, Art. 30];
+*   Cópia do CBPF emitido pela autoridade sanitária competente do país onde se localiza o fabricante do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante [RDC 55/2010, Art. 30];
+*   Histórico da situação de registro do produto em outros países, quando aplicável [RDC 55/2010, Art. 30];
+*   Cópia do comprovante de registro no país de origem, emitido pela autoridade sanitária competente [RDC 55/2010, Art. 30];
+*   Cópia do modelo de bula aprovada pela autoridade sanitária do país de origem, com tradução juramentada [RDC 55/2010, Art. 30];
+*   Modelos de bula e embalagens primária e secundária [RDC 55/2010, Art. 30];
+*   Dados de farmacovigilância atualizados, quando aplicável [RDC 55/2010, Art. 30];
+*   Código de barras (GTIN) ou mecanismos de identificação e segurança para rastreamento [RDC 55/2010, Art. 30];
+*   Cópia do compêndio nacional, internacional ou interno da empresa com as especificações do produto terminado [RDC 55/2010, Art. 30];
+*   Informações adicionais sobre o controle de EET, quando aplicável [RDC 55/2010, Art. 30];
+*   Relatório técnico [RDC 55/2010, Art. 30];
+*   Relatório de experimentação terapêutica [RDC 55/2010, Art. 30];
+*   Relatório de farmacovigilância [RDC 55/2010, Art. 30];
+*   Relatório completo de todos os estudos não-clínicos, bem como protocolos e relatórios completos dos estudos clínicos (fases I, II e III) [RDC 55/2010, Art. 35].
+
+Adicionalmente, o relatório técnico deve conter as informações detalhadas previstas no Art. 31 da RDC 55/2010, incluindo dados do fabricante, histórico de desenvolvimento, etapas de fabricação, controle de qualidade, validação de transporte, informações sobre excipientes, estudos de estabilidade e caracterização de contaminantes e impurezas [RDC 55/2010, Art. 31]. Caso o produto seja um hemoderivado ou vacina, documentos adicionais específicos de produção e controle de qualidade também são exigidos [RDC 55/2010, Art. 32]; [RDC 55/2010, Art. 33].",RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 30;RDC 55/2010, Art. 33;RDC 55/2010, Art. 31;RDC 55/2010, Art. 35;RDC 55/2010, Art. 32","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+Art. 30. No ato do protocolo de pedido de registro de um
+produto biológico novo ou produto biológico, a empresa solicitante
+deverá protocolar um processo único, apresentando os seguintes documentos:
+I - formulários de petição de registro - FP1 e FP2, devidamente
+preenchidos;
+II - via original do comprovante de pagamento da taxa de
+fiscalização de vigilância sanitária, devidamente autenticada e/ou carimbada
+pelo banco, ou comprovante de isenção quando for o caso;
+III - declaração do enquadramento do porte (capacidade econômica)
+da empresa;
+IV - cópia da Licença de Funcionamento da Empresa e/ou do
+Alvará Sanitário;
+V - cópia do Certificado de Autorização de Funcionamento
+da Empresa ou de sua publicação em Diário Oficial da União
+(DOU);
+VI - cópia do Certificado de Responsabilidade Técnica atualizado,
+emitido pelo Conselho Regional de Farmácia, comprovando
+que a empresa solicitante e/ou fabricante tem assistência do farmacêutico
+responsável habilitado para aquele fim;
+VII - justificativa técnica para o registro do produto;
+VIII - cópia do Certificado de Boas Práticas de Fabricação
+(CBPF) expedido pela Anvisa para todos os fabricantes do princípio
+ativo, do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF,","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF, emitido pela autoridade sanitária competente
+do país onde se localiza o fabricante do princípio ativo, do
+produto biológico a granel, do produto biológico em sua embalagem
+primária, do produto biológico terminado, do diluente e do adjuvante;
+X - histórico da situação de registro do produto biológico em
+outros países, quando for o caso;
+XI - cópia do comprovante de registro no país de origem do
+produto biológico, emitido pela respectiva Autoridade Sanitária competente;
+XII - cópia do modelo de bula aprovada pela autoridade
+sanitária competente do país de origem, acompanhada de tradução
+juramentada;
+XIII - modelos de bula e embalagens primária e secundária,
+de acordo com a legislação vigente;
+XIV - dados de farmacovigilância atualizados, de acordo
+com a legislação sanitária vigente, obtidos de estudos clínicos e da
+comercialização do produto, quando aplicável;
+XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem
+o rastreamento do produto de acordo com a legislação sanitária
+vigente;
+XVI - cópia do compêndio nacional,",,,,,,,

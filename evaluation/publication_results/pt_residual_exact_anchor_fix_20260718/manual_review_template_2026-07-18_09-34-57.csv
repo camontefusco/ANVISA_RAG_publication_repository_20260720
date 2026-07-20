@@ -1,0 +1,219 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+DIRECT_13_PT,DIRECT_13,pt,direct_article,True,"Quais documentos específicos, além dos formulários e taxas, devem ser apresentados no protocolo de registro de um produto biológico novo?","A empresa deve apresentar: declaração de porte da empresa, Licença de Funcionamento/Alvará Sanitário, Certificado de Autorização de Funcionamento, Certificado de Responsabilidade Técnica, justificativa técnica, CBPF (da Anvisa e do país de origem) para todos os fabricantes, histórico de registro, comprovante de registro no país de origem, modelos de bula e embalagens, dados de farmacovigilância, código de barras (GTIN), especificações do produto, informações sobre controle de EET, relatório técnico, relatório de experimentação terapêutica e relatório de farmacovigilância.","RDC 55/2010, Art. 30","Art. 30. No ato do protocolo de pedido de registro de um produto biológico novo ou produto biológico, a empresa solicitante deverá protocolar um processo único, apresentando os seguintes documentos: I - formulários de petição de registro - FP1 e FP2, devidamente preenchidos; II - via original do comprovante de pagamento da taxa de fiscalização de vigilância sanitária, devidamente autenticada e/ou carimbada pelo banco, ou comprovante de isenção quando for o caso; III - declaração do enquadramento do porte (capacidade econômica) da empresa; IV - cópia da Licença de Funcionamento da Empresa e/ou do Alvará Sanitário; V - cópia do Certificado de Autorização de Funcionamento da Empresa ou de sua publicação em Diário Oficial da União (DOU); VI - cópia do Certificado de Responsabilidade Técnica atualizado, emitido pelo Conselho Regional de Farmácia, comprovando que a empresa solicitante e/ou fabricante tem assistência do farmacêutico responsável habilitado para aquele fim; VII - justificativa técnica para o registro do produto; VIII - cópia do Certificado de Boas Práticas de Fabricação (CBPF) expedido pela Anvisa para todos os fabricantes do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; IX - cópia do CBPF, emitido pela autoridade sanitária competente do país onde se localiza o fabricante do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; X - histórico da situação de registro do produto biológico em outros países, quando for o caso; XI - cópia do comprovante de registro no país de origem do produto biológico, emitido pela respectiva Autoridade Sanitária competente; XII - cópia do modelo de bula aprovada pela autoridade sanitária competente do país de origem, acompanhada de tradução juramentada; XIII - modelos de bula e embalagens primária e secundária, de acordo com a legislação vigente; XIV - dados de farmacovigilância atualizados, de acordo com a legislação sanitária vigente, obtidos de estudos clínicos e da comercialização do produto, quando aplicável; XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem o rastreamento do produto de acordo com a legislação sanitária vigente; XVI - cópia do compêndio nacional, internacional ou interno da empresa com a determinação das especificações do produto biológico terminado; XVII - informações adicionais de acordo com a legislação vigente sobre o controle de EET, quando aplicável; XVIII - relatório técnico; XIX - relatório de experimentação terapêutica; e XX - relatório de farmacovigilância. Biológico",,RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 30;RDC 55/2010, Art. 33;RDC 55/2010, Art. 31;RDC 55/2010, Art. 35;RDC 55/2010, Art. 32","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+Art. 30. No ato do protocolo de pedido de registro de um
+produto biológico novo ou produto biológico, a empresa solicitante
+deverá protocolar um processo único, apresentando os seguintes documentos:
+I - formulários de petição de registro - FP1 e FP2, devidamente
+preenchidos;
+II - via original do comprovante de pagamento da taxa de
+fiscalização de vigilância sanitária, devidamente autenticada e/ou carimbada
+pelo banco, ou comprovante de isenção quando for o caso;
+III - declaração do enquadramento do porte (capacidade econômica)
+da empresa;
+IV - cópia da Licença de Funcionamento da Empresa e/ou do
+Alvará Sanitário;
+V - cópia do Certificado de Autorização de Funcionamento
+da Empresa ou de sua publicação em Diário Oficial da União
+(DOU);
+VI - cópia do Certificado de Responsabilidade Técnica atualizado,
+emitido pelo Conselho Regional de Farmácia, comprovando
+que a empresa solicitante e/ou fabricante tem assistência do farmacêutico
+responsável habilitado para aquele fim;
+VII - justificativa técnica para o registro do produto;
+VIII - cópia do Certificado de Boas Práticas de Fabricação
+(CBPF) expedido pela Anvisa para todos os fabricantes do princípio
+ativo, do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF,","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF, emitido pela autoridade sanitária competente
+do país onde se localiza o fabricante do princípio ativo, do
+produto biológico a granel, do produto biológico em sua embalagem
+primária, do produto biológico terminado, do diluente e do adjuvante;
+X - histórico da situação de registro do produto biológico em
+outros países, quando for o caso;
+XI - cópia do comprovante de registro no país de origem do
+produto biológico, emitido pela respectiva Autoridade Sanitária competente;
+XII - cópia do modelo de bula aprovada pela autoridade
+sanitária competente do país de origem, acompanhada de tradução
+juramentada;
+XIII - modelos de bula e embalagens primária e secundária,
+de acordo com a legislação vigente;
+XIV - dados de farmacovigilância atualizados, de acordo
+com a legislação sanitária vigente, obtidos de estudos clínicos e da
+comercialização do produto, quando aplicável;
+XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem
+o rastreamento do produto de acordo com a legislação sanitária
+vigente;
+XVI - cópia do compêndio nacional,",,,,,,,
+DIRECT_18_PT,DIRECT_18,pt,direct_article,True,Quais estudos clínicos devem ser apresentados no protocolo de registro de um produto biológico?,"Devem ser apresentados protocolos e relatórios de estudos de farmacocinética, estudos de farmacodinâmica e estudo(s) pivotal(is) de segurança e eficácia clínica.","RDC 55/2010, Art. 46","Art. 46. No ato do protocolo do pedido de registro de um produto biológico, a empresa solicitante deverá apresentar os protocolos e relatórios dos seguintes estudos clínicos: I - estudos de farmacocinética; II - estudos de farmacodinâmica; e III - estudo(s) pivotal(is) de segurança e eficácia clínica. § 1º Os estudos de farmacodinâmica podem ser combinados com estudos de farmacocinética, desde que caracterizada a relação farmacocinética/farmacodinâmica. § 2º Os estudos clínicos comparativos são necessários para demonstrar a comparabilidade dos perfis de eficácia e segurança entre o produto biológico e o produto biológico comparador. § 3º O desenho e as margens de comparabilidade dos estudos de segurança e eficácia previstos no inciso III deste artigo devem ser especificados e respaldados estatística e clinicamente. § 4º Quando disponíveis, os resultados de estudos fase IV deverão ser apresentados.",,RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 46;RDC 55/2010, Art. 45;RDC 55/2010, Art. 35;RDC 55/2010, Art. 44;RDC 55/2010, Art. 36","regulation_id: RDC 55/2010
+article: Art. 46
+chapter: Capítulo III desta - Resolução, a empresa solicitante deverá apresentar os seguintes documentos:
+section: Seção II - Informação Não-clínica e Clínica
+citation_label: RDC 55/2010, Art. 46
+
+Capítulo III desta - Resolução, a empresa solicitante deverá apresentar os seguintes documentos:
+Seção II - Informação Não-clínica e Clínica
+Art. 46. No ato do protocolo do pedido de registro de um
+produto biológico, a empresa solicitante deverá apresentar os protocolos
+e relatórios dos seguintes estudos clínicos:
+I - estudos de farmacocinética;
+II - estudos de farmacodinâmica; e
+III - estudo(s) pivotal(is) de segurança e eficácia clínica.
+§ 1º Os estudos de farmacodinâmica podem ser combinados
+com estudos de farmacocinética, desde que caracterizada a relação
+farmacocinética/farmacodinâmica.
+§ 2º Os estudos clínicos comparativos são necessários para
+demonstrar a comparabilidade dos perfis de eficácia e segurança entre
+o produto biológico e o produto biológico comparador.
+§ 3º O desenho e as margens de comparabilidade dos estudos
+de segurança e eficácia previstos no inciso III deste artigo devem ser
+especificados e respaldados estatística e clinicamente.
+§ 4º Quando disponíveis, os resultados de estudos fase IV
+deverão ser apresentados.","regulation_id: RDC 55/2010
+article: Art. 45
+chapter: Capítulo III desta - Resolução, a empresa solicitante deverá apresentar os seguintes documentos:
+section: Seção II - Informação Não-clínica e Clínica
+citation_label: RDC 55/2010, Art. 45
+
+Capítulo III desta - Resolução, a empresa solicitante deverá apresentar os seguintes documentos:
+Seção II - Informação Não-clínica e Clínica
+Art. 45. No ato do protocolo do pedido de registro de um
+produto biológico, a empresa solicitante deverá apresentar os relatórios
+dos seguintes estudos não-clínicos in-vivo:
+I - estudos de farmacodinâmica relevantes para as indicações
+terapêuticas pretendidas; e
+II - estudos de toxicidade cumulativa (dose-repetida), incluindo
+a caracterização dos parâmetros da cinética de toxicidade,
+conduzidos em espécie(s) relevante(s).",,,,,,,
+DIRECT_24_PT,DIRECT_24,pt,direct_article,True,Quais são os formatos exigidos para a documentação no ato do protocolo de solicitação de registro de um produto biológico?,"A empresa deve apresentar 1 via de toda a documentação solicitada e 1 CD-ROM com as informações em formato PDF, com o número de série do disco explicitado na documentação.","RDC 55/2010, Art. 9","Art. 9º A empresa, ao protocolar a solicitação de registro, deve apresentar 1 (uma) via de toda a documentação solicitada e 1 (um) CD-ROM com as mesmas informações gravadas em linguagem eletrônica em formato pdf (o número de série do disco deve estar explicitado na documentação).",,RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 9;RDC 55/2010, Art. 43;RDC 55/2010, Art. 30;RDC 55/2010, Art. 46;RDC 55/2010, Art. 34","regulation_id: RDC 55/2010
+article: Art. 9
+chapter: CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+section: 
+citation_label: RDC 55/2010, Art. 9
+
+CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+Art. 9º A empresa, ao protocolar a solicitação de registro,
+deve apresentar 1 (uma) via de toda a documentação solicitada e 1
+(um) CD-ROM com as mesmas informações gravadas em linguagem
+eletrônica em formato pdf (o número de série do disco deve estar
+explicitado na documentação).","regulation_id: RDC 55/2010
+article: Art. 43
+chapter: CAPÍTULO V - DO REGISTRO DE PRODUTOS BIOLÓGICOS PELA
+section: Seção I - Documentação para o Registro de Produtos Biológicos
+citation_label: RDC 55/2010, Art. 43
+
+CAPÍTULO V - DO REGISTRO DE PRODUTOS BIOLÓGICOS PELA
+Seção I - Documentação para o Registro de Produtos Biológicos
+Art. 43. No ato do protocolo de pedido de registro de um
+produto biológico pela via de desenvolvimento por comparabilidade,
+além da documentação descrita nas Seções I e II do
+I - relatório com dados sobre o produto biológico, sendo
+obrigatórias as seguintes informações:
+a) descrição das técnicas analíticas utilizadas para detectar
+diferenças potenciais entre o produto biológico e o produto biológico
+comparador; e
+b) dados da caracterização biológica e físico-química relacionados
+aos atributos de qualidade do produto biológico;
+II - declaração indicando o nome do produto biológico comparador;
+III - declaração com comprovação de que o mesmo produto
+biológico comparador foi utilizado ao longo dos estudos de desenvolvimento
+do produto biológico;
+IV - informações sobre o sistema de expressão utilizado para
+a fabricação do produto biológico e produto biológico comparador;
+V - comparação das moléculas do produto biológico e produto
+biológico comparador;
+VI - relatórios dos resultados das análises comparativas entre
+os princípios ativos sempre que necessário;
+VII - relatório contendo descrição detalhada das etapas do
+exercício de comparabilidade, com indicação da capacidade de detectar
+diferenças nos atributos de qualidade entre o produto biológico
+e o produto biológico comparador;
+VIII - relatórios dos estudos de estabilidade comparativos,
+gerados em condições aceleradas e de estresse, de acordo com a
+legislação vigente;",,,,,,,
+DIRECT_47_PT,DIRECT_47,pt,direct_article,True,Como devem ser estruturadas as responsabilidades dos envolvidos no Sistema de Farmacovigilância para evitar falhas operacionais?,Não deve haver sobreposições não justificáveis nem lacunas nas responsabilidades dos envolvidos no sistema.,"RDC 406/2020, Art. 19","Art. 19. Não deve haver sobreposições não justificáveis, bem como lacunas, nas responsabilidades dos envolvidos no Sistema de Farmacovigilância do Detentor de Registro de Medicamento. Sub",,RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 19;RDC 406/2020, Art. 18;RDC 406/2020, Art. 20;RDC 406/2020, Art. 21;RDC 406/2020, Art. 13","regulation_id: RDC 406/2020
+article: Art. 19
+chapter: CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: seção II - Do pessoal
+citation_label: RDC 406/2020, Art. 19
+
+CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+seção II - Do pessoal
+Art. 19. Não deve haver sobreposições não justificáveis, bem como lacunas, nas responsabilidades dos envolvidos no Sistema de Farmacovigilância do Detentor de Registro de Medicamento.
+Sub","regulation_id: RDC 406/2020
+article: Art. 18
+chapter: CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: seção II - Do pessoal
+citation_label: RDC 406/2020, Art. 18
+
+CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+seção II - Do pessoal
+Art. 18. O Detentor de Registro de Medicamento deve contar com número de funcionários qualificados compatível com as atividades de Farmacovigilância.",,,,,,,
+COMPLEX_09_PT,COMPLEX_09,pt,multi_article,True,Quais dispositivos médicos estão excluídos da aplicação da RDC 751/2022 e quais estão isentos de notificação ou registro?,"A RDC não se aplica a dispositivos usados/recondicionados, sob medida, para diagnóstico in vitro, medicamentos, células, tecidos, órgãos, sangue, cosméticos, saneantes ou alimentos. Estão isentos de notificação ou registro: dispositivos para investigações clínicas, apresentações com dois ou mais dispositivos já registrados (embalagens íntegras) e acessórios produzidos pelo fabricante para integrar seus próprios dispositivos já registrados.","RDC 751/2022, Art. 1;RDC 751/2022, Art. 2","Art. 1º Esta Resolução define as regras de classificação de risco de dispositivos médicos, os requisitos de rotulagem e de instruções de uso, e os procedimentos para notificação, registro, alteração, revalidação e cancelamento de notificação ou registro de dispositivos médicos.
+
+Art. 2º Esta Resolução se aplica aos dispositivos médicos nela definidos, sendo obrigatório a notificação ou o registro destes, conforme classificação de risco. § 1º A classificação de risco, os procedimentos e as especificações descritas neste documento, para fins de notificação e registro, se aplicam aos dispositivos médicos e seus acessórios. § 2º Esta Resolução não se aplica aos dispositivos médicos usados ou recondicionados, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 579, de 25 de novembro de 2021 , publicada no DOU nº 225, de 1° de dezembro de 2021. § 3º Esta Resolução não se aplica aos dispositivos médicos sob medida, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 305, de 24 de setembro de 2019 , publicada no DOU nº 186, de 25 de setembro de 2019, Seção 1, pag. 69. (Redação dada pela Resolução 777/2023 ) Redações Anteriores § 4º Esta Resolução não se aplica aos dispositivos médicos para diagnóstico in vitro, incluindo os instrumentos para diagnóstico in vitro, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 36, de 26 de agosto de 2015 , publicada no DOU nº 164, de 27 de agosto de 2015, Seção 1, pág. 43. § 5º Esta Resolução não se aplica aos medicamentos, células, tecidos, órgãos ou sangue de origem humana ou derivados, cosméticos, saneantes ou gêneros alimentícios tratados por outros regulamentos. § 6º Os dispositivos ativos (equipamentos) indicados para correção estética e embelezamento são considerados dispositivos médicos. § 7º Os dispositivos ativos (equipamentos) especificamente destinados à limpeza, desinfecção ou esterilização de dispositivos médicos são considerados dispositivos médicos. § 8º Estão isentos de notificação ou registro os dispositivos médicos destinados a investigações clínicas, cumpridas as disposições legais da autoridade sanitária competente para realização desta atividade, estando proibidos a comercialização e o uso para outros fins. § 9º Estão isentas de notificação ou registro as apresentações constituídas por dois ou mais dispositivos médicos notificados ou registrados e em suas embalagens individuais de apresentação íntegras, devendo conter no rótulo as informações dos dispositivos médicos correspondentes, incluindo os números de notificação ou registro. § 10. Estão isentos de notificação ou registro os acessórios produzidos por um fabricante exclusivamente para integrar os dispositivos médicos de sua fabricação já notificados ou registrados e cujos dossiês técnicos contenham informações sobre estes acessórios. § 11. Os novos acessórios poderão ser incluídos nas notificações ou nos registros originais, detalhando os fundamentos de funcionamento, ação e conteúdo.",,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 2;RDC 751/2022, Art. 1;RDC 751/2022, Art. 3;RDC 751/2022, Art. 16;RDC 751/2022, Art. 15","regulation_id: RDC 751/2022
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+section: Seção II - Abrangência
+citation_label: RDC 751/2022, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+Seção II - Abrangência
+§ 9º Estão isentas de notificação ou registro as apresentações constituídas por dois ou mais dispositivos médicos notificados ou registrados e em suas embalagens individuais de apresentação íntegras, devendo conter no rótulo as informações dos dispositivos médicos correspondentes, incluindo os números de notificação ou registro.
+§ 10. Estão isentos de notificação ou registro os acessórios produzidos por um fabricante exclusivamente para integrar os dispositivos médicos de sua fabricação já notificados ou registrados e cujos dossiês técnicos contenham informações sobre estes acessórios.
+§ 11. Os novos acessórios poderão ser incluídos nas notificações ou nos registros originais, detalhando os fundamentos de funcionamento, ação e conteúdo.","regulation_id: RDC 751/2022
+document_title: Classificacao de risco, notificacao e registro de dispositivos medicos
+article: Art. 1
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+section: Seção I - Objetivo
+citation_label: RDC 751/2022, Art. 1
+
+CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+Seção I - Objetivo
+Art. 1º Esta Resolução define as regras de classificação de risco de dispositivos médicos, os requisitos de rotulagem e de instruções de uso, e os procedimentos para notificação, registro, alteração, revalidação e cancelamento de notificação ou registro de dispositivos médicos.",,,,,,,
+COMPLEX_10_PT,COMPLEX_10,pt,multi_article,True,Como a RDC 406/2020 define 'evento adverso grave' e 'evento clinicamente significativo'?,"Evento adverso grave é qualquer ocorrência médica indesejável, em qualquer dose, que resulte em morte, risco de morte, hospitalização ou prolongamento de hospitalização, incapacidade significativa ou persistente, anomalia congênita ou evento clinicamente significativo. Evento clinicamente significativo é qualquer evento que possa colocar em risco o paciente ou exigir intervenção para evitar morte, risco de morte, hospitalização, incapacidade ou anomalia congênita.","RDC 406/2020, Art. 1;RDC 406/2020, Art. 2","Art. 1º Esta Resolução dispõe sobre as Boas Práticas de Farmacovigilância para Detentores de Registro de Medicamento de uso humano. § 1º Para os fins do disposto no caput, ficam estabelecidos requisitos, responsabilidades e padrões de trabalho a serem observados por todos os Detentores de Registro de Medicamento de uso humano distribuídos ou comercializados no Brasil, com vistas ao cumprimento das Boas Práticas de Farmacovigilância. § 2º O termo Detentores de Registro de Medicamento, nesta Resolução, abrange quaisquer responsáveis pelos medicamentos de uso humano regulados pela Anvisa.
+
+Art. 2° Para efeitos desta Resolução, são adotadas as seguintes definições: I - abuso de medicamentos: uso excessivo intencional de um ou mais medicamentos sem finalidade terapêutica e sem prescrição, que pode ser persistente ou esporádico, acompanhado de efeitos físicos ou psicológicos prejudiciais; II - ações corretivas: ações adotadas para eliminar a causa de não conformidade detectada ou de outra situação indesejável; III - ações preventivas: ações adotadas para eliminar a causa de potencial não conformidade ou de outra potencial situação indesejável; IV - autoinspeção em farmacovigilância: auditoria interna dedicada a avaliar o cumprimento das Boas Práticas de Farmacovigilância, por parte do Detentor de Registro de Medicamento, em todos os seus aspectos; V - Boas Práticas de Farmacovigilância: conjunto de requisitos técnicos destinados a garantir a autenticidade dos dados coletados para a avaliação, em cada momento, dos riscos associados a medicamentos; a confidencialidade da identidade das pessoas que apresentaram ou notificaram Reações Adversas; e o uso de critérios uniformes na avaliação das Notificações, bem como na geração de sinais; VI - confidencialidade: manutenção da privacidade dos pacientes, profissionais de saúde e instituições, incluindo identidades pessoais e todas as informações médicas pessoais; VII - eficácia do medicamento: capacidade de dado medicamento produzir os efeitos benéficos pretendidos, em indivíduo de determinada população, em condições ideais de uso; VIII - erro de medicação: qualquer evento evitável que possa causar ou levar a uso inapropriado de medicamentos, ou causar dano a um paciente, enquanto a medicação está sob o controle dos profissionais de saúde, pacientes ou consumidores, envolvendo o uso não intencional, com finalidade terapêutica, podendo ou não ter prescrição. Esse evento pode estar relacionado com a prática profissional, os produtos para a saúde, procedimentos e sistemas, incluindo prescrição, orientações verbais, rotulagem, embalagem e nomenclatura de produtos industrializados e manipulados, dispensação, distribuição, administração, educação, monitoramento e uso; IX - evento adverso: qualquer ocorrência médica indesejável em paciente no qual haja sido administrado medicamento, sem que necessariamente exista relação causal com o tratamento, podendo ser qualquer Sinal desfavorável e não intencional, sintoma ou doença temporalmente associado ao uso do medicamento; X - evento adverso grave/reação adversa grave: qualquer ocorrência médica indesejável, em qualquer dose, que resulte em morte, risco de morte, situações que requeiram hospitalização ou prolongamento de hospitalização já existente, incapacidade significativa ou persistente, anomalia congênita e evento clinicamente significativo; XI - evento clinicamente significativo: qualquer evento que possa colocar em risco o paciente ou que possa exigir intervenção, a fim de se evitar morte, risco de morte, situações que requeiram hospitalização ou prolongamento de hospitalização já existente, incapacidade significativa ou persistente, anomalia congênita; XII - evolução clínica: condição clínica do usuário de medicamento após manifestação do Evento Adverso, contemplando óbito, não recuperado, recuperado com sequela, em recuperação, recuperado e desconhecido; XIII - Farmacovigilância: ciência e atividades relativas à detecção, avaliação, compreensão e prevenção de Eventos Adversos ou quaisquer outros problemas relacionados a medicamentos; XIV - inefetividade terapêutica: ausência ou redução da resposta terapêutica esperada de medicamento, sob as condições de uso indicadas em bula; XV - informações críticas faltantes: lacunas críticas no conhecimento sobre um medicamento, relacionadas a questões específicas de segurança ou a determinadas populações que fazem uso do produto; XVI - inspeção em farmacovigilância: ação de fiscalização conduzida in loco, pelos integrantes do Sistema Nacional de Vigilância Sanitária (SNVS), para verificação do cumprimento das Boas Práticas de Farmacovigilância por parte do Detentor de Registro de Medicamento. Tal atividade consiste em análise documental, realização de entrevistas, visitas às instalações do Detentor de Registro de Medicamento, revisões em base de dados, entre outras atividades; XVII - interação medicamentosa: resposta farmacológica, toxicológica, clínica ou laboratorial causada pela combinação do medicamento com outros medicamentos. Também pode decorrer da interação do medicamento com alimentos, substâncias químicas ou doenças. Os resultados de exames laboratoriais podem ter sua confiabilidade afetada devido às interações com medicamentos. A interação medicamentosa pode resultar em aumento ou diminuição da efetividade terapêutica ou ainda no aparecimento de novos eventos adversos relacionados; XVIII - notificação: ato de informar a ocorrência de Evento Adverso de medicamento para os Detentores de Registro de Medicamento, autoridades sanitárias ou outras organizações; XIX - notificação de seguimento: notificação de acompanhamento de Evento Adverso previamente notificado, contendo dados adicionais, clínicos ou de exames complementares, a fim de melhor elucidar a relação de causalidade entre o evento descrito e o medicamento suspeito; XX - notificação espontânea: comunicação não solicitada, realizada por um profissional de saúde ou consumidor a uma empresa, autoridade reguladora ou outra organização que descreve uma ou mais reações adversas a um paciente que recebeu um ou mais medicamentos e que não deriva de um estudo ou de qualquer sistema organizado de coleta de dados. Também se incluem os questionamentos realizados pelos representantes de vendas aos profissionais de saúde; XXI - notificação solicitada: refere-se àquela derivada de sistemas organizados de coleta de dados, que incluem, entre outros, ensaios clínicos, registros, programas de pós-aprovação denominados de uso do paciente e outros programas de apoio ao paciente; XXII - Procedimento Operacional Padrão (POP): procedimento escrito e autorizado que fornece instruções para a realização de operações não necessariamente específicas, mas de natureza geral. Certos procedimentos podem ser utilizados para suplementar a documentação hierarquicamente superior; XXIII - reação adversa: qualquer resposta prejudicial ou indesejável, não intencional, a um medicamento, que ocorre nas doses usualmente empregadas no ser humano para profilaxia, diagnóstico, terapia da doença ou para a modificação de funções fisiológicas. Diferentemente do Evento Adverso, a Reação Adversa caracteriza-se pela suspeita de relação causal entre o medicamento e a resposta prejudicial ou indesejável. Para fins de notificação, se um evento for relatado espontaneamente, mesmo que a relação seja desconhecida ou não declarada, ele atende à definição de reação adversa; XXIV - reação adversa inesperada: Reação Adversa cuja natureza, severidade, especificidade ou evolução clínica não é consistente com as informações disponíveis na bula nacional do medicamento em questão, mesmo que tais reações adversas estejam descritas para a respectiva classe farmacológica; XXV - Relação Benefício-Risco: avaliação detalhada dos benefícios em relação aos riscos, podendo estar relacionada à segurança, qualidade e eficácia do medicamento, bem como seu uso racional; XXVI - risco identificado: ocorrência desfavorável para a qual há evidências adequadas de sua associação com dado medicamento; XXVII - risco potencial: ocorrência desfavorável em que há suspeita de associação do risco com dado medicamento de interesse. Tal associação, no entanto, ainda não foi confirmada; XXVIII - sinal: informação que surge de uma ou várias fontes (incluindo observações e experimentos), que sugere uma possível relação causal entre uma intervenção e um evento ou conjunto de eventos relacionados, seja adverso ou benéfico, sendo que tal relação é desconhecida ou foi documentada de forma incompleta anteriormente. Normalmente, é necessária a existência de mais de uma Notificação para que seja gerado um sinal, mas, dependendo da gravidade do evento e da qualidade da informação, pode-se gerar um sinal com uma única Notificação. Também pode ser incluída como sinal Reação Adversa conhecida, para a qual houve mudança do padrão de intensidade ou frequência. A identificação de sinal demanda uma explicação adicional, vigilância contínua ou aplicação de processo de investigação; XXIX - Sistema de Farmacovigilância: sistema adotado pelos Detentores de Registro de Medicamento, para o cumprimento de suas responsabilidades, atividades e ações legalmente estabelecidas, relativamente à Farmacovigilância, e concebido para monitorar a segurança de medicamentos registrados, bem como detectar qualquer modificação na Relação Benefício-Risco desses produtos. Como qualquer outro sistema, caracteriza-se por sua estrutura, suas atividades, ações e resultados; XXX - superdose: uso de medicamento em doses superiores à dose máxima recomendada, isto é, em dose excessiva; e XXXI - uso off label: compreende o uso intencional em situações divergentes da bula de medicamento registrado na Anvisa, com finalidade terapêutica e sob prescrição. Pode incluir diferenças na indicação, faixa etária/peso, dose, frequência, apresentação ou via de administração.",,RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 2;RDC 406/2020, Art. 1;RDC 406/2020, Art. 3;RDC 406/2020, Art. 33;RDC 406/2020, Art. 32","regulation_id: RDC 406/2020
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+section: Seção II - Definições
+citation_label: RDC 406/2020, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+Seção II - Definições
+em qualquer dose, que resulte em morte, risco de morte, situações que requeiram hospitalização ou prolongamento de hospitalização já existente, incapacidade significativa ou persistente, anomalia congênita e evento clinicamente significativo;
+XI - evento clinicamente significativo: qualquer evento que possa colocar em risco o paciente ou que possa exigir intervenção, a fim de se evitar morte, risco de morte, situações que requeiram hospitalização ou prolongamento de hospitalização já existente, incapacidade significativa ou persistente, anomalia congênita;
+XII - evolução clínica: condição clínica do usuário de medicamento após manifestação do Evento Adverso, contemplando óbito, não recuperado, recuperado com sequela, em recuperação, recuperado e desconhecido;
+XIII - Farmacovigilância: ciência e atividades relativas à detecção, avaliação, compreensão e prevenção de Eventos Adversos ou quaisquer outros problemas relacionados a medicamentos;
+XIV - inefetividade terapêutica: ausência ou redução da resposta terapêutica esperada de medicamento, sob as condições de uso indicadas em bula;
+XV - informações críticas faltantes: lacunas críticas no conhecimento sobre um medicamento, relacionadas a questões específicas de segurança ou a determinadas populações que fazem uso do produto;
+XVI - inspeção em farmacovigilância: ação de fiscalização conduzida in loco, pelos integrantes do Sistema Nacional de Vigilância Sanitária (SNVS),","regulation_id: RDC 406/2020
+document_title: Boas Praticas de Farmacovigilancia para Detentores de Registro de Medicamento
+article: Art. 1
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+section: Seção I - Objetivos e Abrangência
+citation_label: RDC 406/2020, Art. 1
+
+CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+Seção I - Objetivos e Abrangência
+Art. 1º Esta Resolução dispõe sobre as Boas Práticas de Farmacovigilância para Detentores de Registro de Medicamento de uso humano.
+§ 1º Para os fins do disposto no caput, ficam estabelecidos requisitos, responsabilidades e padrões de trabalho a serem observados por todos os Detentores de Registro de Medicamento de uso humano distribuídos ou comercializados no Brasil, com vistas ao cumprimento das Boas Práticas de Farmacovigilância.
+§ 2º O termo Detentores de Registro de Medicamento, nesta Resolução, abrange quaisquer responsáveis pelos medicamentos de uso humano regulados pela Anvisa.",,,,,,,

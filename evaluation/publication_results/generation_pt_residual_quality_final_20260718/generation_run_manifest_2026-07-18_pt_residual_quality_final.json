@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-07-18_pt_residual_quality_final",
+  "purpose": "Final merged Portuguese held-out generation with residual-quality fixes",
+  "base_generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_heldout_20260709/generation_evaluation_2026-07-10_01-28-15.csv",
+  "base_generation_csv_sha256": "e4637a5a9a5381254d8c7c428e9ffeb73a6cfca63a545eaa8a7a9362e6697033",
+  "patch_generation_csvs": [
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_residual_quality_target_20260718/generation_evaluation_2026-07-18_09-35-53.csv",
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_complex09_language_fix_20260718/generation_evaluation_2026-07-18_09-45-24.csv",
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_direct13_context_fix_20260718/generation_evaluation_2026-07-18_14-42-24.csv",
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_direct12_citation_fix_20260718/generation_evaluation_2026-07-18_14-45-51.csv"
+  ],
+  "patch_generation_sha256": {
+    "evaluation/publication_results/generation_pt_residual_quality_target_20260718/generation_evaluation_2026-07-18_09-35-53.csv": "c6e05ab85d1cd3150cd1415475b78ad3aad2a2bfc140edd64491743354648cb4",
+    "evaluation/publication_results/generation_pt_complex09_language_fix_20260718/generation_evaluation_2026-07-18_09-45-24.csv": "47e9034fbf289b170f866556bef7b2deb07f511f314ef74172e4586235468f3d",
+    "evaluation/publication_results/generation_pt_direct13_context_fix_20260718/generation_evaluation_2026-07-18_14-42-24.csv": "c3cf4b6038bdbf2fea4beb53bb1c671d879598d5c51aad5c606a1f765ad96f73",
+    "evaluation/publication_results/generation_pt_direct12_citation_fix_20260718/generation_evaluation_2026-07-18_14-45-51.csv": "82964948356e522e0a6da093fc6475f0dec93b8995eb48a5b2494e308fe4846b"
+  },
+  "patched_ids": [
+    "COMPLEX_09_PT",
+    "COMPLEX_10_PT",
+    "DIRECT_04_PT",
+    "DIRECT_12_PT",
+    "DIRECT_13_PT",
+    "DIRECT_16_PT",
+    "DIRECT_17_PT",
+    "DIRECT_18_PT",
+    "DIRECT_24_PT",
+    "DIRECT_37_PT",
+    "DIRECT_43_PT",
+    "DIRECT_47_PT",
+    "DIRECT_69_PT"
+  ],
+  "merged_rows": 75,
+  "note": "Rows not listed in patched_ids are unchanged from the original Portuguese held-out generation run."
+}

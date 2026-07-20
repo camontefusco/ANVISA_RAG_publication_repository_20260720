@@ -1,0 +1,40 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+DIRECT_03_EN,DIRECT_03,en,direct_article,True,What are the requirements for the cancellation or suspension of a DDCM or clinical trial by the sponsor?,"The sponsor must submit technical-scientific justifications and a follow-up plan for participants. If the reason is safety, it must present risk minimization/mitigation measures. The request must be submitted via secondary petition.","RDC 9/2015, Art. 50","Art. 50 . O patrocina dor pode cancelar ou suspender um DDCM ou ensaio clínico a qualquer momento, desde que encaminhadas as devidas justificativas técnico -científicas, bem como um plano de acompanhamento dos participantes do (s) ensaio (s) clínico (s) já iniciado (s). §1º Uma vez cancelado um DDCM, nenhum ensaio clínico , relacionado a ele, poderá ser continuado no País. §2º Caso um DDCM ou ensaio clínico seja cancelado por motivos de segurança, o patrocinador deve justificar técnic a e cientificamente as razões para o cancelamento e apresentar as medidas para minimização/mitigação de r isco aos participantes do (s) ensaio (s) clínico (s). §3º As suspensões e cancelamentos de ensaio clínico ou de DDCM devem ser submetidas à Anvisa na forma de petição secundária anexada ao respectivo processo.","The sponsor may suspend or cancel a DDCM or clinical trial at any time, provided they submit the necessary justifications and a follow-up plan for participants, if the clinical trial has already begun [RDC 945/2024, Art. 85]. 
+
+Additional requirements include:
+* **Safety-related cancellations:** The sponsor must describe the reasons for the cancellation and present measures to minimize or mitigate risks to clinical trial participants [RDC 945/2024, Art. 85, § 2º].
+* **Formal submission:** Suspensions and cancellations must be filed with Anvisa as a secondary petition attached to the respective process within 15 business days of the decision [RDC 945/2024, Art. 85, § 3º].
+* **Temporary suspensions:** As an immediate safety measure, the sponsor must notify Anvisa within 7 calendar days of the suspension date, providing the reasons, scope, and details regarding treatment interruption and recruitment suspension [RDC 945/2024, Art. 85, § 4º; RDC 945/2024, Art. 85, § 5º].
+* **Consequences:** Once a DDCM is cancelled, no related clinical trial may continue in the country [RDC 945/2024, Art. 85, § 1º]. 
+* **Reactivation:** Requests to reactivate a suspended protocol must be accompanied by justifications, and the sponsor must await Anvisa's authorization before restarting the trial [RDC 945/2024, Art. 85, § 6º].",rdc09_2015.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt,"RDC 9/2015, Art. 50;RDC 945/2024, Art. 85;RDC 945/2024, Art. 87;RDC 945/2024, Art. 24;RDC 9/2015, Art. 37","regulation_id: RDC 9/2015
+article: Art. 50
+chapter: Capítulo VI - DAS SUSPENSÕES E CANCELAMENTOS
+section: 
+citation_label: RDC 9/2015, Art. 50
+
+Capítulo VI - DAS SUSPENSÕES E CANCELAMENTOS
+Art. 50 . O patrocina dor pode cancelar ou suspender um DDCM ou ensaio clínico a
+qualquer momento, desde que encaminhadas as devidas justificativas técnico -científicas,
+bem como um plano de acompanhamento dos participantes do (s) ensaio (s) clínico (s) já
+iniciado (s).
+§1º Uma vez cancelado um DDCM, nenhum ensaio clínico , relacionado a ele, poderá
+ser continuado no País.
+§2º Caso um DDCM ou ensaio clínico seja cancelado por motivos de segurança, o
+patrocinador deve justificar técnic a e cientificamente as razões para o cancelamento e
+apresentar as medidas para minimização/mitigação de r isco aos participantes do (s)
+ensaio (s) clínico (s).
+§3º As suspensões e cancelamentos de ensaio clínico ou de DDCM devem ser
+submetidas à Anvisa na forma de petição secundária anexada ao respectivo processo.","regulation_id: RDC 945/2024
+article: Art. 85
+chapter: CAPÍTULO XI - DO INÍCIO E TÉRMINO, SUSPENSÃO OU CANCELAMENTO DE ENSAIO CLÍNICO OU DDCM
+section: 
+citation_label: RDC 945/2024, Art. 85
+
+CAPÍTULO XI - DO INÍCIO E TÉRMINO, SUSPENSÃO OU CANCELAMENTO DE ENSAIO CLÍNICO OU DDCM
+Art. 85. A qualquer momento o patrocinador poderá suspender ou cancelar um DDCM ou ensaio clínico aprovado, desde que encaminhadas as devidas justificativas, bem como um plano de acompanhamento dos participantes, caso o ensaio clínico tenha sido iniciado.
+§ 1º Uma vez cancelado um DDCM, nenhum ensaio clínico relacionado a ele poderá ser continuado no país.
+§ 2º Caso um DDCM ou ensaio clínico seja cancelado por motivos de segurança, o patrocinador deve descrever as razões para o cancelamento e apresentar as medidas para minimização/mitigação de risco aos participantes do ensaio clínico.
+§ 3º As suspensões e cancelamentos devem ser protocoladas na Anvisa, na forma de petição secundária anexada ao respectivo processo em até 15 (quinze) dias úteis após a decisão de suspender ou cancelar um ensaio clínico ou DDCM.
+§ 4º Nos casos de suspensão temporária do ensaio clínico ou DDCM, como medida imediata de segurança, o patrocinador deve notificar à Anvisa no prazo de 7 (sete) dias corridos a contar da data de suspensão, justificando os motivos.
+§ 5º As razões, a abrangência, a interrupção do tratamento e a suspensão do recrutamento de participantes devem estar explicadas com clareza na notificação de suspensão temporária.
+§ 6º A solicitação de reativação de protocolo de ensaio clínico ou DDCM suspensos deve estar acompanhada das devidas justificativas e o patrocinador deve aguardar a autorização da Anvisa para o reinício do ensaio clínico; e",,,,,,,

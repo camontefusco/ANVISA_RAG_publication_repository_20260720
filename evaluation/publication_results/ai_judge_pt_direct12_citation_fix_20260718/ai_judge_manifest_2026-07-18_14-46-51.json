@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-07-18_14-46-51",
+  "purpose": "AI-judge evaluation of frozen held-out generation CSVs",
+  "generation_csvs": [
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_direct12_citation_fix_20260718/generation_evaluation_2026-07-18_14-45-51.csv"
+  ],
+  "generation_csv_sha256": {
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_direct12_citation_fix_20260718/generation_evaluation_2026-07-18_14-45-51.csv": "82964948356e522e0a6da093fc6475f0dec93b8995eb48a5b2494e308fe4846b"
+  },
+  "benchmark": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_benchmark_200.jsonl",
+  "benchmark_sha256": "512a6b80da9dd9e5db7f36f9d70837f32ea7e64b44968dbfc761f341f37cc31f",
+  "split": "held_out_test_75",
+  "split_manifest": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/benchmark_200_split_manifest.json",
+  "split_manifest_sha256": "11f8586093728d80da201aec29cf77e683fb4350e15ec02e8c329a686ab0f205",
+  "question_count": 1,
+  "top_k": 5,
+  "judge_model": "models/gemini-flash-lite-latest",
+  "retrieval": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_max_length": 512,
+    "dense_top_k": 100,
+    "bm25_top_k": 100,
+    "fusion_top_k": 100,
+    "rrf_k": 60,
+    "reranker": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "reranker_top_n": 5
+  },
+  "corpus_checksums": {
+    "IN_338_2024.txt": "d91e361dde5e60cba79974be85a326d79309ce6dd1661243bd3267742eb26ba8",
+    "RDC_406_2020_Estudos_de_Estabilidade.txt": "0405a4696f9893689c2a0b262c38085e45a7e08b1e55a11944da4bdcad25f684",
+    "RDC_55_2010_Registro_de_Produtos_Biológicos.txt": "135074109ec8aa8fe13e080913fc5839aa4ca909543d06aeb2a44d05c2be9e9d",
+    "RDC_751_2022_Regras_de_classificação_de_risco.txt": "00424a355df3207c45cddc01cbb1641c7d2d8e01e2bc3c5ea0482c94d6eca9b6",
+    "RDC_945_2024.txt": "775e6b9518ba454f85bfefbb302ea09d3f96a83f2cbe23cf3ccb3fc7dd1b793b",
+    "rdc09_2015.txt": "8c9a94519de9d1a4b85feacfa28c964ab25161b668777d4fc0cbf6ac70fd5597"
+  },
+  "vector_store_checksums": {
+    "default__vector_store.json": "8bfb069565c5f8458087584c0fac787d4f373bebdbf9f5358724fc527a288789",
+    "docstore.json": "54eea02e9873e36dd79a1e8e820ab83e84313d5b13bc79224324572aa518e35b",
+    "graph_store.json": "8e0a77744010862225c69da83c585f4f8a42fd551b044ce530dbb1eb6e16742c",
+    "image__vector_store.json": "d17ed74c1649a438e518a8dc56a7772913dfe1ea7a7605bce069c63872431455",
+    "index_store.json": "32192bae05182ae97b12e12846ba995cf1ca52a7ccc1b7b99a8ad77c60acdbed"
+  },
+  "package_versions": {
+    "llama-index-core": "0.10.20",
+    "sentence-transformers": "5.1.2",
+    "rank-bm25": "0.2.2",
+    "google-generativeai": "0.3.2"
+  },
+  "note": "Generation answers are frozen; this run reconstructs retrieval evidence and judges answer quality only."
+}

@@ -1,0 +1,24 @@
+name: rag-project-env
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+
+dependencies:
+  # --- Core Conda packages ---
+  - python=3.10
+  - numpy=1.26
+  - pip
+  - python-dotenv
+  - pytorch
+  - sentence-transformers
+  - ragas
+  - streamlit
+
+  # --- Pip packages (LlamaIndex + Google GenAI) ---
+  - pip:
+      - llama-index
+      - llama-index-core
+      - llama-index-embeddings-huggingface
+      - llama-index-llms-google-genai
+      - rank-bm25==0.2.2

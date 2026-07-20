@@ -1,0 +1,217 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+DIRECT_13_EN,DIRECT_13,en,direct_article,True,"What specific documents, besides forms and fees, must be submitted when filing for the registration of a new biological product?","The company must submit: a declaration of company size, Operating License/Sanitary Permit, Certificate of Authorization, Certificate of Technical Responsibility, technical justification, GMP Certificate (from Anvisa and the country of origin) for all manufacturers, registration history, proof of registration in the country of origin, package inserts and labeling models, pharmacovigilance data, barcode (GTIN), product specifications, information on TSE control, technical report, therapeutic experimentation report, and pharmacovigilance report.","RDC 55/2010, Art. 30","Art. 30. No ato do protocolo de pedido de registro de um produto biológico novo ou produto biológico, a empresa solicitante deverá protocolar um processo único, apresentando os seguintes documentos: I - formulários de petição de registro - FP1 e FP2, devidamente preenchidos; II - via original do comprovante de pagamento da taxa de fiscalização de vigilância sanitária, devidamente autenticada e/ou carimbada pelo banco, ou comprovante de isenção quando for o caso; III - declaração do enquadramento do porte (capacidade econômica) da empresa; IV - cópia da Licença de Funcionamento da Empresa e/ou do Alvará Sanitário; V - cópia do Certificado de Autorização de Funcionamento da Empresa ou de sua publicação em Diário Oficial da União (DOU); VI - cópia do Certificado de Responsabilidade Técnica atualizado, emitido pelo Conselho Regional de Farmácia, comprovando que a empresa solicitante e/ou fabricante tem assistência do farmacêutico responsável habilitado para aquele fim; VII - justificativa técnica para o registro do produto; VIII - cópia do Certificado de Boas Práticas de Fabricação (CBPF) expedido pela Anvisa para todos os fabricantes do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; IX - cópia do CBPF, emitido pela autoridade sanitária competente do país onde se localiza o fabricante do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; X - histórico da situação de registro do produto biológico em outros países, quando for o caso; XI - cópia do comprovante de registro no país de origem do produto biológico, emitido pela respectiva Autoridade Sanitária competente; XII - cópia do modelo de bula aprovada pela autoridade sanitária competente do país de origem, acompanhada de tradução juramentada; XIII - modelos de bula e embalagens primária e secundária, de acordo com a legislação vigente; XIV - dados de farmacovigilância atualizados, de acordo com a legislação sanitária vigente, obtidos de estudos clínicos e da comercialização do produto, quando aplicável; XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem o rastreamento do produto de acordo com a legislação sanitária vigente; XVI - cópia do compêndio nacional, internacional ou interno da empresa com a determinação das especificações do produto biológico terminado; XVII - informações adicionais de acordo com a legislação vigente sobre o controle de EET, quando aplicável; XVIII - relatório técnico; XIX - relatório de experimentação terapêutica; e XX - relatório de farmacovigilância. Biológico","When filing for the registration of a new biological product, the applicant must submit a single process containing the following documents, in addition to the petition forms and proof of payment:
+
+*   Declaration of the company's size (economic capacity) [RDC 55/2010, Art. 30];
+*   Copy of the Company's Operating License and/or Sanitary Permit [RDC 55/2010, Art. 30];
+*   Copy of the Company's Authorization Certificate or its publication in the Official Gazette (DOU) [RDC 55/2010, Art. 30];
+*   Copy of the updated Technical Responsibility Certificate issued by the Regional Pharmacy Council [RDC 55/2010, Art. 30];
+*   Technical justification for the product registration [RDC 55/2010, Art. 30];
+*   Copy of the Good Manufacturing Practices Certificate (CBPF) issued by Anvisa for all manufacturers of the active ingredient, bulk biological product, primary packaging, finished biological product, diluent, and adjuvant [RDC 55/2010, Art. 30];
+*   Copy of the CBPF issued by the competent sanitary authority of the country where the manufacturer of the active ingredient, bulk biological product, primary packaging, finished biological product, diluent, and adjuvant is located [RDC 55/2010, Art. 30];
+*   History of the product's registration status in other countries, if applicable [RDC 55/2010, Art. 30];
+*   Copy of the registration proof in the country of origin, issued by the respective competent Sanitary Authority [RDC 55/2010, Art. 30];
+*   Copy of the package insert model approved by the competent sanitary authority of the country of origin, with a sworn translation [RDC 55/2010, Art. 30];
+*   Models of the package insert and primary and secondary packaging, in accordance with current legislation [RDC 55/2010, Art. 30];
+*   Updated pharmacovigilance data, in accordance with current sanitary legislation, obtained from clinical studies and product marketing, when applicable [RDC 55/2010, Art. 30];
+*   Barcode (GTIN) for all presentations or identification and security mechanisms that allow product tracking [RDC 55/2010, Art. 30];
+*   Copy of the national, international, or internal company compendium with the specifications of the finished biological product [RDC 55/2010, Art. 30];
+*   Additional information on TSE (Transmissible Spongiform Encephalopathy) control, when applicable [RDC 55/2010, Art. 30];
+*   Technical report [RDC 55/2010, Art. 30];
+*   Therapeutic experimentation report [RDC 55/2010, Art. 30];
+*   Pharmacovigilance report [RDC 55/2010, Art. 30];
+*   Clinical study protocols and reports, including pharmacokinetics, pharmacodynamics, and pivotal safety and efficacy studies [RDC 55/2010, Art. 46].
+
+Additionally, the technical report must contain detailed information regarding the manufacturer, product data (composition, indications, storage, etc.), development history, manufacturing stages, quality control, storage and transport validation, excipients, stability studies, contaminants, and packaging specifications [RDC 55/2010, Art. 31]. For biotechnological products, specific information regarding cell banks and characterization of the active substance must also be provided [RDC 55/2010, Art. 34].",RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 30;RDC 55/2010, Art. 31;RDC 55/2010, Art. 34;RDC 55/2010, Art. 23;RDC 55/2010, Art. 46","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+Art. 30. No ato do protocolo de pedido de registro de um
+produto biológico novo ou produto biológico, a empresa solicitante
+deverá protocolar um processo único, apresentando os seguintes documentos:
+I - formulários de petição de registro - FP1 e FP2, devidamente
+preenchidos;
+II - via original do comprovante de pagamento da taxa de
+fiscalização de vigilância sanitária, devidamente autenticada e/ou carimbada
+pelo banco, ou comprovante de isenção quando for o caso;
+III - declaração do enquadramento do porte (capacidade econômica)
+da empresa;
+IV - cópia da Licença de Funcionamento da Empresa e/ou do
+Alvará Sanitário;
+V - cópia do Certificado de Autorização de Funcionamento
+da Empresa ou de sua publicação em Diário Oficial da União
+(DOU);
+VI - cópia do Certificado de Responsabilidade Técnica atualizado,
+emitido pelo Conselho Regional de Farmácia, comprovando
+que a empresa solicitante e/ou fabricante tem assistência do farmacêutico
+responsável habilitado para aquele fim;
+VII - justificativa técnica para o registro do produto;
+VIII - cópia do Certificado de Boas Práticas de Fabricação
+(CBPF) expedido pela Anvisa para todos os fabricantes do princípio
+ativo, do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF,","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF, emitido pela autoridade sanitária competente
+do país onde se localiza o fabricante do princípio ativo, do
+produto biológico a granel, do produto biológico em sua embalagem
+primária, do produto biológico terminado, do diluente e do adjuvante;
+X - histórico da situação de registro do produto biológico em
+outros países, quando for o caso;
+XI - cópia do comprovante de registro no país de origem do
+produto biológico, emitido pela respectiva Autoridade Sanitária competente;
+XII - cópia do modelo de bula aprovada pela autoridade
+sanitária competente do país de origem, acompanhada de tradução
+juramentada;
+XIII - modelos de bula e embalagens primária e secundária,
+de acordo com a legislação vigente;
+XIV - dados de farmacovigilância atualizados, de acordo
+com a legislação sanitária vigente, obtidos de estudos clínicos e da
+comercialização do produto, quando aplicável;
+XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem
+o rastreamento do produto de acordo com a legislação sanitária
+vigente;
+XVI - cópia do compêndio nacional,",,,,,,,
+COMPLEX_02_EN,COMPLEX_02,en,exception,True,"What information must be included in the technical report required at the time of the registration protocol for a biological product, according to Art. 31 of RDC 55/2010?","It must contain: manufacturer and cell bank data; manufacturers of the active ingredient and finished product; release certificate issuer; general product data (form, composition, functions, use, warnings, shelf life, storage); development history; manufacturing steps (flowchart, equipment, validations); quality control; storage precautions; container description; and transport chain validation.","RDC 55/2010, Art. 31","Art. 31. No ato do protocolo do pedido de registro de um produto biológico novo ou produto biológico, a empresa solicitante deverá apresentar relatório técnico contendo as seguintes informações: I - nome e endereço do fabricante e do local de armazenamento do banco de células; II - nome e endereço de todos os fabricantes do princípio ativo, do produto biológico a granel, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; III - nome e endereço do emissor do certificado de liberação dos lotes do produto terminado; IV - dados gerais sobre o produto: a) forma farmacêutica e apresentação; b) composição completa da formulação, com todos os seus componentes especificados pelos nomes técnicos correspondentes e sinônimos de acordo com a Denominação Comum Brasileira - DCB, se houver, ou Denominação Comum Internacional - DCI ou, na sua ausência, a denominação Chemical Abstracts Service - CAS; indicando as unidades de medidas utilizadas; c) funções que cada substância desempenha na fórmula; d) via(s) de administração; e) instruções de uso, quando for o caso; f) indicações, finalidade ou uso a que se destina; g) contra-indicações; h) efeitos colaterais; i) reações adversas; j) restrições ou cuidados que devem ser considerados; k) precauções e advertências; l) interações medicamentosas e alimentares; m) alteração nos testes laboratoriais; n) sinais, sintomas e condutas, em caso de superdoses; o) prazo de validade; p) cuidados de conservação; q) temperatura de conservação; r) temperatura de transporte; s) especificações do material da embalagem primária e secundária; e t) códigos ou convenções utilizados pela empresa para identificação dos lotes de princípio ativo, produto biológico a granel, produto biológico em sua embalagem primária e produto biológico terminado; V - histórico do desenvolvimento do produto, apontando a finalidade de uso de cada lote produzido (estudo de estabilidade, estudos pré-clínicos e clínicos); VI - informações sobre as etapas de fabricação: a) protocolo resumido de produção na forma de fluxograma, com identificação dos controles em processo; b) lista dos principais equipamentos utilizados na fabricação; c) descrição detalhada de todas as etapas de fabricação do produto biológico, do diluente e do adjuvante; d) identificação e justificativa para a seleção das etapas críticas do processo de fabricação; e) descrição dos controles em processo e justificativa para determinação das especificações; f) escala de produção em todas as etapas de fabricação, apontando os tamanhos mínimo e máximo do lote industrial a ser produzido para comercialização; g) descrição e justificativas para mudanças efetuadas no processo de produção, durante o desenvolvimento do produto biológico terminado; h) relatório da validação dos procedimentos de remoção e/ou eliminação virais utilizados, quando aplicável; i) relatório de validação das etapas críticas do processo de fabricação; e j) validação e justificativa para os reprocessos; VII - informações sobre o controle de qualidade: a) descrição de todos os testes de controle de qualidade realizados, desde o princípio ativo até o produto terminado; b) descrição dos padrões de referência utilizados; c) validação de metodologias analíticas de acordo com a legislação sanitária vigente; e d) referência e justificativa para cada especificação determinada nos testes de controle de qualidade; VIII - descrição dos cuidados de armazenamento do princípio ativo, do produto biológico a granel, do produto biológico intermediário, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante; IX - descrição dos recipientes e formas de acondicionamento do princípio ativo, do produto biológico a granel, do produto biológico intermediário, do produto biológico em sua embalagem primária, do produto biológico terminado, do diluente e do adjuvante e condições a serem mantidas para garantir a qualidade dos produtos; X - validação da cadeia de transporte: a) qualificação de operação e desempenho das caixas a serem utilizadas para o transporte e validação dos procedimentos de transporte do princípio ativo, do produto biológico a granel, do produto biológico intermediário, do produto biológico em sua embalagem primária e do produto biológico terminado, do diluente e do adjuvante;e b) qualificação de operação e desempenho das caixas a serem utilizadas para o transporte do produto biológico terminado em território nacional; XI - descrição das soluções, componentes e meios de cultura usados na fabricação do produto biológico; XII - informações sobre os excipientes: a) descrição das propriedades físico-químicas, microbiológicas e demais controles de qualidade; b) especificações dos excipientes; c) descrição de possíveis interações químicas dos excipientes com o princípio ativo; d) estudo demonstrando a eficácia do conservante utilizado, para aqueles produtos que contenham algum conservante em sua formulação final; XIII - protocolo e relatório dos estudos de estabilidade de acordo com a legislação sanitária vigente; XIV - contaminantes e impurezas: a) caracterização dos contaminantes e impurezas; b) descrição dos processos envolvidos para diminuição/remoção das impurezas originadas pela decomposição do produto ou pelo processo de fabricação; c) justificativas para as especificações de impurezas no produto acabado; e d) avaliação da segurança para agentes adventícios dos materiais de partida de origem biológica; e XV - descrição e especificações das embalagens primária e secundária. § 1º As quantidades de cada substância, necessárias para o atendimento do previsto na alínea b do inciso IV do caput deste artigo, devem ser expressas no sistema métrico decimal ou unidade padrão. § 2º Sempre que uma unidade internacional de atividade biológica tiver sido definida pela Organização Mundial da Saúde, esta deve ser utilizada. § 3º A empresa solicitante deve apresentar documentação comprobatória do registro do hemoderivado na Anvisa, quando este for parte da composição do produto biológico e, caso o hemoderivado não seja registrado no país, a empresa deverá apresentar documentação conforme disposto nas seções II e III deste capítulo. § 4º Deverá ser utilizado padrão de referência internacional, quando disponível. § 5º Todas as metodologias de análise adotadas pelo importador devem ser detalhadamente descritas; § 6º Na existência de mais de um local de fabricação do princípio ativo, do produto biológico intermediário, do produto biológico a granel, do produto biológico em sua embalagem primária, do diluente e do adjuvante, deve ser enviado um relatório comparativo do processo de fabricação e dos produtos fabricados entre os diversos locais, comprovando a manutenção das características do produto. § 7º O relatório a que se refere o parágrafo anterior deve conter, além de outras informações, os seguintes documentos: I - descrição e avaliação das diferenças no processo produtivo entre os locais alternativos de fabricação; II - estudo de comparabilidade que comprove a manutenção das características físico-químicas e biológicas e dos parâmetros de segurança e eficácia da molécula; e III - estudo de estabilidade de acordo com a legislação sanitária vigente, para cada local alternativo de fabricação.","According to Art. 31 of RDC 55/2010, the technical report required at the time of the registration protocol for a new biological product or biological product must include the following information:
+
+*   **Manufacturer and storage details:** Name and address of the manufacturer and the storage site of the cell bank [RDC 55/2010, Art. 31].
+*   **Manufacturer identification:** Name and address of all manufacturers of the active ingredient, bulk biological product, biological product in its primary packaging, finished biological product, diluent, and adjuvant [RDC 55/2010, Art. 31].
+*   **Batch release:** Name and address of the issuer of the finished product batch release certificate [RDC 55/2010, Art. 31].
+*   **General product data:** Pharmaceutical form and presentation; complete formulation composition (using DCB, DCI, or CAS names and specifying units of measure); function of each substance; administration route(s); instructions for use; indications/purpose; contraindications; side effects; adverse reactions; precautions and warnings; drug and food interactions; changes in laboratory tests; signs, symptoms, and procedures for overdoses; shelf life; storage and transport temperatures; primary and secondary packaging specifications; and batch identification codes/conventions [RDC 55/2010, Art. 31].
+*   **Development history:** Purpose of each produced batch (stability, pre-clinical, and clinical studies) [RDC 55/2010, Art. 31].
+*   **Manufacturing stages:** Production flowcharts with in-process controls; list of main equipment; detailed description of manufacturing stages for the product, diluent, and adjuvant; identification and justification for critical stages; description and justification of in-process controls; production scale (minimum and maximum industrial batch sizes); justification for production changes; validation reports for viral removal/elimination (if applicable); validation reports for critical manufacturing stages; and validation/justification for reprocessing [RDC 55/2010, Art. 31].
+*   **Quality control:** Description of all quality control tests (from active ingredient to finished product); description of reference standards; validation of analytical methodologies; and reference/justification for each specification [RDC 55/2010, Art. 31].
+*   **Storage and packaging:** Storage care for all product components (active ingredient, bulk, intermediate, primary packaging, finished product, diluent, and adjuvant) [RDC 55/2010, Art. 31] and description of containers and packaging forms, including conditions to ensure quality [RDC 55/2010, Art. 31].
+*   **Transport validation:** Operational and performance qualification of transport boxes and validation of transport procedures for all components, including finished product transport within the national territory [RDC 55/2010, Art. 31].
+*   **Manufacturing materials:** Description of solutions, components, and culture media used [RDC 55/2010, Art. 31].
+*   **Excipients:** Physical-chemical and microbiological properties; specifications; chemical interaction descriptions; and preservative efficacy studies (if applicable) [RDC 55/2010, Art. 31].
+*   **Stability:** Protocol and report of stability studies [RDC 55/2010, Art. 31].
+*   **Contaminants and impurities:** Characterization; processes for reduction/removal; justification for specifications; and safety evaluation for adventitious agents in biological starting materials [RDC 55/2010, Art. 31].
+*   **Packaging:** Description and specifications of primary and secondary packaging [RDC 55/2010, Art. 31].
+
+Additionally, the regulation requires specific documentation for hemoderivatives [RDC 55/2010, Art. 31], the use of international reference standards [RDC 55/2010, Art. 31], detailed descriptions of analytical methodologies [RDC 55/2010, Art. 31], and, if multiple manufacturing sites exist, a comparative report including process differences, a comparability study, and stability studies for each site [RDC 55/2010, Art. 31].",RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 31;RDC 55/2010, Art. 43;RDC 55/2010, Art. 46;RDC 55/2010, Art. 45;RDC 55/2010, Art. 44","regulation_id: RDC 55/2010
+article: Art. 31
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção II - Relatório Técnico do Produto Biológico Novo e Produto
+citation_label: RDC 55/2010, Art. 31
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção II - Relatório Técnico do Produto Biológico Novo e Produto
+Art. 31. No ato do protocolo do pedido de registro de um
+produto biológico novo ou produto biológico, a empresa solicitante
+deverá apresentar relatório técnico contendo as seguintes informações:
+I - nome e endereço do fabricante e do local de armazenamento
+do banco de células;
+II - nome e endereço de todos os fabricantes do princípio
+ativo, do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+III - nome e endereço do emissor do certificado de liberação
+dos lotes do produto terminado;
+IV - dados gerais sobre o produto:
+a) forma farmacêutica e apresentação;
+b) composição completa da formulação, com todos os seus
+componentes especificados pelos nomes técnicos correspondentes e
+sinônimos de acordo com a Denominação Comum Brasileira - DCB,
+se houver, ou Denominação Comum Internacional - DCI ou, na sua
+ausência, a denominação Chemical Abstracts Service - CAS; indicando
+as unidades de medidas utilizadas;
+c) funções que cada substância desempenha na fórmula;
+d) via(s) de administração;
+e) instruções de uso, quando for o caso;
+f) indicações, finalidade ou uso a que se destina;
+g) contra-indicações;
+h) efeitos colaterais;
+i) reações adversas;
+j) restrições ou cuidados que devem ser considerados;
+k) precauções e advertências;
+l) interações medicamentosas e alimentares;","regulation_id: RDC 55/2010
+article: Art. 31
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção II - Relatório Técnico do Produto Biológico Novo e Produto
+citation_label: RDC 55/2010, Art. 31
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção II - Relatório Técnico do Produto Biológico Novo e Produto
+h) efeitos colaterais;
+i) reações adversas;
+j) restrições ou cuidados que devem ser considerados;
+k) precauções e advertências;
+l) interações medicamentosas e alimentares;
+m) alteração nos testes laboratoriais;
+n) sinais, sintomas e condutas, em caso de superdoses;
+o) prazo de validade;
+p) cuidados de conservação;
+q) temperatura de conservação;
+r) temperatura de transporte;
+s) especificações do material da embalagem primária e secundária;
+e
+t) códigos ou convenções utilizados pela empresa para identificação
+dos lotes de princípio ativo, produto biológico a granel,
+produto biológico em sua embalagem primária e produto biológico
+terminado;
+V - histórico do desenvolvimento do produto, apontando a
+finalidade de uso de cada lote produzido (estudo de estabilidade,
+estudos pré-clínicos e clínicos);
+VI - informações sobre as etapas de fabricação:
+a) protocolo resumido de produção na forma de fluxograma,
+com identificação dos controles em processo;
+b) lista dos principais equipamentos utilizados na fabricação;
+c) descrição detalhada de todas as etapas de fabricação do
+produto biológico, do diluente e do adjuvante;
+d) identificação e justificativa para a seleção das etapas críticas
+do processo de fabricação;
+e) descrição dos controles em processo e justificativa para
+determinação das especificações;
+f) escala de produção em todas as etapas de fabricação,",,,,,,,
+COMPLEX_09_EN,COMPLEX_09,en,multi_article,True,Which medical devices are excluded from the application of RDC 751/2022 and which are exempt from notification or registration?,"The RDC does not apply to used/refurbished, custom-made, or in vitro diagnostic medical devices, nor to medicines, cells, tissues, organs, blood, cosmetics, sanitizers, or food. Exempt from notification or registration are: devices for clinical investigations, presentations consisting of two or more already registered devices (intact packaging), and accessories produced by the manufacturer to integrate their own already registered devices.","RDC 751/2022, Art. 1;RDC 751/2022, Art. 2","Art. 1º Esta Resolução define as regras de classificação de risco de dispositivos médicos, os requisitos de rotulagem e de instruções de uso, e os procedimentos para notificação, registro, alteração, revalidação e cancelamento de notificação ou registro de dispositivos médicos.
+
+Art. 2º Esta Resolução se aplica aos dispositivos médicos nela definidos, sendo obrigatório a notificação ou o registro destes, conforme classificação de risco. § 1º A classificação de risco, os procedimentos e as especificações descritas neste documento, para fins de notificação e registro, se aplicam aos dispositivos médicos e seus acessórios. § 2º Esta Resolução não se aplica aos dispositivos médicos usados ou recondicionados, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 579, de 25 de novembro de 2021 , publicada no DOU nº 225, de 1° de dezembro de 2021. § 3º Esta Resolução não se aplica aos dispositivos médicos sob medida, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 305, de 24 de setembro de 2019 , publicada no DOU nº 186, de 25 de setembro de 2019, Seção 1, pag. 69. (Redação dada pela Resolução 777/2023 ) Redações Anteriores § 4º Esta Resolução não se aplica aos dispositivos médicos para diagnóstico in vitro, incluindo os instrumentos para diagnóstico in vitro, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 36, de 26 de agosto de 2015 , publicada no DOU nº 164, de 27 de agosto de 2015, Seção 1, pág. 43. § 5º Esta Resolução não se aplica aos medicamentos, células, tecidos, órgãos ou sangue de origem humana ou derivados, cosméticos, saneantes ou gêneros alimentícios tratados por outros regulamentos. § 6º Os dispositivos ativos (equipamentos) indicados para correção estética e embelezamento são considerados dispositivos médicos. § 7º Os dispositivos ativos (equipamentos) especificamente destinados à limpeza, desinfecção ou esterilização de dispositivos médicos são considerados dispositivos médicos. § 8º Estão isentos de notificação ou registro os dispositivos médicos destinados a investigações clínicas, cumpridas as disposições legais da autoridade sanitária competente para realização desta atividade, estando proibidos a comercialização e o uso para outros fins. § 9º Estão isentas de notificação ou registro as apresentações constituídas por dois ou mais dispositivos médicos notificados ou registrados e em suas embalagens individuais de apresentação íntegras, devendo conter no rótulo as informações dos dispositivos médicos correspondentes, incluindo os números de notificação ou registro. § 10. Estão isentos de notificação ou registro os acessórios produzidos por um fabricante exclusivamente para integrar os dispositivos médicos de sua fabricação já notificados ou registrados e cujos dossiês técnicos contenham informações sobre estes acessórios. § 11. Os novos acessórios poderão ser incluídos nas notificações ou nos registros originais, detalhando os fundamentos de funcionamento, ação e conteúdo.","RDC 751/2022 does not apply to the following medical devices:
+
+*   Used or reconditioned medical devices, which are subject to the rules in RDC 579/2021 [RDC 751/2022, Art. 2].
+*   Custom-made medical devices, which are subject to the rules in RDC 305/2019 [RDC 751/2022, Art. 2].
+*   In vitro diagnostic medical devices, including instruments for in vitro diagnosis, which are subject to the rules in RDC 36/2015 [RDC 751/2022, Art. 2].
+*   Medicines, cells, tissues, organs, or blood of human origin or derivatives, cosmetics, sanitizing products, or food products covered by other regulations [RDC 751/2022, Art. 2].
+
+The following are exempt from notification or registration:
+
+*   Medical devices intended for clinical investigations, provided they comply with the legal provisions of the competent health authority; their commercialization and use for other purposes are prohibited [RDC 751/2022, Art. 2].
+*   Presentations consisting of two or more notified or registered medical devices in their intact individual packaging, provided the label contains the information of the corresponding medical devices, including their notification or registration numbers [RDC 751/2022, Art. 2].
+*   Accessories produced by a manufacturer exclusively to integrate into their own medical devices that are already notified or registered, provided the technical dossiers contain information about these accessories [RDC 751/2022, Art. 2].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 2;RDC 751/2022, Art. 1;RDC 751/2022, Art. 3;RDC 751/2022, Art. 28;RDC 751/2022, Art. 27","regulation_id: RDC 751/2022
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+section: Seção II - Abrangência
+citation_label: RDC 751/2022, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+Seção II - Abrangência
+Art. 2º Esta Resolução se aplica aos dispositivos médicos nela definidos, sendo obrigatório a notificação ou o registro destes, conforme classificação de risco.
+§ 1º A classificação de risco, os procedimentos e as especificações descritas neste documento, para fins de notificação e registro, se aplicam aos dispositivos médicos e seus acessórios.
+§ 2º Esta Resolução não se aplica aos dispositivos médicos usados ou recondicionados, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 579, de 25 de novembro de 2021 , publicada no DOU nº 225, de 1° de dezembro de 2021.
+§ 3º Esta Resolução não se aplica aos dispositivos médicos sob medida, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 305, de 24 de setembro de 2019 , publicada no DOU nº 186, de 25 de setembro de 2019, Seção 1, pag. 69.","regulation_id: RDC 751/2022
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+section: Seção II - Abrangência
+citation_label: RDC 751/2022, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+Seção II - Abrangência
+69. (Redação dada pela Resolução 777/2023 ) Redações Anteriores
+§ 4º Esta Resolução não se aplica aos dispositivos médicos para diagnóstico in vitro, incluindo os instrumentos para diagnóstico in vitro, os quais estão submetidos às regras específicas estabelecidas na Resolução de Diretoria Colegiada - RDC nº 36, de 26 de agosto de 2015 , publicada no DOU nº 164, de 27 de agosto de 2015, Seção 1, pág. 43.
+§ 5º Esta Resolução não se aplica aos medicamentos, células, tecidos, órgãos ou sangue de origem humana ou derivados, cosméticos, saneantes ou gêneros alimentícios tratados por outros regulamentos.
+§ 6º Os dispositivos ativos (equipamentos) indicados para correção estética e embelezamento são considerados dispositivos médicos.
+§ 7º Os dispositivos ativos (equipamentos) especificamente destinados à limpeza, desinfecção ou esterilização de dispositivos médicos são considerados dispositivos médicos.
+§ 8º Estão isentos de notificação ou registro os dispositivos médicos destinados a investigações clínicas, cumpridas as disposições legais da autoridade sanitária competente para realização desta atividade, estando proibidos a comercialização e o uso para outros fins.",,,,,,,

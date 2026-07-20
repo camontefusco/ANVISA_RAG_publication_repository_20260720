@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-07-18_pt_residual_quality_merged",
+  "purpose": "Merged Portuguese held-out generation with targeted residual-quality fixes",
+  "base_generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_heldout_20260709/generation_evaluation_2026-07-10_01-28-15.csv",
+  "base_generation_csv_sha256": "e4637a5a9a5381254d8c7c428e9ffeb73a6cfca63a545eaa8a7a9362e6697033",
+  "target_generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_residual_quality_target_20260718/generation_evaluation_2026-07-18_09-35-53.csv",
+  "target_generation_csv_sha256": "c6e05ab85d1cd3150cd1415475b78ad3aad2a2bfc140edd64491743354648cb4",
+  "complex09_generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_complex09_language_fix_20260718/generation_evaluation_2026-07-18_09-45-24.csv",
+  "complex09_generation_csv_sha256": "47e9034fbf289b170f866556bef7b2deb07f511f314ef74172e4586235468f3d",
+  "patched_ids": [
+    "COMPLEX_09_PT",
+    "COMPLEX_10_PT",
+    "DIRECT_04_PT",
+    "DIRECT_16_PT",
+    "DIRECT_17_PT",
+    "DIRECT_18_PT",
+    "DIRECT_24_PT",
+    "DIRECT_37_PT",
+    "DIRECT_43_PT",
+    "DIRECT_47_PT",
+    "DIRECT_69_PT"
+  ],
+  "merged_rows": 75,
+  "note": "Rows not listed in patched_ids are unchanged from the complete Portuguese held-out generation run."
+}

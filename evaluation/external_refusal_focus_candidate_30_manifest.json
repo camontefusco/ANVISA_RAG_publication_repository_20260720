@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-07-18T17:08:36",
+  "purpose": "Prospective external benchmark created after final pipeline freeze",
+  "input_csv": "evaluation/external_refusal_focus_candidate_30.csv",
+  "output_jsonl": "evaluation/external_refusal_focus_candidate_30.jsonl",
+  "pair_count": 15,
+  "question_count": 30,
+  "languages": {
+    "pt": 15,
+    "en": 15
+  },
+  "answerable_pairs": 6,
+  "unanswerable_pairs": 9,
+  "output_sha256": "86b59e6fe1b997e25f32aff68e111e48232145a83fe8b4299b60d2f380b1bfdf",
+  "rule": "Do not tune the pipeline on this file before reporting external-test metrics."
+}

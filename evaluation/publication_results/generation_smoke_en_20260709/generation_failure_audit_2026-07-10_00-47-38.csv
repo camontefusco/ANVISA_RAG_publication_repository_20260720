@@ -1,0 +1,9 @@
+id,pair_id,language,category,answerable,failure_types,question,gold_citations,retrieved_citations,answer,human_adjudication,human_root_cause,human_notes
+DIRECT_03_EN,DIRECT_03,en,direct_article,True,incomplete_answer,What are the requirements for the cancellation or suspension of a DDCM or clinical trial by the sponsor?,"RDC 9/2015, Art. 50","RDC 9/2015, Art. 50;RDC 945/2024, Art. 85;RDC 945/2024, Art. 87;RDC 945/2024, Art. 24;RDC 9/2015, Art. 37","To cancel or suspend a DDCM or clinical trial, the sponsor must:
+
+*   Submit the request at any time, providing the necessary technical-scientific justifications and a follow-up plan for participants if the trial has already begun [RDC 945/2024, Art. 85]; [RDC 9/2015, Art. 50].
+*   If the cancellation is due to safety reasons, describe the reasons and present measures for risk minimization/mitigation for the participants [RDC 945/2024, Art. 85, § 2º]; [RDC 9/2015, Art. 50, § 2º].
+*   File the suspension or cancellation with Anvisa as a secondary petition attached to the respective process within 15 business days after the decision [RDC 945/2024, Art. 85, § 3º]; [RDC 9/2015, Art. 50, § 3º].
+*   In cases of temporary suspension as an immediate safety measure, notify Anvisa within 7 calendar days, justifying the reasons and clearly explaining the scope, treatment interruption, and suspension of recruitment [RDC 945/2024, Art. 85, § 4º e § 5º].
+
+Additionally, once a DDCM is cancelled, no clinical trial related to it may be continued in the country [RDC 945/2024, Art. 85, § 1º]; [RDC 9/2015, Art. 50, § 1º]. To reactivate a suspended protocol, the sponsor must submit justifications and await Anvisa's authorization [RDC 945/2024, Art. 85, § 6º].",,,

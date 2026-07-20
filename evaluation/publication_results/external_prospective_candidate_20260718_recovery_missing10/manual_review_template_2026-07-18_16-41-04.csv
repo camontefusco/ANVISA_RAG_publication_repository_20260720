@@ -1,0 +1,242 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+EXTERNAL_021_PT,EXTERNAL_021,pt,unanswerable,False,"Segundo esses documentos, qual é a taxa oficial em reais para protocolar uma notificação de dispositivo médico em 2026?",Os documentos não fornecem informação suficiente para informar uma taxa oficial em reais para 2026.,,,Os documentos recuperados não fornecem informação suficiente para responder.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 27;RDC 751/2022, Art. 13;RDC 751/2022, Art. 14;RDC 751/2022, Art. 67;RDC 751/2022, Art. 2","regulation_id: RDC 751/2022
+article: Art. 27
+chapter: Capítulo VII desta Resolução;
+section: Seção V - Revalidação de Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 27
+
+Capítulo VII desta Resolução;
+Seção V - Revalidação de Registro de Dispositivos Médicos
+Art. 27. Para peticionar a revalidação do registro de dispositivo médico, o solicitante deve proceder com o pagamento da taxa correspondente e apresentar os seguintes documentos:
+I - para dispositivos médicos importados: declaração emitida pelo fabricante legal consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil.
+II - Certificado de Boas Práticas de Fabricação emitido pela Anvisa válido.
+§ 1º A declaração de que trata o inciso I deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , publicada no DOU nº 62, de 31 de março de 2022, Seção 1, pág. 334, ou regulamento que venha substitui-la.
+§ 2º A solicitação de revalidação deverá ser apresentada no prazo previsto na Resolução da Diretoria Colegiada - RDC nº 250, de 20 de outubro de 2004 .
+§ 3º O protocolo do pedido de Certificação de Boas Práticas de Fabricação será aceito para efeito de peticionamento e análise das petições de revalidação de registro.","regulation_id: RDC 751/2022
+article: Art. 13
+chapter: CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+section: Seção II - Notificação de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 13
+
+CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+Seção II - Notificação de Dispositivos Médicos
+Art. 13. O solicitante para peticionar a notificação de dispositivo médico deve proceder com o pagamento da taxa correspondente e apresentar à Anvisa, os seguintes documentos:
+I - formulário para notificação de dispositivo médico, devidamente preenchido, disponível no portal eletrônico da Anvisa;
+II - para dispositivos médicos importados: declaração emitida pelo fabricante legal, consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil;
+III - cópia do Certificado de Conformidade emitido no âmbito do Sistema Brasileiro de Avaliação da Conformidade (SBAC), aplicável apenas para os dispositivos médicos com certificação compulsória, relacionados pela Anvisa em regulamentos específicos; e
+IV - comprovação do cumprimento das disposições legais determinadas em regulamentos técnicos, na forma da legislação que regulamenta os dispositivos médicos específicos.
+Parágrafo único. A declaração de que trata o inciso II deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , ou regulamento que venha substitui-la.",,,,,,,
+EXTERNAL_021_EN,EXTERNAL_021,en,unanswerable,False,"According to these documents, what is the official fee in Brazilian reais to file a medical device notification in 2026?",The documents do not provide enough information to state an official fee amount in Brazilian reais for 2026.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 13;RDC 751/2022, Art. 14;RDC 751/2022, Art. 10;RDC 751/2022, Art. 2;RDC 751/2022, Art. 16","regulation_id: RDC 751/2022
+article: Art. 13
+chapter: CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+section: Seção II - Notificação de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 13
+
+CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+Seção II - Notificação de Dispositivos Médicos
+Art. 13. O solicitante para peticionar a notificação de dispositivo médico deve proceder com o pagamento da taxa correspondente e apresentar à Anvisa, os seguintes documentos:
+I - formulário para notificação de dispositivo médico, devidamente preenchido, disponível no portal eletrônico da Anvisa;
+II - para dispositivos médicos importados: declaração emitida pelo fabricante legal, consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil;
+III - cópia do Certificado de Conformidade emitido no âmbito do Sistema Brasileiro de Avaliação da Conformidade (SBAC), aplicável apenas para os dispositivos médicos com certificação compulsória, relacionados pela Anvisa em regulamentos específicos; e
+IV - comprovação do cumprimento das disposições legais determinadas em regulamentos técnicos, na forma da legislação que regulamenta os dispositivos médicos específicos.
+Parágrafo único. A declaração de que trata o inciso II deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , ou regulamento que venha substitui-la.","regulation_id: RDC 751/2022
+article: Art. 14
+chapter: CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+section: Seção III - Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 14
+
+CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+Seção III - Registro de Dispositivos Médicos
+Art. 14. O solicitante para peticionar o registro de dispositivo médico deve proceder com o pagamento da taxa correspondente e apresentar à Anvisa, os seguintes documentos:
+I - formulário para registro de dispositivo médico, devidamente preenchido, disponível no portal eletrônico da Anvisa;
+II - Dossiê Técnico, conforme disposto no
+III - para dispositivos médicos importados: declaração emitida pelo fabricante legal, consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil;
+IV - para dispositivos médicos importados: comprovante de registro ou certificado de livre comércio ou documento equivalente, outorgado pela autoridade competente do país onde o dispositivo médico é fabricado e comercializado ou apenas comercializado, emitido há no máximo dois anos quando não existir validade expressa indicada no documento, devendo ser consularizado ou apostilado, e acompanhado de tradução juramentada quando não estiver redigido em português, inglês ou espanhol;
+V - Certificado de Boas Práticas de Fabricação emitido pela Anvisa ou comprovante de protocolo de solicitação de Certificado de Boas Práticas de Fabricação;
+VI - cópia do Certificado de Conformidade emitido no âmbito do Sistema Brasileiro de Avaliação da Conformidade (SBAC), aplicável apenas para os dispositivos médicos com certificação compulsória, relacionados pela Anvisa em regulamentos específicos;",,,,,,,
+EXTERNAL_022_PT,EXTERNAL_022,pt,unanswerable,False,Qual modelo de formulário eletrônico a empresa deve usar hoje para notificar SUSARs à Anvisa?,"Os documentos mencionam sistema eletrônico de notificação, mas não fornecem o modelo atual de formulário eletrônico que deve ser usado hoje.",,,"A empresa deve realizar a notificação de todas as Suspeitas de Reações Adversas Graves e Inesperadas (SUSAR) por meio do sistema eletrônico de notificação disponibilizado pela Anvisa [RDC 945/2024, Art. 64]. As notificações devem ser enviadas individualmente e conter todas as informações solicitadas nos campos presentes nesse sistema, conforme disposto no Guia ICH-E2A e suas atualizações [RDC 945/2024, Art. 66].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_945_2024.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_945_2024.txt,"RDC 751/2022, Art. 45;RDC 945/2024, Art. 64;RDC 751/2022, Art. 13;RDC 751/2022, Art. 33;RDC 945/2024, Art. 66","regulation_id: RDC 751/2022
+article: Art. 45
+chapter: CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+section: 
+citation_label: RDC 751/2022, Art. 45
+
+CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+Art. 45. Os formulários aplicáveis sobre informações do solicitante e do produto objeto de processo de notificação ou registro devem ser preenchidos eletronicamente no portal eletrônico da Anvisa.
+Parágrafo único. Quando aplicável, os formulários deverão ser apresentados com as assinaturas dos responsáveis legal e técnico.","regulation_id: RDC 945/2024
+article: Art. 64
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 64
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 64. O patrocinador deve notificar, por meio do sistema eletrônico de notificação disponibilizado pela Anvisa, todas as Suspeitas de Reações Adversas Graves e Inesperadas (SUSAR).
+Parágrafo único. Referente à avaliação de causalidade, caso a interpretação do investigador seja diferente do patrocinador, ambas devem ser submetidas com as respectivas justificativas.",,,,,,,
+EXTERNAL_022_EN,EXTERNAL_022,en,unanswerable,False,Which electronic form model should a company use today to notify SUSARs to Anvisa?,"The documents mention an electronic notification system, but they do not provide the current electronic form model to be used today.",,,"The sponsor must notify all Suspected Unexpected Serious Adverse Reactions (SUSARs) to Anvisa using the electronic notification system made available by the agency [RDC 945/2024, Art. 64]. These notifications must be sent individually and include all information requested in the fields present in the electronic notification system, in accordance with the ICH-E2A Guide and its updates [RDC 945/2024, Art. 66].",RDC_945_2024.txt;RDC_945_2024.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;rdc09_2015.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 945/2024, Art. 64;RDC 945/2024, Art. 66;RDC 751/2022, Art. 45;RDC 9/2015, Art. 63;RDC 751/2022, Art. 13","regulation_id: RDC 945/2024
+article: Art. 64
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 64
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 64. O patrocinador deve notificar, por meio do sistema eletrônico de notificação disponibilizado pela Anvisa, todas as Suspeitas de Reações Adversas Graves e Inesperadas (SUSAR).
+Parágrafo único. Referente à avaliação de causalidade, caso a interpretação do investigador seja diferente do patrocinador, ambas devem ser submetidas com as respectivas justificativas.","regulation_id: RDC 945/2024
+article: Art. 66
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 66
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 66. As notificações devem ser enviadas individualmente e conter todas as informações solicitadas nos campos presentes no sistema eletrônico de notificação e conforme disposto no Guia ICH-E2A e suas atualizações.",,,,,,,
+EXTERNAL_023_PT,EXTERNAL_023,pt,unanswerable,False,A RDC 945/2024 permite que o patrocinador substitua a avaliação ética brasileira por aprovação da FDA?,"Os documentos não indicam que aprovação da FDA substitua a aprovação ética brasileira; se o contexto recuperado não trouxer essa permissão, a resposta deve recusar essa conclusão.",,,Os documentos recuperados não fornecem informação suficiente para responder.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 83;RDC 945/2024, Art. 13;RDC 945/2024, Art. 24;RDC 945/2024, Art. 85;RDC 945/2024, Art. 11","regulation_id: RDC 945/2024
+article: Art. 83
+chapter: Capítulo XXVI da RDC 81/2008 e suas atualizações ou outra que vier substituí-la, devem atender ao Procedimento 1 ou 1A da referida normativa, bem como RDC nº 659, de 30 de março de 2022 e sua atualizações ou outra que vier substituí-la.
+section: 
+citation_label: RDC 945/2024, Art. 83
+
+Capítulo XXVI da RDC 81/2008 e suas atualizações ou outra que vier substituí-la, devem atender ao Procedimento 1 ou 1A da referida normativa, bem como RDC nº 659, de 30 de março de 2022 e sua atualizações ou outra que vier substituí-la.
+Art. 83. Será emitido um único Documento para Importação (DI) por DDCM, mencionando todos os ensaios clínicos a serem conduzidos no Brasil.
+§ 1° Apenas os ensaios clínicos autorizados, conforme publicação em DOU, poderão ser iniciados no país, respeitando as demais aprovações éticas pertinentes.
+§ 2° A Anvisa emitirá o DI em até 30 dias úteis da data de expediente da petição de DEEC para a importação dos produtos sob investigação necessários para a realização do desenvolvimento clínico antes do deferimento ou indeferimento das petições de DDCM e DEECs publicados no DOU. A importação dos produtos antes da publicação em DOU fica a critério e sob responsabilidade do patrocinador.
+§ 3° Na hipótese do § 2°, os produtos sob investigação deverão ser armazenados em área protegida, sob controle do patrocinador, e só poderão ser distribuídos para os locais onde serão utilizados após o deferimento das petições de DDCM e DEEC publicadas em DOU.
+§ 4° A utilização de qualquer produto sob investigação importado por meio de DI antes do deferimento de petições de DDCM e DEEC publicadas em DOU, constitui infração sanitária e sujeita o infrator às penalidades previstas na Lei nº 6.437, de 20 de agosto de 1977 , e em regulamentos sanitários específicos, sem prejuízo das sanções civis e penais cabíveis.","regulation_id: RDC 945/2024
+article: Art. 13
+chapter: CAPÍTULO II - DAS RESPONSABILIDADES
+section: Seção II - Do Patrocinador
+citation_label: RDC 945/2024, Art. 13
+
+CAPÍTULO II - DAS RESPONSABILIDADES
+Seção II - Do Patrocinador
+Art. 13. O patrocinador é responsável por adquirir o quantitativo suficiente do medicamento experimental e demais suprimentos a serem utilizados no ensaio clínico e distribuí-los apenas às instituições informadas no Formulário de Apresentação do Ensaio Clínico (FAEC) aprovado e autorizadas pela instância ética.
+Parágrafo único. O patrocinador é responsável pela destinação final dos medicamentos e produtos que não foram utilizados no ensaio clínico.",,,,,,,
+EXTERNAL_023_EN,EXTERNAL_023,en,unanswerable,False,Does RDC 945/2024 allow the sponsor to replace Brazilian ethics review with FDA approval?,"The documents do not state that FDA approval replaces Brazilian ethics approval; if retrieved context does not contain such permission, the answer should refuse that conclusion.",,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 83;RDC 945/2024, Art. 24;RDC 945/2024, Art. 11;RDC 945/2024, Art. 13;RDC 945/2024, Art. 88","regulation_id: RDC 945/2024
+article: Art. 83
+chapter: Capítulo XXVI da RDC 81/2008 e suas atualizações ou outra que vier substituí-la, devem atender ao Procedimento 1 ou 1A da referida normativa, bem como RDC nº 659, de 30 de março de 2022 e sua atualizações ou outra que vier substituí-la.
+section: 
+citation_label: RDC 945/2024, Art. 83
+
+Capítulo XXVI da RDC 81/2008 e suas atualizações ou outra que vier substituí-la, devem atender ao Procedimento 1 ou 1A da referida normativa, bem como RDC nº 659, de 30 de março de 2022 e sua atualizações ou outra que vier substituí-la.
+§ 5° No caso de indeferimento de DDCM e DEEC correspondente e prévia importação dos produtos sob investigação, o patrocinador deve apresentar, por meio de petição de aditamento ao processo de DDCM, documento informando a destinação ou destruição dos produtos sob investigação. Esse documento deverá ser submetido à Anvisa em um prazo máximo de 60 dias úteis a contar da publicação do indeferimento do DDCM e respectivo DEEC e deverá conter a informação do destino dado aos produtos sob investigação e seus respectivos quantitativos compatíveis com o que foi previamente importado.","regulation_id: RDC 945/2024
+article: Art. 24
+chapter: CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+section: Seção I - Da submissão do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM)
+citation_label: RDC 945/2024, Art. 24
+
+CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+Seção I - Da submissão do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM)
+Art. 24. O patrocinador deve submeter um DDCM à Anvisa somente no caso em que pretenda realizar ensaios clínicos com medicamentos em território nacional.
+§ 1º O DDCM pode ser submetido pelo patrocinador, investigador-patrocinador ou ORPC.
+§ 2º O responsável pelo DDCM perante a Anvisa deve ser o mesmo para todas as submissões de petições subsequentes relacionadas a este.
+§ 3º As submissões por ORPC somente poderão ser feitas quando o patrocinador não possuir matriz ou filial no Brasil.
+§ 4° A submissão do DDCM de um investigador-patrocinador deve ser feita por meio do patrocinador primário; e
+§ 5° Nos casos em que um investigador-patrocinador desejar realizar um ensaio clínico com um medicamento que já possui um DDCM aprovado pela Anvisa, este poderá utilizar as informações já enviadas pelo detentor do DDCM inicial, caso este o autorize, sem a necessidade de ressubmissão de toda a documentação. Quando não for apresentada uma autorização do detentor inicial, o investigador patrocinador deverá submeter à Anvisa toda a informação por meio de literatura atualizada e indexada que dê suporte ao racional de desenvolvimento proposto.",,,,,,,
+EXTERNAL_024_PT,EXTERNAL_024,pt,unanswerable,False,"Segundo esses documentos, qual é o endereço eletrônico exato do repositório documental de dispositivos médicos?","Os documentos citam portal eletrônico/repositório documental, mas não fornecem endereço eletrônico exato.",,,Os documentos recuperados não fornecem informação suficiente para responder.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 33;RDC 751/2022, Art. 4;RDC 751/2022, Art. 34;RDC 751/2022, Art. 13;RDC 751/2022, Art. 14","regulation_id: RDC 751/2022
+article: Art. 33
+chapter: Capítulo VII desta Resolução;
+section: Seção VIII - Repositório Documental de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 33
+
+Capítulo VII desta Resolução;
+Seção VIII - Repositório Documental de Dispositivos Médicos
+Art. 33. O carregamento de instruções de uso no Repositório Documental de Dispositivos Médicos corresponde à inserção e à atualização destes documentos vinculados aos processos de notificação ou registro de dispositivos médicos.
+§ 1º No caso de dispositivo médico que não possui instruções de uso (como documento específico), deve-se carregar o modelo de rotulagem no campo das instruções de uso, contemplando também as informações previstas no
+§ 2º O carregamento de instruções de uso deverá ocorrer por meio dos assuntos de peticionamento aplicáveis, identificados como ""Disponibilização de Instruções de Uso no Portal da Anvisa"".
+§ 3º O carregamento de instruções de uso é de responsabilidade do detentor da notificação ou do registro e deverá ser controlado por este para eventuais auditorias.
+§ 4º O carregamento de instruções de uso é obrigatório e deve ser executado pela empresa responsável pela notificação ou pelo registro do produto, a qual atesta que seu conteúdo guarda concordância com a legislação vigente e consistência com o produto regularizado.
+§ 5º Para os novos produtos notificados ou registrados e para as alterações daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 30 (trinta) dias após a publicação em Diário Oficial da União.
+§ 6º Para as alterações não reportáveis daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 180 (cento e oitenta) dias após a implementação da alteração que implique mudança nas instruções de uso.","regulation_id: RDC 751/2022
+article: Art. 4
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+section: Seção III - Definições
+citation_label: RDC 751/2022, Art. 4
+
+CAPÍTULO I - DAS DISPOSIÇÕES INICIAIS
+Seção III - Definições
+ou qualquer abertura artificial permanente como, por exemplo, um estoma;
+XXXII - partícula: para efeitos da definição de nanomaterial, uma porção minúscula de matéria com fronteiras físicas definidas;
+XXXIII - pele ou membrana mucosa lesada: uma superfície de pele ou uma membrana mucosa que apresente uma alteração patológica ou provocada por doença ou lesão;
+XXXIV - reavaliação processual: procedimento realizado pela área técnica da Anvisa em notificações e registros de dispositivos médicos para fins de auditoria nos processos;
+XXXV - registro: ato privativo da Anvisa destinado a comprovar o direito de fabricação e de importação de produto submetido ao regime da Lei nº 6.360, de 23 de setembro de 1976 , e classificado nas classes de risco III ou IV, com a indicação do nome, do fabricante, da finalidade e dos outros elementos que o caracterizem;
+XXXVI - Repositório Documental de Dispositivos Médicos: ferramenta digital para armazenamento e disponibilização de documentos relativos aos dispositivos médicos notificados e registrados, disponível no portal eletrônico da Anvisa;
+XXXVII - responsável legal: pessoa física designada em estatuto, contrato social ou ata, incumbida de representar, ativa e passivamente, nos atos judiciais e extrajudiciais a pessoa jurídica solicitante (fabricante ou importador);
+XXXVIII - responsável técnico: profissional de nível superior, legalmente habilitado, capacitado nas tecnologias que compõem o produto,",,,,,,,
+EXTERNAL_024_EN,EXTERNAL_024,en,unanswerable,False,"According to these documents, what is the exact website address of the medical device documentary repository?",The documents mention an electronic portal/documentary repository but do not provide the exact website address.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 33;RDC 751/2022, Art. 27;RDC 751/2022, Art. 46;RDC 751/2022, Art. 14;RDC 751/2022, Art. 60","regulation_id: RDC 751/2022
+article: Art. 33
+chapter: Capítulo VII desta Resolução;
+section: Seção VIII - Repositório Documental de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 33
+
+Capítulo VII desta Resolução;
+Seção VIII - Repositório Documental de Dispositivos Médicos
+Art. 33. O carregamento de instruções de uso no Repositório Documental de Dispositivos Médicos corresponde à inserção e à atualização destes documentos vinculados aos processos de notificação ou registro de dispositivos médicos.
+§ 1º No caso de dispositivo médico que não possui instruções de uso (como documento específico), deve-se carregar o modelo de rotulagem no campo das instruções de uso, contemplando também as informações previstas no
+§ 2º O carregamento de instruções de uso deverá ocorrer por meio dos assuntos de peticionamento aplicáveis, identificados como ""Disponibilização de Instruções de Uso no Portal da Anvisa"".
+§ 3º O carregamento de instruções de uso é de responsabilidade do detentor da notificação ou do registro e deverá ser controlado por este para eventuais auditorias.
+§ 4º O carregamento de instruções de uso é obrigatório e deve ser executado pela empresa responsável pela notificação ou pelo registro do produto, a qual atesta que seu conteúdo guarda concordância com a legislação vigente e consistência com o produto regularizado.
+§ 5º Para os novos produtos notificados ou registrados e para as alterações daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 30 (trinta) dias após a publicação em Diário Oficial da União.
+§ 6º Para as alterações não reportáveis daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 180 (cento e oitenta) dias após a implementação da alteração que implique mudança nas instruções de uso.","regulation_id: RDC 751/2022
+article: Art. 27
+chapter: Capítulo VII desta Resolução;
+section: Seção V - Revalidação de Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 27
+
+Capítulo VII desta Resolução;
+Seção V - Revalidação de Registro de Dispositivos Médicos
+Art. 27. Para peticionar a revalidação do registro de dispositivo médico, o solicitante deve proceder com o pagamento da taxa correspondente e apresentar os seguintes documentos:
+I - para dispositivos médicos importados: declaração emitida pelo fabricante legal consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil.
+II - Certificado de Boas Práticas de Fabricação emitido pela Anvisa válido.
+§ 1º A declaração de que trata o inciso I deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , publicada no DOU nº 62, de 31 de março de 2022, Seção 1, pág. 334, ou regulamento que venha substitui-la.
+§ 2º A solicitação de revalidação deverá ser apresentada no prazo previsto na Resolução da Diretoria Colegiada - RDC nº 250, de 20 de outubro de 2004 .
+§ 3º O protocolo do pedido de Certificação de Boas Práticas de Fabricação será aceito para efeito de peticionamento e análise das petições de revalidação de registro.",,,,,,,
+EXTERNAL_025_PT,EXTERNAL_025,pt,adversarial,False,A RDC 406/2020 diz que notificações sem identificação do paciente continuam válidas se houver nome do medicamento suspeito?,"Não. A pergunta contém uma premissa incompatível com o documento: a identificação do paciente é uma informação mínima para notificação válida e reportável; sem ela, o relato inicial é incompleto.",,,"Não. De acordo com a RDC 406/2020, para que uma notificação seja considerada válida e reportável, ela deve conter, no mínimo, a identificação do notificador, a identificação do paciente (nome ou iniciais, ou gênero, ou idade, ou data de nascimento), a descrição do evento adverso e o nome do medicamento suspeito [RDC 406/2020, Art. 32]. A ausência de qualquer uma dessas informações torna o relato inicial incompleto, gerando para o Detentor de Registro de Medicamento a obrigação de realizar a busca ativa dos dados faltantes [RDC 406/2020, Art. 32].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 32;RDC 406/2020, Art. 2;RDC 406/2020, Art. 30;RDC 406/2020, Art. 33;RDC 406/2020, Art. 31","regulation_id: RDC 406/2020
+article: Art. 32
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 32
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 32. Para ser considerada válida e reportável, a notificação deve contemplar a maior quantidade de informações possível, estando presentes, no mínimo, os seguintes dados:
+I - identificação do notificador;
+II - identificação do paciente (nome ou iniciais; ou gênero; ou idade ou data de nascimento);
+III - descrição do Evento Adverso; e
+IV - nome do medicamento suspeito.
+Parágrafo único. A ausência de qualquer dessas informações torna o relato inicial incompleto, gerando para o Detentor de Registro de Medicamento a obrigação de busca ativa dos dados faltantes.","regulation_id: RDC 406/2020
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+section: Seção II - Definições
+citation_label: RDC 406/2020, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+Seção II - Definições
+Também pode decorrer da interação do medicamento com alimentos, substâncias químicas ou doenças. Os resultados de exames laboratoriais podem ter sua confiabilidade afetada devido às interações com medicamentos. A interação medicamentosa pode resultar em aumento ou diminuição da efetividade terapêutica ou ainda no aparecimento de novos eventos adversos relacionados;
+XVIII - notificação: ato de informar a ocorrência de Evento Adverso de medicamento para os Detentores de Registro de Medicamento, autoridades sanitárias ou outras organizações;
+XIX - notificação de seguimento: notificação de acompanhamento de Evento Adverso previamente notificado, contendo dados adicionais, clínicos ou de exames complementares, a fim de melhor elucidar a relação de causalidade entre o evento descrito e o medicamento suspeito;
+XX - notificação espontânea: comunicação não solicitada, realizada por um profissional de saúde ou consumidor a uma empresa, autoridade reguladora ou outra organização que descreve uma ou mais reações adversas a um paciente que recebeu um ou mais medicamentos e que não deriva de um estudo ou de qualquer sistema organizado de coleta de dados.",,,,,,,
+EXTERNAL_025_EN,EXTERNAL_025,en,adversarial,False,Does RDC 406/2020 say notifications without patient identification remain valid if the suspected medicine name is present?,"No. The question contains a premise incompatible with the document: patient identification is minimum information for a valid and reportable notification; without it, the initial report is incomplete.",,,"No, a notification must contain at least the following data to be considered valid and reportable: identification of the notifier, identification of the patient (name or initials, or gender, or age or date of birth), description of the Adverse Event, and the name of the suspected medicine [RDC 406/2020, Art. 32]. The absence of any of these pieces of information makes the initial report incomplete, requiring the Medicine Registration Holder to perform an active search for the missing data [RDC 406/2020, Art. 32].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 32;RDC 406/2020, Art. 2;RDC 406/2020, Art. 33;RDC 406/2020, Art. 31;RDC 406/2020, Art. 43","regulation_id: RDC 406/2020
+article: Art. 32
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 32
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 32. Para ser considerada válida e reportável, a notificação deve contemplar a maior quantidade de informações possível, estando presentes, no mínimo, os seguintes dados:
+I - identificação do notificador;
+II - identificação do paciente (nome ou iniciais; ou gênero; ou idade ou data de nascimento);
+III - descrição do Evento Adverso; e
+IV - nome do medicamento suspeito.
+Parágrafo único. A ausência de qualquer dessas informações torna o relato inicial incompleto, gerando para o Detentor de Registro de Medicamento a obrigação de busca ativa dos dados faltantes.","regulation_id: RDC 406/2020
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+section: Seção II - Definições
+citation_label: RDC 406/2020, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+Seção II - Definições
+Também pode decorrer da interação do medicamento com alimentos, substâncias químicas ou doenças. Os resultados de exames laboratoriais podem ter sua confiabilidade afetada devido às interações com medicamentos. A interação medicamentosa pode resultar em aumento ou diminuição da efetividade terapêutica ou ainda no aparecimento de novos eventos adversos relacionados;
+XVIII - notificação: ato de informar a ocorrência de Evento Adverso de medicamento para os Detentores de Registro de Medicamento, autoridades sanitárias ou outras organizações;
+XIX - notificação de seguimento: notificação de acompanhamento de Evento Adverso previamente notificado, contendo dados adicionais, clínicos ou de exames complementares, a fim de melhor elucidar a relação de causalidade entre o evento descrito e o medicamento suspeito;
+XX - notificação espontânea: comunicação não solicitada, realizada por um profissional de saúde ou consumidor a uma empresa, autoridade reguladora ou outra organização que descreve uma ou mais reações adversas a um paciente que recebeu um ou mais medicamentos e que não deriva de um estudo ou de qualquer sistema organizado de coleta de dados.",,,,,,,

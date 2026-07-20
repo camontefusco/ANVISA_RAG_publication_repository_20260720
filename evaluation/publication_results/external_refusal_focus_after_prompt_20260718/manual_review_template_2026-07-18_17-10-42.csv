@@ -1,0 +1,744 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+EXTREF_001_PT,EXTREF_001,pt,unanswerable_current_operational,False,Qual e o numero de telefone atual do suporte da Anvisa para o sistema de notificacao de eventos adversos?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 63;RDC 945/2024, Art. 67;RDC 945/2024, Art. 69;RDC 945/2024, Art. 64;RDC 945/2024, Art. 68","regulation_id: RDC 945/2024
+article: Art. 63
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 63
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 63. O patrocinador é responsável pela notificação dos eventos adversos à Anvisa, sendo permitida a delegação de tal atividade à Organização Representativa de Pesquisa Clínica (ORPC).","regulation_id: RDC 945/2024
+article: Art. 67
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 67
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 67. Existindo a possibilidade de um evento ser uma SUSAR, o patrocinador deve quebrar o cegamento para notificação à Anvisa e a quebra deve ser apenas em relação à alocação do participante que foi acometido pela reação adversa grave e inesperada.
+§1º Se após a quebra do cegamento o evento for classificado como uma SUSAR, seguir o disposto no art. 64 e a alocação do participante no braço do ensaio clínico deve ser informada na notificação da SUSAR à Anvisa.
+§2º Sempre que possível, o cegamento deve ser preservado para os responsáveis pela análise e interpretação dos resultados do estudo e pelos responsáveis pela continuidade do ensaio clínico, como gerentes, monitores e investigadores do estudo.",,,,,,,
+EXTREF_001_EN,EXTREF_001,en,unanswerable_current_operational,False,What is Anvisa current support phone number for the adverse-event notification system?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 67;RDC 945/2024, Art. 68;RDC 945/2024, Art. 66;RDC 9/2015, Art. 63;RDC 945/2024, Art. 56","regulation_id: RDC 945/2024
+article: Art. 67
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 67
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 67. Existindo a possibilidade de um evento ser uma SUSAR, o patrocinador deve quebrar o cegamento para notificação à Anvisa e a quebra deve ser apenas em relação à alocação do participante que foi acometido pela reação adversa grave e inesperada.
+§1º Se após a quebra do cegamento o evento for classificado como uma SUSAR, seguir o disposto no art. 64 e a alocação do participante no braço do ensaio clínico deve ser informada na notificação da SUSAR à Anvisa.
+§2º Sempre que possível, o cegamento deve ser preservado para os responsáveis pela análise e interpretação dos resultados do estudo e pelos responsáveis pela continuidade do ensaio clínico, como gerentes, monitores e investigadores do estudo.","regulation_id: RDC 945/2024
+article: Art. 68
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 68
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 68. Quando um evento for relacionado à doença e representar um desfecho primário de eficácia de um ensaio clínico, o protocolo deve definir claramente o evento em questão e este não estará sujeito à notificação.
+Parágrafo único. Caso o evento descrito no caput se caracterize como uma SUSAR, ou seja, quando houver possibilidade razoável de relação causal entre o evento e o medicamento experimental ou comparador ativo, este deve ser notificado, pois pode se tratar de uma possível alteração do perfil de segurança.",,,,,,,
+EXTREF_002_PT,EXTREF_002,pt,unanswerable_current_operational,False,Qual versao atual do MedDRA deve ser usada hoje nos envios ao SNVS?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_945_2024.txt,"RDC 406/2020, Art. 35;RDC 406/2020, Art. 5;RDC 406/2020, Art. 26;RDC 406/2020, Art. 2;RDC 945/2024, Art. 6","regulation_id: RDC 406/2020
+article: Art. 35
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 35
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 35. Para descrição de termos médicos e de Eventos Adversos no envio dos relatórios e das Notificações ao SNVS, os Detentores de Registro de Medicamento devem utilizar o Dicionário Médico para Atividades Regulatórias (MedDRA).","regulation_id: RDC 406/2020
+article: Art. 5
+chapter: CAPÍTULO II - DAS RESPONSABILIDADES DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: 
+citation_label: RDC 406/2020, Art. 5
+
+CAPÍTULO II - DAS RESPONSABILIDADES DO DETENTOR DE REGISTRO DE MEDICAMENTO
+Art. 5º Os Detentores de Registro de Medicamento devem designar 1 (um) Responsável pela Farmacovigilância (RFV), bem como seu substituto, e proporcionar meios adequados para o desenvolvimento de suas funções, incluindo a disponibilização de recursos materiais e humanos, ferramentas de comunicação e acesso a todas as fontes de informação relevantes para o pleno desenvolvimento dessas atividades.
+Parágrafo único. Os dados atualizados do RFV e do seu substituto (nome, formação e telefone) deverão ser enviados pelos Detentores de Registro de Medicamento ao SNVS.",,,,,,,
+EXTREF_002_EN,EXTREF_002,en,unanswerable_current_operational,False,Which current MedDRA version must be used today in submissions to the SNVS?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 35;RDC 406/2020, Art. 26;RDC 406/2020, Art. 5;RDC 406/2020, Art. 10;RDC 406/2020, Art. 28","regulation_id: RDC 406/2020
+article: Art. 35
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 35
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 35. Para descrição de termos médicos e de Eventos Adversos no envio dos relatórios e das Notificações ao SNVS, os Detentores de Registro de Medicamento devem utilizar o Dicionário Médico para Atividades Regulatórias (MedDRA).","regulation_id: RDC 406/2020
+article: Art. 26
+chapter: CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: seção V - Do banco de dados
+citation_label: RDC 406/2020, Art. 26
+
+CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+seção V - Do banco de dados
+Art. 26. A transferência de informações para o SNVS deve observar o disposto nesta Resolução e em legislação específica.
+§ 1º Os Detentores de Registro de Medicamento deverão encaminhar as notificações objeto do art. 30 desta Resolução através de sistema eletrônico de Notificação disponibilizado pela Anvisa.
+§ 2º Os Detentores de Registro de Medicamento poderão gerar arquivos em formato XML compatíveis com o sistema eletrônico de Notificação do SNVS, de acordo com os requisitos definidos pelo padrão E2B do International Conference on Harmonisation (ICH-E2B), de forma agrupada ou mesmo individual, utilizando seus próprios sistemas informatizados de Farmacovigilância, para fins de cumprimento do disposto no caput deste artigo.
+Sub",,,,,,,
+EXTREF_003_PT,EXTREF_003,pt,unanswerable_exact_identifier,False,Qual e o codigo de assunto de peticao para solicitar reliance em um DDCM?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_945_2024.txt;RDC_945_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt,"RDC 945/2024, Art. 40;RDC 945/2024, Art. 45;IN 338/2024;IN 338/2024, Art. 10;IN 338/2024, Art. 7","regulation_id: RDC 945/2024
+article: Art. 40
+chapter: CAPÍTULO V
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: RDC 945/2024, Art. 40
+
+CAPÍTULO V
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 40. O procedimento otimizado de análise poderá ser aplicado, quando solicitado pelo patrocinador, nos termos desta resolução, aos seguintes assuntos de petição:
+I - Anuência em Processo do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM);
+II - Anuência em Processo de Pesquisa Clínica (DEEC);
+III - Modificação substancial ao produto sob investigação;
+IV - Emenda substancial a Protocolo Clínico.
+Sub","regulation_id: RDC 945/2024
+article: Art. 45
+chapter: CAPÍTULO V
+section: seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+citation_label: RDC 945/2024, Art. 45
+
+CAPÍTULO V
+seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+Art. 45. A solicitação de análise pelo procedimento otimizado poderá ser peticionada pelo patrocinador a qualquer momento, por meio de petição secundária, antes do início da análise da petição objeto do pedido.",,,,,,,
+EXTREF_003_EN,EXTREF_003,en,unanswerable_exact_identifier,False,What is the petition subject code for requesting reliance for a DDCM?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 45;RDC 945/2024, Art. 40;RDC 945/2024, Art. 83;RDC 945/2024, Art. 28;RDC 945/2024, Art. 47","regulation_id: RDC 945/2024
+article: Art. 45
+chapter: CAPÍTULO V
+section: seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+citation_label: RDC 945/2024, Art. 45
+
+CAPÍTULO V
+seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+Art. 45. A solicitação de análise pelo procedimento otimizado poderá ser peticionada pelo patrocinador a qualquer momento, por meio de petição secundária, antes do início da análise da petição objeto do pedido.","regulation_id: RDC 945/2024
+article: Art. 40
+chapter: CAPÍTULO V
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: RDC 945/2024, Art. 40
+
+CAPÍTULO V
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 40. O procedimento otimizado de análise poderá ser aplicado, quando solicitado pelo patrocinador, nos termos desta resolução, aos seguintes assuntos de petição:
+I - Anuência em Processo do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM);
+II - Anuência em Processo de Pesquisa Clínica (DEEC);
+III - Modificação substancial ao produto sob investigação;
+IV - Emenda substancial a Protocolo Clínico.
+Sub",,,,,,,
+EXTREF_004_PT,EXTREF_004,pt,unanswerable_external_status,False,A Health Canada aprovou a mesma emenda substancial ao protocolo do estudo citado nesses documentos?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,IN_338_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;RDC_945_2024.txt,"IN 338/2024, Art. 5;RDC 945/2024, Art. 37;RDC 945/2024, Art. 38;RDC 9/2015, Art. 48;RDC 945/2024, Art. 39","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: RDC 945/2024
+article: Art. 37
+chapter: CAPÍTULO IV
+section: Seção II - Das emendas substanciais ao Protocolo Clínico
+citation_label: RDC 945/2024, Art. 37
+
+CAPÍTULO IV
+Seção II - Das emendas substanciais ao Protocolo Clínico
+Art. 37. As petições de emendas substanciais a protocolos de ensaios clínicos devem ser peticionadas de forma eletrônica, como petição secundária, vinculada ao DEEC correspondente e devem conter cópia do protocolo clínico previamente aprovado com as modificações propostas destacadas (formato track-changes) e uma tabela comparando a situação atual com as alterações propostas, as justificativas para cada alteração e a avaliação dos impactos no desenvolvimento clínico.
+Parágrafo único. Em complementação à documentação descrita no caput, deve ser anexado à petição, o Formulário de Apresentação de Ensaio Clínico (FAEC) atualizado em versão limpa e versão com alterações destacadas (formato track changes) e a nova versão do protocolo clínico limpa.",,,,,,,
+EXTREF_004_EN,EXTREF_004,en,unanswerable_external_status,False,Did Health Canada approve the same substantial protocol amendment for the study cited in these documents?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,IN_338_2024.txt;rdc09_2015.txt;RDC_945_2024.txt;IN_338_2024.txt;rdc09_2015.txt,"IN 338/2024, Art. 5;RDC 9/2015, Art. 36;RDC 945/2024, Art. 37;IN 338/2024;RDC 9/2015, Art. 43","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: RDC 9/2015
+article: Art. 36
+chapter: Capítulo V - DAS EMENDAS AO PROTOCOLO DE ENSAIO CLÍNICO
+section: 
+citation_label: RDC 9/2015, Art. 36
+
+Capítulo V - DAS EMENDAS AO PROTOCOLO DE ENSAIO CLÍNICO
+Art. 36.
+§1° As emendas substanciais devem ser submetidas à Anvisa na forma de petição
+secundá ria anexada ao processo do respectivo protocolo de ensaio clínico ao qual está
+vinculada.
+§2° A petição das emendas substanciais deve conter o novo protocolo e o Parecer
+Consubstanciado do Comitê de É tica em Pesquisa (CEP) emitido para o primeiro centro de
+ensaio clínico a encaminhar o protocolo para análise pelo CEP.
+§3° Excetuam -se do disposto no caput as emendas que visam eliminar riscos
+imediatos à segurança dos participantes do ensaio clí nico. Es tas poderão ser
+implementadas e notificadas à Anvisa imediatamente.",,,,,,,
+EXTREF_005_PT,EXTREF_005,pt,unanswerable_exact_url,False,Qual e o endereco web exato do sistema eletronico para submeter o DSUR a Anvisa?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt,"RDC 945/2024, Art. 75;RDC 945/2024, Art. 24;RDC 945/2024, Art. 61;RDC 945/2024, Art. 28;RDC 9/2015, Art. 3","regulation_id: RDC 945/2024
+article: Art. 75
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: Seção III - Do Relatório de atualização de segurança do desenvolvimento do Medicamento Experimental
+citation_label: RDC 945/2024, Art. 75
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+Seção III - Do Relatório de atualização de segurança do desenvolvimento do Medicamento Experimental
+Art. 75. Os Relatórios de Atualização de Segurança do Desenvolvimento do medicamento experimental (DSUR) devem ser enviados anualmente à Anvisa, até o fim do desenvolvimento clínico do medicamento experimental no Brasil.
+Parágrafo único. Os relatórios de atualização de segurança do desenvolvimento do medicamento experimental (DSUR) devem ser elaborados de acordo com o formato descrito na versão vigente do guia ICH E2F e devem ser protocolizados no prazo máximo de 60 (sessenta) dias corridos, tendo como referência de anualidade a data de aprovação do ensaio clínico em qualquer país.","regulation_id: RDC 945/2024
+article: Art. 24
+chapter: CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+section: Seção I - Da submissão do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM)
+citation_label: RDC 945/2024, Art. 24
+
+CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+Seção I - Da submissão do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM)
+Art. 24. O patrocinador deve submeter um DDCM à Anvisa somente no caso em que pretenda realizar ensaios clínicos com medicamentos em território nacional.
+§ 1º O DDCM pode ser submetido pelo patrocinador, investigador-patrocinador ou ORPC.
+§ 2º O responsável pelo DDCM perante a Anvisa deve ser o mesmo para todas as submissões de petições subsequentes relacionadas a este.
+§ 3º As submissões por ORPC somente poderão ser feitas quando o patrocinador não possuir matriz ou filial no Brasil.
+§ 4° A submissão do DDCM de um investigador-patrocinador deve ser feita por meio do patrocinador primário; e
+§ 5° Nos casos em que um investigador-patrocinador desejar realizar um ensaio clínico com um medicamento que já possui um DDCM aprovado pela Anvisa, este poderá utilizar as informações já enviadas pelo detentor do DDCM inicial, caso este o autorize, sem a necessidade de ressubmissão de toda a documentação. Quando não for apresentada uma autorização do detentor inicial, o investigador patrocinador deverá submeter à Anvisa toda a informação por meio de literatura atualizada e indexada que dê suporte ao racional de desenvolvimento proposto.",,,,,,,
+EXTREF_005_EN,EXTREF_005,en,unanswerable_exact_url,False,What is the exact web address of the electronic system for submitting a DSUR to Anvisa?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 75;RDC 945/2024, Art. 28;RDC 945/2024, Art. 61;RDC 9/2015, Art. 3;RDC 945/2024, Art. 24","regulation_id: RDC 945/2024
+article: Art. 75
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: Seção III - Do Relatório de atualização de segurança do desenvolvimento do Medicamento Experimental
+citation_label: RDC 945/2024, Art. 75
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+Seção III - Do Relatório de atualização de segurança do desenvolvimento do Medicamento Experimental
+Art. 75. Os Relatórios de Atualização de Segurança do Desenvolvimento do medicamento experimental (DSUR) devem ser enviados anualmente à Anvisa, até o fim do desenvolvimento clínico do medicamento experimental no Brasil.
+Parágrafo único. Os relatórios de atualização de segurança do desenvolvimento do medicamento experimental (DSUR) devem ser elaborados de acordo com o formato descrito na versão vigente do guia ICH E2F e devem ser protocolizados no prazo máximo de 60 (sessenta) dias corridos, tendo como referência de anualidade a data de aprovação do ensaio clínico em qualquer país.","regulation_id: RDC 945/2024
+article: Art. 28
+chapter: CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+section: Seção II - Dos requisitos específicos para submissão do DDCM
+citation_label: RDC 945/2024, Art. 28
+
+CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+Seção II - Dos requisitos específicos para submissão do DDCM
+VI - dossiê específico de ensaio clínico (DEEC), contendo:
+a) formulário de apresentação de ensaio clínico (FAEC) devidamente preenchido, conforme modelo disponível no sítio eletrônico da Anvisa;
+b) protocolo de ensaio clínico contendo as informações mínimas descritas no Guia ICH E6 (R2) e suas atualizações;
+c) plano de análise estatística (PAE), no mínimo na versão draft, nos casos de ensaios clínicos fase 3 e ensaios clínicos adaptativos;
+d) parecer de aconselhamento científico de qualquer país/região, se houver, sobre o ensaio clínico;
+e) plano de investigação pediátrica de qualquer país/região, se houver;
+f) modelo de rótulo do medicamento experimental;
+g) comprovante de registro do ensaio clínico, na mesma versão do protocolo clínico submetido à Anvisa, em base de dados de registro da International Clinical Trials Registration Platform / World Health Organization (ICTRP/WHO) ou outras reconhecidas pelo International Committee of Medical Journals Editors (ICMJE) e pela Organização Mundial de Saúde (OMS); e
+h) caso o comprovante a que se refere a alínea ""g"" não esteja disponível no momento de submissão do DEEC, ele deve ser submetido obrigatoriamente junto com a notificação de início do ensaio clínico.",,,,,,,
+EXTREF_006_PT,EXTREF_006,pt,unanswerable_private_case,False,Qual foi a data de recebimento da notificacao de evento adverso do paciente do estudo X?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,rdc09_2015.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt,"RDC 9/2015, Art. 63;RDC 406/2020, Art. 30;RDC 945/2024, Art. 71;RDC 945/2024, Art. 70;RDC 9/2015, Art. 65","regulation_id: RDC 9/2015
+article: Art. 63
+chapter: Capítulo VII - DO MONITORAMENTO DE SEGURANÇA E ALERTAS
+section: seção IV - Dos Prazos
+citation_label: RDC 9/2015, Art. 63
+
+Capítulo VII - DO MONITORAMENTO DE SEGURANÇA E ALERTAS
+seção IV - Dos Prazos
+Art. 63 que sejam fatais ou que ameacem a vida sejam
+documentados e notificados à Anvisa , por meio de formulário eletrônico, em no máximo 7
+(sete) dias corridos a contar da data de conhecimento do caso pelo patrocinador.
+Parágrafo único. As informações complementares sobre o acompanhamento dos
+eventos adversos mencionados no caput devem ser incluídas no formulário em até 8 (oito)
+dias corridos a contar da data de notificação .","regulation_id: RDC 406/2020
+article: Art. 30
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 30
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 30. Os Detentores de Registro de Medicamento devem notificar por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, todos os Eventos Adversos Graves (esperados e inesperados), relatados de forma espontânea ou solicitada, ocorridos em território nacional, no prazo máximo de 15 (quinze) dias corridos, contados da data de recebimento da informação relacionada à ocorrência.
+§ 1º Os casos de Inefetividade Terapêutica que representem risco à vida, segundo avaliação do próprio Detentor de Registro de Medicamento, bem como todos aqueles relacionados a vacinas e contraceptivos, devem ser notificados no prazo estabelecido no caput deste artigo.
+§ 2º Os dados complementares referentes à evolução dos casos de que trata este artigo devem ser notificados por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, na forma definida no caput deste artigo.
+§ 3º Devem-se buscar informações adicionais sobre as notificações que necessitam de seguimento, com priorização para graves e inesperadas, seguidas das graves e esperadas e, por fim, das não graves e inesperadas.
+§ 4º O não cumprimento dos prazos referentes às Notificações de que trata este artigo não desobriga seu posterior envio à autoridade sanitária competente.
+§ 5º O Detentor de Registro de Medicamento deve designar um gestor do sistema eletrônico de Notificação disponibilizado pela Anvisa, responsável pelo gerenciamento das senhas de acesso.",,,,,,,
+EXTREF_006_EN,EXTREF_006,en,unanswerable_private_case,False,What was the receipt date of the adverse-event notification for the patient in study X?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;rdc09_2015.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;rdc09_2015.txt;rdc09_2015.txt,"RDC 945/2024, Art. 70;RDC 9/2015, Art. 63;RDC 406/2020, Art. 2;RDC 9/2015, Art. 6;RDC 9/2015, Art. 69","regulation_id: RDC 945/2024
+article: Art. 70
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção II - Dos Prazos para Notificação das SUSARs
+citation_label: RDC 945/2024, Art. 70
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção II - Dos Prazos para Notificação das SUSARs
+Art. 70. O investigador deve informar ao patrocinador sobre os eventos adversos graves no prazo de até 24 (vinte e quatro) horas a contar da data de conhecimento do evento.","regulation_id: RDC 9/2015
+article: Art. 63
+chapter: Capítulo VII - DO MONITORAMENTO DE SEGURANÇA E ALERTAS
+section: seção IV - Dos Prazos
+citation_label: RDC 9/2015, Art. 63
+
+Capítulo VII - DO MONITORAMENTO DE SEGURANÇA E ALERTAS
+seção IV - Dos Prazos
+Art. 63 que sejam fatais ou que ameacem a vida sejam
+documentados e notificados à Anvisa , por meio de formulário eletrônico, em no máximo 7
+(sete) dias corridos a contar da data de conhecimento do caso pelo patrocinador.
+Parágrafo único. As informações complementares sobre o acompanhamento dos
+eventos adversos mencionados no caput devem ser incluídas no formulário em até 8 (oito)
+dias corridos a contar da data de notificação .",,,,,,,
+EXTREF_007_PT,EXTREF_007,pt,unanswerable_future_prediction,False,A Anvisa aceitara uma nova AREE em 2027 para o procedimento de reliance?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,IN_338_2024.txt;IN_338_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"IN 338/2024, Art. 5;IN 338/2024;RDC 945/2024, Art. 42;RDC 945/2024, Art. 47;RDC 945/2024, Art. 44","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: IN 338/2024
+document_title: Procedimento otimizado de analise de ensaios clinicos
+article: Preamble
+chapter: 
+section: 
+citation_label: IN 338/2024
+
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+INSTRUÇÃO NORMATIVA - IN Nº 338, DE 29 DE NOVEMBRO DE 2024
+Estabelece, nos termos da Resolução da Diretoria Colegiada ANVISA nº 945, de 29 de novembro de 2024 , a lista de Autoridades Reguladoras Estrangeiras Equivalentes (AREE) e detalha os critérios para a adoção do procedimento otimizado de análise por reliance e por avaliação de risco e complexidade de petições de DDCM, DEEC, modificações substanciais ao produto sob investigação e emendas substanciais ao protocolo clínico
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso da atribuição que lhe confere o art. 15, III e IV aliado ao art. 7º, III e IV, da Lei n.º 9.782, de 26 de janeiro de 1999 , e ao art. 187, VII, §§ 1º e 3º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021 , em reunião realizada em 27 de novembro de 2024, resolve:",,,,,,,
+EXTREF_007_EN,EXTREF_007,en,unanswerable_future_prediction,False,Will Anvisa accept a new AREE in 2027 for the reliance procedure?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,IN_338_2024.txt;IN_338_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"IN 338/2024, Art. 5;IN 338/2024;RDC 945/2024, Art. 47;RDC 945/2024, Art. 42;RDC 945/2024, Art. 44","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: IN 338/2024
+document_title: Procedimento otimizado de analise de ensaios clinicos
+article: Preamble
+chapter: 
+section: 
+citation_label: IN 338/2024
+
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+INSTRUÇÃO NORMATIVA - IN Nº 338, DE 29 DE NOVEMBRO DE 2024
+Estabelece, nos termos da Resolução da Diretoria Colegiada ANVISA nº 945, de 29 de novembro de 2024 , a lista de Autoridades Reguladoras Estrangeiras Equivalentes (AREE) e detalha os critérios para a adoção do procedimento otimizado de análise por reliance e por avaliação de risco e complexidade de petições de DDCM, DEEC, modificações substanciais ao produto sob investigação e emendas substanciais ao protocolo clínico
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso da atribuição que lhe confere o art. 15, III e IV aliado ao art. 7º, III e IV, da Lei n.º 9.782, de 26 de janeiro de 1999 , e ao art. 187, VII, §§ 1º e 3º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021 , em reunião realizada em 27 de novembro de 2024, resolve:",,,,,,,
+EXTREF_008_PT,EXTREF_008,pt,unanswerable_legal_advice,False,Qual penalidade exata sera aplicada a empresa se ela divulgar instrucao de uso inconsistente?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,"As empresas que inserirem informações no Repositório Documental de Dispositivos Médicos que não apresentem consistência com o produto regularizado ou que não estejam em concordância com a legislação vigente ficam sujeitas às penalidades previstas na Lei nº 6.437, de 20 de agosto de 1977 [RDC 751/2022, Art. 36]. Além disso, na hipótese de inconsistência que justifique uma medida sanitária, a Anvisa poderá suspender a comercialização, importação e/ou uso do produto até que sejam carregadas as instruções de uso adequadas [RDC 751/2022, Art. 36].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 36;RDC 751/2022, Art. 35;RDC 751/2022, Art. 33;RDC 751/2022, Art. 48;RDC 751/2022, Art. 54","regulation_id: RDC 751/2022
+article: Art. 36
+chapter: Capítulo VI.
+section: 
+citation_label: RDC 751/2022, Art. 36
+
+Capítulo VI.
+Art. 36. Ficam sujeitas às penalidades previstas na Lei nº 6.437, de 20 de agosto de 1977 , as empresas que inserirem informações no Repositório Documental de Dispositivos Médicos que não apresentem concordância com a legislação vigente e consistência com o produto regularizado.
+Parágrafo único. Na hipótese de inobservância à legislação vigente ou inconsistência que justifique uma medida sanitária, a Anvisa poderá suspender a comercialização, importação e/ou uso do produto até o carregamento das instruções de uso adequadas aos termos desta Resolução, observado o disposto no art. 15 da Lei nº 6.437, de 20 de agosto de 1977 .","regulation_id: RDC 751/2022
+article: Art. 35
+chapter: Capítulo VI.
+section: 
+citation_label: RDC 751/2022, Art. 35
+
+Capítulo VI.
+Art. 35. As instruções de uso carregadas ou a ausência delas nos termos desta Resolução poderão ser objeto de avaliação documental ou fiscal a qualquer tempo por parte da Anvisa e, caso necessário, a Agência poderá:
+I - solicitar, à empresa, informação, esclarecimento adicional ou carregamento das instruções de uso adequadas; e/ou
+II - retirar as instruções de uso ou restaurar uma versão anterior, quando houver justificativa para tais medidas.",,,,,,,
+EXTREF_008_EN,EXTREF_008,en,unanswerable_legal_advice,False,What exact penalty will be applied to a company if it publishes inconsistent instructions for use?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 33;RDC 751/2022, Art. 35;RDC 751/2022, Art. 52;RDC 751/2022, Art. 51;RDC 751/2022, Art. 46","regulation_id: RDC 751/2022
+article: Art. 33
+chapter: Capítulo VII desta Resolução;
+section: Seção VIII - Repositório Documental de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 33
+
+Capítulo VII desta Resolução;
+Seção VIII - Repositório Documental de Dispositivos Médicos
+Art. 33. O carregamento de instruções de uso no Repositório Documental de Dispositivos Médicos corresponde à inserção e à atualização destes documentos vinculados aos processos de notificação ou registro de dispositivos médicos.
+§ 1º No caso de dispositivo médico que não possui instruções de uso (como documento específico), deve-se carregar o modelo de rotulagem no campo das instruções de uso, contemplando também as informações previstas no
+§ 2º O carregamento de instruções de uso deverá ocorrer por meio dos assuntos de peticionamento aplicáveis, identificados como ""Disponibilização de Instruções de Uso no Portal da Anvisa"".
+§ 3º O carregamento de instruções de uso é de responsabilidade do detentor da notificação ou do registro e deverá ser controlado por este para eventuais auditorias.
+§ 4º O carregamento de instruções de uso é obrigatório e deve ser executado pela empresa responsável pela notificação ou pelo registro do produto, a qual atesta que seu conteúdo guarda concordância com a legislação vigente e consistência com o produto regularizado.
+§ 5º Para os novos produtos notificados ou registrados e para as alterações daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 30 (trinta) dias após a publicação em Diário Oficial da União.
+§ 6º Para as alterações não reportáveis daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 180 (cento e oitenta) dias após a implementação da alteração que implique mudança nas instruções de uso.","regulation_id: RDC 751/2022
+article: Art. 35
+chapter: Capítulo VI.
+section: 
+citation_label: RDC 751/2022, Art. 35
+
+Capítulo VI.
+Art. 35. As instruções de uso carregadas ou a ausência delas nos termos desta Resolução poderão ser objeto de avaliação documental ou fiscal a qualquer tempo por parte da Anvisa e, caso necessário, a Agência poderá:
+I - solicitar, à empresa, informação, esclarecimento adicional ou carregamento das instruções de uso adequadas; e/ou
+II - retirar as instruções de uso ou restaurar uma versão anterior, quando houver justificativa para tais medidas.",,,,,,,
+EXTREF_009_PT,EXTREF_009,pt,unanswerable_specific_document,False,Qual arquivo PDF especifico deve ser baixado para comprovar a aprovacao da AREE?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_945_2024.txt;RDC_945_2024.txt;IN_338_2024.txt;RDC_945_2024.txt;IN_338_2024.txt,"RDC 945/2024, Art. 42;RDC 945/2024, Art. 49;IN 338/2024;RDC 945/2024, Art. 43;IN 338/2024, Art. 8","regulation_id: RDC 945/2024
+article: Art. 42
+chapter: CAPÍTULO V
+section: seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+citation_label: RDC 945/2024, Art. 42
+
+CAPÍTULO V
+seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+Art. 42. Deve ser apresentado comprovante oficial emitido pela AREE sobre a aprovação,nas mesmas versões apresentadas para a Anvisa, do protocolo clínico ou emenda ao protocolo clínico, DPI ou IMPD do DDCM ou da modificação substancial do produto sob investigação.
+§ 1º Na ausência do documento oficial descrito no caput, deve ser apresentada uma declaração assinada pelos responsáveis legal e técnico do patrocinador com a devida justificativa e informações complementares, se aplicável.
+§ 2º Para os casos de não cumprimento dos critérios de admissibilidade para o procedimento otimizado de análise, a Anvisa informará ao solicitante sobre a não aceitação e a motivação para tal.","regulation_id: RDC 945/2024
+article: Art. 49
+chapter: CAPÍTULO V
+section: seção III - Das Autoridades Regulatórias Estrangeiras Equivalentes (AREE)
+citation_label: RDC 945/2024, Art. 49
+
+CAPÍTULO V
+seção III - Das Autoridades Regulatórias Estrangeiras Equivalentes (AREE)
+Art.49. Para fins de admissibilidade do procedimento otimizado de análise das petições primárias e secundárias, os documentos relacionados devem ter sido aprovados por pelo menos uma das AREEs reconhecidas pela Anvisa:
+§ 1° Para cumprimento do descrito no caput, a Anvisa editará ato normativo complementar para definir as autoridades reconhecidas (AREE).
+§ 2° O processo de fabricação do IFA e do produto sob investigação/medicamento experimental aprovado pela AREE deve cumprir com as diretrizes e princípios descritos nos guias vigentes do ICH, no que for aplicável, de acordo com a fase de desenvolvimento clínico.",,,,,,,
+EXTREF_009_EN,EXTREF_009,en,unanswerable_specific_document,False,Which specific PDF file must be downloaded to prove AREE approval?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;IN_338_2024.txt;RDC_945_2024.txt;IN_338_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 42;IN 338/2024, Art. 5;RDC 945/2024, Art. 49;IN 338/2024, Art. 8;RDC 945/2024, Art. 43","regulation_id: RDC 945/2024
+article: Art. 42
+chapter: CAPÍTULO V
+section: seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+citation_label: RDC 945/2024, Art. 42
+
+CAPÍTULO V
+seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+Art. 42. Deve ser apresentado comprovante oficial emitido pela AREE sobre a aprovação,nas mesmas versões apresentadas para a Anvisa, do protocolo clínico ou emenda ao protocolo clínico, DPI ou IMPD do DDCM ou da modificação substancial do produto sob investigação.
+§ 1º Na ausência do documento oficial descrito no caput, deve ser apresentada uma declaração assinada pelos responsáveis legal e técnico do patrocinador com a devida justificativa e informações complementares, se aplicável.
+§ 2º Para os casos de não cumprimento dos critérios de admissibilidade para o procedimento otimizado de análise, a Anvisa informará ao solicitante sobre a não aceitação e a motivação para tal.","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).",,,,,,,
+EXTREF_010_PT,EXTREF_010,pt,false_premise_answerable,True,A RDC 945/2024 diz que o patrocinador nao precisa informar SUSARs aos investigadores?,Nao. A RDC 945/2024 estabelece que o patrocinador deve informar aos investigadores envolvidos no ensaio clinico sobre SUSARs e adotar procedimentos para atualizar a brochura do investigador.,RDC 945/2024 Art. 56,O patrocinador deve informar aos investigadores envolvidos no ensaio clinico sobre SUSARs,"Não. De acordo com a RDC 945/2024, o patrocinador deve informar aos investigadores envolvidos no ensaio clínico sobre as SUSARs [RDC 945/2024, Art. 56].",RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 56;RDC 945/2024, Art. 64;RDC 945/2024, Art. 70;RDC 945/2024, Art. 67;RDC 945/2024, Art. 69","regulation_id: RDC 945/2024
+article: Art. 56
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: Seção I - Do Monitoramento de Segurança
+citation_label: RDC 945/2024, Art. 56
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+Seção I - Do Monitoramento de Segurança
+Art. 56. O patrocinador deve informar aos investigadores envolvidos no ensaio clínico sobre SUSARs (Suspected Unexpected Serious Adverse Reaction) e adotar os procedimentos para atualização da brochura do investigador, além de reavaliar os riscos e benefícios para os participantes.","regulation_id: RDC 945/2024
+article: Art. 64
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 64
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 64. O patrocinador deve notificar, por meio do sistema eletrônico de notificação disponibilizado pela Anvisa, todas as Suspeitas de Reações Adversas Graves e Inesperadas (SUSAR).
+Parágrafo único. Referente à avaliação de causalidade, caso a interpretação do investigador seja diferente do patrocinador, ambas devem ser submetidas com as respectivas justificativas.",,,,,,,
+EXTREF_010_EN,EXTREF_010,en,false_premise_answerable,True,Does RDC 945/2024 say the sponsor does not need to inform investigators about SUSARs?,No. RDC 945/2024 states that the sponsor must inform investigators involved in the clinical trial about SUSARs and adopt procedures to update the Investigator Brochure.,RDC 945/2024 Art. 56,O patrocinador deve informar aos investigadores envolvidos no ensaio clinico sobre SUSARs,"No, the sponsor must inform the investigators involved in the clinical trial about SUSARs [RDC 945/2024, Art. 56].",RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 56;RDC 945/2024, Art. 70;RDC 945/2024, Art. 64;RDC 945/2024, Art. 69;RDC 945/2024, Art. 67","regulation_id: RDC 945/2024
+article: Art. 56
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: Seção I - Do Monitoramento de Segurança
+citation_label: RDC 945/2024, Art. 56
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+Seção I - Do Monitoramento de Segurança
+Art. 56. O patrocinador deve informar aos investigadores envolvidos no ensaio clínico sobre SUSARs (Suspected Unexpected Serious Adverse Reaction) e adotar os procedimentos para atualização da brochura do investigador, além de reavaliar os riscos e benefícios para os participantes.","regulation_id: RDC 945/2024
+article: Art. 70
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção II - Dos Prazos para Notificação das SUSARs
+citation_label: RDC 945/2024, Art. 70
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção II - Dos Prazos para Notificação das SUSARs
+Art. 70. O investigador deve informar ao patrocinador sobre os eventos adversos graves no prazo de até 24 (vinte e quatro) horas a contar da data de conhecimento do evento.",,,,,,,
+EXTREF_011_PT,EXTREF_011,pt,false_premise_answerable,True,A RDC 406/2020 diz que eventos adversos graves no Brasil podem ser enviados somente no RPBR anual?,Nao. Eventos adversos graves ocorridos em territorio nacional devem ser notificados pelo sistema eletronico da Anvisa no prazo maximo de 15 dias corridos.,RDC 406/2020 Art. 30,todos os Eventos Adversos Graves... ocorridos em territorio nacional... prazo maximo de 15 dias corridos,"Não. De acordo com a RDC 406/2020, os Detentores de Registro de Medicamento devem notificar todos os Eventos Adversos Graves (esperados e inesperados) ocorridos em território nacional por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, no prazo máximo de 15 dias corridos contados da data de recebimento da informação [RDC 406/2020, Art. 30]. O envio dessas notificações não é restrito ao Relatório Periódico de Avaliação Benefício-Risco (RPBR), embora este relatório deva incluir todas as notificações de eventos adversos recebidas, inclusive as não graves [RDC 406/2020, Art. 38].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 30;RDC 406/2020, Art. 38;RDC 406/2020, Art. 49;RDC 406/2020, Art. 29;RDC 406/2020, Art. 2","regulation_id: RDC 406/2020
+article: Art. 30
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 30
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 30. Os Detentores de Registro de Medicamento devem notificar por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, todos os Eventos Adversos Graves (esperados e inesperados), relatados de forma espontânea ou solicitada, ocorridos em território nacional, no prazo máximo de 15 (quinze) dias corridos, contados da data de recebimento da informação relacionada à ocorrência.
+§ 1º Os casos de Inefetividade Terapêutica que representem risco à vida, segundo avaliação do próprio Detentor de Registro de Medicamento, bem como todos aqueles relacionados a vacinas e contraceptivos, devem ser notificados no prazo estabelecido no caput deste artigo.
+§ 2º Os dados complementares referentes à evolução dos casos de que trata este artigo devem ser notificados por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, na forma definida no caput deste artigo.
+§ 3º Devem-se buscar informações adicionais sobre as notificações que necessitam de seguimento, com priorização para graves e inesperadas, seguidas das graves e esperadas e, por fim, das não graves e inesperadas.
+§ 4º O não cumprimento dos prazos referentes às Notificações de que trata este artigo não desobriga seu posterior envio à autoridade sanitária competente.
+§ 5º O Detentor de Registro de Medicamento deve designar um gestor do sistema eletrônico de Notificação disponibilizado pela Anvisa, responsável pelo gerenciamento das senhas de acesso.","regulation_id: RDC 406/2020
+article: Art. 38
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção II - Relatórios Periódicos de Avaliação Benefício-Risco
+citation_label: RDC 406/2020, Art. 38
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção II - Relatórios Periódicos de Avaliação Benefício-Risco
+Art. 38. Os Detentores de Registro de Medicamento devem incluir todas as Notificações de Eventos Adversos recebidas no Relatório Periódico de Avaliação Benefício-Risco, inclusive as não graves, ainda que o evento tenha ocorrido em outro país.
+Parágrafo único. O Relatório Periódico de Avaliação Benefício-Risco também deve contemplar uma avaliação sobre os casos de Inefetividade Terapêutica ocorridos no período, tanto aqueles abarcados pelo § 1º do art. 30, quanto os demais casos.",,,,,,,
+EXTREF_011_EN,EXTREF_011,en,false_premise_answerable,True,Does RDC 406/2020 say serious adverse events in Brazil may be sent only in the annual PBRER/RPBR?,No. Serious adverse events occurring in Brazil must be notified through Anvisa electronic system within a maximum of 15 calendar days.,RDC 406/2020 Art. 30,todos os Eventos Adversos Graves... ocorridos em territorio nacional... prazo maximo de 15 dias corridos,"No. According to RDC 406/2020, Marketing Authorization Holders must notify all serious adverse events (expected and unexpected) that occur in the national territory through the electronic notification system made available by Anvisa within a maximum period of 15 calendar days from the date of receipt of the information [RDC 406/2020, Art. 30]. While the Periodic Benefit-Risk Evaluation Report (RPBR) must include all adverse event notifications received, including non-serious ones and those occurring in other countries, this does not replace the mandatory 15-day notification requirement for serious events occurring in Brazil [RDC 406/2020, Art. 30].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 38;RDC 406/2020, Art. 30;RDC 406/2020, Art. 49;RDC 406/2020, Art. 29;RDC 406/2020, Art. 2","regulation_id: RDC 406/2020
+article: Art. 38
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção II - Relatórios Periódicos de Avaliação Benefício-Risco
+citation_label: RDC 406/2020, Art. 38
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção II - Relatórios Periódicos de Avaliação Benefício-Risco
+Art. 38. Os Detentores de Registro de Medicamento devem incluir todas as Notificações de Eventos Adversos recebidas no Relatório Periódico de Avaliação Benefício-Risco, inclusive as não graves, ainda que o evento tenha ocorrido em outro país.
+Parágrafo único. O Relatório Periódico de Avaliação Benefício-Risco também deve contemplar uma avaliação sobre os casos de Inefetividade Terapêutica ocorridos no período, tanto aqueles abarcados pelo § 1º do art. 30, quanto os demais casos.","regulation_id: RDC 406/2020
+article: Art. 30
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 30
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 30. Os Detentores de Registro de Medicamento devem notificar por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, todos os Eventos Adversos Graves (esperados e inesperados), relatados de forma espontânea ou solicitada, ocorridos em território nacional, no prazo máximo de 15 (quinze) dias corridos, contados da data de recebimento da informação relacionada à ocorrência.
+§ 1º Os casos de Inefetividade Terapêutica que representem risco à vida, segundo avaliação do próprio Detentor de Registro de Medicamento, bem como todos aqueles relacionados a vacinas e contraceptivos, devem ser notificados no prazo estabelecido no caput deste artigo.
+§ 2º Os dados complementares referentes à evolução dos casos de que trata este artigo devem ser notificados por meio do sistema eletrônico de Notificação disponibilizado pela Anvisa, na forma definida no caput deste artigo.
+§ 3º Devem-se buscar informações adicionais sobre as notificações que necessitam de seguimento, com priorização para graves e inesperadas, seguidas das graves e esperadas e, por fim, das não graves e inesperadas.
+§ 4º O não cumprimento dos prazos referentes às Notificações de que trata este artigo não desobriga seu posterior envio à autoridade sanitária competente.
+§ 5º O Detentor de Registro de Medicamento deve designar um gestor do sistema eletrônico de Notificação disponibilizado pela Anvisa, responsável pelo gerenciamento das senhas de acesso.",,,,,,,
+EXTREF_012_PT,EXTREF_012,pt,false_premise_answerable,True,A RDC 55/2010 dispensa todos os documentos estrangeiros de traducao juramentada?,Nao. Documentos oficiais em lingua estrangeira apresentados para registro devem ser acompanhados de traducao juramentada na forma da lei.,RDC 55/2010 Art. 13,documentos oficiais em lingua estrangeira... devem ser acompanhados de traducao juramentada,"Não. De acordo com a RDC 55/2010, os documentos oficiais em língua estrangeira apresentados para fins de registro devem ser acompanhados de tradução juramentada na forma da lei [RDC 55/2010, Art. 13]. Além disso, todos os documentos encaminhados à Anvisa, bem como informações em rótulos, bulas, cartuchos e materiais impressos, devem estar escritos em língua portuguesa [RDC 55/2010, Art. 12].",RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 13;RDC 55/2010, Art. 30;RDC 55/2010, Art. 12;RDC 55/2010, Art. 31;RDC 55/2010, Art. 18","regulation_id: RDC 55/2010
+article: Art. 13
+chapter: CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+section: 
+citation_label: RDC 55/2010, Art. 13
+
+CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+Art. 13. Os documentos oficiais em língua estrangeira, apresentados
+para fins de registro, devem ser acompanhados de tradução
+juramentada na forma da lei.","regulation_id: RDC 55/2010
+article: Art. 30
+chapter: CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+section: Seção I - Documentação para o Registro de Produtos Biológicos Novos
+citation_label: RDC 55/2010, Art. 30
+
+CAPÍTULO III - DO REGISTRO DE PRODUTOS BIOLÓGICOS NOVOS E
+Seção I - Documentação para o Registro de Produtos Biológicos Novos
+do produto biológico a granel, do produto biológico em sua
+embalagem primária, do produto biológico terminado, do diluente e
+do adjuvante;
+IX - cópia do CBPF, emitido pela autoridade sanitária competente
+do país onde se localiza o fabricante do princípio ativo, do
+produto biológico a granel, do produto biológico em sua embalagem
+primária, do produto biológico terminado, do diluente e do adjuvante;
+X - histórico da situação de registro do produto biológico em
+outros países, quando for o caso;
+XI - cópia do comprovante de registro no país de origem do
+produto biológico, emitido pela respectiva Autoridade Sanitária competente;
+XII - cópia do modelo de bula aprovada pela autoridade
+sanitária competente do país de origem, acompanhada de tradução
+juramentada;
+XIII - modelos de bula e embalagens primária e secundária,
+de acordo com a legislação vigente;
+XIV - dados de farmacovigilância atualizados, de acordo
+com a legislação sanitária vigente, obtidos de estudos clínicos e da
+comercialização do produto, quando aplicável;
+XV - código de barras (GTIN), para toda(s) a(s) apresentação(ões) ou mecanismos de identificação e segurança que possibilitem
+o rastreamento do produto de acordo com a legislação sanitária
+vigente;
+XVI - cópia do compêndio nacional,",,,,,,,
+EXTREF_012_EN,EXTREF_012,en,false_premise_answerable,True,Does RDC 55/2010 exempt all foreign-language official documents from sworn translation?,No. Official foreign-language documents submitted for registration must be accompanied by sworn translation as required by law.,RDC 55/2010 Art. 13,documentos oficiais em lingua estrangeira... devem ser acompanhados de traducao juramentada,"No. According to RDC 55/2010, official documents in a foreign language submitted for registration purposes must be accompanied by a sworn translation as required by law [RDC 55/2010, Art. 13].",RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt;RDC_55_2010_Registro_de_Produtos_Biológicos.txt,"RDC 55/2010, Art. 13;RDC 55/2010, Art. 12;RDC 55/2010, Art. 14;RDC 55/2010, Art. 11;RDC 55/2010, Art. 30","regulation_id: RDC 55/2010
+article: Art. 13
+chapter: CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+section: 
+citation_label: RDC 55/2010, Art. 13
+
+CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+Art. 13. Os documentos oficiais em língua estrangeira, apresentados
+para fins de registro, devem ser acompanhados de tradução
+juramentada na forma da lei.","regulation_id: RDC 55/2010
+article: Art. 12
+chapter: CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+section: 
+citation_label: RDC 55/2010, Art. 12
+
+CAPÍTULO II - DAS DISPOSIÇÕES GERAIS
+Art. 12. Todos os documentos encaminhados à Anvisa, assim
+como todas as informações contidas em rótulos, bulas, cartuchos e
+todo o material impresso, devem estar escritos em língua portuguesa,
+atendendo à legislação vigente.",,,,,,,
+EXTREF_013_PT,EXTREF_013,pt,answerable_boundary,True,O que a RDC 406/2020 exige sobre a disponibilidade do RFV?,"O RFV deve estar disponivel em tempo integral, ter graduacao na area de saude, possuir experiencia e conhecimentos comprovados em Farmacovigilancia e atuar em territorio nacional.",RDC 406/2020 Art. 16,"RFV deve estar disponivel em tempo integral, possuir graduacao na area de saude... territorio nacional","De acordo com a RDC 406/2020, o Responsável pela Farmacovigilância (RFV) deve estar disponível em tempo integral [RDC 406/2020, Art. 16] e estar disponível sempre que for acionado [RDC 406/2020, Art. 6]. Além disso, o RFV deve desempenhar suas atividades em território nacional [RDC 406/2020, Art. 16] e residir em território brasileiro [RDC 406/2020, Art. 6].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 16;RDC 406/2020, Art. 6;RDC 406/2020, Art. 7;RDC 406/2020, Art. 5;RDC 406/2020, Art. 10","regulation_id: RDC 406/2020
+article: Art. 16
+chapter: CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: seção II - Do pessoal
+citation_label: RDC 406/2020, Art. 16
+
+CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+seção II - Do pessoal
+Art. 16. O RFV deve estar disponível em tempo integral, possuir graduação na área de saúde, ter experiência e conhecimentos comprovados em Farmacovigilância, e desempenhar suas atividades em território nacional.","regulation_id: RDC 406/2020
+article: Art. 6
+chapter: CAPÍTULO II - DAS RESPONSABILIDADES DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: 
+citation_label: RDC 406/2020, Art. 6
+
+CAPÍTULO II - DAS RESPONSABILIDADES DO DETENTOR DE REGISTRO DE MEDICAMENTO
+Art. 6º O RFV deve:
+I - responder pelo Sistema de Farmacovigilância do Detentor de Registro de Medicamento e pelas questões relativas à Farmacovigilância;
+II - conhecer os perfis de segurança dos produtos sob responsabilidade do Detentor de Registro de Medicamento; e
+III - residir em território brasileiro e estar disponível sempre que for acionado.",,,,,,,
+EXTREF_013_EN,EXTREF_013,en,answerable_boundary,True,What does RDC 406/2020 require regarding RFV availability?,"The RFV must be available full time, have a health-area degree, have proven pharmacovigilance experience and knowledge, and perform activities in Brazilian territory.",RDC 406/2020 Art. 16,"RFV deve estar disponivel em tempo integral, possuir graduacao na area de saude... territorio nacional","According to RDC 406/2020, the Pharmacovigilance Responsible (RFV) must be available full-time [RDC 406/2020, Art. 16]. Additionally, the RFV must reside in Brazilian territory and be available whenever they are called upon [RDC 406/2020, Art. 6].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 16;RDC 406/2020, Art. 7;RDC 406/2020, Art. 6;RDC 406/2020, Art. 5;RDC 406/2020, Art. 17","regulation_id: RDC 406/2020
+article: Art. 16
+chapter: CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: seção II - Do pessoal
+citation_label: RDC 406/2020, Art. 16
+
+CAPÍTULO III - DO SISTEMA DE FARMACOVIGILÂNCIA DO DETENTOR DE REGISTRO DE MEDICAMENTO
+seção II - Do pessoal
+Art. 16. O RFV deve estar disponível em tempo integral, possuir graduação na área de saúde, ter experiência e conhecimentos comprovados em Farmacovigilância, e desempenhar suas atividades em território nacional.","regulation_id: RDC 406/2020
+article: Art. 7
+chapter: CAPÍTULO II - DAS RESPONSABILIDADES DO DETENTOR DE REGISTRO DE MEDICAMENTO
+section: 
+citation_label: RDC 406/2020, Art. 7
+
+CAPÍTULO II - DAS RESPONSABILIDADES DO DETENTOR DE REGISTRO DE MEDICAMENTO
+Art. 7º O RFV deve ser dotado de autoridade e autonomia suficientes para:
+I - implementar alterações no Sistema de Farmacovigilância, com vistas a promover, manter e melhorar o cumprimento dos requisitos regulatórios;
+II - promover inclusões e sugestões nos Planos de Gerenciamento de Risco e Relatórios Periódicos de Avaliação Benefício-Risco; e
+III - responder prontamente perante a autoridade sanitária quanto à segurança de produtos sob responsabilidade do Detentor de Registro de Medicamento.",,,,,,,
+EXTREF_014_PT,EXTREF_014,pt,answerable_boundary,True,"Segundo a IN 338/2024, quais AREEs estao listadas para reliance?","As AREEs listadas sao EMA e seus paises membros, Health Canada, Swissmedic, MHRA do Reino Unido, FDA dos Estados Unidos e PMDA do Japao.",IN 338/2024 Art. 5,"EMA
+
+Health Canada
+
+Swissmedic
+
+MHRA
+
+FDA
+
+PMDA","Segundo a IN 338/2024, as Autoridades Reguladoras Estrangeiras Equivalentes (AREE) listadas para a aplicação do procedimento de *reliance* são [IN 338/2024, Art. 5]:
+
+1. Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2. Agência Canadense de Saúde - Health Canada (HC);
+3. Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4. Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5. Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6. Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).",IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt,"IN 338/2024;IN 338/2024, Art. 5;IN 338/2024, Art. 3;IN 338/2024, Art. 6;IN 338/2024, Art. 10","regulation_id: IN 338/2024
+document_title: Procedimento otimizado de analise de ensaios clinicos
+article: Preamble
+chapter: 
+section: 
+citation_label: IN 338/2024
+
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+INSTRUÇÃO NORMATIVA - IN Nº 338, DE 29 DE NOVEMBRO DE 2024
+Estabelece, nos termos da Resolução da Diretoria Colegiada ANVISA nº 945, de 29 de novembro de 2024 , a lista de Autoridades Reguladoras Estrangeiras Equivalentes (AREE) e detalha os critérios para a adoção do procedimento otimizado de análise por reliance e por avaliação de risco e complexidade de petições de DDCM, DEEC, modificações substanciais ao produto sob investigação e emendas substanciais ao protocolo clínico
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso da atribuição que lhe confere o art. 15, III e IV aliado ao art. 7º, III e IV, da Lei n.º 9.782, de 26 de janeiro de 1999 , e ao art. 187, VII, §§ 1º e 3º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021 , em reunião realizada em 27 de novembro de 2024, resolve:","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).",,,,,,,
+EXTREF_014_EN,EXTREF_014,en,answerable_boundary,True,"According to IN 338/2024, which AREEs are listed for reliance?","The listed AREEs are EMA and its member countries, Health Canada, Swissmedic, the UK MHRA, the US FDA, and Japan PMDA.",IN 338/2024 Art. 5,"EMA
+
+Health Canada
+
+Swissmedic
+
+MHRA
+
+FDA
+
+PMDA","According to IN 338/2024, the Equivalent Foreign Regulatory Authorities (AREEs) listed for the application of the optimized analysis procedure based on regulatory reliance practices are:
+
+1. European Medicines Agency (EMA) and its member countries;
+2. Health Canada (HC);
+3. Swissmedic;
+4. Medicines and Healthcare Products Regulatory Agency (MHRA) - United Kingdom;
+5. US Food and Drug Administration (FDA);
+6. Pharmaceuticals and Medical Devices Agency (PMDA) - Japan.
+
+[IN 338/2024, Art. 5]",IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt,"IN 338/2024;IN 338/2024, Art. 5;IN 338/2024, Art. 3;IN 338/2024, Art. 6;IN 338/2024, Art. 10","regulation_id: IN 338/2024
+document_title: Procedimento otimizado de analise de ensaios clinicos
+article: Preamble
+chapter: 
+section: 
+citation_label: IN 338/2024
+
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+INSTRUÇÃO NORMATIVA - IN Nº 338, DE 29 DE NOVEMBRO DE 2024
+Estabelece, nos termos da Resolução da Diretoria Colegiada ANVISA nº 945, de 29 de novembro de 2024 , a lista de Autoridades Reguladoras Estrangeiras Equivalentes (AREE) e detalha os critérios para a adoção do procedimento otimizado de análise por reliance e por avaliação de risco e complexidade de petições de DDCM, DEEC, modificações substanciais ao produto sob investigação e emendas substanciais ao protocolo clínico
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso da atribuição que lhe confere o art. 15, III e IV aliado ao art. 7º, III e IV, da Lei n.º 9.782, de 26 de janeiro de 1999 , e ao art. 187, VII, §§ 1º e 3º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021 , em reunião realizada em 27 de novembro de 2024, resolve:","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).",,,,,,,
+EXTREF_015_PT,EXTREF_015,pt,answerable_boundary,True,O que deve ocorrer com alteracoes de aprovacao requerida antes de produzirem efeitos segundo a RDC 751/2022?,"Alteracoes de aprovacao requerida so produzem efeitos apos a publicacao da decisao final no Diario Oficial da Uniao e, quando aplicavel, apos os dados atualizados serem publicizados no portal da Anvisa.",RDC 751/2022 Art. 21,"somente produzira efeitos apos publicada a decisao final no DOU e, quando aplicavel, dados atualizados publicizados no portal","Segundo a RDC 751/2022, a alteração de aprovação requerida somente produzirá efeitos após a publicação da decisão final no Diário Oficial da União e, quando aplicável, a publicização dos dados atualizados no portal eletrônico da Anvisa [RDC 751/2022, Art. 21]. Além disso, as alterações que requerem aprovação prévia pela Anvisa somente poderão ser divulgadas ao mercado após a publicação da referida alteração no Diário Oficial da União e no portal eletrônico da Anvisa [RDC 751/2022, Art. 31].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 21;RDC 751/2022, Art. 16;RDC 751/2022, Art. 19;RDC 751/2022, Art. 61;RDC 751/2022, Art. 31","regulation_id: RDC 751/2022
+article: Art. 21
+chapter: Capítulo VII desta Resolução;
+section: Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 21
+
+Capítulo VII desta Resolução;
+Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+Art. 21. A alteração de aprovação requerida somente produzirá efeitos após publicada a decisão final no Diário Oficial da União e, quando aplicável, os dados atualizados serão publicizados no portal eletrônico da Anvisa.","regulation_id: RDC 751/2022
+article: Art. 16
+chapter: Capítulo VII desta Resolução;
+section: Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 16
+
+Capítulo VII desta Resolução;
+Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+Art. 16. As alterações de informações apresentadas no processo de notificação ou registro de dispositivos médicos são classificadas em:
+I - alteração de aprovação requerida;
+II - alteração de implementação imediata; e
+III - alteração não reportável.
+§ 1º O peticionamento das alterações constantes dos incisos I e II deste artigo deverá observar o disposto na Instrução Normativa - IN nº 74, de 16 de setembro de 2020 , publicada no DOU nº 180, de 18 de setembro de 2020, Seção 1, pag. 111, que detalha os assuntos de peticionamento aplicáveis. (Redação dada pela Resolução 777/2023 ) Redações Anteriores
+§ 2º São classificadas como alterações não reportáveis quaisquer alterações de menor relevância não classificadas como de aprovação requerida ou de implementação imediata, e ainda: alterações de informações que não modificam o projeto do dispositivo médico;
+correções de bug em softwares; alterações não técnicas tais como imagens, formatações, leiautes, símbolos e adequações de texto de documentos sem acréscimo de risco;
+atualizações de informações de Autorização de Funcionamento de Empresa; alterações de contato (v.g. telefones ou endereçamento postal), assistência técnica e website.
+§ 3º As alterações relacionadas no §2º deverão ser controladas pelo sistema de qualidade do detentor da regularização e ser incorporadas em peticionamentos posteriores.
+§ 4º O peticionamento de alteração para dispositivos médicos de classes de risco I e II será executado pelo regime de implementação imediata, exceto quando se tratar de alteração não reportável.",,,,,,,
+EXTREF_015_EN,EXTREF_015,en,answerable_boundary,True,What must happen before approval-required changes take effect under RDC 751/2022?,"Approval-required changes only take effect after the final decision is published in the Official Gazette and, when applicable, updated data are published on Anvisa portal.",RDC 751/2022 Art. 21,"somente produzira efeitos apos publicada a decisao final no DOU e, quando aplicavel, dados atualizados publicizados no portal","Under RDC 751/2022, an approval-required change only takes effect after the final decision is published in the Diário Oficial da União and, when applicable, the updated data is made public on the Anvisa electronic portal [RDC 751/2022, Art. 21]. Additionally, such changes may only be disclosed to the market after the publication of the alteration in the Diário Oficial da União and on the Anvisa electronic portal [RDC 751/2022, Art. 31].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 21;RDC 751/2022, Art. 16;RDC 751/2022, Art. 31;RDC 751/2022, Art. 61;RDC 751/2022, Art. 24","regulation_id: RDC 751/2022
+article: Art. 21
+chapter: Capítulo VII desta Resolução;
+section: Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 21
+
+Capítulo VII desta Resolução;
+Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+Art. 21. A alteração de aprovação requerida somente produzirá efeitos após publicada a decisão final no Diário Oficial da União e, quando aplicável, os dados atualizados serão publicizados no portal eletrônico da Anvisa.","regulation_id: RDC 751/2022
+article: Art. 16
+chapter: Capítulo VII desta Resolução;
+section: Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 16
+
+Capítulo VII desta Resolução;
+Seção IV - Alteração de Notificação ou Registro de Dispositivos Médicos
+Art. 16. As alterações de informações apresentadas no processo de notificação ou registro de dispositivos médicos são classificadas em:
+I - alteração de aprovação requerida;
+II - alteração de implementação imediata; e
+III - alteração não reportável.
+§ 1º O peticionamento das alterações constantes dos incisos I e II deste artigo deverá observar o disposto na Instrução Normativa - IN nº 74, de 16 de setembro de 2020 , publicada no DOU nº 180, de 18 de setembro de 2020, Seção 1, pag. 111, que detalha os assuntos de peticionamento aplicáveis. (Redação dada pela Resolução 777/2023 ) Redações Anteriores
+§ 2º São classificadas como alterações não reportáveis quaisquer alterações de menor relevância não classificadas como de aprovação requerida ou de implementação imediata, e ainda: alterações de informações que não modificam o projeto do dispositivo médico;
+correções de bug em softwares; alterações não técnicas tais como imagens, formatações, leiautes, símbolos e adequações de texto de documentos sem acréscimo de risco;
+atualizações de informações de Autorização de Funcionamento de Empresa; alterações de contato (v.g. telefones ou endereçamento postal), assistência técnica e website.
+§ 3º As alterações relacionadas no §2º deverão ser controladas pelo sistema de qualidade do detentor da regularização e ser incorporadas em peticionamentos posteriores.
+§ 4º O peticionamento de alteração para dispositivos médicos de classes de risco I e II será executado pelo regime de implementação imediata, exceto quando se tratar de alteração não reportável.",,,,,,,

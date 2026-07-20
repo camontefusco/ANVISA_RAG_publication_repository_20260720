@@ -1,0 +1,13 @@
+id,pair_id,language,category,answerable,failure_types,question,gold_citations,retrieved_citations,answer,human_adjudication,human_root_cause,human_notes
+COMPLEX_09_PT,COMPLEX_09,pt,multi_article,True,incomplete_answer,Quais dispositivos médicos estão excluídos da aplicação da RDC 751/2022 e quais estão isentos de notificação ou registro?,"RDC 751/2022, Art. 1;RDC 751/2022, Art. 2","RDC 751/2022, Art. 2;RDC 751/2022, Art. 1;RDC 751/2022, Art. 3;RDC 751/2022, Art. 16;RDC 751/2022, Art. 15","The medical devices excluded from the application of RDC 751/2022 are:
+
+*   Used or reconditioned medical devices [RDC 751/2022, Art. 2];
+*   Custom-made medical devices [RDC 751/2022, Art. 2];
+*   In vitro diagnostic medical devices, including instruments for in vitro diagnosis [RDC 751/2022, Art. 2];
+*   Medicines, cells, tissues, organs, or blood of human origin or derivatives, cosmetics, sanitizing products, or food products covered by other regulations [RDC 751/2022, Art. 2].
+
+The medical devices exempt from notification or registration are:
+
+*   Devices intended for clinical investigations, provided that the legal provisions of the competent health authority are met, with commercialization and use for other purposes being prohibited [RDC 751/2022, Art. 2];
+*   Presentations consisting of two or more notified or registered medical devices in their intact individual packaging, provided the label contains the information of the corresponding devices, including their notification or registration numbers [RDC 751/2022, Art. 2];
+*   Accessories produced by a manufacturer exclusively to integrate their own medical devices that are already notified or registered, provided the technical dossiers contain information about these accessories [RDC 751/2022, Art. 2].",,,

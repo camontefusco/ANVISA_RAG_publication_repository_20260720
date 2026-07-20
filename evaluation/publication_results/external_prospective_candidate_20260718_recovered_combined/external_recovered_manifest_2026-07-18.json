@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-07-18_recovered_combined",
+  "purpose": "Recovered external prospective candidate result after filesystem move left only a 40-row checkpoint from the first run.",
+  "source_checkpoint_40": "/Users/cmontefusco/projects/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/external_prospective_candidate_20260718/generation_checkpoint_2026-07-18_16-24-24.jsonl",
+  "source_recovery_missing10_csv": "/Users/cmontefusco/projects/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/external_prospective_candidate_20260718_recovery_missing10/generation_evaluation_2026-07-18_16-41-04.csv",
+  "combined_csv": "/Users/cmontefusco/projects/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/external_prospective_candidate_20260718_recovered_combined/generation_evaluation_2026-07-18_recovered_combined.csv",
+  "combined_normalized_article_audit_csv": "/Users/cmontefusco/projects/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/external_prospective_candidate_20260718_recovered_combined/generation_evaluation_2026-07-18_recovered_combined_with_normalized_article_audit.csv",
+  "question_count": 50,
+  "pair_count": 25,
+  "caveat": "Rows EXTERNAL_021 through EXTERNAL_025 were regenerated only because final artifacts from the first completed run were lost during a filesystem move; no tuning or benchmark edits were performed.",
+  "combined_csv_sha256": "86c775a212c588fa975c666ed4c2518d60fcb4fdfec7d6ef8df36ab48532bd2d",
+  "combined_normalized_article_audit_csv_sha256": "5cbad89146d33ed6ce987ae9005035ad70f71822f59526f59a94ff36626b2d19"
+}

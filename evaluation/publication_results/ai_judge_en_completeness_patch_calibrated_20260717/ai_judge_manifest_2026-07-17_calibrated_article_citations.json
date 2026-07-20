@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-07-17_calibrated_article_citations",
+  "purpose": "Merged full English AI-judge run with calibrated article-level citation rejudge for DIRECT_25_EN",
+  "base_ai_judge_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_en_completeness_patch_merged_20260717/ai_judge_evaluation_2026-07-17_15-07-11.csv",
+  "base_ai_judge_csv_sha256": "e4ca2359e8d858ae52901361b7a507df5b9d36f9ebe8d19de39bbd7f90f1fccd",
+  "rejudge_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_en_direct25_rejudge_20260717/ai_judge_evaluation_2026-07-17_15-36-36.csv",
+  "rejudge_csv_sha256": "a9f236b3f4ab560346518d89fc4243b15e888cbf21f1c77ce408e077a352d7cf",
+  "generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_en_completeness_patch_merged_20260717/generation_evaluation_2026-07-17_merged_completeness_patch.csv",
+  "generation_csv_sha256": "66e28c484e7136c43bca68e6d16a0ebfa8df39755d66e275f6b390e8fc789c40",
+  "patched_ids": [
+    "DIRECT_25_EN"
+  ],
+  "merged_rows": 75,
+  "note": "Article-level citations are considered correct when the cited retrieved article contains the supporting paragraph/subitem."
+}

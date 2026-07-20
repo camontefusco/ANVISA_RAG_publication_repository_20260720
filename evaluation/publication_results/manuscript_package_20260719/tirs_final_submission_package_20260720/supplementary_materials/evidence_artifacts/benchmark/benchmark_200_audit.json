@@ -1,0 +1,43 @@
+{
+  "audited_at": "2026-06-18T14:51:59",
+  "status": "pass",
+  "rows": 200,
+  "pairs": 100,
+  "bucket_counts": {
+    "pt_answerable": 70,
+    "en_answerable": 70,
+    "complex": 20,
+    "unanswerable": 40
+  },
+  "language_counts": {
+    "pt": 100,
+    "en": 100
+  },
+  "source_evidence_counts": {
+    "rdc09_2015.txt": 30,
+    "RDC_55_2010_Registro_de_Produtos_Biológicos.txt": 30,
+    "RDC_751_2022_Regras_de_classificação_de_risco.txt": 30,
+    "RDC_406_2020_Estudos_de_Estabilidade.txt": 30,
+    "IN_338_2024.txt": 22,
+    "RDC_945_2024.txt": 26
+  },
+  "unique_gold_citations": 78,
+  "ambiguous_corpus_citations": [
+    "RDC 751/2022, Art. 5",
+    "RDC 751/2022, Art. 9",
+    "RDC 9/2015, Art. 1",
+    "RDC 9/2015, Art. 2",
+    "RDC 9/2015, Art. 3",
+    "RDC 9/2015, Art. 35",
+    "RDC 9/2015, Art. 36",
+    "RDC 9/2015, Art. 4",
+    "RDC 9/2015, Art. 63",
+    "RDC 9/2015, Art. 8",
+    "RDC 945/2024, Art. 28",
+    "RDC 945/2024, Art. 85"
+  ],
+  "term_rows_repaired_or_flagged": 0,
+  "errors": [],
+  "warnings": [],
+  "human_review_status": "pending"
+}

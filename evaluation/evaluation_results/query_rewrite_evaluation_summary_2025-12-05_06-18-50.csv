@@ -1,0 +1,3 @@
+chunk_size,chunk_overlap,retriever_k,reranker_n,use_hyde,faithfulness,context_precision,context_recall
+256,38,10,5,False,1.0,0.59999999994,0.5833333333333333
+256,38,10,5,True,1.0,0.49999999995,0.6666666666666666

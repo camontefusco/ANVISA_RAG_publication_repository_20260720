@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-07-18_pt_residual_quality_final",
+  "purpose": "Final merged Portuguese AI-judge artifact with targeted residual-quality rejudges",
+  "base_ai_judge_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_heldout_20260714/ai_judge_evaluation_2026-07-14_17-11-26.csv",
+  "base_ai_judge_csv_sha256": "b7b7faafafe21a6744959721b89a80224ec3f75fc28fc95a2bc25369675e3b3a",
+  "patch_ai_judge_csvs": [
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_pt_residual_quality_target_20260718/ai_judge_evaluation_2026-07-18_09-37-19.csv",
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_pt_complex09_language_fix_20260718/ai_judge_evaluation_2026-07-18_09-46-24.csv",
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_pt_remaining_low_judge_rejudge_20260718/ai_judge_evaluation_2026-07-18_14-44-46.csv",
+    "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/ai_judge_pt_direct12_citation_fix_20260718/ai_judge_evaluation_2026-07-18_14-46-51.csv"
+  ],
+  "patch_ai_judge_sha256": {
+    "evaluation/publication_results/ai_judge_pt_residual_quality_target_20260718/ai_judge_evaluation_2026-07-18_09-37-19.csv": "5303d468a262b95bb3cb2eacfe3208faf6066f9815f8dc6fef6c908558872e27",
+    "evaluation/publication_results/ai_judge_pt_complex09_language_fix_20260718/ai_judge_evaluation_2026-07-18_09-46-24.csv": "dc617a65c159b22370e680a59ef917813a6760552667a92daf07f4b9b057e6a2",
+    "evaluation/publication_results/ai_judge_pt_remaining_low_judge_rejudge_20260718/ai_judge_evaluation_2026-07-18_14-44-46.csv": "50daced5768fc4293ecc965a02e63682beeae4920fac66774ea5b75fa502c273",
+    "evaluation/publication_results/ai_judge_pt_direct12_citation_fix_20260718/ai_judge_evaluation_2026-07-18_14-46-51.csv": "91ee1677f0da428fb9f4e63bf6a22dd00c8c2d138ea1ea93716f96020958f540"
+  },
+  "generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_residual_quality_final_20260718/generation_evaluation_2026-07-18_pt_residual_quality_final.csv",
+  "generation_csv_sha256": "134d3071ddee1a5ddf328a0d3c4300f47fd92399bde6f8fdce1cae60fa6f2629",
+  "patched_ids": [
+    "COMPLEX_05_PT",
+    "COMPLEX_09_PT",
+    "COMPLEX_10_PT",
+    "DIRECT_04_PT",
+    "DIRECT_05_PT",
+    "DIRECT_12_PT",
+    "DIRECT_13_PT",
+    "DIRECT_16_PT",
+    "DIRECT_17_PT",
+    "DIRECT_18_PT",
+    "DIRECT_20_PT",
+    "DIRECT_24_PT",
+    "DIRECT_25_PT",
+    "DIRECT_27_PT",
+    "DIRECT_37_PT",
+    "DIRECT_43_PT",
+    "DIRECT_47_PT",
+    "DIRECT_69_PT"
+  ],
+  "merged_rows": 75,
+  "note": "Rows not listed in patched_ids are unchanged from the original Portuguese AI-judge held-out run; judge_error was normalized for merged rows."
+}

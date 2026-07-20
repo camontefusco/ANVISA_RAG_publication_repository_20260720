@@ -1,0 +1,600 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+REFDEV_001_PT,REFDEV_001,pt,unanswerable_current_operational,False,Qual e o modelo atual do formulario eletronico para notificar SUSARs a Anvisa?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 45;RDC 945/2024, Art. 66;RDC 945/2024, Art. 64;RDC 751/2022, Art. 34;RDC 751/2022, Art. 13","regulation_id: RDC 751/2022
+article: Art. 45
+chapter: CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+section: 
+citation_label: RDC 751/2022, Art. 45
+
+CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+Art. 45. Os formulários aplicáveis sobre informações do solicitante e do produto objeto de processo de notificação ou registro devem ser preenchidos eletronicamente no portal eletrônico da Anvisa.
+Parágrafo único. Quando aplicável, os formulários deverão ser apresentados com as assinaturas dos responsáveis legal e técnico.","regulation_id: RDC 945/2024
+article: Art. 66
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 66
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 66. As notificações devem ser enviadas individualmente e conter todas as informações solicitadas nos campos presentes no sistema eletrônico de notificação e conforme disposto no Guia ICH-E2A e suas atualizações.",,,,,,,
+REFDEV_001_EN,REFDEV_001,en,unanswerable_current_operational,False,What is the current electronic form model for notifying SUSARs to Anvisa?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;rdc09_2015.txt,"RDC 751/2022, Art. 45;RDC 945/2024, Art. 64;RDC 945/2024, Art. 66;RDC 751/2022, Art. 13;RDC 9/2015, Art. 63","regulation_id: RDC 751/2022
+article: Art. 45
+chapter: CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+section: 
+citation_label: RDC 751/2022, Art. 45
+
+CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+Art. 45. Os formulários aplicáveis sobre informações do solicitante e do produto objeto de processo de notificação ou registro devem ser preenchidos eletronicamente no portal eletrônico da Anvisa.
+Parágrafo único. Quando aplicável, os formulários deverão ser apresentados com as assinaturas dos responsáveis legal e técnico.","regulation_id: RDC 945/2024
+article: Art. 64
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 64
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 64. O patrocinador deve notificar, por meio do sistema eletrônico de notificação disponibilizado pela Anvisa, todas as Suspeitas de Reações Adversas Graves e Inesperadas (SUSAR).
+Parágrafo único. Referente à avaliação de causalidade, caso a interpretação do investigador seja diferente do patrocinador, ambas devem ser submetidas com as respectivas justificativas.",,,,,,,
+REFDEV_002_PT,REFDEV_002,pt,unanswerable_current_operational,False,Qual e a taxa em reais vigente hoje para uma notificacao de dispositivo medico?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 13;RDC 751/2022, Art. 27;RDC 751/2022, Art. 14;RDC 751/2022, Art. 67;RDC 751/2022, Art. 4","regulation_id: RDC 751/2022
+article: Art. 13
+chapter: CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+section: Seção II - Notificação de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 13
+
+CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+Seção II - Notificação de Dispositivos Médicos
+Art. 13. O solicitante para peticionar a notificação de dispositivo médico deve proceder com o pagamento da taxa correspondente e apresentar à Anvisa, os seguintes documentos:
+I - formulário para notificação de dispositivo médico, devidamente preenchido, disponível no portal eletrônico da Anvisa;
+II - para dispositivos médicos importados: declaração emitida pelo fabricante legal, consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil;
+III - cópia do Certificado de Conformidade emitido no âmbito do Sistema Brasileiro de Avaliação da Conformidade (SBAC), aplicável apenas para os dispositivos médicos com certificação compulsória, relacionados pela Anvisa em regulamentos específicos; e
+IV - comprovação do cumprimento das disposições legais determinadas em regulamentos técnicos, na forma da legislação que regulamenta os dispositivos médicos específicos.
+Parágrafo único. A declaração de que trata o inciso II deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , ou regulamento que venha substitui-la.","regulation_id: RDC 751/2022
+article: Art. 27
+chapter: Capítulo VII desta Resolução;
+section: Seção V - Revalidação de Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 27
+
+Capítulo VII desta Resolução;
+Seção V - Revalidação de Registro de Dispositivos Médicos
+Art. 27. Para peticionar a revalidação do registro de dispositivo médico, o solicitante deve proceder com o pagamento da taxa correspondente e apresentar os seguintes documentos:
+I - para dispositivos médicos importados: declaração emitida pelo fabricante legal consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil.
+II - Certificado de Boas Práticas de Fabricação emitido pela Anvisa válido.
+§ 1º A declaração de que trata o inciso I deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , publicada no DOU nº 62, de 31 de março de 2022, Seção 1, pág. 334, ou regulamento que venha substitui-la.
+§ 2º A solicitação de revalidação deverá ser apresentada no prazo previsto na Resolução da Diretoria Colegiada - RDC nº 250, de 20 de outubro de 2004 .
+§ 3º O protocolo do pedido de Certificação de Boas Práticas de Fabricação será aceito para efeito de peticionamento e análise das petições de revalidação de registro.",,,,,,,
+REFDEV_002_EN,REFDEV_002,en,unanswerable_current_operational,False,What is the fee in Brazilian reais currently in force for a medical device notification?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 13;RDC 751/2022, Art. 27;RDC 751/2022, Art. 14;RDC 751/2022, Art. 67;RDC 751/2022, Art. 10","regulation_id: RDC 751/2022
+article: Art. 13
+chapter: CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+section: Seção II - Notificação de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 13
+
+CAPÍTULO III - SOLICITAÇÃO DE NOTIFICAÇÃO OU REGISTRO E SUA MANUTENÇÃO
+Seção II - Notificação de Dispositivos Médicos
+Art. 13. O solicitante para peticionar a notificação de dispositivo médico deve proceder com o pagamento da taxa correspondente e apresentar à Anvisa, os seguintes documentos:
+I - formulário para notificação de dispositivo médico, devidamente preenchido, disponível no portal eletrônico da Anvisa;
+II - para dispositivos médicos importados: declaração emitida pelo fabricante legal, consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil;
+III - cópia do Certificado de Conformidade emitido no âmbito do Sistema Brasileiro de Avaliação da Conformidade (SBAC), aplicável apenas para os dispositivos médicos com certificação compulsória, relacionados pela Anvisa em regulamentos específicos; e
+IV - comprovação do cumprimento das disposições legais determinadas em regulamentos técnicos, na forma da legislação que regulamenta os dispositivos médicos específicos.
+Parágrafo único. A declaração de que trata o inciso II deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , ou regulamento que venha substitui-la.","regulation_id: RDC 751/2022
+article: Art. 27
+chapter: Capítulo VII desta Resolução;
+section: Seção V - Revalidação de Registro de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 27
+
+Capítulo VII desta Resolução;
+Seção V - Revalidação de Registro de Dispositivos Médicos
+Art. 27. Para peticionar a revalidação do registro de dispositivo médico, o solicitante deve proceder com o pagamento da taxa correspondente e apresentar os seguintes documentos:
+I - para dispositivos médicos importados: declaração emitida pelo fabricante legal consularizada ou apostilada, redigida em português, inglês ou espanhol ou acompanhada de tradução juramentada, há no máximo dois anos quando não existir validade expressa indicada no documento, autorizando a empresa solicitante a representar e comercializar seu(s) produto(s) no Brasil.
+II - Certificado de Boas Práticas de Fabricação emitido pela Anvisa válido.
+§ 1º A declaração de que trata o inciso I deve conter a razão social e endereço completo do fabricante legal e da empresa solicitante, a autorização expressa para a empresa solicitante representar e comercializar os seus produtos no Brasil, e, a afirmação acerca do conhecimento e atendimento aos requisitos de Boas Práticas de Fabricação de Produtos para Saúde estabelecidos na Resolução da Diretoria Colegiada - RDC nº 665, de 30 de março de 2022 , publicada no DOU nº 62, de 31 de março de 2022, Seção 1, pág. 334, ou regulamento que venha substitui-la.
+§ 2º A solicitação de revalidação deverá ser apresentada no prazo previsto na Resolução da Diretoria Colegiada - RDC nº 250, de 20 de outubro de 2004 .
+§ 3º O protocolo do pedido de Certificação de Boas Práticas de Fabricação será aceito para efeito de peticionamento e análise das petições de revalidação de registro.",,,,,,,
+REFDEV_003_PT,REFDEV_003,pt,unanswerable_exact_url,False,Qual e o URL exato do portal eletronico da Anvisa para instrucoes de uso de dispositivos medicos?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 34;RDC 751/2022, Art. 33;RDC 751/2022, Art. 60;RDC 751/2022, Art. 47;RDC 751/2022, Art. 13","regulation_id: RDC 751/2022
+article: Art. 34
+chapter: Capítulo VI.
+section: 
+citation_label: RDC 751/2022, Art. 34
+
+Capítulo VI.
+Art. 34. A disponibilização de instruções de uso será realizada exclusivamente no portal eletrônico da Anvisa, imediatamente após a finalização do protocolo da respectiva petição, independentemente de análise documental por parte da Agência.
+§ 1º A atualização é realizada por meio de nova inserção de instruções de uso.
+§ 2º Havendo novo carregamento de instruções de uso em processo de notificação ou registro serão mantidas públicas somente as recentemente carregadas.
+§ 3º As instruções de uso carregadas ao longo do tempo serão mantidas em banco de dados para controle e auditoria por parte da Anvisa.","regulation_id: RDC 751/2022
+article: Art. 33
+chapter: Capítulo VII desta Resolução;
+section: Seção VIII - Repositório Documental de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 33
+
+Capítulo VII desta Resolução;
+Seção VIII - Repositório Documental de Dispositivos Médicos
+Art. 33. O carregamento de instruções de uso no Repositório Documental de Dispositivos Médicos corresponde à inserção e à atualização destes documentos vinculados aos processos de notificação ou registro de dispositivos médicos.
+§ 1º No caso de dispositivo médico que não possui instruções de uso (como documento específico), deve-se carregar o modelo de rotulagem no campo das instruções de uso, contemplando também as informações previstas no
+§ 2º O carregamento de instruções de uso deverá ocorrer por meio dos assuntos de peticionamento aplicáveis, identificados como ""Disponibilização de Instruções de Uso no Portal da Anvisa"".
+§ 3º O carregamento de instruções de uso é de responsabilidade do detentor da notificação ou do registro e deverá ser controlado por este para eventuais auditorias.
+§ 4º O carregamento de instruções de uso é obrigatório e deve ser executado pela empresa responsável pela notificação ou pelo registro do produto, a qual atesta que seu conteúdo guarda concordância com a legislação vigente e consistência com o produto regularizado.
+§ 5º Para os novos produtos notificados ou registrados e para as alterações daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 30 (trinta) dias após a publicação em Diário Oficial da União.
+§ 6º Para as alterações não reportáveis daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 180 (cento e oitenta) dias após a implementação da alteração que implique mudança nas instruções de uso.",,,,,,,
+REFDEV_003_EN,REFDEV_003,en,unanswerable_exact_url,False,What is the exact URL of Anvisa electronic portal for medical-device instructions for use?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 34;RDC 751/2022, Art. 33;RDC 751/2022, Art. 60;RDC 751/2022, Art. 45;RDC 751/2022, Art. 51","regulation_id: RDC 751/2022
+article: Art. 34
+chapter: Capítulo VI.
+section: 
+citation_label: RDC 751/2022, Art. 34
+
+Capítulo VI.
+Art. 34. A disponibilização de instruções de uso será realizada exclusivamente no portal eletrônico da Anvisa, imediatamente após a finalização do protocolo da respectiva petição, independentemente de análise documental por parte da Agência.
+§ 1º A atualização é realizada por meio de nova inserção de instruções de uso.
+§ 2º Havendo novo carregamento de instruções de uso em processo de notificação ou registro serão mantidas públicas somente as recentemente carregadas.
+§ 3º As instruções de uso carregadas ao longo do tempo serão mantidas em banco de dados para controle e auditoria por parte da Anvisa.","regulation_id: RDC 751/2022
+article: Art. 33
+chapter: Capítulo VII desta Resolução;
+section: Seção VIII - Repositório Documental de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 33
+
+Capítulo VII desta Resolução;
+Seção VIII - Repositório Documental de Dispositivos Médicos
+Art. 33. O carregamento de instruções de uso no Repositório Documental de Dispositivos Médicos corresponde à inserção e à atualização destes documentos vinculados aos processos de notificação ou registro de dispositivos médicos.
+§ 1º No caso de dispositivo médico que não possui instruções de uso (como documento específico), deve-se carregar o modelo de rotulagem no campo das instruções de uso, contemplando também as informações previstas no
+§ 2º O carregamento de instruções de uso deverá ocorrer por meio dos assuntos de peticionamento aplicáveis, identificados como ""Disponibilização de Instruções de Uso no Portal da Anvisa"".
+§ 3º O carregamento de instruções de uso é de responsabilidade do detentor da notificação ou do registro e deverá ser controlado por este para eventuais auditorias.
+§ 4º O carregamento de instruções de uso é obrigatório e deve ser executado pela empresa responsável pela notificação ou pelo registro do produto, a qual atesta que seu conteúdo guarda concordância com a legislação vigente e consistência com o produto regularizado.
+§ 5º Para os novos produtos notificados ou registrados e para as alterações daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 30 (trinta) dias após a publicação em Diário Oficial da União.
+§ 6º Para as alterações não reportáveis daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 180 (cento e oitenta) dias após a implementação da alteração que implique mudança nas instruções de uso.",,,,,,,
+REFDEV_004_PT,REFDEV_004,pt,unanswerable_current_status,False,A FDA aprovou hoje a mesma versao do DDCM apresentada a Anvisa?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,IN_338_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;rdc09_2015.txt,"IN 338/2024, Art. 5;RDC 945/2024, Art. 42;RDC 945/2024, Art. 24;RDC 9/2015, Art. 46;RDC 9/2015, Art. 45","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: RDC 945/2024
+article: Art. 42
+chapter: CAPÍTULO V
+section: seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+citation_label: RDC 945/2024, Art. 42
+
+CAPÍTULO V
+seção II - Dos requisitos para a admissibilidade do procedimento otimizado de análise por Reliance
+Art. 42. Deve ser apresentado comprovante oficial emitido pela AREE sobre a aprovação,nas mesmas versões apresentadas para a Anvisa, do protocolo clínico ou emenda ao protocolo clínico, DPI ou IMPD do DDCM ou da modificação substancial do produto sob investigação.
+§ 1º Na ausência do documento oficial descrito no caput, deve ser apresentada uma declaração assinada pelos responsáveis legal e técnico do patrocinador com a devida justificativa e informações complementares, se aplicável.
+§ 2º Para os casos de não cumprimento dos critérios de admissibilidade para o procedimento otimizado de análise, a Anvisa informará ao solicitante sobre a não aceitação e a motivação para tal.",,,,,,,
+REFDEV_004_EN,REFDEV_004,en,unanswerable_current_status,False,Did the FDA approve today the same DDCM version submitted to Anvisa?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,IN_338_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;RDC_945_2024.txt;rdc09_2015.txt,"IN 338/2024, Art. 5;RDC 945/2024, Art. 24;RDC 9/2015, Art. 37;RDC 945/2024, Art. 42;RDC 9/2015, Art. 3","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: RDC 945/2024
+article: Art. 24
+chapter: CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+section: Seção I - Da submissão do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM)
+citation_label: RDC 945/2024, Art. 24
+
+CAPÍTULO III - DOS PROCEDIMENTOS E REQUISITOS PARA A AUTORIZAÇÃO DE ENSAIO CLÍNICO
+Seção I - Da submissão do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM)
+Art. 24. O patrocinador deve submeter um DDCM à Anvisa somente no caso em que pretenda realizar ensaios clínicos com medicamentos em território nacional.
+§ 1º O DDCM pode ser submetido pelo patrocinador, investigador-patrocinador ou ORPC.
+§ 2º O responsável pelo DDCM perante a Anvisa deve ser o mesmo para todas as submissões de petições subsequentes relacionadas a este.
+§ 3º As submissões por ORPC somente poderão ser feitas quando o patrocinador não possuir matriz ou filial no Brasil.
+§ 4° A submissão do DDCM de um investigador-patrocinador deve ser feita por meio do patrocinador primário; e
+§ 5° Nos casos em que um investigador-patrocinador desejar realizar um ensaio clínico com um medicamento que já possui um DDCM aprovado pela Anvisa, este poderá utilizar as informações já enviadas pelo detentor do DDCM inicial, caso este o autorize, sem a necessidade de ressubmissão de toda a documentação. Quando não for apresentada uma autorização do detentor inicial, o investigador patrocinador deverá submeter à Anvisa toda a informação por meio de literatura atualizada e indexada que dê suporte ao racional de desenvolvimento proposto.",,,,,,,
+REFDEV_005_PT,REFDEV_005,pt,unanswerable_specific_tool,False,Qual senha ou perfil de acesso deve ser usado no sistema eletronico de notificacao da Anvisa?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_945_2024.txt,"RDC 751/2022, Art. 45;RDC 751/2022, Art. 34;RDC 406/2020, Art. 30;RDC 406/2020, Art. 26;RDC 945/2024, Art. 64","regulation_id: RDC 751/2022
+article: Art. 45
+chapter: CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+section: 
+citation_label: RDC 751/2022, Art. 45
+
+CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+Art. 45. Os formulários aplicáveis sobre informações do solicitante e do produto objeto de processo de notificação ou registro devem ser preenchidos eletronicamente no portal eletrônico da Anvisa.
+Parágrafo único. Quando aplicável, os formulários deverão ser apresentados com as assinaturas dos responsáveis legal e técnico.","regulation_id: RDC 751/2022
+article: Art. 34
+chapter: Capítulo VI.
+section: 
+citation_label: RDC 751/2022, Art. 34
+
+Capítulo VI.
+Art. 34. A disponibilização de instruções de uso será realizada exclusivamente no portal eletrônico da Anvisa, imediatamente após a finalização do protocolo da respectiva petição, independentemente de análise documental por parte da Agência.
+§ 1º A atualização é realizada por meio de nova inserção de instruções de uso.
+§ 2º Havendo novo carregamento de instruções de uso em processo de notificação ou registro serão mantidas públicas somente as recentemente carregadas.
+§ 3º As instruções de uso carregadas ao longo do tempo serão mantidas em banco de dados para controle e auditoria por parte da Anvisa.",,,,,,,
+REFDEV_005_EN,REFDEV_005,en,unanswerable_specific_tool,False,Which password or access profile should be used in Anvisa electronic notification system?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 45;RDC 751/2022, Art. 33;RDC 751/2022, Art. 34;RDC 751/2022, Art. 56;RDC 751/2022, Art. 13","regulation_id: RDC 751/2022
+article: Art. 45
+chapter: CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+section: 
+citation_label: RDC 751/2022, Art. 45
+
+CAPÍTULO V - FORMULÁRIOS DE INFORMAÇÕES DO SOLICITANTE E SEUS DISPOSITIVOS MÉDICOS
+Art. 45. Os formulários aplicáveis sobre informações do solicitante e do produto objeto de processo de notificação ou registro devem ser preenchidos eletronicamente no portal eletrônico da Anvisa.
+Parágrafo único. Quando aplicável, os formulários deverão ser apresentados com as assinaturas dos responsáveis legal e técnico.","regulation_id: RDC 751/2022
+article: Art. 33
+chapter: Capítulo VII desta Resolução;
+section: Seção VIII - Repositório Documental de Dispositivos Médicos
+citation_label: RDC 751/2022, Art. 33
+
+Capítulo VII desta Resolução;
+Seção VIII - Repositório Documental de Dispositivos Médicos
+Art. 33. O carregamento de instruções de uso no Repositório Documental de Dispositivos Médicos corresponde à inserção e à atualização destes documentos vinculados aos processos de notificação ou registro de dispositivos médicos.
+§ 1º No caso de dispositivo médico que não possui instruções de uso (como documento específico), deve-se carregar o modelo de rotulagem no campo das instruções de uso, contemplando também as informações previstas no
+§ 2º O carregamento de instruções de uso deverá ocorrer por meio dos assuntos de peticionamento aplicáveis, identificados como ""Disponibilização de Instruções de Uso no Portal da Anvisa"".
+§ 3º O carregamento de instruções de uso é de responsabilidade do detentor da notificação ou do registro e deverá ser controlado por este para eventuais auditorias.
+§ 4º O carregamento de instruções de uso é obrigatório e deve ser executado pela empresa responsável pela notificação ou pelo registro do produto, a qual atesta que seu conteúdo guarda concordância com a legislação vigente e consistência com o produto regularizado.
+§ 5º Para os novos produtos notificados ou registrados e para as alterações daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 30 (trinta) dias após a publicação em Diário Oficial da União.
+§ 6º Para as alterações não reportáveis daqueles produtos previamente notificados ou registrados, o peticionamento e o respectivo carregamento de instruções de uso deverá ser realizado em até 180 (cento e oitenta) dias após a implementação da alteração que implique mudança nas instruções de uso.",,,,,,,
+REFDEV_006_PT,REFDEV_006,pt,unanswerable_private_terms,False,Qual contrato de ORPC do patrocinador define a transferencia de funcoes neste estudo?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,rdc09_2015.txt;rdc09_2015.txt;rdc09_2015.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 9/2015, Art. 20;RDC 9/2015, Art. 19;RDC 9/2015, Art. 21;RDC 945/2024, Art. 14;RDC 945/2024, Art. 13","regulation_id: RDC 9/2015
+article: Art. 20
+chapter: Capítulo II - DAS RESPONSABILIDADES
+section: Seção I - Das Responsabilidades do Patrocinador
+citation_label: RDC 9/2015, Art. 20
+
+Capítulo II - DAS RESPONSABILIDADES
+Seção I - Das Responsabilidades do Patrocinador
+Art. 20. O patrocinador pode transferir suas funções para uma ORPC .
+§1º A transferência de que trata o caput não afasta a responsabilidade definitiva do
+patroci nador pela qualidade e i ntegridade dos dados do ensaio clínico .
+§2° Quaisquer funçõ es relacionadas ao ensaio clínico que sejam transferidas a uma
+ORPC e assumidas por esta devem ser especificadas por escrito em documento assinado
+pelo patrocinador e ORPC.","regulation_id: RDC 9/2015
+article: Art. 19
+chapter: Capítulo II - DAS RESPONSABILIDADES
+section: Seção I - Das Responsabilidades do Patrocinador
+citation_label: RDC 9/2015, Art. 19
+
+Capítulo II - DAS RESPONSABILIDADES
+Seção I - Das Responsabilidades do Patrocinador
+Art. 19 . O patrocinador deve informar imediatamente os envolvidos no ensaio,
+quando este for finalizado prematuramente ou suspenso por qualquer motivo.",,,,,,,
+REFDEV_006_EN,REFDEV_006,en,unanswerable_private_terms,False,Which sponsor CRO/ORPC contract defines transfer of functions in this study?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;rdc09_2015.txt,"RDC 945/2024, Art. 14;RDC 945/2024, Art. 13;RDC 945/2024, Art. 15;RDC 9/2015, Art. 20;RDC 9/2015, Art. 19","regulation_id: RDC 945/2024
+article: Art. 14
+chapter: CAPÍTULO II - DAS RESPONSABILIDADES
+section: Seção II - Do Patrocinador
+citation_label: RDC 945/2024, Art. 14
+
+CAPÍTULO II - DAS RESPONSABILIDADES
+Seção II - Do Patrocinador
+Art. 14. O patrocinador pode transferir suas funções para uma ORPC.
+§ 1º A transferência de que trata o caput não afasta a responsabilidade definitiva do patrocinador pela qualidade e integridade dos dados do ensaio clínico.
+§ 2° Quaisquer funções relacionadas ao ensaio clínico que sejam transferidas a uma ORPC e assumidas por esta devem ser especificadas por escrito em documento assinado pelo patrocinador e ORPC.","regulation_id: RDC 945/2024
+article: Art. 13
+chapter: CAPÍTULO II - DAS RESPONSABILIDADES
+section: Seção II - Do Patrocinador
+citation_label: RDC 945/2024, Art. 13
+
+CAPÍTULO II - DAS RESPONSABILIDADES
+Seção II - Do Patrocinador
+Art. 13. O patrocinador é responsável por adquirir o quantitativo suficiente do medicamento experimental e demais suprimentos a serem utilizados no ensaio clínico e distribuí-los apenas às instituições informadas no Formulário de Apresentação do Ensaio Clínico (FAEC) aprovado e autorizadas pela instância ética.
+Parágrafo único. O patrocinador é responsável pela destinação final dos medicamentos e produtos que não foram utilizados no ensaio clínico.",,,,,,,
+REFDEV_007_PT,REFDEV_007,pt,unanswerable_future_approval,False,A Anvisa aprovara automaticamente um ensaio clinico se a EMA aprovar no proximo mes?,Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados nao fornecem informacao suficiente para responder.,IN_338_2024.txt;rdc09_2015.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt,"IN 338/2024, Art. 5;RDC 9/2015, Art. 54;RDC 945/2024, Art. 52;RDC 945/2024, Art. 87;RDC 9/2015, Art. 80","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: RDC 9/2015
+article: Art. 54
+chapter: Capítulo VI - DAS SUSPENSÕES E CANCELAMENTOS
+section: 
+citation_label: RDC 9/2015, Art. 54
+
+Capítulo VI - DAS SUSPENSÕES E CANCELAMENTOS
+Art. 54 . A Anvisa poderá , a qualquer momento, cancelar ou suspender o DDCM ou
+qualquer ensaio clínico vinculado, se julgar que as condições de aprovação não foram
+atendidas ou se houver relatos de segurança ou eficácia que afetem significativamente os
+participantes do ensaio clín ico ou afetem a validade científica de dados obtidos, informando
+os motivos ao patrocinador.",,,,,,,
+REFDEV_007_EN,REFDEV_007,en,unanswerable_future_approval,False,Will Anvisa automatically approve a clinical trial if EMA approves it next month?,The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,IN_338_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"IN 338/2024, Art. 5;RDC 945/2024, Art. 52;RDC 945/2024, Art. 8;RDC 945/2024, Art. 44;RDC 945/2024, Art. 87","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).","regulation_id: RDC 945/2024
+article: Art. 52
+chapter: CAPÍTULO VI - DOS PRAZOS PARA AUTORIZAÇÃO DE ENSAIO CLÍNICO, MODIFICAÇÕES E EMENDAS SUBSTANCIAIS
+section: 
+citation_label: RDC 945/2024, Art. 52
+
+CAPÍTULO VI - DOS PRAZOS PARA AUTORIZAÇÃO DE ENSAIO CLÍNICO, MODIFICAÇÕES E EMENDAS SUBSTANCIAIS
+Art. 52. Após o regular recebimento das petições primárias de DDCM e do DEEC, a Anvisa as avaliará em até 90 (noventa) dias úteis, a contar da data de emissão do expediente do DEEC.
+§ 1° Caso não haja manifestação da Anvisa no prazo previsto no caput, o DDCM e respectivo DEEC serão liberados por decurso de prazo, por meio de Resolução-RE publicada no Diário Oficial da União (DOU), e o desenvolvimento clínico poderá ser iniciado após as aprovações éticas pertinentes.
+§ 2° O descrito no §1° também se aplica às petições primárias de novos DEECs vinculados posteriormente ao DDCM e às petições secundárias de modificações substanciais ao produto sob investigação e de emendas substanciais ao protocolo clínico.
+§ 3° As modificações substanciais ao produto sob investigação e emendas substanciais ao protocolo clínico oriundas de recomendações ou alertas de segurança emitidos por autoridades sanitárias que visam eliminar riscos imediatos à segurança dos participantes do ensaio clínico deverão ser peticionadas, antes de serem implementadas e poderão ser implementadas, independente da manifestação prévia da Anvisa.",,,,,,,
+REFDEV_008_PT,REFDEV_008,pt,unanswerable_medical_advice,False,"Com base nesses documentos, qual tratamento deve ser prescrito para um participante com SUSAR?",Os documentos recuperados nao fornecem informacao suficiente para responder.,,,Os documentos recuperados não fornecem informação suficiente para responder.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;IN_338_2024.txt,"RDC 945/2024, Art. 85;RDC 945/2024, Art. 67;RDC 945/2024, Art. 6;RDC 945/2024, Art. 74;IN 338/2024, Art. 8","regulation_id: RDC 945/2024
+article: Art. 85
+chapter: CAPÍTULO XI - DO INÍCIO E TÉRMINO, SUSPENSÃO OU CANCELAMENTO DE ENSAIO CLÍNICO OU DDCM
+section: 
+citation_label: RDC 945/2024, Art. 85
+
+CAPÍTULO XI - DO INÍCIO E TÉRMINO, SUSPENSÃO OU CANCELAMENTO DE ENSAIO CLÍNICO OU DDCM
+Art. 85. A qualquer momento o patrocinador poderá suspender ou cancelar um DDCM ou ensaio clínico aprovado, desde que encaminhadas as devidas justificativas, bem como um plano de acompanhamento dos participantes, caso o ensaio clínico tenha sido iniciado.
+§ 1º Uma vez cancelado um DDCM, nenhum ensaio clínico relacionado a ele poderá ser continuado no país.
+§ 2º Caso um DDCM ou ensaio clínico seja cancelado por motivos de segurança, o patrocinador deve descrever as razões para o cancelamento e apresentar as medidas para minimização/mitigação de risco aos participantes do ensaio clínico.
+§ 3º As suspensões e cancelamentos devem ser protocoladas na Anvisa, na forma de petição secundária anexada ao respectivo processo em até 15 (quinze) dias úteis após a decisão de suspender ou cancelar um ensaio clínico ou DDCM.
+§ 4º Nos casos de suspensão temporária do ensaio clínico ou DDCM, como medida imediata de segurança, o patrocinador deve notificar à Anvisa no prazo de 7 (sete) dias corridos a contar da data de suspensão, justificando os motivos.
+§ 5º As razões, a abrangência, a interrupção do tratamento e a suspensão do recrutamento de participantes devem estar explicadas com clareza na notificação de suspensão temporária.
+§ 6º A solicitação de reativação de protocolo de ensaio clínico ou DDCM suspensos deve estar acompanhada das devidas justificativas e o patrocinador deve aguardar a autorização da Anvisa para o reinício do ensaio clínico; e","regulation_id: RDC 945/2024
+article: Art. 67
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 67
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 67. Existindo a possibilidade de um evento ser uma SUSAR, o patrocinador deve quebrar o cegamento para notificação à Anvisa e a quebra deve ser apenas em relação à alocação do participante que foi acometido pela reação adversa grave e inesperada.
+§1º Se após a quebra do cegamento o evento for classificado como uma SUSAR, seguir o disposto no art. 64 e a alocação do participante no braço do ensaio clínico deve ser informada na notificação da SUSAR à Anvisa.
+§2º Sempre que possível, o cegamento deve ser preservado para os responsáveis pela análise e interpretação dos resultados do estudo e pelos responsáveis pela continuidade do ensaio clínico, como gerentes, monitores e investigadores do estudo.",,,,,,,
+REFDEV_008_EN,REFDEV_008,en,unanswerable_medical_advice,False,"Based on these documents, what treatment should be prescribed for a participant with a SUSAR?",The retrieved documents do not provide enough information to answer.,,,The retrieved documents do not provide enough information to answer.,RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;IN_338_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 67;RDC 945/2024, Art. 56;RDC 945/2024, Art. 51;IN 338/2024, Art. 3;RDC 945/2024, Art. 6","regulation_id: RDC 945/2024
+article: Art. 67
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 67
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 67. Existindo a possibilidade de um evento ser uma SUSAR, o patrocinador deve quebrar o cegamento para notificação à Anvisa e a quebra deve ser apenas em relação à alocação do participante que foi acometido pela reação adversa grave e inesperada.
+§1º Se após a quebra do cegamento o evento for classificado como uma SUSAR, seguir o disposto no art. 64 e a alocação do participante no braço do ensaio clínico deve ser informada na notificação da SUSAR à Anvisa.
+§2º Sempre que possível, o cegamento deve ser preservado para os responsáveis pela análise e interpretação dos resultados do estudo e pelos responsáveis pela continuidade do ensaio clínico, como gerentes, monitores e investigadores do estudo.","regulation_id: RDC 945/2024
+article: Art. 56
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: Seção I - Do Monitoramento de Segurança
+citation_label: RDC 945/2024, Art. 56
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+Seção I - Do Monitoramento de Segurança
+Art. 56. O patrocinador deve informar aos investigadores envolvidos no ensaio clínico sobre SUSARs (Suspected Unexpected Serious Adverse Reaction) e adotar os procedimentos para atualização da brochura do investigador, além de reavaliar os riscos e benefícios para os participantes.",,,,,,,
+REFDEV_009_PT,REFDEV_009,pt,false_premise_answerable,True,A RDC 406/2020 diz que uma notificacao e valida sem identificacao do paciente se houver o medicamento suspeito?,Nao. A identificacao do paciente e uma das informacoes minimas para a notificacao ser valida e reportavel; a ausencia de qualquer informacao minima torna o relato inicial incompleto.,RDC 406/2020 Art. 32,"identificacao do paciente
+
+ausencia de qualquer dessas informacoes torna o relato inicial incompleto","No. According to [RDC 406/2020, Art. 32], for a notification to be considered valid and reportable, it must contain, at a minimum, the following data: identification of the notifier; identification of the patient (name or initials; or gender; or age or date of birth); description of the Adverse Event; and the name of the suspected medication. The absence of any of these pieces of information makes the initial report incomplete [RDC 406/2020, Art. 32].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 32;RDC 406/2020, Art. 2;RDC 406/2020, Art. 30;RDC 406/2020, Art. 29;RDC 406/2020, Art. 46","regulation_id: RDC 406/2020
+article: Art. 32
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 32
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 32. Para ser considerada válida e reportável, a notificação deve contemplar a maior quantidade de informações possível, estando presentes, no mínimo, os seguintes dados:
+I - identificação do notificador;
+II - identificação do paciente (nome ou iniciais; ou gênero; ou idade ou data de nascimento);
+III - descrição do Evento Adverso; e
+IV - nome do medicamento suspeito.
+Parágrafo único. A ausência de qualquer dessas informações torna o relato inicial incompleto, gerando para o Detentor de Registro de Medicamento a obrigação de busca ativa dos dados faltantes.","regulation_id: RDC 406/2020
+article: Art. 2
+chapter: CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+section: Seção II - Definições
+citation_label: RDC 406/2020, Art. 2
+
+CAPÍTULO I - DAS DISPOSIÇÕES PRELIMINARES
+Seção II - Definições
+Também pode decorrer da interação do medicamento com alimentos, substâncias químicas ou doenças. Os resultados de exames laboratoriais podem ter sua confiabilidade afetada devido às interações com medicamentos. A interação medicamentosa pode resultar em aumento ou diminuição da efetividade terapêutica ou ainda no aparecimento de novos eventos adversos relacionados;
+XVIII - notificação: ato de informar a ocorrência de Evento Adverso de medicamento para os Detentores de Registro de Medicamento, autoridades sanitárias ou outras organizações;
+XIX - notificação de seguimento: notificação de acompanhamento de Evento Adverso previamente notificado, contendo dados adicionais, clínicos ou de exames complementares, a fim de melhor elucidar a relação de causalidade entre o evento descrito e o medicamento suspeito;
+XX - notificação espontânea: comunicação não solicitada, realizada por um profissional de saúde ou consumidor a uma empresa, autoridade reguladora ou outra organização que descreve uma ou mais reações adversas a um paciente que recebeu um ou mais medicamentos e que não deriva de um estudo ou de qualquer sistema organizado de coleta de dados.",,,,,,,
+REFDEV_009_EN,REFDEV_009,en,false_premise_answerable,True,Does RDC 406/2020 say a notification is valid without patient identification if the suspected medicine is named?,No. Patient identification is one of the minimum data elements for a notification to be valid and reportable; absence of any minimum element makes the initial report incomplete.,RDC 406/2020 Art. 32,"identificacao do paciente
+
+ausencia de qualquer dessas informacoes torna o relato inicial incompleto","No. According to RDC 406/2020, for a notification to be considered valid and reportable, it must contain at a minimum the identification of the patient (name or initials, or gender, or age or date of birth) [RDC 406/2020, Art. 32]. The absence of this information makes the initial report incomplete, requiring the Marketing Authorization Holder to perform an active search for the missing data [RDC 406/2020, Art. 32].",RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt;RDC_406_2020_Estudos_de_Estabilidade.txt,"RDC 406/2020, Art. 32;RDC 406/2020, Art. 29;RDC 406/2020, Art. 2;RDC 406/2020, Art. 33;RDC 406/2020, Art. 46","regulation_id: RDC 406/2020
+article: Art. 32
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 32
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 32. Para ser considerada válida e reportável, a notificação deve contemplar a maior quantidade de informações possível, estando presentes, no mínimo, os seguintes dados:
+I - identificação do notificador;
+II - identificação do paciente (nome ou iniciais; ou gênero; ou idade ou data de nascimento);
+III - descrição do Evento Adverso; e
+IV - nome do medicamento suspeito.
+Parágrafo único. A ausência de qualquer dessas informações torna o relato inicial incompleto, gerando para o Detentor de Registro de Medicamento a obrigação de busca ativa dos dados faltantes.","regulation_id: RDC 406/2020
+article: Art. 29
+chapter: CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+section: Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+citation_label: RDC 406/2020, Art. 29
+
+CAPÍTULO IV - DA OPERAÇÃO DO SISTEMA DE FARMACOVIGILÂNCIA
+Seção I - Registro e submissão de Notificações de Segurança de Casos Individuais
+Art. 29. Devem ser registradas no banco de dados de Farmacovigilância dos Detentores de Registro de Medicamento as informações de segurança de casos individuais, ainda que não confirmadas, relativas a:
+I - suspeita de reações adversas a medicamentos;
+II - inefetividade terapêutica, total ou parcial;
+III - interações medicamentosas;
+IV - superdose de medicamentos;
+V - abuso de medicamentos;
+VI - erros de medicação;
+VII - uso off label do medicamento;
+VIII - exposição a medicamento durante gravidez/lactação;
+IX - eventos adversos por desvio de qualidade; e
+X - outras situações que possam vir a ser objeto da Farmacovigilância.",,,,,,,
+REFDEV_010_PT,REFDEV_010,pt,false_premise_answerable,True,A IN 338/2024 diz que a decisao da Anvisa fica vinculada as condicoes aprovadas pela AREE?,Nao. A decisao e de competencia exclusiva da Anvisa e nao esta vinculada as decisoes nem as condicoes aprovadas pela AREE.,IN 338/2024 Art. 10,"competencia exclusiva da Anvisa
+
+nao esta vinculada as decisoes e condicoes aprovadas pela AREE","Não. De acordo com a IN 338/2024, a decisão sobre as petições submetidas pelo procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance) é de competência exclusiva da Anvisa e não está vinculada às decisões e às condições aprovadas pela AREE [IN 338/2024, Art. 10].",IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;RDC_945_2024.txt,"IN 338/2024, Art. 10;IN 338/2024, Art. 5;IN 338/2024;IN 338/2024, Art. 3;RDC 945/2024, Art. 49","regulation_id: IN 338/2024
+article: Art. 10
+chapter: CAPÍTULO III - DAS DISPOSIÇÕES FINAIS
+section: 
+citation_label: IN 338/2024, Art. 10
+
+CAPÍTULO III - DAS DISPOSIÇÕES FINAIS
+Art. 10 A decisão sobre as petições submetidas pelo procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance) é de competência exclusiva da Anvisa e não está vinculada às decisões e às condições aprovadas pela AREE.","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).",,,,,,,
+REFDEV_010_EN,REFDEV_010,en,false_premise_answerable,True,Does IN 338/2024 say Anvisa decision is bound by the conditions approved by the AREE?,No. The decision is exclusively Anvisa’s competence and is not bound by the AREE decisions or approved conditions.,IN 338/2024 Art. 10,"competencia exclusiva da Anvisa
+
+nao esta vinculada as decisoes e condicoes aprovadas pela AREE","No, the decision regarding petitions submitted through the optimized analysis procedure based on regulatory reliance is the exclusive competence of Anvisa and is not bound by the decisions and conditions approved by the AREE [IN 338/2024, Art. 10].",IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;IN_338_2024.txt;RDC_945_2024.txt,"IN 338/2024, Art. 10;IN 338/2024, Art. 5;IN 338/2024, Art. 3;IN 338/2024;RDC 945/2024, Art. 49","regulation_id: IN 338/2024
+article: Art. 10
+chapter: CAPÍTULO III - DAS DISPOSIÇÕES FINAIS
+section: 
+citation_label: IN 338/2024, Art. 10
+
+CAPÍTULO III - DAS DISPOSIÇÕES FINAIS
+Art. 10 A decisão sobre as petições submetidas pelo procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance) é de competência exclusiva da Anvisa e não está vinculada às decisões e às condições aprovadas pela AREE.","regulation_id: IN 338/2024
+article: Art. 5
+chapter: CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: IN 338/2024, Art. 5
+
+CAPÍTULO II - DA APLICAÇÃO DO PROCEDIMENTO OTIMIZADO DE ANÁLISE
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 5º Para a aplicação do procedimento otimizado de análise com base em práticas de confiança regulatória (Reliance), as versões do Dossiê do Produto sob Investigação (DPI) ou Investigational Medicinal Product Dossier (IMPD), do protocolo clínico ou da emenda substancial ao protocolo clínico apresentadas à Anvisa devem ser as mesmas aprovadas por pelo menos uma das seguintes AREEs:
+1- Agência Europeia de Medicamentos - European Medicines Agency (EMA) e seus países membro;
+2- Agência Canadense de Saúde - Health Canada (HC);
+3- Agência Suíça de Produtos Terapêuticos - Swissmedic;
+4- Agência Reguladora de Medicamentos e Produtos de Saúde - Medicines and Healthcare Products Regulatory Agency (MHRA) - Reino Unido;
+5- Agência Reguladora dos Estados Unidos - US Food and Drug Administration (FDA);
+6- Agência Reguladora do Japão - Pharmaceuticals and Medical Devices Agency (PMDA).
+Parágrafo único. A exclusão ou inclusão de novas AREEs se dará por meio de decisão da Diretoria Colegiada da Anvisa (DICOL).",,,,,,,
+REFDEV_011_PT,REFDEV_011,pt,false_premise_answerable,True,A RDC 945/2024 permite quebrar o cegamento de todos os participantes quando houver possibilidade de SUSAR?,Nao. A quebra do cegamento para notificacao deve ocorrer apenas em relacao a alocacao do participante acometido pela reacao adversa grave e inesperada.,RDC 945/2024 Art. 67,quebra deve ser apenas em relacao a alocacao do participante acometido,"No. According to RDC 945/2024, if there is a possibility that an event is a SUSAR, the sponsor must break the blinding only in relation to the allocation of the participant who was affected by the serious and unexpected adverse reaction [RDC 945/2024, Art. 67]. Furthermore, whenever possible, the blinding must be preserved for those responsible for the analysis and interpretation of the study results and for those responsible for the continuity of the clinical trial, such as managers, monitors, and study investigators [RDC 945/2024, Art. 67].",RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 67;RDC 945/2024, Art. 74;RDC 945/2024, Art. 87;RDC 945/2024, Art. 85;RDC 945/2024, Art. 73","regulation_id: RDC 945/2024
+article: Art. 67
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 67
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 67. Existindo a possibilidade de um evento ser uma SUSAR, o patrocinador deve quebrar o cegamento para notificação à Anvisa e a quebra deve ser apenas em relação à alocação do participante que foi acometido pela reação adversa grave e inesperada.
+§1º Se após a quebra do cegamento o evento for classificado como uma SUSAR, seguir o disposto no art. 64 e a alocação do participante no braço do ensaio clínico deve ser informada na notificação da SUSAR à Anvisa.
+§2º Sempre que possível, o cegamento deve ser preservado para os responsáveis pela análise e interpretação dos resultados do estudo e pelos responsáveis pela continuidade do ensaio clínico, como gerentes, monitores e investigadores do estudo.","regulation_id: RDC 945/2024
+article: Art. 74
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção II - Dos Relatórios Finais de Ensaios Clínicos
+citation_label: RDC 945/2024, Art. 74
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção II - Dos Relatórios Finais de Ensaios Clínicos
+Art. 74. Após a conclusão das atividades de um ensaio clínico em todos os países participantes, por quaisquer razões, o patrocinador deve submeter à Anvisa um relatório final contendo, minimamente, as seguintes informações:
+I - título do ensaio clínico e código do protocolo;
+II - status final de recrutamento e discriminação do número de participantes recrutados por centro no Brasil e no mundo;
+III - número final de centros no Brasil e no mundo; e
+VI- número final de EAGs por participante e por centro no Brasil, incluindo a descrição dos EAGs relacionados ao medicamento experimental ou comparador, RAMs, SUSARs e se houve quebra ou não do caráter cego;
+VIII - motivo para encerramento do estudo e racional para o término prematuro do desenvolvimento no Brasil ou no mundo, quando aplicável.
+§ 1º O relatório final de protocolo de ensaio clínico deve ser submetido à Anvisa na forma de petição secundária anexada ao processo do respectivo protocolo ao qual está vinculado.
+§ 2º O relatório final deve ser protocolizado em até 12 (doze) meses da data de término do ensaio clínico.
+§ 3º No ano em que for protocolizado o relatório final, pode ser dispensado o relatório anual.",,,,,,,
+REFDEV_011_EN,REFDEV_011,en,false_premise_answerable,True,Does RDC 945/2024 allow unblinding all participants when there is a possible SUSAR?,No. Unblinding for notification must be only for the allocation of the participant affected by the serious unexpected adverse reaction.,RDC 945/2024 Art. 67,quebra deve ser apenas em relacao a alocacao do participante acometido,"No. According to RDC 945/2024, Art. 67, when there is a possibility that an event is a SUSAR, the sponsor must unblind the study only in relation to the allocation of the specific participant who was affected by the serious and unexpected adverse reaction [RDC 945/2024, Art. 67]. Furthermore, the regulation specifies that, whenever possible, blinding must be preserved for those responsible for the analysis and interpretation of study results and those responsible for the continuity of the clinical trial, such as managers, monitors, and investigators [RDC 945/2024, Art. 67].",RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt;RDC_945_2024.txt,"RDC 945/2024, Art. 67;RDC 945/2024, Art. 85;RDC 945/2024, Art. 87;RDC 945/2024, Art. 68;RDC 945/2024, Art. 56","regulation_id: RDC 945/2024
+article: Art. 67
+chapter: CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+section: seção I - Da Notificação das SUSARs à Anvisa
+citation_label: RDC 945/2024, Art. 67
+
+CAPÍTULO VII - DO MONITORAMENTO E DA NOTIFICAÇÃO DE INFORMAÇÕES DE SEGURANÇA SOBRE ENSAIO CLÍNICO
+seção I - Da Notificação das SUSARs à Anvisa
+Art. 67. Existindo a possibilidade de um evento ser uma SUSAR, o patrocinador deve quebrar o cegamento para notificação à Anvisa e a quebra deve ser apenas em relação à alocação do participante que foi acometido pela reação adversa grave e inesperada.
+§1º Se após a quebra do cegamento o evento for classificado como uma SUSAR, seguir o disposto no art. 64 e a alocação do participante no braço do ensaio clínico deve ser informada na notificação da SUSAR à Anvisa.
+§2º Sempre que possível, o cegamento deve ser preservado para os responsáveis pela análise e interpretação dos resultados do estudo e pelos responsáveis pela continuidade do ensaio clínico, como gerentes, monitores e investigadores do estudo.","regulation_id: RDC 945/2024
+article: Art. 85
+chapter: CAPÍTULO XI - DO INÍCIO E TÉRMINO, SUSPENSÃO OU CANCELAMENTO DE ENSAIO CLÍNICO OU DDCM
+section: 
+citation_label: RDC 945/2024, Art. 85
+
+CAPÍTULO XI - DO INÍCIO E TÉRMINO, SUSPENSÃO OU CANCELAMENTO DE ENSAIO CLÍNICO OU DDCM
+Art. 85. A qualquer momento o patrocinador poderá suspender ou cancelar um DDCM ou ensaio clínico aprovado, desde que encaminhadas as devidas justificativas, bem como um plano de acompanhamento dos participantes, caso o ensaio clínico tenha sido iniciado.
+§ 1º Uma vez cancelado um DDCM, nenhum ensaio clínico relacionado a ele poderá ser continuado no país.
+§ 2º Caso um DDCM ou ensaio clínico seja cancelado por motivos de segurança, o patrocinador deve descrever as razões para o cancelamento e apresentar as medidas para minimização/mitigação de risco aos participantes do ensaio clínico.
+§ 3º As suspensões e cancelamentos devem ser protocoladas na Anvisa, na forma de petição secundária anexada ao respectivo processo em até 15 (quinze) dias úteis após a decisão de suspender ou cancelar um ensaio clínico ou DDCM.
+§ 4º Nos casos de suspensão temporária do ensaio clínico ou DDCM, como medida imediata de segurança, o patrocinador deve notificar à Anvisa no prazo de 7 (sete) dias corridos a contar da data de suspensão, justificando os motivos.
+§ 5º As razões, a abrangência, a interrupção do tratamento e a suspensão do recrutamento de participantes devem estar explicadas com clareza na notificação de suspensão temporária.
+§ 6º A solicitação de reativação de protocolo de ensaio clínico ou DDCM suspensos deve estar acompanhada das devidas justificativas e o patrocinador deve aguardar a autorização da Anvisa para o reinício do ensaio clínico; e",,,,,,,
+REFDEV_012_PT,REFDEV_012,pt,false_premise_answerable,True,A RDC 751/2022 permite instrucoes exclusivamente nao impressas para equipamentos de uso domestico por leigos?,Nao. A disponibilizacao exclusiva em formato nao impresso e proibida para equipamentos de uso em saude de uso domestico e para operacao por leigos.,RDC 751/2022 Art. 54,"proibida a disponibilizacao exclusiva
+
+uso domestico
+
+operacao por leigos","Não. De acordo com a RDC 751/2022, é proibida a disponibilização exclusiva das instruções de uso em formato não impresso para equipamentos de uso em saúde com indicação de uso doméstico em geral (incluindo serviço de atenção domiciliar) e para aqueles operados por leigos, independentemente do local de utilização [RDC 751/2022, Art. 54].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 54;RDC 751/2022, Art. 51;RDC 751/2022, Art. 50;RDC 751/2022, Art. 53;RDC 751/2022, Art. 52","regulation_id: RDC 751/2022
+article: Art. 54
+chapter: CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+section: Seção II - Instruções de Uso em Formato Não Impresso
+citation_label: RDC 751/2022, Art. 54
+
+CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+Seção II - Instruções de Uso em Formato Não Impresso
+Art. 54. Fica proibida a disponibilização exclusiva das instruções de uso em formato não impresso para os seguintes produtos:
+I - equipamentos de uso em saúde que tenham indicação de:
+a) uso doméstico em geral, inclusive os de utilização em serviço de atenção domiciliar - SAD; e
+b) operação por leigos, independentemente do local de utilização.
+II - materiais de uso em saúde utilizados por público leigo.","regulation_id: RDC 751/2022
+article: Art. 51
+chapter: CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+section: Seção II - Instruções de Uso em Formato Não Impresso
+citation_label: RDC 751/2022, Art. 51
+
+CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+Seção II - Instruções de Uso em Formato Não Impresso
+Art. 51. São requisitos para a disponibilização de instruções de uso em formato não impresso:
+I - informar no rótulo externo o modo de obter a correlação entre o produto fornecido e a versão da instrução de uso correspondente;
+II - indicar no rótulo um Serviço de Atendimento ao Consumidor onde o formato impresso das instruções de uso poderá ser solicitado sem custo adicional (inclusive de envio);
+III - garantir a disponibilização das instruções de uso durante todo período em que o produto fornecido estiver no mercado; e
+IV - especificar os recursos necessários para a leitura das instruções de uso pelo usuário.
+§ 1º Quando as dimensões da rotulagem externa não permitirem, as informações exigidas neste artigo poderão ser incluídas em documento anexo ao produto.
+§ 2º O fabricante ou detentor da notificação ou do registro de equipamentos deve considerar o período indicado no inciso III como sendo o tempo de vida útil especificado para o produto, contado a partir da última unidade comercializada do produto.",,,,,,,
+REFDEV_012_EN,REFDEV_012,en,false_premise_answerable,True,Does RDC 751/2022 allow exclusively non-printed instructions for home-use equipment operated by laypeople?,No. Exclusive non-printed instructions are prohibited for health equipment for home use and for operation by laypeople.,RDC 751/2022 Art. 54,"proibida a disponibilizacao exclusiva
+
+uso domestico
+
+operacao por leigos","No, RDC 751/2022 prohibits the exclusive provision of instructions for use in a non-printed format for health equipment intended for general home use, including those used in home care services, and for equipment operated by laypeople, regardless of the place of use [RDC 751/2022, Art. 54].",RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt;RDC_751_2022_Regras_de_classificação_de_risco.txt,"RDC 751/2022, Art. 54;RDC 751/2022, Art. 51;RDC 751/2022, Art. 52;RDC 751/2022, Art. 50;RDC 751/2022, Art. 16","regulation_id: RDC 751/2022
+article: Art. 54
+chapter: CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+section: Seção II - Instruções de Uso em Formato Não Impresso
+citation_label: RDC 751/2022, Art. 54
+
+CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+Seção II - Instruções de Uso em Formato Não Impresso
+Art. 54. Fica proibida a disponibilização exclusiva das instruções de uso em formato não impresso para os seguintes produtos:
+I - equipamentos de uso em saúde que tenham indicação de:
+a) uso doméstico em geral, inclusive os de utilização em serviço de atenção domiciliar - SAD; e
+b) operação por leigos, independentemente do local de utilização.
+II - materiais de uso em saúde utilizados por público leigo.","regulation_id: RDC 751/2022
+article: Art. 51
+chapter: CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+section: Seção II - Instruções de Uso em Formato Não Impresso
+citation_label: RDC 751/2022, Art. 51
+
+CAPÍTULO VI - RÓTULOS E INSTRUÇÕES DE USO DE DISPOSITIVOS MÉDICOS
+Seção II - Instruções de Uso em Formato Não Impresso
+Art. 51. São requisitos para a disponibilização de instruções de uso em formato não impresso:
+I - informar no rótulo externo o modo de obter a correlação entre o produto fornecido e a versão da instrução de uso correspondente;
+II - indicar no rótulo um Serviço de Atendimento ao Consumidor onde o formato impresso das instruções de uso poderá ser solicitado sem custo adicional (inclusive de envio);
+III - garantir a disponibilização das instruções de uso durante todo período em que o produto fornecido estiver no mercado; e
+IV - especificar os recursos necessários para a leitura das instruções de uso pelo usuário.
+§ 1º Quando as dimensões da rotulagem externa não permitirem, as informações exigidas neste artigo poderão ser incluídas em documento anexo ao produto.
+§ 2º O fabricante ou detentor da notificação ou do registro de equipamentos deve considerar o período indicado no inciso III como sendo o tempo de vida útil especificado para o produto, contado a partir da última unidade comercializada do produto.",,,,,,,

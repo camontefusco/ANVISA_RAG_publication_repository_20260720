@@ -1,0 +1,25 @@
+# Secrets and local configuration
+.env
+.env.*
+
+# Source text not redistributed
+data/
+cleaned_data/
+data.zip
+
+# Generated retrieval artifacts
+embedding_cache/
+local_storage/
+vector_store/
+vector_store_live_candidate/
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local/editor/system files
+.DS_Store
+.tmp/
+.vscode/
+.~lock.*

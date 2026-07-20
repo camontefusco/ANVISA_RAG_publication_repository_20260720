@@ -1,0 +1,12 @@
+{
+  "started": "2026-06-22T17:16:48",
+  "completed": "2026-06-22T17:17:33",
+  "cleaning_run": true,
+  "index_rebuilt": true,
+  "evaluation_run": false,
+  "evaluation_split": "held_out_test_75",
+  "evaluation_limit": null,
+  "article_count": 382,
+  "source_count": 6,
+  "chunk_count": 481
+}

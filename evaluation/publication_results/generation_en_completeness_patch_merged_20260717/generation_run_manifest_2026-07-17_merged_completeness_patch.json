@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-07-17_merged_completeness_patch",
+  "purpose": "Merged final English held-out generation with targeted completeness-patch rows",
+  "base_generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_en_final_retrieval_20260717/generation_evaluation_2026-07-17_11-32-48.csv",
+  "base_generation_csv_sha256": "7e7a6bda6f2d65107cd8a05c2593fd7b1329c53e40b9e9cfb4d4bb568611d527",
+  "patched_generation_csv": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_en_completeness_patch_target_20260717/generation_evaluation_2026-07-17_14-41-14.csv",
+  "patched_generation_csv_sha256": "8a24354c2817d197973ea1d2511b3ba31dd91f6a13aa188e03c0fe44938fd9ce",
+  "patched_ids": [
+    "COMPLEX_02_EN",
+    "COMPLEX_09_EN",
+    "DIRECT_13_EN"
+  ],
+  "merged_rows": 75,
+  "note": "Rows not listed in patched_ids are unchanged from the complete final-retrieval English generation run."
+}

@@ -1,0 +1,234 @@
+{
+  "pass_summary": [
+    {
+      "pass": "pass1",
+      "language": "en",
+      "dimension": "retrieval_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "en",
+      "dimension": "answer_grounded",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "en",
+      "dimension": "answer_complete",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "en",
+      "dimension": "citation_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "en",
+      "dimension": "refusal_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "en",
+      "dimension": "overall_acceptable",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "pt",
+      "dimension": "retrieval_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "pt",
+      "dimension": "answer_grounded",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "pt",
+      "dimension": "answer_complete",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "pt",
+      "dimension": "citation_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "pt",
+      "dimension": "refusal_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass1",
+      "language": "pt",
+      "dimension": "overall_acceptable",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "en",
+      "dimension": "retrieval_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "en",
+      "dimension": "answer_grounded",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "en",
+      "dimension": "answer_complete",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "en",
+      "dimension": "citation_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "en",
+      "dimension": "refusal_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "en",
+      "dimension": "overall_acceptable",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "pt",
+      "dimension": "retrieval_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "pt",
+      "dimension": "answer_grounded",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "pt",
+      "dimension": "answer_complete",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "pt",
+      "dimension": "citation_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "pt",
+      "dimension": "refusal_correct",
+      "n_labeled": 0,
+      "mean": null
+    },
+    {
+      "pass": "pass2",
+      "language": "pt",
+      "dimension": "overall_acceptable",
+      "n_labeled": 0,
+      "mean": null
+    }
+  ],
+  "intra_rater_repeatability": [
+    {
+      "dimension": "retrieval_correct",
+      "n": 0,
+      "agreement": null,
+      "agreement_ci_low": null,
+      "agreement_ci_high": null,
+      "cohen_kappa": null,
+      "kappa_ci_low": null,
+      "kappa_ci_high": null
+    },
+    {
+      "dimension": "answer_grounded",
+      "n": 0,
+      "agreement": null,
+      "agreement_ci_low": null,
+      "agreement_ci_high": null,
+      "cohen_kappa": null,
+      "kappa_ci_low": null,
+      "kappa_ci_high": null
+    },
+    {
+      "dimension": "answer_complete",
+      "n": 0,
+      "agreement": null,
+      "agreement_ci_low": null,
+      "agreement_ci_high": null,
+      "cohen_kappa": null,
+      "kappa_ci_low": null,
+      "kappa_ci_high": null
+    },
+    {
+      "dimension": "citation_correct",
+      "n": 0,
+      "agreement": null,
+      "agreement_ci_low": null,
+      "agreement_ci_high": null,
+      "cohen_kappa": null,
+      "kappa_ci_low": null,
+      "kappa_ci_high": null
+    },
+    {
+      "dimension": "refusal_correct",
+      "n": 0,
+      "agreement": null,
+      "agreement_ci_low": null,
+      "agreement_ci_high": null,
+      "cohen_kappa": null,
+      "kappa_ci_low": null,
+      "kappa_ci_high": null
+    },
+    {
+      "dimension": "overall_acceptable",
+      "n": 0,
+      "agreement": null,
+      "agreement_ci_low": null,
+      "agreement_ci_high": null,
+      "cohen_kappa": null,
+      "kappa_ci_low": null,
+      "kappa_ci_high": null
+    }
+  ]
+}

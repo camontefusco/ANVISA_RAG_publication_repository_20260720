@@ -1,0 +1,150 @@
+{
+  "strategy": "article_aware_v1",
+  "data_path": "/Users/cmontefusco/Documents/DSAI2/Rag_project/cleaned_data",
+  "single_chunk_max_tokens": 500,
+  "long_chunk_size": 400,
+  "long_chunk_overlap": 60,
+  "embedding_model": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/embedding_cache/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "embedding_max_length": 512,
+  "article_count": 382,
+  "chunk_count": 481,
+  "single_chunk_article_count": 359,
+  "long_article_count": 23,
+  "split_chunk_count": 150,
+  "min_chunk_tokens": 41,
+  "median_chunk_tokens": 155,
+  "max_chunk_tokens": 503,
+  "chunks_300_to_700_tokens": 132,
+  "chunks_under_300_tokens": 349,
+  "chunks_over_700_tokens": 0,
+  "chunks_by_source": {
+    "IN_338_2024.txt": 19,
+    "RDC_406_2020_Estudos_de_Estabilidade.txt": 61,
+    "RDC_55_2010_Registro_de_Produtos_Biológicos.txt": 69,
+    "RDC_751_2022_Regras_de_classificação_de_risco.txt": 102,
+    "RDC_945_2024.txt": 123,
+    "rdc09_2015.txt": 107
+  },
+  "long_articles": [
+    {
+      "citation_label": "IN 338/2024, Art. 3",
+      "article_token_count": 2048,
+      "chunk_count": 7
+    },
+    {
+      "citation_label": "RDC 406/2020, Art. 2",
+      "article_token_count": 2380,
+      "chunk_count": 8
+    },
+    {
+      "citation_label": "RDC 406/2020, Art. 50",
+      "article_token_count": 867,
+      "chunk_count": 3
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 2",
+      "article_token_count": 1858,
+      "chunk_count": 6
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 30",
+      "article_token_count": 786,
+      "chunk_count": 3
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 31",
+      "article_token_count": 2003,
+      "chunk_count": 6
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 32",
+      "article_token_count": 568,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 33",
+      "article_token_count": 635,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 34",
+      "article_token_count": 631,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 55/2010, Art. 43",
+      "article_token_count": 744,
+      "chunk_count": 3
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 2",
+      "article_token_count": 801,
+      "chunk_count": 3
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 4",
+      "article_token_count": 3815,
+      "chunk_count": 12
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 8",
+      "article_token_count": 508,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 10",
+      "article_token_count": 613,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 14",
+      "article_token_count": 663,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 48",
+      "article_token_count": 886,
+      "chunk_count": 3
+    },
+    {
+      "citation_label": "RDC 751/2022, Art. 67",
+      "article_token_count": 4570,
+      "chunk_count": 15
+    },
+    {
+      "citation_label": "RDC 945/2024, Art. 6",
+      "article_token_count": 4797,
+      "chunk_count": 15
+    },
+    {
+      "citation_label": "RDC 945/2024, Art. 28",
+      "article_token_count": 1853,
+      "chunk_count": 6
+    },
+    {
+      "citation_label": "RDC 945/2024, Art. 83",
+      "article_token_count": 523,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 9/2015, Art. 3",
+      "article_token_count": 552,
+      "chunk_count": 2
+    },
+    {
+      "citation_label": "RDC 9/2015, Art. 6",
+      "article_token_count": 3197,
+      "chunk_count": 10
+    },
+    {
+      "citation_label": "RDC 9/2015, Art. 3",
+      "article_token_count": 1794,
+      "chunk_count": 6
+    }
+  ],
+  "persistence_verification": {
+    "required_files_present": true,
+    "article_aware_metadata_markers": 481,
+    "expected_chunk_count": 481
+  }
+}

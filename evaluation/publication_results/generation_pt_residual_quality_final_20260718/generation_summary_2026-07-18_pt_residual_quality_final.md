@@ -1,0 +1,101 @@
+# Publication RAG Evaluation Summary
+
+Generated: 2026-07-18T14:50:13
+Questions: 75
+Answerable questions: 60
+Unanswerable questions: 15
+
+## Raw Vector Retrieval Metrics
+
+- Source hit rate: 0.9
+- Mean reciprocal rank: 0.7327777777777778
+
+## BM25 Retrieval Metrics
+
+- Source hit rate: 0.9833333333333333
+- Mean reciprocal rank: 0.9097222222222222
+
+## Fused Retrieval Metrics Before Reranking
+
+- Source hit rate: 0.9833333333333333
+- Mean reciprocal rank: 0.8472222222222222
+
+## Operational Retrieval Metrics
+
+- Source hit rate after cross-encoder reranking: 1.000 (95% CI 1.000-1.000; 60 pairs)
+- Source MRR after cross-encoder reranking: 0.958 (95% CI 0.925-0.992; 60 pairs)
+- Article Recall@k: 1.000 (95% CI 1.000-1.000; 60 pairs)
+- Article Precision@k: 0.207 (95% CI 0.200-0.217; 60 pairs)
+- Article MRR@k: 0.910 (95% CI 0.857-0.958; 60 pairs)
+- Article nDCG@k: 0.933 (95% CI 0.893-0.969; 60 pairs)
+- Mean gold term coverage in retrieved contexts: 0.994 (95% CI 0.986-1.000; 60 pairs)
+
+## Retrieval Metrics By Language
+
+### pt
+
+- Questions: 60
+- Raw vector source hit rate: 0.9
+- Raw vector MRR: 0.7327777777777778
+- BM25 source hit rate: 0.9833333333333333
+- BM25 MRR: 0.9097222222222222
+- Fused source hit rate: 0.9833333333333333
+- Fused MRR: 0.8472222222222222
+- Operational source hit rate: 1.000 (95% CI 1.000-1.000; 60 pairs)
+- Operational MRR: 0.958 (95% CI 0.925-0.992; 60 pairs)
+- Article Recall@k: 1.000 (95% CI 1.000-1.000; 60 pairs)
+- Article MRR@k: 0.910 (95% CI 0.857-0.958; 60 pairs)
+- Mean gold term coverage: 0.994 (95% CI 0.986-1.000; 60 pairs)
+
+## Paired Language Differences
+
+Positive values favor Portuguese; intervals are paired over bilingual facts.
+
+- Source hit rate (PT - EN): not available
+- Source MRR (PT - EN): not available
+- Article Recall@k (PT - EN): not available
+- Article MRR@k (PT - EN): not available
+- Gold-term coverage (PT - EN): not available
+
+## Retrieval Metrics By Question Type
+
+### direct_article
+
+- Questions: 53
+- Source hit rate: 1.000 (95% CI 1.000-1.000; 53 pairs)
+- Article Recall@k: 1.000 (95% CI 1.000-1.000; 53 pairs)
+- Article MRR@k: 0.898 (95% CI 0.840-0.953; 53 pairs)
+
+### exception
+
+- Questions: 5
+- Source hit rate: 1.000 (95% CI 1.000-1.000; 5 pairs)
+- Article Recall@k: 1.000 (95% CI 1.000-1.000; 5 pairs)
+- Article MRR@k: 1.000 (95% CI 1.000-1.000; 5 pairs)
+
+### multi_article
+
+- Questions: 2
+- Source hit rate: 1.000 (95% CI 1.000-1.000; 2 pairs)
+- Article Recall@k: 1.000 (95% CI 1.000-1.000; 2 pairs)
+- Article MRR@k: 1.000 (95% CI 1.000-1.000; 2 pairs)
+
+
+## Generation Metrics
+
+- Mean gold term coverage in generated answers: 0.828 (95% CI 0.782-0.872; 60 pairs)
+- Refusal accuracy on unanswerable questions: 1.000 (95% CI 1.000-1.000; 15 pairs)
+- Citation presence on answerable questions: 1.000 (95% CI 1.000-1.000; 60 pairs)
+- Article citation presence on answerable questions: 1.000 (95% CI 1.000-1.000; 60 pairs)
+- Retrieved-citation validity: 1.000 (95% CI 1.000-1.000; 60 pairs)
+
+## Notes
+
+- Automated scores are screening metrics, not final evidence.
+- Raw vector metrics measure the embedding retriever without routing or source diversification.
+- BM25 metrics measure exact-term retrieval over passage text and regulatory metadata.
+- Fused metrics use reciprocal rank fusion before cross-encoder reranking.
+- Operational metrics use the five highest-scoring passages from multilingual cross-encoder reranking.
+- Confidence intervals use pair-clustered bootstrap resampling so bilingual counterparts are not treated as independent.
+- LLM-judge scores are automated labels and should not be described as human expert validation.
+- No human reviewer, intra-rater reliability, inter-rater reliability, or expert consensus claim is made for this AI-only study design.

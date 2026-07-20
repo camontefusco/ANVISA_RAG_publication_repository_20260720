@@ -1,0 +1,35 @@
+id,pair_id,language,category,answerable,question,expected_answer,gold_citations,gold_evidence,answer,retrieved_sources,retrieved_citations,retrieved_context_1,retrieved_context_2,human_source_correct_0_1,human_answer_grounded_0_1,human_answer_complete_0_1,human_citation_correct_0_1,human_safety_or_refusal_correct_0_1,human_error_type,human_comments
+DIRECT_12_PT,DIRECT_12,pt,direct_article,True,Qual procedimento deve ser seguido pelo patrocinador antes de implementar emendas substanciais a protocolos de ensaios clínicos?,"As emendas devem ser protocolizadas e o patrocinador deve aguardar a manifestação da Anvisa, respeitando os prazos estabelecidos.","RDC 9/2015, Art. 47","Art. 47. As emendas substanciais a pro tocolos de ensaios clínicos devem ser protocolizadas e aguardar manifestação da Anvisa antes de sua implementação, respeitando os prazos estabelecidos no","O patrocinador deve protocolar as emendas substanciais a protocolos de ensaios clínicos junto à Anvisa e aguardar a manifestação da agência antes de sua implementação, respeitando os prazos estabelecidos [RDC 9/2015, Art. 47].
+
+As emendas substanciais devem ser submetidas como petição secundária anexada ao processo do respectivo protocolo de ensaio clínico [RDC 9/2015, Art. 36]. A petição deve conter o novo protocolo e o Parecer Consubstanciado do Comitê de Ética em Pesquisa (CEP) emitido para o primeiro centro de ensaio clínico que encaminhou o protocolo para análise [RDC 9/2015, Art. 36].
+
+Como exceção, as emendas que visam eliminar riscos imediatos à segurança dos participantes podem ser implementadas e notificadas à Anvisa imediatamente [RDC 9/2015, Art. 36]. Além disso, o patrocinador pode solicitar a aplicação de um procedimento otimizado de análise (Reliance) para emendas substanciais ao protocolo clínico, nos termos da resolução vigente [RDC 945/2024, Art. 40].",rdc09_2015.txt;RDC_945_2024.txt;RDC_945_2024.txt;rdc09_2015.txt;rdc09_2015.txt,"RDC 9/2015, Art. 36;RDC 945/2024, Art. 40;RDC 945/2024, Art. 39;RDC 9/2015, Art. 47;RDC 9/2015, Art. 4","regulation_id: RDC 9/2015
+article: Art. 36
+chapter: Capítulo V - DAS EMENDAS AO PROTOCOLO DE ENSAIO CLÍNICO
+section: 
+citation_label: RDC 9/2015, Art. 36
+
+Capítulo V - DAS EMENDAS AO PROTOCOLO DE ENSAIO CLÍNICO
+Art. 36.
+§1° As emendas substanciais devem ser submetidas à Anvisa na forma de petição
+secundá ria anexada ao processo do respectivo protocolo de ensaio clínico ao qual está
+vinculada.
+§2° A petição das emendas substanciais deve conter o novo protocolo e o Parecer
+Consubstanciado do Comitê de É tica em Pesquisa (CEP) emitido para o primeiro centro de
+ensaio clínico a encaminhar o protocolo para análise pelo CEP.
+§3° Excetuam -se do disposto no caput as emendas que visam eliminar riscos
+imediatos à segurança dos participantes do ensaio clí nico. Es tas poderão ser
+implementadas e notificadas à Anvisa imediatamente.","regulation_id: RDC 945/2024
+article: Art. 40
+chapter: CAPÍTULO V
+section: Seção I - Com base em práticas de confiança regulatória (Reliance)
+citation_label: RDC 945/2024, Art. 40
+
+CAPÍTULO V
+Seção I - Com base em práticas de confiança regulatória (Reliance)
+Art. 40. O procedimento otimizado de análise poderá ser aplicado, quando solicitado pelo patrocinador, nos termos desta resolução, aos seguintes assuntos de petição:
+I - Anuência em Processo do Dossiê de Desenvolvimento Clínico de Medicamento (DDCM);
+II - Anuência em Processo de Pesquisa Clínica (DEEC);
+III - Modificação substancial ao produto sob investigação;
+IV - Emenda substancial a Protocolo Clínico.
+Sub",,,,,,,

@@ -1,0 +1,22 @@
+id,pair_id,language,category,answerable,failure_types,question,gold_citations,retrieved_citations,answer,human_adjudication,human_root_cause,human_notes
+DIRECT_04_PT,DIRECT_04,pt,direct_article,True,incomplete_answer,Qual é o prazo máximo para a protocolização do relatório final de um ensaio clínico após o seu término?,"RDC 9/2015, Art. 69","RDC 9/2015, Art. 69;RDC 945/2024, Art. 74;RDC 945/2024, Art. 84;RDC 945/2024, Art. 75;RDC 945/2024, Art. 73","O prazo máximo para a protocolização do relatório final de um ensaio clínico é de até 12 (doze) meses contados a partir da data de término do ensaio clínico [RDC 9/2015, Art. 69]; [RDC 945/2024, Art. 74].",,,
+DIRECT_16_PT,DIRECT_16,pt,direct_article,True,incomplete_answer,Em quais situações um produto biológico não pode ser considerado comparável pela via de desenvolvimento por comparabilidade?,"RDC 55/2010, Art. 43","RDC 55/2010, Art. 43;RDC 55/2010, Art. 19;RDC 55/2010, Art. 27;RDC 55/2010, Art. 2;RDC 55/2010, Art. 26","Um produto biológico não pode ser considerado comparável quando:
+
+*   Os procedimentos analíticos utilizados não forem suficientes para apontar diferenças relevantes que possam impactar a segurança e a eficácia do produto [RDC 55/2010, Art. 43]; ou
+*   A relação entre os atributos de qualidade específicos, segurança e eficácia não estiver estabelecida [RDC 55/2010, Art. 43].",,,
+DIRECT_17_PT,DIRECT_17,pt,direct_article,True,incomplete_answer,Quais são os requisitos para que uma empresa solicite o registro excepcional de um produto biológico novo com estudos de fase III ainda em andamento?,"RDC 55/2010, Art. 23","RDC 55/2010, Art. 23;RDC 55/2010, Art. 30;RDC 55/2010, Art. 31;RDC 55/2010, Art. 35;RDC 55/2010, Art. 46","Para solicitar o registro excepcional de um produto biológico novo com estudos de fase III em andamento, a empresa deve atender aos seguintes requisitos:
+
+1.  **Condições do produto:** O produto deve ser utilizado no tratamento ou prevenção de doenças graves e/ou de alta mortalidade, devendo ser demonstrada uma alta eficácia terapêutica ou preventiva e/ou a inexistência de outra terapia ou droga alternativa comparável para aquele estágio da doença [RDC 55/2010, Art. 23].
+2.  **Status dos estudos:** Os estudos clínicos de fase II devem estar concluídos e os estudos de fase III devem estar em andamento [RDC 55/2010, Art. 23].
+3.  **Documentação adicional:** Além da documentação exigida nas Seções I e II do Capítulo III, a empresa deve apresentar [RDC 55/2010, Art. 23]:
+    *   Cronograma de realização e finalização dos estudos clínicos de fase III [RDC 55/2010, Art. 23];
+    *   Resultados preliminares dos estudos clínicos de fase III, caso estejam disponíveis [RDC 55/2010, Art. 23].
+4.  **Compromissos pós-registro:**
+    *   Os resultados dos estudos clínicos de fase III devem ser apresentados à ANVISA assim que estiverem disponíveis, conforme o cronograma estabelecido [RDC 55/2010, Art. 23].
+    *   Caso o registro seja concedido, a segurança e a eficácia do produto deverão ser monitoradas e avaliadas continuamente no Brasil pelo sistema de Farmacovigilância da empresa detentora, em conformidade com a legislação vigente [RDC 55/2010, Art. 23].",,,
+COMPLEX_09_PT,COMPLEX_09,pt,multi_article,True,incorrect_refusal,Quais dispositivos médicos estão excluídos da aplicação da RDC 751/2022 e quais estão isentos de notificação ou registro?,"RDC 751/2022, Art. 1;RDC 751/2022, Art. 2","RDC 751/2022, Art. 2;RDC 751/2022, Art. 1;RDC 751/2022, Art. 3;RDC 751/2022, Art. 16;RDC 751/2022, Art. 15","Os documentos recuperados não fornecem informação suficiente para responder quais dispositivos médicos estão excluídos da aplicação da RDC 751/2022.
+
+Quanto aos dispositivos isentos de notificação ou registro, a RDC 751/2022 estabelece as seguintes situações:
+
+*   Apresentações constituídas por dois ou mais dispositivos médicos notificados ou registrados, desde que as embalagens individuais de apresentação estejam íntegras e o rótulo contenha as informações dos dispositivos correspondentes, incluindo seus números de notificação ou registro [RDC 751/2022, Art. 2].
+*   Acessórios produzidos por um fabricante exclusivamente para integrar os dispositivos médicos de sua fabricação que já estejam notificados ou registrados, desde que os dossiês técnicos contenham informações sobre esses acessórios [RDC 751/2022, Art. 2].",,,
