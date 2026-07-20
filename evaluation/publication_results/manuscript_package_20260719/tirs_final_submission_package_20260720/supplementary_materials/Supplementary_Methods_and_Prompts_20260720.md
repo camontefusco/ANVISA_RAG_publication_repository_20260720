@@ -284,6 +284,24 @@ Answer-level metrics:
 - answer term coverage: fraction of expected answer terms found in the generated answer
 - refusal detected: whether the answer matched the defined refusal patterns
 
+## Operational Failure Thresholds
+
+The primary reported metrics were continuous means. They were not converted into a single binary success claim for the manuscript. The evaluation code nevertheless used operational flags to identify rows requiring review:
+
+| Audit condition | Flag used |
+|---|---|
+| Answerable row with no retrieved gold source | `wrong_or_missing_source` |
+| Answerable row with article Recall@k below 1.0 | `incomplete_article_retrieval` |
+| Retrieved expected-term coverage below 0.50 | `low_evidence_term_coverage` |
+| Answerable row that returned the refusal sentence | `incorrect_refusal` |
+| Answerable row without a recognized citation | `missing_citation` |
+| Citation-like label not present among retrieved citation labels | `unsupported_or_unretrieved_citation` |
+| Generated answer-term coverage below 0.50 | `incomplete_answer` |
+| AI-judge faithfulness below 0.80 | `judge_flagged_unfaithful` |
+| Unanswerable row without literal refusal detection | `failed_to_refuse` |
+
+The English completeness diagnostic experiment used AI-judge completeness below 0.80 to identify low-completeness answerable English rows. These thresholds were used for technical error analysis and targeted repair. They were not regulatory acceptance criteria.
+
 ## Automated AI Judge
 
 The AI judge used `models/gemini-flash-lite-latest` with temperature 0.0. The judge received the question, system answer, expected answer, answerability flag, and retrieved evidence. It returned JSON with four numeric scores from 0 to 1:

@@ -12,23 +12,23 @@ Corresponding author: Carlos Victor Montefusco-Pereira. Friedrich-Wilhelm 28, 12
 
 Keywords: regulatory science; ANVISA; retrieval-augmented generation; clinical trials; pharmacovigilance; biological products and medical devices
 
-Abbreviations: ANVISA, Agencia Nacional de Vigilancia Sanitaria; AREE, equivalent foreign regulatory authority; DDCM, Clinical Drug Development Dossier; DSUR, Development Safety Update Report; ICH, International Council for Harmonisation; RAG, retrieval-augmented generation; SUSAR, suspected unexpected serious adverse reaction.
+Abbreviations: ANVISA, Agencia Nacional de Vigilancia Sanitaria; AREE, equivalent foreign regulatory authority; BM25, Best Matching 25; DDCM, Clinical Drug Development Dossier; DSUR, Development Safety Update Report; ICH, International Council for Harmonisation; MRR, mean reciprocal rank; RAG, retrieval-augmented generation; RRF, reciprocal rank fusion; SUSAR, suspected unexpected serious adverse reaction.
 
 Abstract
 
 Background. Regulatory teams often need to interpret long health-authority documents while working across languages. In Brazil, many regulatory sources are published in Portuguese, while companies and scientists may ask questions in English.
 
-Objective. To evaluate whether a bilingual retrieval-augmented generation prototype could help locate and summarize selected ANVISA regulatory requirements relevant to drug development and health-product regulation.
+Objective. To evaluate whether a bilingual retrieval-augmented generation prototype could locate, cite, and summarize selected ANVISA regulatory requirements relevant to drug development and health-product regulation.
 
-Methods. Six ANVISA regulatory documents were cleaned, indexed by regulatory article, and used as a closed document collection. The test set included Portuguese and English questions about clinical trials, pharmacovigilance, biological products, medical devices, reliance pathways, exceptions, and unanswerable operational questions. Answers were required to cite the source document and article or refuse when the indexed documents did not contain the requested fact. Detailed retrieval settings were documented separately.
+Methods. Six ANVISA regulatory documents were cleaned and indexed as an article-level closed corpus. The system was implemented in Python 3.10 using LlamaIndex, sentence-transformers, rank-bm25, Streamlit, and the Google Generative AI interface. Dense retrieval used sentence-transformers/all-MiniLM-L6-v2; keyword retrieval used BM25; candidates were merged by reciprocal rank fusion and reranked with cross-encoder/mmarco-mMiniLMv2-L12-H384-v1. The final answer model was models/gemini-flash-lite-latest. The benchmark included 200 bilingual questions: 70 Portuguese answerable, 70 English answerable, 20 multi-article or exception questions, and 40 unanswerable or adversarial questions. An automated AI judge scored faithfulness, citation correctness, completeness, and refusal correctness on a 0 to 1 scale.
 
-Results. The system answered many direct regulatory questions with the correct source article, including questions about SUSAR handling, DSUR submission, valid pharmacovigilance notifications, biological-product registration exceptions, and medical-device instructions for use. Error analysis was more informative than aggregate scores. Some answers were correct but incomplete, for example omitting an active-search obligation, an ICH E2F condition, or a 30-business-day response deadline. The first external stress test showed that refusal behavior was the main remaining weakness. After a separate refusal-calibration step, refusal correctness improved in a focused external test.
+Results. The final article-aware index contained 382 detected regulatory articles and 481 chunks. In the first external stress test, answerable questions had source hit 1.000, source MRR 0.988, normalized article Recall@5 0.967, normalized article MRR@5 0.913, citation correctness 0.975, faithfulness 1.000, and completeness 0.943. Refusal correctness for unanswerable/adversarial questions was lower at 0.700. After refusal calibration using separate development data, a refusal-focused external test reached refusal correctness 0.944, with faithfulness 1.000, citation correctness 1.000, and completeness 0.908 on answerable controls.
 
-Conclusion. A bilingual RAG system may support regulatory information access when answers are tied to verifiable articles. For regulatory use, evaluation should report examples, omissions, false refusals, and refusal failures, not only average retrieval scores.
+Conclusion. A bilingual RAG system may support regulatory information access when answers are tied to verifiable articles and refusal is evaluated as a primary endpoint. The project did not validate regulatory advice. It tested a narrower use case: locating and summarizing evidence inside a defined ANVISA corpus.
 
 Introduction
 
-Drug-development decisions often begin with a narrow regulatory question. A sponsor may need to know how a Clinical Drug Development Dossier (DDCM) can be suspended, when a Development Safety Update Report (DSUR) must be submitted, what minimum information makes an adverse-event notification valid, whether a foreign-manufactured biological product can be registered without registration in its manufacturing country, or whether instructions for a medical device may be provided only in non-printed form. These questions are practical. They affect trial operations, safety reporting, dossier planning, pharmacovigilance systems, and product labelling.
+Drug-development decisions often begin with a narrow regulatory question. A sponsor may need to know how a Clinical Drug Development Dossier (DDCM) can be suspended, when a Development Safety Update Report (DSUR) must be submitted, what minimum information makes an adverse-event notification valid, whether a foreign-manufactured biological product can be registered without registration in its manufacturing country, or whether instructions for a medical device may be provided only in non-printed form. These questions affect trial operations, safety reporting, dossier planning, pharmacovigilance systems, and product labelling.
 
 The difficulty is not only that the documents are long. The relevant answer may be in one article, while a nearby article discusses the same topic but does not answer the exact question. A user may also ask in English while the source document is in Portuguese. In that setting, a general search result is not enough. The user needs to know which document and article support the answer, and when the document collection does not contain the requested fact.
 
@@ -36,121 +36,133 @@ Retrieval-augmented generation (RAG) systems may help by retrieving source passa
 
 This study evaluated a bilingual RAG prototype using selected ANVISA documents. The aim was not to build a regulatory-advice tool. The aim was to test whether the system could support traceable information access: retrieve the relevant document and article, answer in Portuguese or English, cite the source, and refuse when the indexed documents did not provide the requested information.
 
-The manuscript focuses on what the system did with regulatory questions. Detailed engineering settings are better suited to supplementary material. This distinction is important. For regulatory-science readers, the main issue is not whether the system used one retrieval model or another. The main issue is whether the system handled real regulatory information needs in a way that could be checked.
+The manuscript focuses on the regulatory behavior of the system rather than treating the application as a generic chatbot. The central questions were whether article-level retrieval improved traceability, whether bilingual queries over Portuguese source text could be handled, whether generated answers preserved complete regulatory conditions, and whether the system could abstain when the answer was outside the closed corpus.
 
 Materials and Methods
 
 Study design
 
-This was a technical evaluation of a closed-corpus bilingual RAG prototype. The corpus was closed because the system was not allowed to search current web pages, submission portals, fee schedules, private company information, or unpublished documents. This design made the evidence boundary explicit. If the answer was not present in the indexed documents, the correct behavior was refusal.
+This was a technical evaluation of a closed-corpus bilingual RAG prototype. The corpus was closed because the system was not allowed to search current web pages, submission portals, fee schedules, private company information, unpublished documents, or documents outside the local index. This design made the evidence boundary explicit. If the answer was not present in the indexed documents, the correct behavior was refusal.
 
-The evaluation was developed in stages. Initial tests identified problems in corpus cleaning, retrieval, English questions over Portuguese documents, answer completeness, citation behavior, and refusal behavior. Repairs were made on development data. The final evaluation emphasized held-out and external test sets, including an external stress test and a later refusal-focused test.
-
-The roles of the datasets were separated to avoid presenting development gains as independent validation. Development runs were used to identify and repair failures. Held-out internal runs were used to test whether the repaired system passed the curated benchmark. The first external stress test was used to challenge the system after high internal scores. When that test showed refusal weakness, refusal calibration was changed using a separate development set, and a second refusal-focused external test was used to evaluate that repair. The first external stress test was therefore treated as diagnostic external evidence, not as a dataset to tune from.
+The evaluation was developed in stages. Initial tests identified problems in corpus cleaning, retrieval, English questions over Portuguese documents, answer completeness, citation behavior, and refusal behavior. Repairs were made on development data. The final reporting separates development runs, internal held-out runs, the first external stress test, and a later refusal-focused external test. This separation is important because internal scores can be inflated when the same project team writes questions, reviews errors, and repairs the system.
 
 Regulatory corpus
 
-The corpus included six selected ANVISA documents covering clinical trials, biological products, medical devices, pharmacovigilance, and reliance-based review [3-8]. The documents were chosen because they represent common questions in drug-development and health-product work:
+The corpus included six selected ANVISA documents covering clinical trials, biological products, medical devices, pharmacovigilance, and reliance-based review [3-8]. The documents were chosen because they represent common questions in drug-development and health-product work. The final corpus included IN 338/2024, RDC 406/2020, RDC 55/2010, RDC 751/2022, RDC 945/2024, and RDC 9/2015. Corpus composition and use cases are summarized in Table 1.
 
-Table 1. ANVISA corpus and regulatory use cases.
+Each source file was checked against its document identifier and topic before final indexing. Source verification identified one local-file metadata mismatch: the local file name suggested stability studies, while the document content was RDC 406/2020 on pharmacovigilance. The final corpus table therefore used official regulation numbers and topics rather than local file names.
 
-[Table submitted as a separate file.]
+Software and implementation
 
-Each source file was checked against its document identifier and topic before final indexing. Source verification identified one local-file metadata mismatch: the file name suggested stability studies, while the document content was RDC 406/2020 on pharmacovigilance. The final corpus table therefore used official regulation names and topics rather than local file names.
+The prototype and evaluation scripts were implemented in Python 3.10. The environment file specified numpy 1.26, python-dotenv, PyTorch, sentence-transformers, ragas, Streamlit, LlamaIndex, llama-index-core, llama-index-embeddings-huggingface, llama-index-llms-google-genai, and rank-bm25 0.2.2. The user-facing application was a Streamlit app. Indexing and evaluation were run from Python scripts in the project repository. The main implementation files were src/article_chunking.py, src/retrieval.py, src/prompts.py, src/engine.py, evaluation/publication_eval.py, evaluation/answer_quality.py, and evaluation/evaluation_statistics.py.
 
-System summary
+The answer-generation model and the AI-judge model were both models/gemini-flash-lite-latest. The embedding model was sentence-transformers/all-MiniLM-L6-v2. The reranker was cross-encoder/mmarco-mMiniLMv2-L12-H384-v1. The local reproducibility package records the cache snapshot paths used during development, but model names rather than cache paths are the primary reproducibility identifiers because local paths are machine-specific.
 
-The system indexed the documents by article so that answers could cite a verifiable regulatory unit. It combined semantic retrieval with keyword retrieval, reranked candidate passages, and generated answers from the highest-ranked contexts. English questions were supported by Portuguese retrieval anchors for regulatory terms such as clinical trial/ensaio clinico, sponsor/patrocinador, biological product/produto biologico, medical device/dispositivo medico, and pharmacovigilance/farmacovigilancia.
+Corpus cleaning and article-aware chunking
 
-The main paper reports this at a high level. Full technical settings, including chunking, model identifiers, retrieval configuration, prompts, and judge rubric, are intended for Supplementary Information.
+Raw regulatory text files were cleaned to remove markup residue, page boilerplate, and formatting artifacts while preserving article labels and regulatory structure. The final index used article-aware chunking rather than arbitrary fixed-size text windows. The target unit was one regulatory article per chunk when possible. Chapter, section, document, source-file, article-number, and citation-label metadata were retained with each chunk.
 
-Benchmark and evaluation
+Article chunking used a single-article maximum of 500 tokens. Longer articles were split into 400-token chunks with 60-token overlap. Embedding maximum length was 512 tokens. The final index audit recorded six source documents, 382 detected articles, 481 total chunks, 359 articles represented by a single chunk, and 23 long articles split into multiple chunks. Median chunk length was 155 tokens, maximum chunk length was 503 tokens, and no chunk exceeded 700 tokens. The closed-corpus workflow and index audit are shown in Figure 1.
 
-The main benchmark contained 200 bilingual questions. It included direct answerable questions, multi-article questions, exception questions, false-premise questions, unanswerable questions, and adversarial questions. Questions were written in Portuguese and English to test the practical situation in which Brazilian regulatory documents are searched by local and international users.
+Retrieval, reranking, and answer generation
 
-An answer was considered useful only if it was grounded in the indexed corpus. For answerable questions, the expected source document and article were recorded. For unanswerable questions, the expected behavior was refusal. Automated judging was used because an independent two-expert panel was not available. This limits the claim level. The results should be read as technical evaluation with audit trails, not expert regulatory validation.
+Retrieval combined dense vector search and keyword search. Dense retrieval used the sentence-transformers embedding model. Keyword retrieval used BM25 over normalized text created from chunk content and metadata fields, including regulation identifier, document aliases, title, citation label, chapter, section, and topic tags. Normalization removed accents, lowercased text, and extracted alphanumeric tokens.
 
-The automated judge was used as a structured scoring tool, not as a substitute for regulatory expertise. The judge assessed whether each answer was supported by the retrieved evidence, whether citations matched the evidence, whether the answer covered material parts of the question, and whether refusal was appropriate. Because the same project team built the benchmark and no independent expert panel reviewed all answers, the strongest defensible claim is that this was an auditable technical evaluation. The supplementary material should therefore provide the benchmark, generated answers, retrieved articles, automated scores, and failure categories.
+The dense retriever returned 100 candidates. BM25 returned 100 candidates. Candidate lists were merged using reciprocal rank fusion with k = 60, retaining up to 100 fused candidates. Candidate passages were then reranked with the multilingual cross-encoder reranker in batches of 8. The final answer context contained the top 5 reranked passages.
 
-Development and error categories
+English questions were answered in English, but retrieval was allowed to include conservative Portuguese anchors because the source documents were in Portuguese. Anchors included clinical trial/ensaio clinico, sponsor/patrocinador, biological product/produto biologico, medical device/dispositivo medico, stability study/estudo de estabilidade, and pharmacovigilance/farmacovigilancia. The original question remained visible to the answer model. These anchors were retrieval aids only; they did not add facts to the answer.
 
-The evaluation was organized around categories of regulatory questions and categories of observed behavior. This was necessary because a single average score did not explain whether the system was useful for regulatory work. A direct article question, a rule-plus-exception question, a false-premise question, and a current operational question have different risks. The project therefore tracked not only whether an answer was scored as correct, but also what type of question produced the error and what was changed in response.
+The answer prompt required the model to answer using only retrieved context, answer in the same language as the question, cite each material statement using the retrieved article-level citation label, and refuse if retrieved evidence did not contain enough information to answer the exact question. The refusal sentence was fixed by language: "The retrieved documents do not provide enough information to answer" for English questions and "Os documentos recuperados nao fornecem informacao suficiente para responder" for Portuguese questions. The final prompt is provided in Supplementary Methods and Prompts.
 
-The abbreviated development table below summarizes the main categories. The full artifact-to-claim mapping is provided separately in the development results story table, including the source files used for the first held-out AI-judge evaluation, English completeness repair, external stress test, refusal-development run, and refusal-focused external test.
+Benchmark
 
-Table 2. Development decisions made after observed failures.
+The main benchmark contained 200 bilingual questions: 70 Portuguese answerable questions, 70 English answerable questions, 20 multi-article or exception questions, and 40 unanswerable or adversarial questions. The benchmark had 100 Portuguese rows and 100 English rows organized as bilingual pairs. The audit recorded 78 unique gold article citations. Benchmark structure and gold source coverage are shown in Figure 2.
 
-[Table submitted as a separate file.]
+For answerable questions, the benchmark recorded expected source documents, gold article labels, gold citation labels, expected answer terms, and a short expected answer. For unanswerable questions, the expected behavior was refusal. The benchmark included direct article questions, long-list questions, rule-plus-exception questions, false-premise questions, current operational questions outside the corpus, and adversarial questions that were regulatory in topic but not answerable from the indexed documents.
+
+Automated AI judge and scoring rules
+
+Automated judging was used because an independent two-expert panel was not available. This limits the claim level. The automated judge was used as a structured technical scoring tool, not as an independent regulatory expert. The judge received the question, system answer, expected answer, answerability flag, and retrieved evidence. It returned JSON scores from 0 to 1 for four dimensions: faithfulness, citation correctness, completeness, and refusal correctness.
+
+Faithfulness measured whether factual claims were supported by retrieved evidence. Citation correctness measured whether citations existed when an answer was given, referred to retrieved evidence, and supported the associated claim. Article-level citations were accepted when the supporting sentence was within a retrieved cited article; paragraph or item suffixes were not required. Completeness measured whether the answer covered the expected answer's essential information, including material conditions and exceptions. Refusal correctness measured whether an unanswerable question was refused without unsupported content, or whether an answerable question was answered rather than refused.
+
+The primary reported metrics were continuous means, not binary expert adjudications. For per-question failure review, the code flagged answerable rows as problematic when the retrieved source was missing, article retrieval was incomplete, retrieved term coverage was below 0.50, generated answer-term coverage was below 0.50, citations were absent, cited labels were not among retrieved labels, or refusal occurred for an answerable question. AI-judge faithfulness below 0.80 was flagged as unfaithful. English completeness diagnosis used judge completeness below 0.80 to identify low-completeness rows for repair experiments. These thresholds were operational audit rules, not clinical or regulatory acceptance criteria.
+
+Evaluation stages and leakage control
+
+Development runs were used to identify and repair failures. Internal held-out runs were used to check the repaired system on the curated benchmark. When internal results became high, an external stress test was run once to test whether the internal pattern generalized. That first external stress test was treated as diagnostic external evidence and was not used directly for tuning. After it identified refusal calibration as the main weakness, refusal rules were adjusted using a separate development set. A second refusal-focused external test was then used to evaluate the repair.
+
+The first external stress test contained 50 questions organized as 25 bilingual pairs. It included 40 answerable questions and 10 unanswerable or adversarial questions. The first external run required artifact recovery after output folders had been moved; a preserved 40-row checkpoint was merged with a regenerated 10-row unanswerable/adversarial block using the same frozen settings. No benchmark, retrieval, prompt, judge, threshold, or result-driven tuning edits were made before that recovery. The refusal-focused external test contained 30 questions organized as 15 bilingual pairs, with 18 unanswerable questions and 12 answerable controls.
+
+Statistical handling and audit trail
+
+Source-level retrieval was summarized by source hit and source MRR. Article-level retrieval was summarized by Recall@k, Precision@k, MRR@k, and nDCG@k after lowercasing, accent removal, and whitespace normalization of citation labels. For generated answers, the system recorded citation presence, article citation presence, retrieved-citation validity, answer-term coverage, refusal detection, and AI-judge scores. When confidence intervals were reported in supplementary files, pair-clustered percentile bootstrap resampling used bilingual pair ID as the cluster key, 2000 resamples, 95% confidence level, and seed 20260619.
+
+For reproducibility, each evaluation row exported the question ID, pair ID, language, category, answerability flag, gold source documents, gold citations, raw vector candidates, BM25 candidates, fused candidates, final reranked contexts, generated answer, extracted citations, refusal detection, deterministic metrics, AI-judge scores, and judge rationale. The repository also contains manual-review templates. They were retained as audit scaffolds, but they were not completed as a two-expert validation dataset.
 
 Results
 
-Direct regulatory questions
+Corpus and benchmark construction
 
-The system performed well when the question matched an article in the corpus and the expected answer was compact. For example, it correctly answered that a pharmacovigilance notification under RDC 406/2020 requires identification of the notifier, identification of the patient, description of the adverse event, and name of the suspected medicine. It cited RDC 406/2020, Art. 32.
+The final index contained six ANVISA documents, 382 detected regulatory articles, and 481 article-level chunks (Figure 1). Most articles were short enough to be represented by one chunk. Long articles were split with overlap to preserve continuity. This mattered because regulatory questions often ask for all items in an article or for a condition that appears after the main rule.
 
-It also correctly handled false-premise questions. When asked whether a notification is valid without patient identification if the suspected medicine is named, the system answered no and pointed back to the minimum required elements in RDC 406/2020, Art. 32. This is important because regulatory users often ask questions in a form that contains an assumption. A useful system should not merely agree with the premise.
+The 200-question benchmark was balanced by language and included the intended mix of regulatory question types (Figure 2). Gold evidence covered 78 unique article citations. The source coverage was distributed across the six regulations, including clinical-trial, pharmacovigilance, biological-product, medical-device, and reliance questions. This structure was important because high performance on direct clinical-trial questions alone would not show whether the system handled rule-plus-exception or refusal boundaries.
 
-The system also answered questions relevant to clinical-trial conduct. For example, when asked whether possible SUSAR reporting allows unblinding all participants, the system answered that unblinding should be limited to the affected participant and cited RDC 945/2024, Art. 67. This type of question is operationally important because it connects safety reporting with trial integrity.
+Direct article questions
 
-These examples show why article-level citation was treated as part of the answer, not as a display feature. In each case, a regulatory user would still need to inspect the cited article before applying the information. The system's useful role was to narrow the search and provide a checkable summary. That use case is different from relying on the system to make a submission decision or interpret the full legal position for a product.
+The system performed best when the question matched a compact article-level answer. For example, it correctly answered that a pharmacovigilance notification under RDC 406/2020 requires identification of the notifier, identification of the patient, description of the adverse event, and name of the suspected medicine, citing RDC 406/2020, Art. 32. It also correctly handled a false-premise version of the same issue by answering no when asked whether a notification is valid without patient identification if the suspected medicine is named.
 
-Examples of correct and incorrect behavior
+The system also answered clinical-trial conduct questions. When asked whether possible SUSAR reporting allows unblinding all participants, it answered that unblinding should be limited to the affected participant and cited RDC 945/2024, Art. 67. These examples show why article-level citation was part of the evaluation rather than a display feature. The system's useful role was to narrow the search and provide a checkable summary; the regulatory user would still need to inspect the cited article before applying it.
 
-Table 3 shows representative examples. The table is more informative than an aggregate metric because it shows what a regulatory reader would need to inspect.
+Internal development metrics
 
-Table 3. Representative answer outcomes.
+The first held-out AI-judge evaluation showed high faithfulness but weaker completeness. Among 120 answerable internal held-out rows, mean AI-judge faithfulness was 0.997, citation correctness was 0.965, and completeness was 0.808. Among 30 unanswerable rows, refusal correctness was 1.000. English answer completeness was the main weak point in this stage: the English answerable subset had completeness 0.645. This result led to the English completeness repair work rather than to a claim that the system was already ready.
 
-[Table submitted as a separate file.]
+After English repair, the English repair set had mean faithfulness 0.997, citation correctness 0.983, completeness 0.995, and refusal correctness 1.000. After Portuguese residual-quality repair, the Portuguese repair set had mean faithfulness 0.993, citation correctness 0.963, completeness 0.995, and refusal correctness 1.000. These results are shown as development history in Figure 3A. They should not be interpreted as paired repeated-measure improvements because the stages used different evaluation sets.
 
-Completeness errors mattered more than raw retrieval
+Completeness errors
 
-Several errors occurred even when the correct document or article was nearby. The most common pattern was omission of a condition. In one pharmacovigilance question, the system listed the minimum elements of a valid notification but omitted the active-search obligation when required information is absent. In one DSUR question, the answer gave the annual submission timing but omitted the ICH E2F condition. In one medical-device question, it omitted the requirement that instructions remain available while the product remains on the market. In a biological-product question, it gave the exception but did not first state the general rule.
+Completeness errors mattered more than raw retrieval. Several errors occurred even when the correct document or article was retrieved. In one pharmacovigilance question, the system listed the minimum elements of a valid notification but omitted the active-search obligation when required information is absent. In one DSUR question, the answer gave the annual submission timing but omitted the ICH E2F condition. In one medical-device question, it omitted the requirement that non-printed instructions remain available while the product remains on the market. In a biological-product question, it gave the exception for a foreign-manufactured biological product but did not first state the general rule. In a clinical-trial question, it omitted a 30-business-day response deadline.
 
-These are not cosmetic errors. In regulatory work, an omitted condition can change how a sponsor plans a submission, designs a safety process, or prepares product information. A system that retrieves the right article but omits the condition is useful only if the user still checks the citation.
+These were not cosmetic errors. In regulatory work, an omitted condition can change how a sponsor plans a submission, designs a safety process, or prepares product information. A system that retrieves the right article but omits the condition is useful only if the user still checks the citation.
 
-The development process therefore changed the evaluation focus. Early work asked whether the system could find the right source. Later work asked whether the answer included all material elements from the source and whether the system could abstain from unsupported operational claims. This sequence matters because a system may appear strong on retrieval metrics while still producing answers that are too short for regulatory use.
+The development process therefore changed the evaluation focus. Early work asked whether the system could find the right source. Later work asked whether the answer included all material elements from the source and whether the system could abstain from unsupported operational claims. This sequence is summarized in Table 2, and representative answer outcomes are provided in Table 3.
 
-External testing changed the interpretation
+External stress test
 
-Internal results became high after the system was repaired. Those results showed that the final system passed the internal benchmark, but they were not enough to support a strong general claim. For that reason, an external stress test was run.
+The first external stress test was more informative than the internal post-repair scores. It contained 50 questions, including 40 answerable rows and 10 unanswerable or adversarial rows. For answerable questions, source hit was 1.000 and source MRR was 0.988. Normalized article Recall@5 was 0.967 and normalized article MRR@5 was 0.913. Citation presence and retrieved-citation validity were both 0.975. AI-judge faithfulness was 1.000, citation correctness was 0.975, and completeness was 0.943.
 
-The external test supported the answerable-question use case but exposed refusal as the main remaining weakness. The system generally found and cited relevant evidence for answerable questions. However, for unanswerable or adversarial questions, it sometimes answered from nearby regulatory text instead of saying that the corpus did not contain the specific requested fact.
+The same test exposed refusal behavior as the main remaining weakness. Literal refusal detection for unanswerable/adversarial questions was 0.600, and AI-judge refusal correctness was 0.700. The main failure pattern was answering from nearby general regulatory text when the question asked for a more specific current or operational fact not present in the corpus. For example, the system answered a question about a current electronic SUSAR notification form model using the general electronic notification requirement, instead of refusing because the specific current form model was not in the indexed documents.
 
-This shifted the interpretation of the project. The main problem was not simply "Can the system retrieve ANVISA text?" It was "Can the system distinguish a related article from an article that actually answers the question?" That distinction is central for regulatory use.
+Language-specific external results were similar but not identical. Among answerable external rows, normalized article Recall@5 was 0.950 for English and 0.983 for Portuguese. AI-judge completeness was 0.930 for English and 0.955 for Portuguese. AI-judge refusal correctness for unanswerable/adversarial rows was 0.800 for English and 0.600 for Portuguese. These results did not support a perfect-system claim. They supported a narrower claim: answerable regulatory questions were usually handled well, but refusal calibration remained a safety boundary.
 
 Refusal calibration
 
-A separate refusal-calibration step was then performed using development data. The later refusal-focused external test included questions about current support phone numbers, current MedDRA versions, petition subject codes, exact URLs, private case status, future approvals, legal advice, and specific operational documents not present in the corpus.
+After the first external stress test, refusal rules were revised using a separate refusal-development set. The revision instructed the answer model to treat related-but-incomplete context as insufficient and to refuse current forms, exact URLs, current fees or values, private contract terms, company-specific submission status, personal contact information, market prices, reimbursement, taxes, patents, future approvals, and advice not explicitly stated in the retrieved regulatory text.
 
-After calibration, the system correctly refused most unanswerable questions and did not over-refuse answerable controls. It correctly refused questions such as the current MedDRA version, current support phone number, and petition subject code for reliance when those facts were not present in the indexed documents. One remaining boundary problem involved questions where the corpus described general enforcement consequences but did not contain the exact penalty requested.
+In the later refusal-focused external test, the system correctly refused 17 of 18 unanswerable questions by AI-judge scoring, giving refusal correctness 0.944. It did not over-refuse the answerable controls: answerable-control faithfulness was 1.000, citation correctness was 1.000, and completeness was 0.908. This improvement and the completeness trade-off are shown in Figure 3B. The result suggests that refusal calibration improved abstention behavior, but it also shows a cost: answerable-control completeness was lower than in the first external stress test.
 
-This repair did not make refusal behavior solved. It made the remaining problem narrower. The system became better at refusing questions about current forms, exact codes, private cases, URLs, future approvals, and operational information outside the corpus. The harder residual case was when the corpus contained a related general rule but not the specific fact requested. That is an important regulatory boundary because related evidence can be persuasive but still insufficient.
+The remaining boundary problem involved questions where the corpus contained a related general rule but not the exact requested fact. This is a regulatory risk because related evidence can sound persuasive while still being insufficient. The safest interpretation is that refusal improved, not that refusal was solved.
 
-Summary metrics
+Summary of quantitative evaluation
 
-Aggregate metrics are useful, but they should be interpreted through the examples above. In the first external stress test, answerable-question performance was strong, with normalized article Recall@5 of 0.967 and AI-judge completeness of 0.943. Refusal correctness was weaker at 0.700. After refusal calibration, the refusal-focused external test reached refusal correctness of 0.944, with no over-refusal on answerable controls.
+Across the development path, the main metrics changed in ways that affected the project interpretation. Initial internal held-out answer completeness was 0.808 overall for answerable rows, with English completeness 0.645. After targeted English repair, the English repair set reached completeness 0.995. After Portuguese residual-quality repair, the Portuguese repair set reached completeness 0.995. These internal repair results were not treated as independent proof because they followed error review and targeted changes.
 
-
-Figure 3A. Development-stage answer-quality metrics. Mean AI-judge scores are shown for faithfulness, citation correctness, completeness, and refusal correctness across the main evaluation stages. The stages used different evaluation sets; the plot summarizes the development history and should not be interpreted as a paired repeated-measure comparison. Values and filters are documented in the figure source table.
-
-
-Figure 3B. Targeted weak-point repairs. The left panel shows English answer completeness before and after the English-completeness repair set. The middle panel shows refusal correctness in the first external stress test and in the later refusal-focused external test after refusal-prompt calibration. The right panel shows answerable-question completeness in the external stress test and in the answerable controls of the refusal-focused test. Because the panels compare different evaluation sets, the figure documents observed development decisions rather than paired statistical improvement.
-
-The full development decision table, expanded example table, and evaluation-stage summary are provided in Supplementary Tables S1-S3.
+The first external stress test provided the main challenge to overfitting. It showed strong retrieval and answer grounding for answerable questions, with source hit 1.000, normalized article Recall@5 0.967, faithfulness 1.000, citation correctness 0.975, and completeness 0.943. It also showed weak refusal correctness at 0.700. The refusal-focused external test after separate calibration improved refusal correctness to 0.944 but had answerable-control completeness 0.908. Thus the main residual problem shifted from retrieval and language support to the boundary between partial related evidence and sufficient evidence.
 
 Discussion
 
 Principal finding
 
-The main finding is not that the system achieved high average scores. The main finding is that a bilingual RAG prototype can support traceable access to selected ANVISA documents, but its usefulness depends on three controls: article citation, completeness checking, and refusal when the indexed documents do not contain the requested fact.
+The main finding is not that the system achieved high average scores. The main finding is that a bilingual RAG prototype can support traceable access to selected ANVISA documents when it is evaluated as a closed-corpus evidence-location tool. Its usefulness depends on three controls: article citation, completeness checking, and refusal when the indexed documents do not contain the requested fact.
 
 This is a regulatory-science finding because it concerns how AI-mediated information access behaves in realistic regulatory questions. The system was useful when it led the user to the right article and summarized the article without adding unsupported information. It was less reliable when the answer required a complete list, a rule-plus-exception structure, or a distinction between current operational facts and static regulatory text.
 
-Why examples should be central
+Why examples and quantitative metrics both matter
 
-Average metrics can hide the difference between minor and important errors. A completeness score does not tell the reader whether the omitted item was trivial or operationally important. The examples show that omissions can involve active-search obligations, ICH E2F conditions, market-availability requirements for instructions for use, or the general rule before a biological-product exception. These are the kinds of details that matter in regulatory practice.
+The results support using both metrics and examples. Metrics showed the overall pattern: high answerable-question retrieval and grounding, lower refusal correctness in the first external stress test, and improved refusal correctness after calibration. Examples showed why the scores matter. An average completeness score does not tell the reader whether the omitted item was trivial or operationally important. In this project, omissions involved active-search obligations, ICH E2F conditions, market-availability requirements for instructions for use, the general rule before a biological-product exception, and a 30-business-day deadline.
 
-The examples also show why refusal behavior deserves a separate endpoint. A question about a current phone number, current MedDRA version, petition subject code, or exact current form model may sound regulatory, but the answer may not be in a closed corpus of resolutions. A system that answers such questions from nearby text can create false confidence.
+The same point applies to refusal. A question about a current phone number, current MedDRA version, petition subject code, exact form model, or private case status may sound regulatory, but the answer may not be in a closed corpus of resolutions. A system that answers such questions from nearby text can create false confidence. Refusal correctness should therefore be reported as a primary endpoint, not as a minor safety note.
 
 Implications for drug development and regulatory affairs
 
@@ -158,7 +170,7 @@ The most realistic use of this prototype is assisted navigation of a defined doc
 
 The system should not be used as a stand-alone regulatory decision tool. It does not know whether a document is still the complete current legal basis for a submission. It does not access current portals, fee schedules, forms, company-specific status, or authority correspondence. It does not replace regulatory judgment. Its value is narrower: it can help locate and summarize evidence inside the documents it has indexed.
 
-The examples also map to ordinary decision points in development work. Before or during a clinical trial, a sponsor may need to check DDCM suspension procedures, DSUR timing, or the boundary between SUSAR reporting and trial unblinding. During safety-system design, the team may need to confirm the minimum information that makes a pharmacovigilance notification valid and what follow-up is expected when information is incomplete. During product registration planning, a biological-product team may need to understand whether an exception applies or whether the general manufacturing-country registration rule still controls the case. For medical devices, labelling and supply teams may need to know whether non-printed instructions for use are acceptable for the intended use setting. These examples are not full regulatory strategies. They are narrow evidence-location tasks, which is the level at which a closed-corpus RAG tool can be tested responsibly.
+The examples map to ordinary decision points in development work. Before or during a clinical trial, a sponsor may need to check DDCM suspension procedures, DSUR timing, or the boundary between SUSAR reporting and trial unblinding. During safety-system design, the team may need to confirm the minimum information that makes a pharmacovigilance notification valid and what follow-up is expected when information is incomplete. During product registration planning, a biological-product team may need to understand whether an exception applies or whether the general manufacturing-country registration rule still controls the case. For medical devices, labelling and supply teams may need to know whether non-printed instructions for use are acceptable for the intended use setting. These examples are narrow evidence-location tasks, which is the level at which a closed-corpus RAG tool can be tested responsibly.
 
 Intended users and confidence boundary
 
@@ -166,24 +178,21 @@ The most likely users are regulatory affairs staff, clinical-development teams, 
 
 Confidence should depend on the question type. Confidence is highest for direct article questions, definition-like questions, and false-premise questions where the cited article clearly supports the answer. Confidence is moderate for rule-plus-exception questions, multi-article questions, and complete-list questions, because these are the settings where the evaluation found omissions. Confidence is low for current operational details, exact portal codes, current MedDRA versions, phone numbers, URLs, fee information, product-specific strategy, private case status, legal advice, or future approval likelihood. For those questions, the safest behavior is refusal or a statement that the indexed documents do not provide enough information.
 
-This intended-use boundary is central to how the system should be judged. The system is not a source of regulatory authority. It is a tool for finding candidate evidence inside a defined corpus. A user can have reasonable confidence when the answer is narrow, the citation is specific, and the cited article can be checked. Confidence should decrease when the answer requires current external information, interpretation across several documents, or application to a specific product or submission.
-
 Comparison with prior work
 
-The prior TIRS study on generative AI search of FDA guidance documents reported both potential and limitations. The present study supports the same general direction but adds a bilingual ANVISA use case and a stronger focus on refusal and article-level evidence. Together, these studies suggest that regulatory RAG systems should be evaluated not only by whether they retrieve a source, but by whether they answer the specific question completely and refuse unsupported questions.
+The prior TIRS study on generative AI search of FDA guidance documents reported both potential and limitations [2]. The present study supports the same general direction but adds a bilingual ANVISA use case and a stronger focus on refusal and article-level evidence. Together, these studies suggest that regulatory RAG systems should be evaluated not only by whether they retrieve a source, but by whether they answer the specific question completely and refuse unsupported questions.
 
 The ANVISA setting also adds a cross-language dimension. English questions were not simply translated answers; they tested whether international users could ask about Portuguese regulatory documents using familiar English regulatory terms. The project found that bilingual access was feasible, but terminology support was needed. This has practical relevance for companies, academic sponsors, and international collaborators who work with Brazilian requirements but may not formulate questions in Portuguese.
-
-The table structure follows the practical pattern used in recent regulatory and RAG evaluations: keep corpus scope, evaluation logic, aggregate performance, and compact error examples in the main paper, and move audit-level examples, prompts, and stage histories to supplementary material. This separation is especially important here because automated judging was used. The main tables therefore show what changed and why; the supplementary files provide the checkable audit trail.
-It also keeps the reader focused on regulatory consequences rather than implementation detail.
 
 Limitations
 
 This study used a selected closed corpus and does not cover all ANVISA rules or current operational resources. Benchmark construction did not include an independent panel of regulatory experts. Automated judging was used and should be interpreted as technical scoring, not expert validation. Some internal results may be inflated because the system was improved after error review. The first external stress test required artifact recovery after output files were moved; preserved settings were used, but this should be reported transparently. Finally, the prototype was tested offline and not in a prospective regulatory-affairs workflow.
 
+The AI judge is also a limitation. It can score consistency between a question, expected answer, generated answer, and retrieved evidence, but it cannot certify regulatory correctness. Continuous AI-judge means should therefore be read as reproducibility-oriented technical indicators. They are useful because they are auditable and applied consistently, but they are not a substitute for blinded expert review.
+
 Future work
 
-Future studies should test the system with regulatory-affairs users and measure whether it reduces time to locate evidence without increasing overconfidence. A stronger validation study should include independent expert review of selected answers, blinded error classification, and prospective question authoring by users not involved in system development. The corpus should also be expanded and versioned so that users can see whether a question requires current external information rather than static document retrieval.
+Future studies should test the system with regulatory-affairs users and measure whether it reduces time to locate evidence without increasing overconfidence. A stronger validation study should include independent expert review of selected answers, blinded error classification, prospective question authoring by users not involved in system development, and comparison with standard document search. The corpus should also be expanded and versioned so that users can see whether a question requires current external information rather than static document retrieval.
 
 Conclusion
 
@@ -203,7 +212,7 @@ C.V.M.-P. conceived and designed the study, developed the software pipeline, pre
 
 Data Availability
 
-The code, benchmark manifests, generated outputs, prompts, and non-restricted derived artifacts will be made publicly available in a project repository after manuscript acceptance. Files needed for peer review are included as supplementary materials. Full cleaned copies of ANVISA regulatory text are derived from public agency documents; if redistribution of full cleaned text is restricted or unnecessary, the repository will provide official source links, checksums, and cleaning scripts rather than republishing the full source text.
+The code, benchmark manifests, generated outputs, prompts, and non-restricted derived artifacts are archived in a private project repository during manuscript preparation and will be made publicly available after manuscript acceptance. Files needed for peer review are included as supplementary materials. Full cleaned copies of ANVISA regulatory text are derived from public agency documents; if redistribution of full cleaned text is restricted or unnecessary, the public repository will provide official source links, checksums, and cleaning scripts rather than republishing the full source text.
 
 Ethics Approval
 
@@ -230,3 +239,13 @@ References
 7. Agencia Nacional de Vigilancia Sanitaria. Resolucao da Diretoria Colegiada Anvisa No. 945, de 29 de novembro de 2024. Guidelines and procedures for clinical trials for later medicine registration. AnvisaLegis. Accessed 19 July 2026.
 
 8. Agencia Nacional de Vigilancia Sanitaria. Resolucao RDC No. 9, de 20 de fevereiro de 2015. Regulation for clinical trials with medicines in Brazil. AnvisaLegis. Accessed 19 July 2026.
+
+Figure Legends
+
+Figure 1. Closed-corpus RAG workflow. The workflow shows the path from selected ANVISA source documents to cleaned text, article-aware chunks with metadata, hybrid retrieval, reranking, answer generation, and evaluation. Source artifacts recorded six indexed regulatory documents, 382 detected articles, 481 article-level chunks, and a 200-question internal benchmark.
+
+Figure 2. Benchmark design and source coverage. The benchmark contained 70 Portuguese answerable questions, 70 English answerable questions, 20 multi-article or exception questions, and 40 unanswerable or adversarial questions. Gold source evidence covered all six indexed ANVISA documents and 78 unique article citations.
+
+Figure 3A. Development-stage answer-quality metrics. Mean AI-judge scores are shown for faithfulness, citation correctness, completeness, and refusal correctness across the main evaluation stages. The stages used different evaluation sets; the plot summarizes development history and should not be interpreted as a paired repeated-measure comparison.
+
+Figure 3B. Targeted weak-point repairs. The left panel shows English answer completeness before and after the English-completeness repair set. The middle panel shows refusal correctness in the first external stress test and in the later refusal-focused external test after refusal-prompt calibration. The right panel shows answerable-question completeness in the external stress test and in the answerable controls of the refusal-focused test. Because the panels compare different evaluation sets, the figure documents observed development decisions rather than paired statistical improvement.
