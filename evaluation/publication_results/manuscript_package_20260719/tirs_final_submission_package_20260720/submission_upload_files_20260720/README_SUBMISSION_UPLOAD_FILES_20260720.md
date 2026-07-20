@@ -1,6 +1,6 @@
 # TIRS submission upload files
 
-This folder contains a practical upload set derived from the full working package.
+This folder contains a practical upload set derived from the full working package. Do not upload render-QA folders; they have been moved to the parent render_qa_archive_20260720 folder.
 
 ## Main files
 

@@ -206,7 +206,7 @@ The refusal sentence was language-specific:
 | Portuguese | Os documentos recuperados nao fornecem informacao suficiente para responder. |
 | English | The retrieved documents do not provide enough information to answer. |
 
-Refusal was required when context was absent, irrelevant, or only partially related. The final prompt explicitly classified related-but-incomplete evidence as insufficient. This was added because the first external stress test showed that the system sometimes answered current operational questions from nearby general regulatory text.
+Refusal was required when context was absent, irrelevant, or only partially related. The final prompt explicitly classified related-but-incomplete evidence as insufficient. This was added because the first AI-authored prospective stress test showed that the system sometimes answered current operational questions from nearby general regulatory text.
 
 ## Benchmark Design
 
@@ -229,7 +229,7 @@ Split counts:
 | Calibration | 20 |
 | Development remainder | 5 |
 
-The external stress test contained 50 questions, organized as 25 bilingual pairs. The refusal-focused external test contained 30 questions, organized as 15 bilingual pairs.
+The AI-authored prospective stress test contained 50 questions, organized as 25 bilingual pairs. The refusal-focused AI-authored test contained 30 questions, organized as 15 bilingual pairs.
 
 ## Evaluation Outputs
 
@@ -342,7 +342,7 @@ JSON fields: faithfulness, citation_correctness, completeness,
 refusal_correctness, rationale
 ```
 
-The AI judge was used as a structured technical scoring tool. It was not treated as an independent regulatory expert panel.
+The AI judge was used as a structured technical scoring tool. It was not treated as an independent regulatory expert panel. The answer model and automated judge used the same Gemini model family, so same-model-family grading may overestimate answer quality.
 
 ## Confidence Intervals
 
@@ -359,4 +359,4 @@ Pair clustering was used because Portuguese and English questions were written a
 
 ## Reproducibility Boundary
 
-The package supports reproduction of the reported technical evaluation if the same code, corpus files, model identifiers, benchmark files, and API model behavior are available. Exact generated answers may still vary because hosted LLM behavior can change over time even when the model name and prompt are fixed. The archived per-question CSVs are therefore part of the evidence record and should be used to audit the reported results.
+The package supports reproduction of the reported technical evaluation if the same code, corpus files, model identifiers, benchmark files, API model behavior, and package versions are available. A conda environment export and pip freeze file are included as environment.lock.yml and requirements-freeze.txt. Exact generated answers may still vary because hosted LLM behavior can change over time even when the model name and prompt are fixed. The archived per-question CSVs are therefore part of the evidence record and should be used to audit the reported results.
