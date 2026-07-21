@@ -27,6 +27,15 @@ Supplementary Data S1 is also provided as separate upload-ready data files:
 
 These files contain the consolidated per-question audit table, stage counts, and notes on why the reported evaluated-row count is 404 rather than 500.
 
+Supplementary Data S2 is provided as separate upload-ready AI-judge files:
+
+- `07_Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv`
+- `07_Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv`
+- `07_Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md`
+- `07_Supplementary_Data_S2_README_20260721.md`
+
+These files document which questions were analyzed by the AI judge, the scoring criteria, model settings, exact prompt, row-level scores and rationales, stage-level metrics, conclusions, and recommendations.
+
 ## Figures
 
 Selected figure files are in `figures_for_upload/`.
