@@ -12,5 +12,5 @@
   "answerable_pairs": 20,
   "unanswerable_pairs": 5,
   "output_sha256": "40a01b48ce016ccc81e5dae082724ffb4a49392726084276e3997ce70bc1f79d",
-  "rule": "Do not tune the pipeline on this file before reporting external-test metrics."
+  "rule": "Do not tune the pipeline on this file before reporting AI-authored prospective-test metrics."
 }

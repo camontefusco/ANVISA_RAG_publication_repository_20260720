@@ -23,7 +23,7 @@ The final manuscript should present this as a staged development and validation 
 9. Build a bilingual article-level benchmark.
 10. Use automated AI judging because expert-panel validation was not available.
 11. Run internal held-out evaluation.
-12. Run an external stress test once without tuning.
+12. Run an AI-authored prospective stress test once without tuning.
 13. Repair refusal calibration only after documenting the external weakness.
 14. Run a new refusal-focused external test.
 15. Freeze the pipeline and avoid further tuning from test results.
@@ -194,7 +194,7 @@ Quality check: The user explicitly raised concern about trusting 1.000 metrics. 
 
 Consequence: The manuscript emphasizes the staged evaluation sequence rather than relying on the internal benchmark alone.
 
-### 13. Prospective external stress test
+### 13. Prospective AI-authored prospective stress test
 
 Problem observed: Internal scores were suspiciously high.
 
@@ -208,13 +208,13 @@ Consequence: The strongest evidence became the external test pattern, not the in
 
 ### 14. Refusal calibration repair
 
-Problem observed: The first external stress test showed refusal correctness around 0.700 on unanswerable/adversarial questions.
+Problem observed: The first AI-authored prospective stress test showed refusal correctness around 0.700 on unanswerable/adversarial questions.
 
 Decision: Repair refusal calibration using a separate development set, not by tuning directly on the external test.
 
 Rationale: The failure was important enough to fix, but tuning directly from the external test would compromise its value as an external assessment.
 
-Quality check: A separate refusal-focused development set was used, followed by a new external refusal-focused test.
+Quality check: A separate refusal-focused development set was used, followed by a new refusal-focused AI-authored test.
 
 Consequence: The second refusal-focused external test showed improved refusal behavior while preserving answerable-control performance.
 
@@ -253,7 +253,7 @@ The final pipeline is justified by the failure modes observed during development
 - Citation-constrained generation addresses traceability.
 - Refusal calibration addresses unsupported answers when related but insufficient context is retrieved.
 - AI judging addresses practical solo-author evaluation constraints while requiring transparent limitations.
-- External stress testing addresses concern that internal 1.000 scores are inflated.
+- AI-authored prospective stress testing addresses concern that internal 1.000 scores are inflated.
 
 ## What to include in the manuscript
 
@@ -261,7 +261,7 @@ The main manuscript should include a short subsection called "Development and va
 
 Suggested text:
 
-"Pipeline development followed a staged procedure. Initial testing identified environment, corpus-cleaning, retrieval, answer-completeness, citation, and refusal failures. Each repair was made on development data and followed by re-evaluation. Because internal held-out metrics became very high after targeted repairs, the final system was assessed with a prospective external stress test that was run once before additional tuning. That test showed strong answerable-question performance but weaker refusal behavior. Refusal calibration was then updated using a separate development set, and a new refusal-focused external test was run to assess the repaired boundary condition. The final pipeline was frozen after this step."
+"Pipeline development followed a staged procedure. Initial testing identified environment, corpus-cleaning, retrieval, answer-completeness, citation, and refusal failures. Each repair was made on development data and followed by re-evaluation. Because internal held-out metrics became very high after targeted repairs, the final system was assessed with a prospective AI-authored prospective stress test that was run once before additional tuning. That test showed strong answerable-question performance but weaker refusal behavior. Refusal calibration was then updated using a separate development set, and a new refusal-focused external test was run to assess the repaired boundary condition. The final pipeline was frozen after this step."
 
 ## What to include in supplementary material
 
@@ -284,7 +284,7 @@ Recommended contents:
 
 Concern: The system was overfit to the benchmark.
 
-Response: Internal results are explicitly reported as post-repair. External stress testing was added because internal scores were suspiciously high.
+Response: Internal results are explicitly reported as post-repair. AI-authored prospective stress testing was added because internal scores were suspiciously high.
 
 Concern: There was no expert panel.
 
@@ -296,7 +296,7 @@ Response: The paper is framed around regulatory information access, medical-prod
 
 Concern: The system may hallucinate.
 
-Response: Refusal behavior is an explicit endpoint. The first external test exposed refusal weakness, calibration was repaired on development data, and a second external refusal test assessed the fix.
+Response: Refusal behavior is an explicit endpoint. The first external test exposed refusal weakness, calibration was repaired on development data, and a second refusal-focused AI-authored test assessed the fix.
 
 Concern: The system is not current regulatory advice.
 

@@ -15,7 +15,7 @@ Prepared: 2026-07-20
 | Long-list questions | Often found the right article. | Omitted one element, condition, or deadline. | Answer-completeness checks were added. | Average metrics can hide operationally important omissions. |
 | False-premise questions | Could correct the premise and cite evidence. | Automated labels could confuse false premise with refusal. | False-premise questions were kept as a separate category. | These questions should not be merged with ordinary unanswerable questions. |
 | Current or operational facts outside corpus | Refused after calibration. | Earlier system answered from nearby general text. | A stricter refusal rule and separate refusal test were added. | Refusal calibration is central for regulatory safety. |
-| External stress-test questions | Confirmed strong answerable-question behavior. | Refusal correctness dropped to 0.700. | Refusal was repaired using separate development data. | External testing changed the project story. |
+| AI-authored prospective-test questions | Confirmed strong answerable-question behavior. | Refusal correctness dropped to 0.700. | Refusal was repaired using separate development data. | AI-authored prospective testing changed the project story. |
 
 ## Supplementary Table S2. Expanded representative answer outcomes
 
@@ -28,8 +28,8 @@ Prepared: 2026-07-20
 | Correct refusal | What is the current phone number for Anvisa support for the adverse-event notification system? | Refused because the corpus does not contain current support contact information. | Appropriate evidence boundary. |
 | Incomplete answer | What information must appear for non-printed instructions for use? | Retrieved RDC 751/2022, Art. 51 but omitted that instructions must remain available while the product is on the market. | Correct article, incomplete answer. |
 | Incomplete answer | Can a foreign-manufactured biological product be registered without registration in the manufacturing country? | Gave the exception but did not clearly state the general rule. | Risk of treating an exception as the whole rule. |
-| False refusal | Under RDC 945/2024, until when must DSURs be sent to Anvisa and what is the annual reference date? | Refused in one English external-test row although the corpus contained the answer. | Retrieval or answer threshold failure. |
-| Refusal failure before calibration | What is the current electronic form model for notifying SUSARs to Anvisa? | Earlier external testing sometimes answered with the general electronic-notification requirement. | Related context was mistaken for sufficient evidence. |
+| False refusal | Under RDC 945/2024, until when must DSURs be sent to Anvisa and what is the annual reference date? | Refused in one English prospective-test row although the corpus contained the answer. | Retrieval or answer threshold failure. |
+| Refusal failure before calibration | What is the current electronic form model for notifying SUSARs to Anvisa? | Earlier AI-authored prospective testing sometimes answered with the general electronic-notification requirement. | Related context was mistaken for sufficient evidence. |
 
 ## Supplementary Table S3. Evaluation-stage summary
 
@@ -37,8 +37,8 @@ Prepared: 2026-07-20
 |---|---|---|
 | Initial held-out evaluation | English completeness was the weak point; some answers omitted list items, conditions, or exceptions. | Development diagnosis. |
 | Post-repair internal evaluation | High internal scores showed that the repaired system passed the curated benchmark. | Internal technical check, not independent validation. |
-| External stress test | Answerable questions were mostly supported, but refusal behavior was weak. | Diagnostic external evidence that changed the project focus. |
-| Refusal-focused external test | Refusal improved after separate calibration, with no over-refusal on answerable controls. | Focused external check of refusal calibration. |
+| AI-authored prospective stress test | Answerable questions were mostly supported, but refusal behavior was weak. | Diagnostic prospective evidence that changed the project focus. |
+| Refusal-focused AI-authored test | Refusal improved after separate calibration, with no over-refusal on answerable controls. | Focused AI-authored check of refusal calibration. |
 
 ## Supplementary Table S4. Main-table disposition after revision
 

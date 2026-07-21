@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKAGE = ROOT / "tirs_final_submission_package_20260720"
+PACKAGE = ROOT
 EVIDENCE = PACKAGE / "supplementary_materials" / "evidence_artifacts"
 OUT = PACKAGE / "figures_from_development_20260720"
 
@@ -157,8 +157,8 @@ def build_source_table() -> list[dict[str, str]]:
         (1, "Internal held-out", "internal_heldout"),
         (2, "English repair set", "english_repair"),
         (3, "Portuguese repair set", "portuguese_repair"),
-        (4, "External stress test", "external_stress"),
-        (5, "External refusal test", "external_refusal"),
+        (4, "Prospective test", "external_stress"),
+        (5, "Refusal test", "external_refusal"),
     ]
 
     metric_columns = [
@@ -216,7 +216,7 @@ def build_source_table() -> list[dict[str, str]]:
         "Figure 3B",
         "Targeted weak-point repairs",
         3,
-        "External stress test",
+        "Prospective test",
         "Refusal correctness",
         loaded["external_stress"],
         unanswerable,
@@ -236,14 +236,14 @@ def build_source_table() -> list[dict[str, str]]:
         "answerable == false",
         CSV_SOURCES["external_refusal"],
         "judge_refusal_correctness",
-        "External refusal-focused set.",
+        "Refusal-focused AI-authored set.",
     )
     add_mean(
         rows_out,
         "Figure 3B",
         "Targeted weak-point repairs",
         5,
-        "External stress test",
+        "Prospective test",
         "Completeness trade-off",
         loaded["external_stress"],
         answerable,
@@ -269,9 +269,9 @@ def build_source_table() -> list[dict[str, str]]:
     add_mean(
         rows_out,
         "Figure S1",
-        "External retrieval validity",
+        "Prospective-test retrieval validity",
         1,
-        "External stress test",
+        "Prospective test",
         "Source hit",
         loaded["external_stress"],
         answerable,
@@ -282,9 +282,9 @@ def build_source_table() -> list[dict[str, str]]:
     add_mean(
         rows_out,
         "Figure S1",
-        "External retrieval validity",
+        "Prospective-test retrieval validity",
         2,
-        "External stress test",
+        "Prospective test",
         "Source MRR",
         loaded["external_stress"],
         answerable,
@@ -295,9 +295,9 @@ def build_source_table() -> list[dict[str, str]]:
     add_mean(
         rows_out,
         "Figure S1",
-        "External retrieval validity",
+        "Prospective-test retrieval validity",
         3,
-        "External stress test",
+        "Prospective test",
         "Normalized article recall@5",
         loaded["external_stress"],
         answerable,
@@ -309,9 +309,9 @@ def build_source_table() -> list[dict[str, str]]:
     add_mean(
         rows_out,
         "Figure S1",
-        "External retrieval validity",
+        "Prospective-test retrieval validity",
         4,
-        "External stress test",
+        "Prospective test",
         "Normalized article MRR@5",
         loaded["external_stress"],
         answerable,
@@ -453,11 +453,11 @@ def plot_s1(rows: list[dict[str, str]]) -> None:
     ax.set_xticklabels(labels, rotation=25, ha="right")
     ax.set_ylim(0.85, 1.03)
     ax.set_ylabel("Mean retrieval metric")
-    ax.set_title("External stress-test retrieval validity")
+    ax.set_title("Prospective-test retrieval validity")
     ax.grid(axis="y", color="0.88", linewidth=0.6)
     for idx, yy in enumerate(y):
         ax.text(idx, min(yy + 0.006, 1.015), f"{yy:.3f}", ha="center", va="bottom", fontsize=8)
-    save_all(fig, "Figure_S1_external_retrieval_validity")
+    save_all(fig, "Figure_S1_prospective_test_retrieval_validity")
 
 
 def plot_s2(rows: list[dict[str, str]]) -> None:
@@ -545,7 +545,8 @@ def main() -> None:
     plot_s1(rows)
     plot_s2(rows)
     plot_s3(rows)
-    shutil.copy2(Path(__file__).resolve(), OUT / "build_rag_development_figures.py")
+    if Path(__file__).resolve() != (OUT / "build_rag_development_figures.py").resolve():
+        shutil.copy2(Path(__file__).resolve(), OUT / "build_rag_development_figures.py")
     write_readme(rows)
 
 

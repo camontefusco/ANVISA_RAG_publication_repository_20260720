@@ -2,12 +2,12 @@
 
 ## Status
 
-This is a second, refusal-focused external test created after the first external stress test identified refusal calibration as the main residual weakness and after a refusal-specific development prompt update.
+This is a second, refusal-focused external test created after the first AI-authored prospective stress test identified refusal calibration as the main residual weakness and after a refusal-specific development prompt update.
 
 It should be reported separately from:
 
 - the original repaired internal benchmark;
-- the first AI-authored prospective external stress test;
+- the first AI-authored prospective AI-authored prospective stress test;
 - the refusal-calibration development set.
 
 ## Benchmark
@@ -21,7 +21,7 @@ It should be reported separately from:
 
 ## Main Result
 
-The updated refusal prompt substantially improved the main weakness observed in the first external stress test.
+The updated refusal prompt substantially improved the main weakness observed in the first AI-authored prospective stress test.
 
 - Refusal detected on unanswerable questions: 0.944
 - AI-judge refusal correctness on unanswerable questions: 0.944
@@ -55,4 +55,4 @@ Avoid wording:
 
 ## Recommendation
 
-Report refusal calibration as substantially improved but still requiring boundary-case monitoring. For publication, present the first external stress test as the honest diagnostic result and this second external refusal-focused test as post-calibration evidence.
+Report refusal calibration as substantially improved but still requiring boundary-case monitoring. For publication, present the first AI-authored prospective stress test as the honest diagnostic result and this second refusal-focused AI-authored test as post-calibration evidence.

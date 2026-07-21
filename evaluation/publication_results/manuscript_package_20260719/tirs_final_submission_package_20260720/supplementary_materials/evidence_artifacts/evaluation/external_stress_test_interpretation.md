@@ -2,7 +2,7 @@
 
 ## Status
 
-This result should be reported as an **AI-authored prospective external stress test with artifact recovery**.
+This result should be reported as an **AI-authored prospective AI-authored prospective stress test with artifact recovery**.
 
 The first external run completed in the terminal, but after the Codex output folder was moved from iCloud/local locations, only a 40-row checkpoint remained in the moved project folder. The missing 10 rows were the unanswerable and adversarial block (`EXTERNAL_021` through `EXTERNAL_025`, PT and EN). Those 10 rows were regenerated once with the same frozen settings and merged with the preserved 40-row checkpoint.
 
@@ -10,9 +10,9 @@ No benchmark edits, retrieval edits, prompt edits, judge edits, threshold edits,
 
 ## Main Finding
 
-The external stress test does **not** support the strongest version of the internal perfect-score claim. It supports a more nuanced and publishable claim:
+The AI-authored prospective stress test does **not** support the strongest version of the internal perfect-score claim. It supports a more nuanced and publishable claim:
 
-> The final RAG system showed strong prospective source retrieval, citation grounding, and answer faithfulness on an AI-authored external stress test, but refusal behavior on unanswerable/adversarial regulatory questions remained a residual weakness.
+> The final RAG system showed strong prospective source retrieval, citation grounding, and answer faithfulness on an AI-authored AI-authored prospective stress test, but refusal behavior on unanswerable/adversarial regulatory questions remained a residual weakness.
 
 ## Key Metrics
 
@@ -80,7 +80,7 @@ This external test is good news, but not perfect-system evidence.
 
 The defensible publication wording is:
 
-> In a 50-question AI-authored prospective external stress test, the frozen system retrieved the correct source for all answerable questions and achieved high normalized article recall@5, citation validity, faithfulness, and completeness. However, refusal correctness dropped to 0.70 on unanswerable/adversarial questions, indicating that abstention behavior remains the principal residual limitation.
+> In a 50-question AI-authored prospective AI-authored prospective stress test, the frozen system retrieved the correct source for all answerable questions and achieved high normalized article recall@5, citation validity, faithfulness, and completeness. However, refusal correctness dropped to 0.70 on unanswerable/adversarial questions, indicating that abstention behavior remains the principal residual limitation.
 
 Avoid saying:
 

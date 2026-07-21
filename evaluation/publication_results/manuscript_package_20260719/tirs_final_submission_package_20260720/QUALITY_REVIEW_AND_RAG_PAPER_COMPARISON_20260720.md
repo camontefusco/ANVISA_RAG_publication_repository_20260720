@@ -66,7 +66,7 @@ The system was improved after error review. Internal post-repair values should b
 
 3. External evaluation is still small.
 
-The first external stress test had 50 questions. The refusal-focused external test had 30 questions. These are useful, but not large enough for strong generalization claims.
+The first AI-authored prospective stress test had 50 questions. The refusal-focused external test had 30 questions. These are useful, but not large enough for strong generalization claims.
 
 4. Development-stage figures compare different sets.
 
@@ -96,7 +96,7 @@ Six documents are enough for a case study, but not enough to claim broad ANVISA 
 
 The FDA TIRS paper reported that its RAG application cited the correct source document 89.2% of the time, while all relevant information was present in 69.6% of answers and 13.4% contained incorrect information.
 
-Our external stress-test retrieval values are strong:
+Our AI-authored prospective-test retrieval values are strong:
 
 - Source hit: 1.000, n=40 answerable questions
 - Source MRR: 0.988, n=40
@@ -105,9 +105,9 @@ Our external stress-test retrieval values are strong:
 
 Our answer-quality values should be interpreted more cautiously because they come from AI-judge scoring:
 
-- External stress-test completeness: 0.943, n=40 answerable questions
-- External stress-test refusal correctness: 0.700, n=10 unanswerable/adversarial questions
-- Refusal-focused external refusal correctness after calibration: 0.944, n=18
+- AI-authored prospective-test completeness: 0.943, n=40 answerable questions
+- AI-authored prospective-test refusal correctness: 0.700, n=10 unanswerable/adversarial questions
+- Refusal-focused AI-authored refusal correctness after calibration: 0.944, n=18
 - Answerable-control completeness after refusal tuning: 0.908, n=12
 
 Interpretation: retrieval appears strong in the tested corpus. Refusal calibration was the main safety weakness. The stricter refusal prompt improved refusal behavior but may have slightly reduced completeness on answerable controls. That trade-off is scientifically useful and should be shown, not hidden.
@@ -163,7 +163,7 @@ Main manuscript:
 
 Supplement:
 
-- Figure S1: external stress-test retrieval validity.
+- Figure S1: AI-authored prospective-test retrieval validity.
 - Figure S2: 200-question benchmark composition.
 - Figure S3: article-aware chunk distribution.
 - Full source table for all plotted values.

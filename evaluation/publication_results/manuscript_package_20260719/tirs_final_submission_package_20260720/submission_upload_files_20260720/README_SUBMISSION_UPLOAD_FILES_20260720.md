@@ -6,9 +6,8 @@ This folder contains a practical upload set derived from the full working packag
 
 - `00_Cover_Letter_TIRS_20260720.docx`
 - `01_Main_Manuscript_Text_Only_TIRS_20260720.docx`
-- `02_Tables_1_to_3_TIRS_20260720.docx`
 
-Individual table files are also provided as `Table_1_*.docx`, `Table_2_*.docx`, and `Table_3_*.docx`.
+Upload the individual table files: `Table_1_*.docx`, `Table_2_*.docx`, and `Table_3_*.docx`. The former combined table file was moved to the parent table archive to avoid duplicate table submission.
 
 PDF versions of these files are provided in `pdf_versions/`.
 

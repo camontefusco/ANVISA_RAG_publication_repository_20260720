@@ -11,7 +11,7 @@ Main article figures:
 
 Supplementary figures:
 
-- Figure S1: external retrieval validity
+- Figure S1: prospective-test retrieval validity
 - Figure S2: benchmark composition
 - Figure S3: article-aware chunk distribution
 
