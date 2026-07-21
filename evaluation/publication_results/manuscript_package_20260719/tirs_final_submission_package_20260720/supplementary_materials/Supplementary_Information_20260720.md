@@ -69,3 +69,12 @@ Internal post-repair scores should not be interpreted as independent proof of ge
 ## Supplementary File 7. Methods and prompts for reproducibility
 
 `Supplementary_Methods_and_Prompts_20260720.md` contains the expanded methods and prompt documentation requested for journal reproducibility review. It includes article-aware chunking settings, dense and BM25 retrieval settings, reciprocal rank fusion, cross-encoder reranking, English query anchors, final answer prompt, refusal prompt, AI-judge prompt, metric definitions, bootstrap confidence-interval settings, and the reproducibility boundary for hosted LLM outputs.
+
+## Supplementary Figure S4. Streamlit interface and app smoke test
+
+Supplementary Figure S4 shows the local Streamlit interface used for bilingual ANVISA question answering. The screenshot was captured on 2026-07-21 after launching the app from the recovered local project with `rag-project-env`.
+
+A backend smoke test was run with the same application components used by Streamlit: `Translator`, `get_chat_engine`, the persisted vector index, hybrid retrieval, reranking, and the Gemini answer wrapper. The English question was: "What does RDC 945/2024 regulate?" The retrieval rewrite was: "O que a RDC 945/2024 regulamenta?" The generated answer stated that RDC 945/2024 regulates guidelines and procedures for clinical trials with medicines in Brazil, including DDCM submission for later drug registration, and cited [RDC 945/2024, Art. 1]. Five source nodes were returned. The first retrieved source was RDC 945/2024, Art. 1.
+
+This was an application smoke test, not an additional benchmark result.
+
