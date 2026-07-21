@@ -304,45 +304,9 @@ The English completeness diagnostic experiment used AI-judge completeness below 
 
 ## Automated AI Judge
 
-The AI judge used `models/gemini-flash-lite-latest` with temperature 0.0. The judge received the question, system answer, expected answer, answerability flag, and retrieved evidence. It returned JSON with four numeric scores from 0 to 1:
+The automated judge used `models/gemini-flash-lite-latest` with temperature 0.0. It received the question, system answer, expected answer, answerability flag, and retrieved evidence, then returned four numeric scores from 0 to 1: faithfulness, citation correctness, completeness, and refusal correctness. The judge was used as a structured technical scoring tool, not as an independent regulatory expert panel. The answer model and automated judge used the same Gemini model family, so same-model-family grading may overestimate answer quality.
 
-- faithfulness
-- citation_correctness
-- completeness
-- refusal_correctness
-
-The judge prompt was:
-
-```text
-Evaluate a regulatory RAG answer. Return only JSON with numeric scores from 0 to 1
-and a short rationale.
-
-Scoring:
-- faithfulness: every factual claim is supported by retrieved evidence.
-- citation_correctness: citations exist when an answer is given, refer to retrieved
-  evidence, and support the associated claim.
-  The system uses article-level citation labels only. If the supporting sentence
-  is in a paragraph, item, or subitem inside a retrieved cited article, the
-  article-level citation is correct; do not penalize the answer for omitting
-  paragraph, item, section, page, or line suffixes.
-- completeness: the answer covers the expected answer's essential information,
-  including material conditions or exceptions.
-- refusal_correctness: score 1 when an unanswerable question is refused without an
-  unsupported answer, or when an answerable question is answered rather than refused.
-
-Question answerable from corpus: {answerable}
-Question: {question}
-Expected answer: {expected_answer}
-System answer: {answer}
-
-Retrieved evidence:
-{evidence}
-
-JSON fields: faithfulness, citation_correctness, completeness,
-refusal_correctness, rationale
-```
-
-The AI judge was used as a structured technical scoring tool. It was not treated as an independent regulatory expert panel. The answer model and automated judge used the same Gemini model family, so same-model-family grading may overestimate answer quality.
+The exact judge prompt, scoring definitions, model settings, row-level scores, rationales, and stage-level summaries are provided only in Supplementary Data 2 to avoid duplication across supplementary files.
 
 ## Confidence Intervals
 
