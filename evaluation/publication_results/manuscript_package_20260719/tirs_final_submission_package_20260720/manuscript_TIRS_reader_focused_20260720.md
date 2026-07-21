@@ -22,7 +22,7 @@ Objective. To evaluate whether a bilingual retrieval-augmented generation protot
 
 Methods. Six ANVISA regulatory documents were cleaned, indexed by regulatory article, and used as a closed document collection. The test set included Portuguese and English questions about clinical trials, pharmacovigilance, biological products, medical devices, reliance pathways, exceptions, and unanswerable operational questions. Answers were required to cite the source document and article or refuse when the indexed documents did not contain the requested fact. Detailed retrieval settings were documented separately.
 
-Results. The system answered many direct regulatory questions with the correct source article, including questions about SUSAR handling, DSUR submission, valid pharmacovigilance notifications, biological-product registration exceptions, and medical-device instructions for use. Error analysis was more informative than aggregate scores. Some answers were correct but incomplete, for example omitting an active-search obligation, an ICH E2F condition, or a 30-business-day response deadline. The first external stress test showed that refusal behavior was the main remaining weakness. After a separate refusal-calibration step, refusal correctness improved in a focused external test.
+Results. The system answered many direct regulatory questions with the correct source article, including questions about SUSAR handling, DSUR submission, valid pharmacovigilance notifications, biological-product registration exceptions, and medical-device instructions for use. Error analysis was more informative than aggregate scores. Some answers were correct but incomplete, for example omitting an active-search obligation, an ICH E2F condition, or a 30-business-day response deadline. The first AI-authored prospective stress test showed that refusal behavior was the main remaining weakness. After a separate refusal-calibration step, refusal correctness improved in a focused AI-authored prospective test.
 
 Conclusion. A bilingual RAG system may support regulatory information access when answers are tied to verifiable articles. For regulatory use, evaluation should report examples, omissions, false refusals, and refusal failures, not only average retrieval scores.
 
@@ -44,9 +44,9 @@ Study design
 
 This was a technical evaluation of a closed-corpus bilingual RAG prototype. The corpus was closed because the system was not allowed to search current web pages, submission portals, fee schedules, private company information, or unpublished documents. This design made the evidence boundary explicit. If the answer was not present in the indexed documents, the correct behavior was refusal.
 
-The evaluation was developed in stages. Initial tests identified problems in corpus cleaning, retrieval, English questions over Portuguese documents, answer completeness, citation behavior, and refusal behavior. Repairs were made on development data. The final evaluation emphasized held-out and external test sets, including an external stress test and a later refusal-focused test.
+The evaluation was developed in stages. Initial tests identified problems in corpus cleaning, retrieval, English questions over Portuguese documents, answer completeness, citation behavior, and refusal behavior. Repairs were made on development data. The final evaluation emphasized held-out and AI-authored prospective test sets, including an AI-authored prospective stress test and a later refusal-focused test.
 
-The roles of the datasets were separated to avoid presenting development gains as independent validation. Development runs were used to identify and repair failures. Held-out internal runs were used to test whether the repaired system passed the curated benchmark. The first external stress test was used to challenge the system after high internal scores. When that test showed refusal weakness, refusal calibration was changed using a separate development set, and a second refusal-focused external test was used to evaluate that repair. The first external stress test was therefore treated as diagnostic external evidence, not as a dataset to tune from.
+The roles of the datasets were separated to avoid presenting development gains as independent validation. Development runs were used to identify and repair failures. Held-out internal runs were used to test whether the repaired system passed the curated benchmark. The first AI-authored prospective stress test was used to challenge the system after high internal scores. When that test showed refusal weakness, refusal calibration was changed using a separate development set, and a second refusal-focused AI-authored prospective test was used to evaluate that repair. The first AI-authored prospective stress test was therefore treated as diagnostic prospective evidence, not as a dataset to tune from.
 
 Regulatory corpus
 
@@ -82,7 +82,7 @@ Development and error categories
 
 The evaluation was organized around categories of regulatory questions and categories of observed behavior. This was necessary because a single average score did not explain whether the system was useful for regulatory work. A direct article question, a rule-plus-exception question, a false-premise question, and a current operational question have different risks. The project therefore tracked not only whether an answer was scored as correct, but also what type of question produced the error and what was changed in response.
 
-The abbreviated development table below summarizes the main categories. The full artifact-to-claim mapping is provided separately in the development results story table, including the source files used for the first held-out AI-judge evaluation, English completeness repair, external stress test, refusal-development run, and refusal-focused external test.
+The abbreviated development table below summarizes the main categories. The full artifact-to-claim mapping is provided separately in the development results story table, including the source files used for the first held-out AI-judge evaluation, English completeness repair, AI-authored prospective stress test, refusal-development run, and refusal-focused AI-authored prospective test.
 
 Table 2. Development decisions made after observed failures.
 
@@ -92,7 +92,7 @@ Table 2. Development decisions made after observed failures.
 | Arbitrary chunks did not match legal structure. | Correct documents were sometimes nearby but answers missed article-level conditions. | Rebuilt the index with article-aware chunks and article metadata. | Users need checkable article citations, not only semantically similar passages. |
 | Dense retrieval alone was weak for exact legal terms. | Terms such as DDCM, RDC numbers, article numbers, and IN 338/2024 required exact matching. | Added BM25 retrieval, reciprocal-rank fusion, and reranking. | Regulatory questions often depend on exact terms and article labels. |
 | English questions over Portuguese documents lost completeness. | Initial English completeness was lower than Portuguese completeness. | Added conservative Portuguese retrieval anchors while preserving answer language. | International users may ask in English while the source corpus remains Portuguese. |
-| The system answered from related but insufficient context. | External stress testing showed refusal correctness of 0.700. | Tightened the refusal rule and tested a separate refusal-focused external set. | A related article is not enough when the specific requested fact is absent. |
+| The system answered from related but insufficient context. | AI-authored prospective stress testing showed refusal correctness of 0.700. | Tightened the refusal rule and tested a separate refusal-focused AI-authored set. | A related article is not enough when the specific requested fact is absent. |
 
 Results
 
@@ -129,17 +129,17 @@ These are not cosmetic errors. In regulatory work, an omitted condition can chan
 
 The development process therefore changed the evaluation focus. Early work asked whether the system could find the right source. Later work asked whether the answer included all material elements from the source and whether the system could abstain from unsupported operational claims. This sequence matters because a system may appear strong on retrieval metrics while still producing answers that are too short for regulatory use.
 
-External testing changed the interpretation
+AI-authored prospective testing changed the interpretation
 
-Internal results became high after the system was repaired. Those results showed that the final system passed the internal benchmark, but they were not enough to support a strong general claim. For that reason, an external stress test was run.
+Internal results became high after the system was repaired. Those results showed that the final system passed the internal benchmark, but they were not enough to support a strong general claim. For that reason, an AI-authored prospective stress test was run.
 
-The external test supported the answerable-question use case but exposed refusal as the main remaining weakness. The system generally found and cited relevant evidence for answerable questions. However, for unanswerable or adversarial questions, it sometimes answered from nearby regulatory text instead of saying that the corpus did not contain the specific requested fact.
+The AI-authored prospective test supported the answerable-question use case but exposed refusal as the main remaining weakness. The system generally found and cited relevant evidence for answerable questions. However, for unanswerable or adversarial questions, it sometimes answered from nearby regulatory text instead of saying that the corpus did not contain the specific requested fact.
 
 This shifted the interpretation of the project. The main problem was not simply "Can the system retrieve ANVISA text?" It was "Can the system distinguish a related article from an article that actually answers the question?" That distinction is central for regulatory use.
 
 Refusal calibration
 
-A separate refusal-calibration step was then performed using development data. The later refusal-focused external test included questions about current support phone numbers, current MedDRA versions, petition subject codes, exact URLs, private case status, future approvals, legal advice, and specific operational documents not present in the corpus.
+A separate refusal-calibration step was then performed using development data. The later refusal-focused AI-authored prospective test included questions about current support phone numbers, current MedDRA versions, petition subject codes, exact URLs, private case status, future approvals, legal advice, and specific operational documents not present in the corpus.
 
 After calibration, the system correctly refused most unanswerable questions and did not over-refuse answerable controls. It correctly refused questions such as the current MedDRA version, current support phone number, and petition subject code for reliance when those facts were not present in the indexed documents. One remaining boundary problem involved questions where the corpus described general enforcement consequences but did not contain the exact penalty requested.
 
@@ -147,7 +147,7 @@ This repair did not make refusal behavior solved. It made the remaining problem 
 
 Summary metrics
 
-Aggregate metrics are useful, but they should be interpreted through the examples above. In the first external stress test, answerable-question performance was strong, with normalized article Recall@5 of 0.967 and AI-judge completeness of 0.943. Refusal correctness was weaker at 0.700. After refusal calibration, the refusal-focused external test reached refusal correctness of 0.944, with no over-refusal on answerable controls.
+Aggregate metrics are useful, but they should be interpreted through the examples above. In the first AI-authored prospective stress test, answerable-question performance was strong, with normalized article Recall@5 of 0.967 and AI-judge completeness of 0.943. Refusal correctness was weaker at 0.700. After refusal calibration, the refusal-focused AI-authored prospective test reached refusal correctness of 0.944, with no over-refusal on answerable controls.
 
 ![Figure 3A. Development-stage answer-quality metrics.](figures_from_development_20260720/Figure_3A_development_stage_answer_quality.png)
 
@@ -155,7 +155,7 @@ Figure 3A. Development-stage answer-quality metrics. Mean AI-judge scores are sh
 
 ![Figure 3B. Targeted weak-point repairs.](figures_from_development_20260720/Figure_3B_targeted_weak_point_repairs.png)
 
-Figure 3B. Targeted weak-point repairs. The left panel shows English answer completeness before and after the English-completeness repair set. The middle panel shows refusal correctness in the first external stress test and in the later refusal-focused external test after refusal-prompt calibration. The right panel shows answerable-question completeness in the external stress test and in the answerable controls of the refusal-focused test. Because the panels compare different evaluation sets, the figure documents observed development decisions rather than paired statistical improvement.
+Figure 3B. Targeted weak-point repairs. The left panel shows English answer completeness before and after the English-completeness repair set. The middle panel shows refusal correctness in the first AI-authored prospective stress test and in the later refusal-focused AI-authored prospective test after refusal-prompt calibration. The right panel shows answerable-question completeness in the AI-authored prospective stress test and in the answerable controls of the refusal-focused test. Because the panels compare different evaluation sets, the figure documents observed development decisions rather than paired statistical improvement.
 
 The full development decision table, expanded example table, and evaluation-stage summary are provided in Supplementary Tables S1-S3.
 
@@ -200,7 +200,7 @@ It also keeps the reader focused on regulatory consequences rather than implemen
 
 Limitations
 
-This study used a selected closed corpus and does not cover all ANVISA rules or current operational resources. Benchmark construction did not include an independent panel of regulatory experts. Automated judging was used and should be interpreted as technical scoring, not expert validation. Some internal results may be inflated because the system was improved after error review. The first external stress test required artifact recovery after output files were moved; preserved settings were used, but this should be reported transparently. Finally, the prototype was tested offline and not in a prospective regulatory-affairs workflow.
+This study used a selected closed corpus and does not cover all ANVISA rules or current operational resources. Benchmark construction did not include an independent panel of regulatory experts. Automated judging was used and should be interpreted as technical scoring, not expert validation. Some internal results may be inflated because the system was improved after error review. The first AI-authored prospective stress test required artifact recovery after output files were moved; preserved settings were used, but this should be reported transparently. Finally, the prototype was tested offline and not in a prospective regulatory-affairs workflow.
 
 Future work
 

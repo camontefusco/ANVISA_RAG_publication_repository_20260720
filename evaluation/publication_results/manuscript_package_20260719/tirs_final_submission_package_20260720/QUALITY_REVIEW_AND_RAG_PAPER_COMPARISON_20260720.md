@@ -66,7 +66,7 @@ The system was improved after error review. Internal post-repair values should b
 
 3. External evaluation is still small.
 
-The first AI-authored prospective stress test had 50 questions. The refusal-focused external test had 30 questions. These are useful, but not large enough for strong generalization claims.
+The first AI-authored prospective stress test had 50 questions. The refusal-focused AI-authored prospective test had 30 questions. These are useful, but not large enough for strong generalization claims.
 
 4. Development-stage figures compare different sets.
 

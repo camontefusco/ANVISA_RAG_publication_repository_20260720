@@ -52,7 +52,7 @@ Automated judging was used because an independent expert panel was not available
 
 ## Supplementary File 5. Representative questions and per-question results
 
-The evidence-artifact folder contains per-question CSV outputs for the held-out internal benchmark, English completeness repair, Portuguese residual-quality repair, first AI-authored prospective stress test, refusal-development run, and refusal-focused external test. These files include question identifiers, language, category, expected source or article fields when present, generated answers, retrieved evidence fields, and scoring fields.
+The evidence-artifact folder contains per-question CSV outputs for the held-out internal benchmark, English completeness repair, Portuguese residual-quality repair, first AI-authored prospective stress test, refusal-development run, and refusal-focused AI-authored prospective test. These files include question identifiers, language, category, expected source or article fields when present, generated answers, retrieved evidence fields, and scoring fields.
 
 The main manuscript reports representative correct answers, incomplete answers, false refusals, and refusal failures. Expanded decision-history, example, and stage-summary tables are provided in `Supplementary_Tables_20260720.md`. The CSV files should be retained with the supplement so readers can audit which questions produced each result category.
 
@@ -60,7 +60,7 @@ The main manuscript reports representative correct answers, incomplete answers, 
 
 The development-results story table and TIRS decision-rationale file document the repair sequence: initial application/dependency diagnosis, corpus cleaning, article-aware indexing, hybrid retrieval, reranking, English retrieval anchors, answer-completeness repair, Portuguese residual-quality review, AI-authored prospective stress testing, refusal calibration, and final pipeline freeze.
 
-Internal post-repair scores should not be interpreted as independent proof of generalization. They show that the repaired system passed its curated benchmark. The first AI-authored prospective stress test changed the interpretation by showing that refusal calibration was the main remaining weakness. The second refusal-focused external test evaluated that repair using a separate AI-authored prospective question set.
+Internal post-repair scores should not be interpreted as independent proof of generalization. They show that the repaired system passed its curated benchmark. The first AI-authored prospective stress test changed the interpretation by showing that refusal calibration was the main remaining weakness. The second refusal-focused AI-authored prospective test evaluated that repair using a separate AI-authored prospective question set.
 
 ## Supplementary File 7. Methods and prompts for reproducibility
 
