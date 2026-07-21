@@ -20,7 +20,7 @@ Background. Regulatory teams often need to interpret long health-authority docum
 
 Objective. To evaluate whether a bilingual retrieval-augmented generation prototype could help locate and summarize selected ANVISA regulatory requirements relevant to drug development and health-product regulation.
 
-Methods. Six ANVISA regulatory documents were cleaned, indexed by regulatory article, and used as a closed document collection. The test set included Portuguese and English questions about clinical trials, pharmacovigilance, biological products, medical devices, reliance pathways, exceptions, and unanswerable operational questions. Answers were required to cite the source document and article or refuse when the indexed documents did not contain the requested fact. Detailed retrieval settings were documented separately.
+Methods. Six ANVISA regulatory documents were cleaned, indexed by regulatory article, and used as a closed document collection. The test set included Portuguese and English questions about clinical trials, pharmacovigilance, biological products, medical devices, reliance pathways, exceptions, and unanswerable operational questions. Answers were required to cite the source document and article or refuse when the indexed documents did not contain the requested fact. Detailed retrieval settings, generated-answer audit fields, and the automated AI-judge rubric were documented in the Supplementary Information and Supplementary Data S1-S2.
 
 Results. The system answered many direct regulatory questions with the correct source article, including questions about SUSAR handling, DSUR submission, valid pharmacovigilance notifications, biological-product registration exceptions, and medical-device instructions for use. Error analysis was more informative than aggregate scores. Some answers were correct but incomplete, for example omitting an active-search obligation, an ICH E2F condition, or a 30-business-day response deadline. The first AI-authored prospective stress test showed that refusal behavior was the main remaining weakness. After a separate refusal-calibration step, refusal correctness improved in a focused AI-authored prospective test.
 
@@ -68,7 +68,7 @@ System summary
 
 The system indexed the documents by article so that answers could cite a verifiable regulatory unit. It combined semantic retrieval with keyword retrieval, reranked candidate passages, and generated answers from the highest-ranked contexts. English questions were supported by Portuguese retrieval anchors for regulatory terms such as clinical trial/ensaio clinico, sponsor/patrocinador, biological product/produto biologico, medical device/dispositivo medico, and pharmacovigilance/farmacovigilancia.
 
-The main paper reports this at a high level. Full technical settings, including chunking, model identifiers, retrieval configuration, prompts, and judge rubric, are intended for Supplementary Information.
+The main paper reports this at a high level. Full technical settings, including chunking, model identifiers, retrieval configuration, prompts, metric definitions, and the judge rubric, are provided in the Supplementary Information. Row-level generated answers and error flags are provided in Supplementary Data S1. AI-judge criteria, prompt, row-level scores, rationales, and stage-level conclusions are provided in Supplementary Data S2.
 
 Benchmark and evaluation
 
@@ -76,13 +76,13 @@ The main benchmark contained 200 bilingual questions. It included direct answera
 
 An answer was considered useful only if it was grounded in the indexed corpus. For answerable questions, the expected source document and article were recorded. For unanswerable questions, the expected behavior was refusal. Automated judging was used because an independent two-expert panel was not available. This limits the claim level. The results should be read as technical evaluation with audit trails, not expert regulatory validation.
 
-The automated judge was used as a structured scoring tool, not as a substitute for regulatory expertise. The judge assessed whether each answer was supported by the retrieved evidence, whether citations matched the evidence, whether the answer covered material parts of the question, and whether refusal was appropriate. Because the same project team built the benchmark and no independent expert panel reviewed all answers, the strongest defensible claim is that this was an auditable technical evaluation. The supplementary material should therefore provide the benchmark, generated answers, retrieved articles, automated scores, and failure categories.
+The automated judge was used as a structured scoring tool, not as a substitute for regulatory expertise. The judge assessed whether each answer was supported by the retrieved evidence, whether citations matched the evidence, whether the answer covered material parts of the question, and whether refusal was appropriate. It returned four 0-1 scores per judged row: faithfulness, citation correctness, completeness, and refusal correctness, plus a short rationale. Scores below 0.8 were treated as review flags. Because the same project team built the benchmark and no independent expert panel reviewed all answers, the strongest defensible claim is that this was an auditable technical evaluation. The benchmark, generated answers, retrieved articles, automated scores, judge rationales, and failure categories are therefore provided as Supplementary Data S1-S2.
 
 Development and error categories
 
 The evaluation was organized around categories of regulatory questions and categories of observed behavior. This was necessary because a single average score did not explain whether the system was useful for regulatory work. A direct article question, a rule-plus-exception question, a false-premise question, and a current operational question have different risks. The project therefore tracked not only whether an answer was scored as correct, but also what type of question produced the error and what was changed in response.
 
-The abbreviated development table below summarizes the main categories. The full artifact-to-claim mapping is provided separately in the development results story table, including the source files used for the first held-out AI-judge evaluation, English completeness repair, AI-authored prospective stress test, refusal-development run, and refusal-focused AI-authored prospective test.
+The abbreviated development table below summarizes the main categories. The full artifact-to-claim mapping is provided separately in the development results story table, including the source files used for the first held-out AI-judge evaluation, English completeness repair, AI-authored prospective stress test, refusal-development run, and refusal-focused AI-authored prospective test. The row-level question, answer, judge score, rationale, error flag, and linked action fields are provided in Supplementary Data S1-S2.
 
 Table 2. Development decisions made after observed failures.
 
@@ -147,17 +147,17 @@ This repair did not make refusal behavior solved. It made the remaining problem 
 
 Summary metrics
 
-Aggregate metrics are useful, but they should be interpreted through the examples above. In the first AI-authored prospective stress test, answerable-question performance was strong, with normalized article Recall@5 of 0.967 and AI-judge completeness of 0.943. Refusal correctness was weaker at 0.700. After refusal calibration, the refusal-focused AI-authored prospective test reached refusal correctness of 0.944, with no over-refusal on answerable controls.
+Aggregate metrics are useful, but they should be interpreted through the examples above and the row-level audit files. In the first AI-authored prospective stress test, answerable-question performance was strong, with normalized article Recall@5 of 0.967 and AI-judge completeness of 0.943. Refusal correctness was weaker at 0.700. After refusal calibration, the refusal-focused AI-authored prospective test reached refusal correctness of 0.944, with no over-refusal on answerable controls. The questions analyzed by the AI judge, the four scoring criteria, row-level rationales, stage-level metrics, and recommendations are reported in Supplementary Data S2.
 
 ![Figure 3A. Development-stage answer-quality metrics.](figures_from_development_20260720/Figure_3A_development_stage_answer_quality.png)
 
-Figure 3A. Development-stage answer-quality metrics. Mean AI-judge scores are shown for faithfulness, citation correctness, completeness, and refusal correctness across the main evaluation stages. The stages used different evaluation sets; the plot summarizes the development history and should not be interpreted as a paired repeated-measure comparison. Values and filters are documented in the figure source table.
+Figure 3A. Development-stage answer-quality metrics. Mean AI-judge scores are shown for faithfulness, citation correctness, completeness, and refusal correctness across the main evaluation stages. The stages used different evaluation sets; the plot summarizes the development history and should not be interpreted as a paired repeated-measure comparison. Values and filters are documented in the figure source table and Supplementary Data S2.
 
 ![Figure 3B. Targeted weak-point repairs.](figures_from_development_20260720/Figure_3B_targeted_weak_point_repairs.png)
 
-Figure 3B. Targeted weak-point repairs. The left panel shows English answer completeness before and after the English-completeness repair set. The middle panel shows refusal correctness in the first AI-authored prospective stress test and in the later refusal-focused AI-authored prospective test after refusal-prompt calibration. The right panel shows answerable-question completeness in the AI-authored prospective stress test and in the answerable controls of the refusal-focused test. Because the panels compare different evaluation sets, the figure documents observed development decisions rather than paired statistical improvement.
+Figure 3B. Targeted weak-point repairs. The left panel shows English answer completeness before and after the English-completeness repair set. The middle panel shows refusal correctness in the first AI-authored prospective stress test and in the later refusal-focused AI-authored prospective test after refusal-prompt calibration. The right panel shows answerable-question completeness in the AI-authored prospective stress test and in the answerable controls of the refusal-focused test. Because the panels compare different evaluation sets, the figure documents observed development decisions rather than paired statistical improvement. The underlying AI-judge rows and rationales are reported in Supplementary Data S2.
 
-The full development decision table, expanded example table, and evaluation-stage summary are provided in Supplementary Tables S1-S3.
+The full development decision table, expanded example table, and evaluation-stage summary are provided in Supplementary Tables S1-S3. The row-level question-answer audit and the AI-judge dossier are provided as Supplementary Data S1 and S2.
 
 Discussion
 
