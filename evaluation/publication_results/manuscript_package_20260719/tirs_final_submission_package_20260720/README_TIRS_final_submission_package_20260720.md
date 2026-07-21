@@ -23,7 +23,7 @@ The `submission_upload_files_20260720/` folder contains the practical upload set
 - `supplementary_materials/evidence_artifact_checksums.sha256`
 - `supplementary_materials/per_question_result_files_summary.csv`
 
-The supplementary package contains corpus audits, benchmark files, split/audit manifests, AI-judge summaries, per-question CSV outputs, AI-authored prospective-test interpretations, refusal-calibration outputs, development-history files, expanded tables, exact method/prompt documentation, and archived source files for the final retrieval, generation, and judging configuration.
+The supplementary package contains corpus audits, benchmark files, split/audit manifests, AI-judge summaries, Supplementary Data S1 with a consolidated 404-row per-question audit table, per-question CSV outputs, AI-authored prospective-test interpretations, refusal-calibration outputs, development-history files, expanded tables, exact method/prompt documentation, and archived source files for the final retrieval, generation, and judging configuration.
 
 ## Claim boundary
 

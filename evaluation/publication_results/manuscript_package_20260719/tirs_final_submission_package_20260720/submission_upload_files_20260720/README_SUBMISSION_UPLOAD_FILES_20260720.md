@@ -19,6 +19,14 @@ PDF versions of these files are provided in `pdf_versions/`.
 
 The evidence artifact manifest, checksums, per-question summaries, and evidence artifact folder remain in the parent supplementary package.
 
+Supplementary Data S1 is also provided as separate upload-ready data files:
+
+- `06_Supplementary_Data_S1_Per_Question_Audit_404_rows_20260721.csv`
+- `06_Supplementary_Data_S1_Stage_Counts_20260721.csv`
+- `06_Supplementary_Data_S1_README_20260721.md`
+
+These files contain the consolidated per-question audit table, stage counts, and notes on why the reported evaluated-row count is 404 rather than 500.
+
 ## Figures
 
 Selected figure files are in `figures_for_upload/`.
