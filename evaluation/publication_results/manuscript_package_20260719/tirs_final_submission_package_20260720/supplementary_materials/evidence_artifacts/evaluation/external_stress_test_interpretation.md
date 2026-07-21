@@ -4,7 +4,7 @@
 
 This result should be reported as an **AI-authored prospective stress test with artifact recovery**.
 
-The first external run completed in the terminal, but after the Codex output folder was moved from iCloud/local locations, only a 40-row checkpoint remained in the moved project folder. The missing 10 rows were the unanswerable and adversarial block (`EXTERNAL_021` through `EXTERNAL_025`, PT and EN). Those 10 rows were regenerated once with the same frozen settings and merged with the preserved 40-row checkpoint.
+The first external run completed in the terminal, but after working output folders were reorganized, only a 40-row checkpoint remained in the recovered project evidence folder. The missing 10 rows were the unanswerable and adversarial block (`EXTERNAL_021` through `EXTERNAL_025`, PT and EN). Those 10 rows were regenerated once with the same frozen settings and merged with the preserved 40-row checkpoint.
 
 No benchmark edits, retrieval edits, prompt edits, judge edits, threshold edits, or result-driven tuning were performed.
 

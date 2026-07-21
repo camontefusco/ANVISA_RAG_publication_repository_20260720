@@ -4,7 +4,7 @@ Purpose: document that the recovered local Streamlit implementation could load a
 
 Environment: `/opt/anaconda3/envs/rag-project-env`, Python 3.10.
 
-Local project used for runtime test: `/Users/cmontefusco/Coding_projects/Rag_project`.
+Local project used for runtime test: `the recovered ANVISA RAG project folder`.
 
 Startup result: `Translator`, Gemini answer wrapper, vector index, hybrid retriever, reranker, and `RetrieverQueryEngine` loaded successfully.
 

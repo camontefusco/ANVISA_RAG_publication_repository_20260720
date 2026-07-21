@@ -6,15 +6,15 @@ This note records the traceable development path from the course notebooks to th
 
 ## Local files located
 
-- Course notebooks were found in `/Users/cmontefusco/Downloads/1_LLM.ipynb`, `/Users/cmontefusco/Downloads/2_chatbot.ipynb`, and `/Users/cmontefusco/Downloads/3_rag.ipynb`.
+- Course notebooks were found in `course notebook 1`, `course notebook 2`, and `course notebook 3`.
 - Copies of those notebooks are also present in the publication repository under `notebooks/`.
-- The original path reported at the start of the project, `/Users/cmontefusco/Documents/DSAI2/Rag_project`, is no longer present.
-- A moved/recovered project was found at `/Users/cmontefusco/Coding_projects/Rag_project`.
-- A Codex recovered copy was found at `/Users/cmontefusco/projects/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project`.
+- The original path reported at the start of the project, `the original DSAI2 project folder`, is no longer present.
+- A moved/recovered project was found at `the recovered ANVISA RAG project folder`.
+- A Codex recovered copy was found at `the Codex recovered project copy`.
 
 ## Interpretation
 
-The recovered `Coding_projects/Rag_project` folder is the best local evidence for the first ANVISA RAG implementation. It contains the ANVISA Streamlit app, ANVISA `data/` and `cleaned_data/` files, `src_RAG_Shenia/`, current `src/`, notebooks 1 through 7, evaluation scripts, vector stores, and publication-result files. Its git history records one archive commit on 2026-07-17, so file modification times mainly document recovery rather than original authorship dates.
+The recovered ANVISA RAG project folder is the best local evidence for the first ANVISA RAG implementation. It contains the ANVISA Streamlit app, ANVISA `data/` and `cleaned_data/` files, `src_RAG_Shenia/`, current `src/`, notebooks 1 through 7, evaluation scripts, vector stores, and publication-result files. Its git history records one archive commit on 2026-07-17, so file modification times mainly document recovery rather than original authorship dates.
 
 ## Development decisions
 
