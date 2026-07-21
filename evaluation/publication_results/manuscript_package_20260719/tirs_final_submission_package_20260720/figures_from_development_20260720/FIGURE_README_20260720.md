@@ -48,4 +48,4 @@ Important caveat: development-stage panels compare successive evaluation sets, n
 - Main text: use Figure 3A or 3B only if the caption states that stages are different evaluation sets.
 - Supplement: include Figure S1, Figure S2, Figure S3, and the full source table.
 - Do not report a plotted value unless it is present in `figure_metrics_source_table.csv`.
-- Figure S4: Streamlit interface and app smoke-test screenshot. Use as supplementary application evidence, not as a benchmark metric.
+- Figure S4: Streamlit RAG-answer and source-table smoke-test screenshot. Use as supplementary application evidence, not as a benchmark metric.

@@ -8,7 +8,7 @@ Local project used for runtime test: `/Users/cmontefusco/Coding_projects/Rag_pro
 
 Startup result: `Translator`, Gemini answer wrapper, vector index, hybrid retriever, reranker, and `RetrieverQueryEngine` loaded successfully.
 
-Interface result: Streamlit launched at `http://localhost:8507`; the interface screenshot is provided as Supplementary Figure S4.
+Interface result: Streamlit launched locally, and an evidence view displaying the RAG answer and retrieved sources is provided as Supplementary Figure S4.
 
 Backend query smoke test:
 

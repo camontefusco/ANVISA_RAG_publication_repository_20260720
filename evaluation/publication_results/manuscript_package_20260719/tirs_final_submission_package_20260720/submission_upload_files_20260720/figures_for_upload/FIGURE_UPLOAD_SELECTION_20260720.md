@@ -25,4 +25,4 @@ Fallback formats:
 - PNG files only if the portal requests a raster fallback other than TIFF.
 
 SVG files were not copied into the upload set to avoid duplicate-format clutter.
-- Figure S4: Streamlit interface and app smoke-test screenshot. Use as supplementary application evidence, not as a benchmark metric.
+- Figure S4: Streamlit RAG-answer and source-table smoke-test screenshot. Use as supplementary application evidence, not as a benchmark metric.

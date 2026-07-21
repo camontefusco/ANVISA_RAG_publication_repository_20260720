@@ -70,7 +70,7 @@ Internal post-repair scores should not be interpreted as independent proof of ge
 
 `Supplementary_Methods_and_Prompts_20260720.md` contains the expanded methods and prompt documentation requested for journal reproducibility review. It includes article-aware chunking settings, dense and BM25 retrieval settings, reciprocal rank fusion, cross-encoder reranking, English query anchors, final answer prompt, refusal prompt, AI-judge prompt, metric definitions, bootstrap confidence-interval settings, and the reproducibility boundary for hosted LLM outputs.
 
-## Supplementary Figure S4. Streamlit interface and app smoke test
+## Supplementary Figure S4. Streamlit RAG-answer smoke test
 
 Supplementary Figure S4 shows the local Streamlit interface used for bilingual ANVISA question answering. The screenshot was captured on 2026-07-21 after launching the app from the recovered local project with `rag-project-env`.
 
