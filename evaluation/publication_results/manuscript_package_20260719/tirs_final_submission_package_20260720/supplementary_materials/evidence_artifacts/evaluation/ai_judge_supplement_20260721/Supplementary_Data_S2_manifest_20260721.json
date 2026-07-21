@@ -1,40 +1,40 @@
 {
   "created": "2026-07-21",
   "description": "AI-judge supplementary dossier derived from the reported 404-row evaluation audit.",
-  "source_audit_csv": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/supplementary_materials/evidence_artifacts/evaluation/per_question_supplement_20260721/Supplementary_Data_S1_per_question_audit_404_rows_20260721.csv",
+  "source_audit_csv": "supplementary_materials/evidence_artifacts/evaluation/per_question_supplement_20260721/Supplementary_Data_S1_per_question_audit_404_rows_20260721.csv",
   "source_audit_sha256": "c5d9ced219328b09dfa440aeb1b24bdb0fafcdc7588247baed16f17b991da3b6",
   "reported_ai_judge_rows": 404,
   "files": {
     "Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv",
+      "path": "supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv",
       "sha256": "3d3ca4bac6c96c8da916adf4ac1e9eb5534cfe659cfe573d37a1b1a3f7a1fa6a"
     },
     "Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv",
+      "path": "supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv",
       "sha256": "84165bca97cbac504d93d8b49dcd37e34f672a8d546ad7e04cd785be9acae5be"
     },
     "Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md",
+      "path": "supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md",
       "sha256": "98a61b4b38d8b1aac27b5d51fa710b495754cfa4da0297a9d880d25c76f75e0d"
     },
     "README_Supplementary_Data_S2_AI_Judge_20260721.md": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/README_Supplementary_Data_S2_AI_Judge_20260721.md",
+      "path": "supplementary_materials/evidence_artifacts/evaluation/ai_judge_supplement_20260721/README_Supplementary_Data_S2_AI_Judge_20260721.md",
       "sha256": "0e945a665f1801c21e2102ffeb35f1c928d1b56a2b8add54579eff90058bed24"
     },
     "07_Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/submission_upload_files_20260720/07_Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv",
+      "path": "submission_upload_files_20260720/07_Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv",
       "sha256": "f272b4757a89afd41278001a89e877a51520b4d979ecf81bbe73b887de875a2a"
     },
     "07_Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/submission_upload_files_20260720/07_Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv",
+      "path": "submission_upload_files_20260720/07_Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv",
       "sha256": "d937127ba03c4413ea8a7f1f21e21eeb057e39872bdbd3b0c7d87fca703107f6"
     },
     "07_Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/submission_upload_files_20260720/07_Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md",
+      "path": "submission_upload_files_20260720/07_Supplementary_Data_S2_AI_Judge_Criteria_and_Prompt_20260721.md",
       "sha256": "98a61b4b38d8b1aac27b5d51fa710b495754cfa4da0297a9d880d25c76f75e0d"
     },
     "07_Supplementary_Data_S2_README_20260721.md": {
-      "path": "/Users/cmontefusco/Documents/DSAI2/ANVISA_RAG_publication_repository_20260720/evaluation/publication_results/manuscript_package_20260719/tirs_final_submission_package_20260720/submission_upload_files_20260720/07_Supplementary_Data_S2_README_20260721.md",
+      "path": "submission_upload_files_20260720/07_Supplementary_Data_S2_README_20260721.md",
       "sha256": "0e945a665f1801c21e2102ffeb35f1c928d1b56a2b8add54579eff90058bed24"
     }
   }

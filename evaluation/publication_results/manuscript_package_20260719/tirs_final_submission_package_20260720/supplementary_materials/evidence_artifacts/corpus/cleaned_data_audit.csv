@@ -1,7 +1,7 @@
 file_name,mode,raw_chars,cleaned_chars,raw_lines,cleaned_lines,output_path
-IN_338_2024.txt,mhtml_html,552595,14450,14423,98,/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data/IN_338_2024.txt
-RDC_406_2020_Estudos_de_Estabilidade.txt,mhtml_html,582594,39879,14812,266,/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data/RDC_406_2020_Estudos_de_Estabilidade.txt
-RDC_55_2010_Registro_de_Produtos_Biológicos.txt,mhtml_html,83583,43062,1662,829,/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data/RDC_55_2010_Registro_de_Produtos_Biológicos.txt
-RDC_751_2022_Regras_de_classificação_de_risco.txt,mhtml_html,667827,80024,15905,596,/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data/RDC_751_2022_Regras_de_classificação_de_risco.txt
-RDC_945_2024.txt,mhtml_html,619952,71857,15288,413,/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data/RDC_945_2024.txt
-rdc09_2015.txt,plain_text,54887,53346,933,831,/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data/rdc09_2015.txt
+IN_338_2024.txt,mhtml_html,552595,14450,14423,98,cleaned_data/IN_338_2024.txt
+RDC_406_2020_Estudos_de_Estabilidade.txt,mhtml_html,582594,39879,14812,266,cleaned_data/RDC_406_2020_Estudos_de_Estabilidade.txt
+RDC_55_2010_Registro_de_Produtos_Biológicos.txt,mhtml_html,83583,43062,1662,829,cleaned_data/RDC_55_2010_Registro_de_Produtos_Biológicos.txt
+RDC_751_2022_Regras_de_classificação_de_risco.txt,mhtml_html,667827,80024,15905,596,cleaned_data/RDC_751_2022_Regras_de_classificação_de_risco.txt
+RDC_945_2024.txt,mhtml_html,619952,71857,15288,413,cleaned_data/RDC_945_2024.txt
+rdc09_2015.txt,plain_text,54887,53346,933,831,cleaned_data/rdc09_2015.txt

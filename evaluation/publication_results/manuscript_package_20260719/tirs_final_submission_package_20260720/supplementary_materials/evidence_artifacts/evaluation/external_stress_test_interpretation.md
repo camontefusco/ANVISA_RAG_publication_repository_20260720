@@ -2,7 +2,7 @@
 
 ## Status
 
-This result should be reported as an **AI-authored prospective AI-authored prospective stress test with artifact recovery**.
+This result should be reported as an **AI-authored prospective stress test with artifact recovery**.
 
 The first external run completed in the terminal, but after the Codex output folder was moved from iCloud/local locations, only a 40-row checkpoint remained in the moved project folder. The missing 10 rows were the unanswerable and adversarial block (`EXTERNAL_021` through `EXTERNAL_025`, PT and EN). Those 10 rows were regenerated once with the same frozen settings and merged with the preserved 40-row checkpoint.
 
@@ -80,7 +80,7 @@ This external test is good news, but not perfect-system evidence.
 
 The defensible publication wording is:
 
-> In a 50-question AI-authored prospective AI-authored prospective stress test, the frozen system retrieved the correct source for all answerable questions and achieved high normalized article recall@5, citation validity, faithfulness, and completeness. However, refusal correctness dropped to 0.70 on unanswerable/adversarial questions, indicating that abstention behavior remains the principal residual limitation.
+> In a 50-question AI-authored prospective stress test, the frozen system retrieved the correct source for all answerable questions and achieved high normalized article recall@5, citation validity, faithfulness, and completeness. However, refusal correctness dropped to 0.70 on unanswerable/adversarial questions, indicating that abstention behavior remains the principal residual limitation.
 
 Avoid saying:
 

@@ -7,7 +7,7 @@ This is a second, refusal-focused external test created after the first AI-autho
 It should be reported separately from:
 
 - the original repaired internal benchmark;
-- the first AI-authored prospective AI-authored prospective stress test;
+- the first AI-authored prospective stress test;
 - the refusal-calibration development set.
 
 ## Benchmark

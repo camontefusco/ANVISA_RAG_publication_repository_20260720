@@ -1,10 +1,10 @@
 {
   "strategy": "article_aware_v1",
-  "data_path": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/cleaned_data",
+  "data_path": "cleaned_data",
   "single_chunk_max_tokens": 500,
   "long_chunk_size": 400,
   "long_chunk_overlap": 60,
-  "embedding_model": "/Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/embedding_cache/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
   "embedding_max_length": 512,
   "article_count": 382,
   "chunk_count": 481,
@@ -146,5 +146,6 @@
     "required_files_present": true,
     "article_aware_metadata_markers": 481,
     "expected_chunk_count": 481
-  }
+  },
+  "embedding_model_note": "Original audit recorded a local cache path; public package reports the model identifier."
 }

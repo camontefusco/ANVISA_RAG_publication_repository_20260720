@@ -1,4 +1,4 @@
-# AI-Judge Evaluation of Frozen Held-Out RAG Answers
+# Superseded failed run: Portuguese residual-quality AI-judge attempt
 
 Generated: 2026-07-18T14:39:08
 Input rows: 75
@@ -11,7 +11,11 @@ Unanswerable judged rows: 0
 
 - evaluation/publication_results/generation_pt_residual_quality_merged_20260718/generation_evaluation_2026-07-18_pt_residual_quality_merged.csv
 
-## Overall AI-Judge Metrics
+## Supersession Note
+
+This file is retained only as a failed-run diagnostic artifact. It should not be used as the Portuguese residual-quality result. The reported Portuguese residual-quality metrics are provided in `ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Stage_Summary_20260721.csv` and in `ai_judge_supplement_20260721/Supplementary_Data_S2_AI_Judge_Per_Question_404_rows_20260721.csv`, where the Portuguese residual-quality repair stage contains 75 judged rows with no judge-error rows.
+
+## Failed-Run Metrics
 
 - Faithfulness, answerable rows: not available
 - Citation correctness, answerable rows: not available
@@ -22,7 +26,6 @@ Unanswerable judged rows: 0
 
 ## Publication Use
 
-- These scores are automated LLM-judge labels over frozen generated answers.
-- They should be reported as AI-judge validation, not as human expert validation.
-- The retrieved evidence was reconstructed with the saved retrieval and rerank queries from the original generation CSVs.
-- The generation outputs were not regenerated during this judge-only run.
+- Do not report this failed run as a Portuguese residual-quality result.
+- Use Supplementary Data S2 for the reported AI-judge dossier and Portuguese residual-quality stage metrics.
+- This file is retained to make the development audit trail transparent.

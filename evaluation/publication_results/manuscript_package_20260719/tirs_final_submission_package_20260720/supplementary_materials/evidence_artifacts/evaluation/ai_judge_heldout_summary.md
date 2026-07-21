@@ -9,8 +9,8 @@ Unanswerable judged rows: 30
 
 ## Inputs
 
-- /Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_en_heldout_20260709/generation_evaluation_2026-07-10_01-03-11.csv
-- /Users/cmontefusco/Documents/Codex/2026-06-16/files-mentioned-by-the-user-rag/Rag_project/evaluation/publication_results/generation_pt_heldout_20260709/generation_evaluation_2026-07-10_01-28-15.csv
+- evaluation/publication_results/generation_en_heldout_20260709/generation_evaluation_2026-07-10_01-03-11.csv
+- evaluation/publication_results/generation_pt_heldout_20260709/generation_evaluation_2026-07-10_01-28-15.csv
 
 ## Overall AI-Judge Metrics
 
