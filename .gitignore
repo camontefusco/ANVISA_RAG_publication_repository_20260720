@@ -1,6 +1,7 @@
 # Secrets and local configuration
 .env
 .env.*
+!.env.example
 
 # Source text not redistributed
 data/
@@ -23,3 +24,4 @@ __pycache__/
 .tmp/
 .vscode/
 .~lock.*
+src_RAG_Shenia/

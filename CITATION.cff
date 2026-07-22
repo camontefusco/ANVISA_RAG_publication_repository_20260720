@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark package, please cite it using this metadata."
+title: "Bilingual ANVISA Regulatory RAG Prototype"
+type: software
+authors:
+  - family-names: Montefusco-Pereira
+    given-names: Carlos Victor
+    orcid: "https://orcid.org/0000-0003-4167-4653"
+abstract: "An unpublished bilingual retrieval-augmented generation prototype for article-level retrieval and cited question answering over selected public ANVISA regulatory documents."
+repository-code: "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720"
+license: MIT
+version: "0.1.0"
+date-released: "2026-07-22"
+keywords:
+  - retrieval-augmented generation
+  - regulatory science
+  - ANVISA
+  - pharmaceutical regulation
+  - bilingual evaluation
