@@ -1,0 +1,39 @@
+{
+  "title": "Bilingual ANVISA Regulatory RAG Prototype",
+  "upload_type": "software",
+  "description": "Unpublished bilingual retrieval-augmented generation prototype for article-level retrieval and cited question answering over selected public ANVISA regulatory documents. The repository includes code, benchmark artifacts, evaluation evidence, Streamlit demonstration documentation, and a source-document manifest with official ANVISA URLs and SHA-256 checksums. The full raw and cleaned ANVISA corpus is not redistributed.",
+  "creators": [
+    {
+      "name": "Montefusco-Pereira, Carlos Victor",
+      "orcid": "0000-0003-4167-4653",
+      "affiliation": "Independent Researcher in Data Science and Artificial Intelligence in Industrial Pharmaceutics, Berlin, Germany"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Ribeiro Junior, Howard Lopes",
+      "orcid": "0000-0003-2431-4779",
+      "type": "Researcher",
+      "affiliation": "Center for Research and Drug Development (NPDM), Federal University of Ceara, Fortaleza, Brazil"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "retrieval-augmented generation",
+    "regulatory science",
+    "ANVISA",
+    "pharmaceutical regulation",
+    "bilingual evaluation",
+    "article-level retrieval",
+    "AI judge"
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "This archive is a technical-demo and reproducibility package for a regulatory RAG manuscript. It is not a regulatory decision system, legal opinion, or official ANVISA guidance."
+}
