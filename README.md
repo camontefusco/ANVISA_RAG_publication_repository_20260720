@@ -1,3 +1,7 @@
+## Current manuscript revision
+
+The cumulative Reviewer 2 revision, clean and tracked manuscripts, response letter, supplements and selected data are in [the 29 October 2026 snapshot](revisions/reviewer_2_20261029/README.md). This is an ongoing revision: human review is AI-assisted and unblinded, six prospective question pairs require replacement, and independent validation and current-law verification remain open. Earlier release materials below retain their historical context.
+
 # Bilingual ANVISA Regulatory RAG Prototype
 
 This repository contains an unpublished bilingual retrieval-augmented generation (RAG) prototype for Portuguese and English question answering over selected public ANVISA regulatory documents. The system was developed by Carlos Victor Montefusco-Pereira as the primary creator and developer, with manuscript and regulatory-science framing by Howard Lopes Ribeiro Junior.

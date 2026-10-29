@@ -25,3 +25,6 @@ __pycache__/
 .vscode/
 .~lock.*
 src_RAG_Shenia/
+
+# Full local reviewer archive includes raw sources, private review keys and caches
+/revisions/reviewer_2_20261021/
