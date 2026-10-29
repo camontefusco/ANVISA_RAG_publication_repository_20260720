@@ -19,7 +19,7 @@ The sibling diagnostic completed132 unique answers and132 automated evaluations.
 
 The DR11 experiment completed300 answers and300 evaluations; completeness0.590 to0.617, difference+0.027 (95% interval-0.027 to+0.099). Improvement remains unproven and human review of those answers remains pending.
 
-The corrected40-row prospective candidate submission has AI authorship and Howard approval. Six overlapping bilingual pairs require replacement before freezing: AV002,AV006,AV007,AV012,AV014,AV015. No validation answers have been generated. Source eligibility/absence scope, current-law verification and other disputed ratings remain open.
+The corrected40-row prospective candidate submission has AI authorship and Howard approval. Six replacement pairs were submitted and Howard approved all12 replacement rows. Three pairs still reuse earlier answer content and require replacement: AV002,AV012,AV015. Seventeen pairs have no substantive reuse identified in this screen; this is not novelty certification. No validation answers have been generated. Source eligibility/absence scope, current-law verification and other disputed ratings remain open.
 
 ## Storage and provenance
 
