@@ -1,6 +1,6 @@
 ## Current manuscript revision
 
-The cumulative Reviewer 2 revision, clean and tracked manuscripts, response letter, supplements and selected data are in [the 29 October 2026 snapshot](revisions/reviewer_2_20261029/README.md). This is an ongoing revision: human review is AI-assisted and unblinded, three prospective question pairs still require replacement after screening the six submitted replacements, and independent validation and current-law verification remain open. Earlier release materials below retain their historical context.
+The cumulative Reviewer 2 revision, clean and tracked manuscripts, response letter, supplements and selected data are in [the 30 October 2026 snapshot](revisions/reviewer_2_20261030/README.md). This is an ongoing revision: human review is AI-assisted and unblinded, the40-row author-led input set is frozen before generation following Howard’s final-version review on29October, and independent validation and current-law verification remain open. Earlier release materials below retain their historical context.
 
 # Bilingual ANVISA Regulatory RAG Prototype
 
