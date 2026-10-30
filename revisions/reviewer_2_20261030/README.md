@@ -27,3 +27,11 @@ The complete local archive was relocated outside Codex on29October2026. Historic
 
 GitHub repository: https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720
 Drive revision folder: https://drive.google.com/drive/folders/1goZ-4gED5llHdDQ2lExs1XLH663M-DB0
+
+## DR8 clause audit update
+
+The further screen covers all 200 original rows and 46 replacement drafts. Among the 154 original rows outside the replacement-parent list, 12 rows in six pairs cite surviving articles with explicit amendment or partial-repeal markers; 102 have no such marker flag and 40 require answerability/scope review. Four preliminary false-positive rows were removed after refining prose and chapter-heading handling. Counts are screening categories, not adjudicated error rates.
+
+COMPLEX_02_PT/EN retain transport-chain validation under RDC55 Article31 itemX, which is displayed as revoked; removal from that provision does not establish absence of transport duties elsewhere. A separately narrowed question and reference are proposed. COMPLEX_09_PT/EN have an additional reference-completeness concern involving notified versus registered devices and omitted exemption conditions. Four bilingual reference proposals remain unapproved and do not silently enlarge the existing 46 replacement drafts. Four other flagged pairs had no clause correction identified. Original golds, historical metrics and the frozen40 test remain unchanged.
+
+Direct full-page capture failed with HTTP403 for all seven official pages. Accessible official excerpts were checked and retained locally, without claiming complete new source snapshots or exhaustive current-law verification. Supplement S28 and question-level screening data document positive, negative and unresolved findings. No new Google generation or judge calls were made. Human applicability/gold approval, complete source capture and cross-reference checks, isolated indexing and reevaluation remain open.
