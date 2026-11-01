@@ -1,3 +1,7 @@
+# Targeted legal-status update on 1 November 2026
+
+Supplementary S41 documents current consolidated staffing support and revocation of RDC55 Articles22 and30. Both refusal failures remain archived-task failures; frozen primary14/20 versus18/20 and expanded-scope sensitivity13/20 versus17/20 are unchanged. Current-law verification/reevaluation, independent external validation and additional baselines remain incomplete or absent. These limitations are now explicit in the manuscript and response. Personal author confirmation covers44/80 new outputs;36 received AI review only. The package now contains55 Word documents. Complete sources and exact archived-context checks are in data/current_law_targeted_check_20261101.
+
 # Scope and review update on 1 November 2026
 
 FV012 expanded scope includes archived Articles 17, 30 VIII-IX and 31 I-III. Frozen primary results remain 14/20 baseline versus 18/20 repaired; the post hoc expanded-scope sensitivity is 13/20 versus 17/20. The corresponding author personally confirmed 44 outputs (11 pairs); the remaining 36 (nine pairs) received AI quality review only. The staffing and ruminant-documentation refusal failures remain. Current-law verification and reevaluation, independent external validation and additional no-retrieval/official-site answer-quality baselines remain incomplete or absent. The scope sensitivity does not establish a population improvement or current regulatory accuracy.
