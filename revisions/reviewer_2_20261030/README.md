@@ -1,3 +1,13 @@
+# Current revision on 1 November 2026
+
+The approved validation is complete: 20 question-only translations and 80 answer generations on 40 new AI-authored questions, comparing the original baseline and frozen integrated repair. No judge or repair calls were made. Primary bilingual-pair success was 14/20 versus 18/20; common citation formatting gave 15/20 versus 18/20; raw/raw success was 14/20 versus 15/20. The exact paired primary test was inconclusive (p=0.125), despite the favorable descriptive counts. Both languages of two partly answerable pairs still refused with complete required evidence. All new gold and outcome ratings are local AI-assisted, unblinded and pending human confirmation. This is not independent external or current-law validation.
+
+The updated clean manuscript, cumulative tracked manuscript, response letter and Supplementary S40 report all completed and negative results. Accepting manuscript tracked changes reproduces the clean version; rejecting them restores the original September submission text. The package contains 54 Word documents and the cumulative figures, data and code. Main figures and historical scores remain unchanged.
+
+Fresh inputs are now released after execution, with frozen hashes, selected passages, raw calls, raw/processed outputs and all component decisions in data/integrated_validation_completed_20261101. The freeze manifest preserves the historical pending-authorization statement; AUTHORIZATION_AFTER_FREEZE.json records the subsequent approval. Full corpora, local vector assets, credentials and private human coordination files are excluded. No API calls remain. Human confirmation of the new references and outcomes is the next dependency.
+
+Earlier sections below document historical work and superseded execution states. The completed report above and Supplementary S40 are authoritative for current validation status.
+
 # Revised manuscript and review package
 
 30 October 2026
@@ -51,7 +61,7 @@ The fresh controls strengthen the case-level evidence that source structure, dir
 
 Remaining work: Obtain author confirmation of the new content assessments and adjudicate secondary reference scope without overwriting original ratings. Validate the parser prototype against every source-heading style before rebuilding a separate index. Evaluate any integrated evidence, language and partial-answer changes with both answerable and insufficient-evidence cases, then freeze the system before a genuinely fresh test. Current-law review and independent validation remain open. No new generation batch is queued.
 
-## Reference scope and frozen integrated validation S39 and S40
+## Historical protocol state on 31 October superseded by the completed S40 report
 
 The corresponding author reported human confirmation of the available diagnostic assessments on 31 October 2026; original AI-assisted provenance and unblinded author role are retained. Three secondary reference components are now contextual rather than mandatory for the narrower original questions. The separate retrospective 18-output overlay passes 17/18 versus 0/18 under the former strict definition, without changing any answer, original score or Howard rating. This is a rubric correction, not a model improvement.
 
