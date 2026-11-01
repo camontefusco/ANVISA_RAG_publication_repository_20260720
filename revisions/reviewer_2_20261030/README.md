@@ -1,3 +1,9 @@
+# Scope and review update on 1 November 2026
+
+FV012 expanded scope includes archived Articles 17, 30 VIII-IX and 31 I-III. Frozen primary results remain 14/20 baseline versus 18/20 repaired; the post hoc expanded-scope sensitivity is 13/20 versus 17/20. The corresponding author personally confirmed 44 outputs (11 pairs); the remaining 36 (nine pairs) received AI quality review only. The staffing and ruminant-documentation refusal failures remain. Current-law verification and reevaluation, independent external validation and additional no-retrieval/official-site answer-quality baselines remain incomplete or absent. The scope sensitivity does not establish a population improvement or current regulatory accuracy.
+
+The five cumulative Word documents incorporate this update. Main figures, other supplementary documents, frozen gold and historical scores are retained. Prior execution-status statements below are historical.
+
 # Current revision on 1 November 2026
 
 The approved validation is complete: 20 question-only translations and 80 answer generations on 40 new AI-authored questions, comparing the original baseline and frozen integrated repair. No judge or repair calls were made. Primary bilingual-pair success was 14/20 versus 18/20; common citation formatting gave 15/20 versus 18/20; raw/raw success was 14/20 versus 15/20. The exact paired primary test was inconclusive (p=0.125), despite the favorable descriptive counts. Both languages of two partly answerable pairs still refused with complete required evidence. All new gold and outcome ratings are local AI-assisted, unblinded and pending human confirmation. This is not independent external or current-law validation.
