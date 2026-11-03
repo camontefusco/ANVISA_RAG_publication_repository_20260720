@@ -1,0 +1,11 @@
+{
+  "release": "v0.2.1",
+  "release_url": "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.2.1",
+  "doi": "10.5281/zenodo.23925532",
+  "zenodo_record": "https://zenodo.org/records/23925532",
+  "concept_doi": "10.5281/zenodo.21504181",
+  "tag_commit": "c8b78f2611c96fa2fd14b6db0ec0925b752270e2",
+  "original_release_asset": "submission_ready_20261103_GPEC.zip",
+  "original_asset_sha256": "d98cb27522f2e7b112cf5ecbd14695eb2f5f79ea90716f3d9d3dd6190a4bf3e2",
+  "variant": "Post-archival DOI-linked submission; manuscript/response citations updated; scientific scores, data, figures, supplementary tables and line ranges unchanged."
+}

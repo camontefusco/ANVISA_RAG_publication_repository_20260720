@@ -1,0 +1,17 @@
+{
+  "changes": "Only the archive version, DOI and release URL change in manuscript paragraph 79. Response archival citation refreshed.",
+  "main_line_numbers_unchanged": true,
+  "tracked_accept_reject_pass": true,
+  "all32_reviewer_quotes_preserved": true,
+  "changed_pages": {
+    "manuscript_clean": [
+      10
+    ],
+    "manuscript_tracked": [
+      17
+    ],
+    "response_to_reviewer_2": [
+      10
+    ]
+  }
+}

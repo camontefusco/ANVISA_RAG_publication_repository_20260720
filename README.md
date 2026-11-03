@@ -1,6 +1,6 @@
 # Current revision and release
 
-Version v0.2.1 contains the [checked GPEC and table revision](revisions/reviewer_2_20261103_v021/README.md), with the complete submission ZIP, updated response, all figure/table alignment checks, and recovered S14/S15 numeric sources. Scientific scores are unchanged from v0.2.0. Earlier snapshots remain intact. The tagged files retain the previously verified archival citation; a separate post-archival submission variant will add the verified v0.2.1 DOI without changing results.
+Version v0.2.1 contains the [checked GPEC and table revision](revisions/reviewer_2_20261103_v021/README.md), with the complete submission ZIP, updated response, all figure/table alignment checks, and recovered S14/S15 numeric sources. Scientific scores are unchanged from v0.2.0. Earlier snapshots remain intact. The verified v0.2.1 DOI is https://doi.org/10.5281/zenodo.23925532. The [current DOI-linked submission](revisions/v021_linked_20261103/README.md) adds that citation without changing scientific results.
 
 The [citation-linked submission variant](revisions/release_linked_20261103/README.md) adds the verified DOI and refreshed response line references after archival; scientific data and figures are unchanged. The tagged v0.2.0 snapshot remains intact.
 
