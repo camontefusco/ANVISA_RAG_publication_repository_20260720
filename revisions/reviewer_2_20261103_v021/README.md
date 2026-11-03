@@ -1,0 +1,5 @@
+# Current submission with GPEC affiliation
+
+Both authors have affiliation 3: Member of Brazil-Africa Group for Scientific Research and Writing (GPEC), Portuguese-Speaking African Countries (PALOPs), Brazil. Added 3 November 2026 using author-supplied wording. Clean and cumulative tracked manuscripts, their PDFs and response-letter line references are updated. Scientific content, figures, tables and data are unchanged. The earlier published v0.2.0 release remains immutable and does not include this affiliation edit. The response letter refers to clean manuscript lines 1 to 489. Prior package audits are retained as history; GPEC_QA.json records this edit verification. No journal submission has been performed.
+
+Table consistency sweep: 179 checks passed across four main and 22 supplementary tables, result layers, manuscript callouts and reviewer responses. Supplementary labels, units and sample notes were clarified; no scores changed. Recovered S14/S15 numeric source CSVs were added to revision_data.zip. See TABLE_ALIGNMENT_QA.json and TABLE_ASSET_CROSSWALK.csv. The published v0.2.0 archive remains unchanged.

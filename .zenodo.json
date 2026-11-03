@@ -1,12 +1,12 @@
 {
   "title": "Bilingual ANVISA Regulatory RAG Prototype",
   "upload_type": "software",
-  "description": "Archived-corpus bilingual ANVISA regulatory RAG prototype and reproducibility evidence. Version v0.2.0 adds the coauthor-reviewed 3 November 2026 manuscript revision, clean and tracked documents, full reviewer response, figures, curated question-level data, separate human and AI assessments, and matched hybrid/BM25/model-only comparisons. Coauthor-rated content success is 39/40 hybrid, 38/40 BM25 and 9/40 model-only answers; bilingual success is 19/20, 18/20 and 4/20 pairs. The hybrid-BM25 difference is inconclusive. All 118 distinct new answers (120 condition records) received personal coauthor review, with prior project exposure and limited condition masking disclosed. Historical scores, problematic source references, negative results and disagreements are retained separately. This does not establish current-law accuracy, fresh independent external validation or professional workflow benefit. Full ANVISA corpora, indexes, credentials and concealed reviewer coordination keys are excluded.",
+  "description": "Archived-corpus bilingual ANVISA regulatory RAG prototype and reproducibility evidence. Version v0.2.1 retains the coauthor-reviewed 3 November 2026 manuscript revision, clean and tracked documents, full reviewer response, figures, curated question-level data, separate human and AI assessments, and matched hybrid/BM25/model-only comparisons. Coauthor-rated content success is 39/40 hybrid, 38/40 BM25 and 9/40 model-only answers; bilingual success is 19/20, 18/20 and 4/20 pairs. The hybrid-BM25 difference is inconclusive. All 118 distinct new answers (120 condition records) received personal coauthor review, with prior project exposure and limited condition masking disclosed. Historical scores, problematic source references, negative results and disagreements are retained separately. This does not establish current-law accuracy, fresh independent external validation or professional workflow benefit. Full ANVISA corpora, indexes, credentials and concealed reviewer coordination keys are excluded. This patch adds the GPEC affiliation for both manuscript authors, corrects supplementary direct-article category labels, clarifies tokenizer units and sibling-test denominators, and includes the recovered numeric source CSVs for Supplementary Tables S14 and S15. Scientific scores are unchanged from v0.2.0.",
   "creators": [
     {
       "name": "Montefusco-Pereira, Carlos Victor",
       "orcid": "0000-0003-4167-4653",
-      "affiliation": "Independent Researcher in Data Science and Artificial Intelligence in Industrial Pharmaceutics, Berlin, Germany"
+      "affiliation": "Independent Researcher in Data Science and Artificial Intelligence in Industrial Pharmaceutics, Berlin, Germany; Member of Brazil-Africa Group for Scientific Research and Writing (GPEC), Portuguese-Speaking African Countries (PALOPs), Brazil"
     }
   ],
   "contributors": [
@@ -14,7 +14,7 @@
       "name": "Ribeiro Junior, Howard Lopes",
       "orcid": "0000-0003-2431-4779",
       "type": "Researcher",
-      "affiliation": "Center for Research and Drug Development (NPDM), Federal University of Ceará, Fortaleza, Brazil"
+      "affiliation": "Center for Research and Drug Development (NPDM), Federal University of Ceará, Fortaleza, Brazil; Member of Brazil-Africa Group for Scientific Research and Writing (GPEC), Portuguese-Speaking African Countries (PALOPs), Brazil"
     }
   ],
   "license": "MIT",
@@ -36,6 +36,6 @@
     }
   ],
   "notes": "Technical archived-corpus evaluation and evidence package. Earlier software and evaluation snapshots remain historical. This is not official ANVISA guidance or an autonomous regulatory decision system. The MIT license covers repository-authored code and documentation; third-party material is not relicensed.",
-  "version": "v0.2.0",
+  "version": "v0.2.1",
   "publication_date": "2026-11-03"
 }
