@@ -1,10 +1,12 @@
 # Current revision and release
 
+The [citation-linked submission variant](revisions/release_linked_20261103/README.md) adds the verified DOI and refreshed response line references after archival; scientific data and figures are unchanged. The tagged v0.2.0 snapshot remains intact.
+
 The current coauthor-reviewed revision is [3 November 2026](revisions/reviewer_2_20261103/README.md). It contains the clean and cumulative tracked manuscripts, full reviewer response, supporting documents, figures and curated evidence. The [complete package](revisions/reviewer_2_20261103/submission_ready_20261103.zip) also contains the high-resolution TIFF files. Earlier dated revisions are historical snapshots and may contain superseded scores or review-status descriptions.
 
 The new common-prompt study has 118 distinct coauthor-rated answers representing 120 condition records. Hybrid, BM25 and model-only content success is 39/40, 38/40 and 9/40 answers, or 19/20, 18/20 and 4/20 bilingual pairs. Hybrid superiority over BM25 is unproven (+5 percentage points; descriptive 95% paired interval -10 to +20; exact p = 1.000). Review date: 2 November; prior project/question exposure and limited condition masking are disclosed. Original AI scores and disagreements remain separate. Current-law accuracy and fresh independent validation are not established.
 
-This release is version v0.2.0. Prior version v0.1.2 is archived at https://doi.org/10.5281/zenodo.21504214; the all-versions DOI is https://doi.org/10.5281/zenodo.21504181. The new version-specific DOI will be recorded after the existing GitHub-Zenodo integration completes. Do not cite the prior version as containing these new results.
+This release is version v0.2.0. Prior version v0.1.2 is archived at https://doi.org/10.5281/zenodo.21504214; the all-versions DOI is https://doi.org/10.5281/zenodo.21504181. Version v0.2.0 is published at https://doi.org/10.5281/zenodo.23909097. Cite this version-specific DOI for the completed November results; the prior version does not contain them.
 
 # Bilingual ANVISA Regulatory RAG Prototype
 

@@ -1,0 +1,269 @@
+{
+  "reviewer1": {
+    "comment": "This is a really interesting and timely piece. I have a few comments which can be easily addressed via revision. Also, I did notice that you used the RAG abbreviation in the abstract, while it was only defined later in the text. Please fix this.",
+    "source": "User-provided quotation",
+    "location": "Clean manuscript lines 26 to 27"
+  },
+  "reviewer2_general": {
+    "comment": "The topic suits the journal, and the authors deserve credit for releasing per-question outputs, prompts and judge rationales; those files made it possible to check the reported results. Several of those checks do not support how the manuscript describes its own evaluation design. The main issues are: repair sets that overlap the held-out set; prospective-test items that reappear in the calibration set; a revoked regulation used as gold truth; several refusal failures that are labeling errors; and no human verification of the automated judge",
+    "source": "User-provided quotation"
+  },
+  "comments": [
+    {
+      "comment_id": "DR1",
+      "source_page": 1,
+      "source_text_linebreaks": "The main issues are: repair sets\nthat overlap the held-out set; prospective-test items\nthat reappear in the calibration set; a revoked\nregulation used as solid truth; several refusal failures\nthat are labeling errors; and no human verification of\nthe automated judge.",
+      "verbatim_text": "The main issues are: repair sets that overlap the held-out set; prospective-test items that reappear in the calibration set; a revoked regulation used as solid truth; several refusal failures that are labeling errors; and no human verification of the automated judge.",
+      "response": "We relabel reused repair and calibration questions as development data, retain revoked-source exposure, and separate answerability adjudications from original scores. The 94-output historical review, 44 sibling outputs, separate 40-answer assessment and earlier 80-output repair review remain distinct, with assistance/exposure disclosed. The later common-prompt and BM25 comparisons now have personal coauthor assessment of 118 distinct answers representing 120 condition records. Author-rated success is 19/20 hybrid pairs, 18/20 BM25 pairs and 4/20 model-only pairs. The hybrid-BM25 difference is inconclusive. Current-law rebuilding and reevaluation and independent external validation remain incomplete; workflow benefit was outside this technical evaluation.",
+      "location": "Revised clean manuscript, lines 139 to 167; 209 to 232; 250 to 262; 322 to 351; 385 to 398. Supplementary Sections S2 to S4 and S8."
+    },
+    {
+      "comment_id": "DR2",
+      "source_page": 1,
+      "source_text_linebreaks": "The Portuguese names here and in\nthe references have lost their diacritics (Agencia,\nResolucao, Instrucao). Please restore them.\nSeparately,",
+      "verbatim_text": "The Portuguese names here and in the references have lost their diacritics (Agencia, Resolucao, Instrucao). Please restore them. Separately,",
+      "response": "Portuguese names, abbreviations, tables and references use Agência, Resolução and Instrução, with the appropriate related diacritics. Original generated answers and raw ratings remain preserved as data.",
+      "location": "Revised clean manuscript, lines 16 to 22; 435 to 487. Tables 1 to 4; references; Supplementary Information."
+    },
+    {
+      "comment_id": "DR3",
+      "source_page": 2,
+      "source_text_linebreaks": "Please state the actual evaluated\nsample sizes here.",
+      "verbatim_text": "Please state the actual evaluated sample sizes here.",
+      "response": "The abstract distinguishes actual evaluated samples: 404 outputs across six overlapping historical stages (150 internal, 75 English repair, 75 Portuguese repair, 50 stress, 24 calibration, 30 post-calibration); 94 historical outputs reviewed by the coauthor; a separate 40-answer assessment; an 80-answer author-reviewed repair comparison; 120 coauthor-rated common-prompt outputs across hybrid, BM25 and model-only conditions; and 32 positive-target retrieval questions. The 120 condition records represent 118 distinct rated answers, as explained in Methods. Construction totals and distinct IDs remain in Methods and S2. The abstract stays within the journal word limit.",
+      "location": "Revised clean manuscript, lines 28 to 32; 139 to 146. "
+    },
+    {
+      "comment_id": "DR4",
+      "source_page": 2,
+      "source_text_linebreaks": "Please state these sample sizes\nand report confidence intervals in the abstract. With n =\n10, one item shifts the result by 0.10. Counts (e.g.,\n7/10, 17/18) would be clearer than means for binary\noutcomes.",
+      "verbatim_text": "Please state these sample sizes and report confidence intervals in the abstract. With n = 10, one item shifts the result by 0.10. Counts (e.g., 7/10, 17/18) would be clearer than means for binary outcomes.",
+      "response": "The abstract and Table 2 give 10/20 frozen-assessment pairs (exact 95% interval 27.2 to 72.8%), with category counts 6/12, 0/4 and 4/4. Historical completeness retains its pair-bootstrap interval. The separate completed coauthor comparison gives 19/20 hybrid pairs (exact 95% interval 75.1 to 99.9%), 18/20 BM25 (68.3 to 98.8%) and 4/20 model-only (5.7 to 43.7%). The abstract reports the hybrid-BM25 paired difference and uncertainty. These are distinct from the earlier author-reviewed repair comparison.",
+      "location": "Revised clean manuscript, lines 33 to 40; 209 to 232; 264 to 271. "
+    },
+    {
+      "comment_id": "DR5",
+      "source_page": 3,
+      "source_text_linebreaks": "DDCM suspension example maps\nto gold answers from RDC 9/2015 (Art. 50), which RDC\n945/2024 revoked effective 1 January 2025.",
+      "verbatim_text": "DDCM suspension example maps to gold answers from RDC 9/2015 (Art. 50), which RDC 945/2024 revoked effective 1 January 2025.",
+      "response": "The introductory current-rule example cites RDC 945/2024 Articles 85 and 89. Historical golds based on RDC 9/2015 remain identified as historical exposure, not silently recited as current requirements.",
+      "location": "Revised clean manuscript, lines 45 to 54; 92 to 102. "
+    },
+    {
+      "comment_id": "DR6",
+      "source_page": 4,
+      "source_text_linebreaks": "RDC 9/2015 was revoked by RDC\n945/2024, which took effect on 1 January 2025. Figure\n2 shows RDC 9/2015 as the gold source for 30\nbenchmark questions, tied for the most of any\ndocument.",
+      "verbatim_text": "RDC 9/2015 was revoked by RDC 945/2024, which took effect on 1 January 2025. Figure 2 shows RDC 9/2015 as the gold source for 30 benchmark questions, tied for the most of any document.",
+      "response": "RDC 9/2015 is explicitly marked revoked. The corrected Figure 2 counts 28 distinct question rows, rather than 30 source/article entries. Duplicate citations within a question are counted once.",
+      "location": "Revised clean manuscript, lines 92 to 114; 235 to 239. Figure 2 and its legend; Table 1; Supplementary Section S4."
+    },
+    {
+      "comment_id": "DR7",
+      "source_page": 4,
+      "source_text_linebreaks": "questions are phrased in the\npresent tense; for example, 'What is the maximum\ndeadline for filing the final report of a clinical trial after\nits conclusion?' has gold RDC 9/2015, Art. 69. In the\ninternal held-out run, 19 generated answers cite RDC\n9/2015.",
+      "verbatim_text": "questions are phrased in the present tense; for example, 'What is the maximum deadline for filing the final report of a clinical trial after its conclusion?' has gold RDC 9/2015, Art. 69. In the internal held-out run, 19 generated answers cite RDC 9/2015.",
+      "response": "The source audit lists affected golds and generated citations. We distinguish citation grounding from applicable law. Present-tense historical wording does not make a revoked rule valid; the current-law adjudication remains open.",
+      "location": "Revised clean manuscript, lines 92 to 114; 235 to 239; 378 to 384. "
+    },
+    {
+      "comment_id": "DR8",
+      "source_page": 4,
+      "source_text_linebreaks": "Supplementary Table S1 calls it an\n'earlier clinical-trial regulation' without noting\nrevocation. Please either remove it and re-author the\naffected questions against RDC 945/2024, or keep it as\na deliberate temporal-validity test: label it revoked in\nthe index and score answers that cite it for current-\ntense questions as incorrect. In either case, confirm the\nin-force consolidated version of every remaining\nregulation and record the version date",
+      "verbatim_text": "Supplementary Table S1 calls it an 'earlier clinical-trial regulation' without noting revocation. Please either remove it and re-author the affected questions against RDC 945/2024, or keep it as a deliberate temporal-validity test: label it revoked in the index and score answers that cite it for current-tense questions as incorrect. In either case, confirm the in-force consolidated version of every remaining regulation and record the version date",
+      "response": "Consolidated source checks identified revoked and amended provisions; they do not establish current-law accuracy. Forty-six constructed-benchmark rows cite wholly revoked sources/articles. Draft replacements are not treated as validated results and are excluded from the submission. A targeted check retains RDC 406 Article 18 but identifies RDC 55 Articles 22 and 30 as revoked. Historical gold and scores remain preserved; no corrected current-law accuracy is claimed (Supplementary Section S4). We have not completed either a fully reauthored current-law evaluation or a deliberately designed temporal-validity test. We therefore narrow the paper to retrospective archived-corpus findings and explicitly retain this part of the concern as unresolved.",
+      "location": "Revised clean manuscript, lines 92 to 114; 378 to 398. Supplementary Section S4. Current-law reevaluation is not completed."
+    },
+    {
+      "comment_id": "DR9",
+      "source_page": 4,
+      "source_text_linebreaks": "This history belongs in the\nsupplement, not the main Methods. Supplementary\nTable S5 also mentions a 'borrowed Shenia source'\nand a 'Codex recovered copy.' If third-party code was\nreused, please state its attribution and license. If AI\ncoding or writing assistants were used, the journal's AI-\nuse disclosure policy applies.",
+      "verbatim_text": "This history belongs in the supplement, not the main Methods. Supplementary Table S5 also mentions a 'borrowed Shenia source' and a 'Codex recovered copy.' If third-party code was reused, please state its attribution and license. If AI coding or writing assistants were used, the journal's AI-use disclosure policy applies.",
+      "response": "Development history is in the supplementary provenance record. The corresponding author identified the course notebooks and Shenia code as their own work; no unsupported third-party ownership or license is asserted. The declarations retain a factual assistance disclosure and author responsibility. The detailed notebook/code history and ownership clarification are in Supplementary Section S1; the main manuscript retains only implementation details needed to interpret the evaluation.",
+      "location": "Revised clean manuscript, lines 116 to 125; 425 to 432. Supplementary Section S1."
+    },
+    {
+      "comment_id": "DR10",
+      "source_page": 4,
+      "source_text_linebreaks": "(1) The answer model and the\njudge are the same model alias, so the judge is not\nindependent (see my comment on the AI judge\nsection). (2) 'flash-lite-latest' is an unpinned alias that\nchanges over time. Reference 15 cites Gemini 2.5\nFlash-Lite documentation, which may not be the model\nactually used. Please report the resolved model version\nand the run dates.",
+      "verbatim_text": "(1) The answer model and the judge are the same model alias, so the judge is not independent (see my comment on the AI judge section). (2) 'flash-lite-latest' is an unpinned alias that changes over time. Reference 15 cites Gemini 2.5 Flash-Lite documentation, which may not be the model actually used. Please report the resolved model version and the run dates.",
+      "response": "The manuscript distinguishes the historical unpinned Gemini alias from later recorded gemini-3.5-flash-lite responses. Missing historical backend metadata is not reconstructed as fact. Generation and judging shared an alias, so the automated judge is not independent.",
+      "location": "Revised clean manuscript, lines 133 to 137; 385 to 392; 477 to 479. "
+    },
+    {
+      "comment_id": "DR11",
+      "source_page": 5,
+      "source_text_linebreaks": "Please state which tokenizer these\ntoken counts refer to.all-MiniLM-L6-v2 has a default\nmaximum sequence length of 256 word pieces, while\nchunks here reach 503 tokens with an embedding\nmaximum of 512. Please confirm whether long chunks\nwere trun",
+      "verbatim_text": "Please state which tokenizer these token counts refer to.all-MiniLM-L6-v2 has a default maximum sequence length of 256 word pieces, while chunks here reach 503 tokens with an embedding maximum of 512. Please confirm whether long chunks were trun",
+      "response": "The tokenizer audit distinguishes cl100k_base chunking from WordPiece embedding length: 35/481 nodes exceeded the recorded 512-token embedding limit. A paired 300-answer comparison estimated completeness 0.590 versus 0.617, difference +0.027 with a 95% pair-bootstrap interval from -0.027 to +0.099. Improvement remains unproven. Retrieval and mechanism analyses retain negative results and exploratory limitations. The new matched 482-chunk BM25 comparison uses saved translated queries and the same completion policy: all required articles were found in 30/32 questions at five versus 32/32 for hybrid retrieval, and full required article text after completion in 31/32 versus 32/32. Small descriptive difference intervals include zero; reliable hybrid superiority is not established.",
+      "location": "Revised clean manuscript, lines 116 to 125; 181 to 188; 209 to 232; 293 to 299; 322 to 351. Supplementary Sections S1, S5, S6 and S10."
+    },
+    {
+      "comment_id": "DR12",
+      "source_page": 5,
+      "source_text_linebreaks": "There are no baselines or\nablations, so the reader cannot tell what each\ncomponent contributes. Useful comparisons: BM25\nalone; dense retrieval alone; with and without the\nreranker and anchors; a no-retrieval LLM baseline; and\nideally keyword search in AnvisaLegis. This matters\nbecause all-MiniLM-L6-v2 was trained on English but is\nused here on Portuguese text; BM25 and the\nmultilingual reranker may be doing most of the work.\nPlease consider a multilingual embedding model.",
+      "verbatim_text": "There are no baselines or ablations, so the reader cannot tell what each component contributes. Useful comparisons: BM25 alone; dense retrieval alone; with and without the reranker and anchors; a no-retrieval LLM baseline; and ideally keyword search in AnvisaLegis. This matters because all-MiniLM-L6-v2 was trained on English but is used here on Portuguese text; BM25 and the multilingual reranker may be doing most of the work. Please consider a multilingual embedding model.",
+      "response": "Supplementary Section S5 provides component ablations on development questions. The separate common-prompt comparison now includes the same Gemini model with hybrid passages, BM25 passages or no retrieval. Coauthor assessment yields 19/20, 18/20 and 4/20 successful bilingual pairs, respectively. The matched lexical retrieval comparison controls the archived corpus, saved translated queries, named-regulation filtering, five seed chunks and article-completion policy; expanded context sizes vary. BM25 answer generation is sequential and reuses saved hybrid comparators. The hybrid-minus-BM25 pair difference is +5 percentage points (descriptive 95% interval -10 to +20; exact p = 1.000), without established superiority or equivalence. The English encoder was not replaced by a multilingual model. Web-search superiority and professional workflow benefit were outside this technical comparison.",
+      "location": "Revised clean manuscript, lines 181 to 188; 209 to 232; 285 to 299; 322 to 351; 385 to 398. Supplementary Sections S5 and S10."
+    },
+    {
+      "comment_id": "DR13",
+      "source_page": 5,
+      "source_text_linebreaks": "This paragraph describes six\n'conservative anchors,' but the materials describe\nmore. The per-question CSVs record glossary-based\nquery rewriting. Supplementary File 4 reports that a\n'Translator' component loaded and that the query was\nfully rewritten into Portuguese. Supplementary File 2\ndescribes rule-based 'targeted anchors' added 'when\nprevious development runs showed that the relevant\narticle could be missed,' plus neighbor-article injection.\nRules derived from benchmark failures are another\npath for overfitting. Please describe all of them here,\nlist them in full, and ablate them. The 'stability study'\nanchor appears to be left over from the misnamed file,\nsince no stability regulation is in the corpus.",
+      "verbatim_text": "This paragraph describes six 'conservative anchors,' but the materials describe more. The per-question CSVs record glossary-based query rewriting. Supplementary File 4 reports that a 'Translator' component loaded and that the query was fully rewritten into Portuguese. Supplementary File 2 describes rule-based 'targeted anchors' added 'when previous development runs showed that the relevant article could be missed,' plus neighbor-article injection. Rules derived from benchmark failures are another path for overfitting. Please describe all of them here, list them in full, and ablate them. The 'stability study' anchor appears to be left over from the misnamed file, since no stability regulation is in the corpus.",
+      "response": "Query rewriting, article anchors, fallback, neighbor injection and citation diversification are described, with separate rule ablations. Sibling expansion used development-exposed questions. The earlier 80-answer integrated-repair comparison used AI-authored questions frozen before generation after development exposure; all 80 outputs received personal author review on 1 November 2026, including 36 coauthor ratings checked against an AI-prepared draft. This is distinct from the subsequent 120-record common-prompt/BM25 comparison, personally rated by the coauthor on 2 November without AI-drafted ratings. Neither comparison establishes independent external validation.",
+      "location": "Revised clean manuscript, lines 126 to 132; 181 to 208; 285 to 292; 209 to 232. Supplementary Sections S1, S5, S8 and S10; full rule inventory and code in revision_data.zip."
+    },
+    {
+      "comment_id": "DR14",
+      "source_page": 6,
+      "source_text_linebreaks": "The AI judge is not independent\nenough to carry the conclusions. It is the same model\nalias as the answer model. Its evidence was\n'reconstructed from saved retrieval and rerank queries\nwhere available' (Supplementary Data S2), so it may\nnot have seen the context the answer model saw.\nFaithfulness is 1.000 on every answerable row in S4\nthrough S6, which suggests the metric is not\ndiscriminating. I recognize an expert panel was not\navailable, but the second author has regulatory\nexpertise. A blinded human review of a stratified\nsample would substantially strengthen the paper: all\nrefusal cases, all rows below 0.8, and a random set of\npasses, with agreement against the judge reported. A\nsecond AI judge from a different model family would\nalso help.",
+      "verbatim_text": "The AI judge is not independent enough to carry the conclusions. It is the same model alias as the answer model. Its evidence was 'reconstructed from saved retrieval and rerank queries where available' (Supplementary Data S2), so it may not have seen the context the answer model saw. Faithfulness is 1.000 on every answerable row in S4 through S6, which suggests the metric is not discriminating. I recognize an expert panel was not available, but the second author has regulatory expertise. A blinded human review of a stratified sample would substantially strengthen the paper: all refusal cases, all rows below 0.8, and a random set of passes, with agreement against the judge reported. A second AI judge from a different model family would also help.",
+      "response": "We retain the distinct human-review layers in S3, S6 and S8 and completed coauthor review of the new common-prompt and BM25 comparisons in S10. Howard personally drafted and approved 118 distinct ratings covering all 120 condition records on 2 November 2026. He reports no exposure to AI scores, the condition key or prior findings for these outputs before finalizing, but had prior project/question exposure and answer style could reveal conditions. Original provenance fields were clarified by the corresponding author and preserved unchanged. Human and AI primary labels agree on 117/118 distinct answers; one accepted model-only answer changes its answer count from 8/40 to 9/40, not pair success. Secondary disagreements remain separately reported. This coauthor assessment is not independent external validation, not a cross-family rescoring of the historical 404 outputs, and not full human verification of the separate 300-output window-pooling experiment. Historical faithfulness saturation, unresolved backend versions and reconstructed-evidence limits remain explicit.",
+      "location": "Revised clean manuscript, lines 133 to 137; 153 to 179; 209 to 232; 250 to 255; 293 to 299; 322 to 351; 385 to 392. Supplementary Sections S3, S6 and S10."
+    },
+    {
+      "comment_id": "DR15",
+      "source_page": 6,
+      "source_text_linebreaks": "This statement is not supported by\nthe data. The refusal-calibration development set (S5)\ncontains the failed prospective item almost verbatim.\nThe prospective test asks 'Which electronic form model\nshould a company use today to notify SUSARs to\nAnvisa?'; S5 asks 'What is the current electronic form\nmodel for notifying SUSARs to Anvisa?' S5 also\ncontains the prospective false-premise item on patient\nidentification, and fee and URL questions that mirror\nother prospective items. The final prompt then lists\nthese exact categories as refusal triggers. Please\ncorrect the statement that the prospective test was 'not\nused directly for tuning,' and ideally add a refusal test\nwritten by someone who has not seen the prompt.",
+      "verbatim_text": "This statement is not supported by the data. The refusal-calibration development set (S5) contains the failed prospective item almost verbatim. The prospective test asks 'Which electronic form model should a company use today to notify SUSARs to Anvisa?'; S5 asks 'What is the current electronic form model for notifying SUSARs to Anvisa?' S5 also contains the prospective false-premise item on patient identification, and fee and URL questions that mirror other prospective items. The final prompt then lists these exact categories as refusal triggers. Please correct the statement that the prospective test was 'not used directly for tuning,' and ideally add a refusal test written by someone who has not seen the prompt.",
+      "response": "The SUSAR-form and patient-identification examples, equivalent bilingual pairs and other related items are documented as calibration overlap. The claim that the stress test was not used directly for tuning has been removed. The later 40-question test is separately described with its authorship and exposure limits.",
+      "location": "Revised clean manuscript, lines 147 to 151; 240 to 248; 385 to 392. Supplementary Section S2 and its question-overlap audit."
+    },
+    {
+      "comment_id": "DR16",
+      "source_page": 7,
+      "source_text_linebreaks": "These sets should not be called\n'prospective' (or 'external,' as Figure 1 and the file\nnames do). They were written by an AI model after\ndevelopment and evaluated once. Please name the\nmodel that authored them and describe the generation\nprompt. A Gemini-authored test graded by Gemini\nwould be a further circularity.",
+      "verbatim_text": "These sets should not be called 'prospective' (or 'external,' as Figure 1 and the file names do). They were written by an AI model after development and evaluated once. Please name the model that authored them and describe the generation prompt. A Gemini-authored test graded by Gemini would be a further circularity.",
+      "response": "The earlier AI-authored sets are called diagnostic assessments, not independent or external validation. Historical authoring-model/session metadata and complete authoring prompts were not retained and cannot be reconstructed reliably; this remains a reproducibility limitation. The later 40-question coauthor-reviewed candidate set was prepared with Claude. The earlier 80-answer repair comparison used AI-authored questions and received personal author review, with AI-draft assistance disclosed. Figure 1 uses descriptive evaluation labels.",
+      "location": "Revised clean manuscript, lines 87 to 91; 169 to 179; 196 to 208. Figure 1; Supplementary Sections S2, S3 and S8."
+    },
+    {
+      "comment_id": "DR17",
+      "source_page": 7,
+      "source_text_linebreaks": "The pair-clustered bootstrap is\ndescribed here, but its results do not appear in the\nmain text. Please report confidence intervals for the\nheadline metrics.",
+      "verbatim_text": "The pair-clustered bootstrap is described here, but its results do not appear in the main text. Please report confidence intervals for the headline metrics.",
+      "response": "Headline historical metrics have pair-bootstrap intervals, while small binary all-pass strata and the new pair-success outcomes have exact pair-level binomial intervals. The unit, assumptions and limitations are stated; individual language outputs are not treated as independent observations.",
+      "location": "Revised clean manuscript, lines 153 to 159; 209 to 232; 240 to 271. "
+    },
+    {
+      "comment_id": "DR18",
+      "source_page": 7,
+      "source_text_linebreaks": "n the smoke test (Supplementary\nFigure 4 and File 4), the app answers an English\nquestion in Portuguese under a 'Bilingual' setting. This\ncontradicts the same-language rule, so the deployed\napp does not match the evaluated pipeline. Please say\nso or remove the demonstration claim.",
+      "verbatim_text": "n the smoke test (Supplementary Figure 4 and File 4), the app answers an English question in Portuguese under a 'Bilingual' setting. This contradicts the same-language rule, so the deployed app does not match the evaluated pipeline. Please say so or remove the demonstration claim.",
+      "response": "The archived demonstration answered an English query in Portuguese. This failure is disclosed in Supplementary Section S1 and is not treated as bilingual deployment evidence. The screenshot and schematic are omitted from the submission figures. The frozen coauthor assessment independently records five English outputs in Portuguese.",
+      "location": "Revised clean manuscript, lines 264 to 283; 353 to 359. The specific interface demonstration failure is in Supplementary Section S1; demonstration figures are excluded."
+    },
+    {
+      "comment_id": "DR19",
+      "source_page": 7,
+      "source_text_linebreaks": "Figure 2 shows RDC 9/2015, a\nrevoked regulation, as the gold source for 30 questions\n(see my comment on the Regulatory corpus\nparagraph). Figure 2 also contains the internal note\n'Benchmark audit status: pass,' which should be\nremoved.",
+      "verbatim_text": "Figure 2 shows RDC 9/2015, a revoked regulation, as the gold source for 30 questions (see my comment on the Regulatory corpus paragraph). Figure 2 also contains the internal note 'Benchmark audit status: pass,' which should be removed.",
+      "response": "Figure 2 uses distinct question rows, labels RDC 9/2015 revoked, and contains no internal audit-pass label. Its source data and updated legend are included.",
+      "location": "Revised clean manuscript, lines 235 to 239. Figure 2 and its legend."
+    },
+    {
+      "comment_id": "DR20",
+      "source_page": 8,
+      "source_text_linebreaks": "This false-premise question is\ncited here as a success, but in the prospective test it is\nlabeled unanswerable. The Portuguese row gave the\ncorrect 'Não' answer citing Art. 32 and was scored 0 on\nrefusal; the English twin gave the same answer and\nscored 1. S5 later relabels it as answerable. See my\ncomments on the prospective-test results.",
+      "verbatim_text": "This false-premise question is cited here as a success, but in the prospective test it is labeled unanswerable. The Portuguese row gave the correct 'Não' answer citing Art. 32 and was scored 0 on refusal; the English twin gave the same answer and scored 1. S5 later relabels it as answerable. See my comments on the prospective-test results.",
+      "response": "The patient-identification example is discussed as a cross-language judge and answerability inconsistency. Corresponding-author adjudications are separate from original golds and ratings. A correct cited negative is not automatically a failed refusal.",
+      "location": "Revised clean manuscript, lines 256 to 262. The specific patient-identification adjudication is in Supplementary Section S3 and the separate adjudication data."
+    },
+    {
+      "comment_id": "DR22",
+      "source_page": 8,
+      "source_text_linebreaks": "The repair sets are not separate\nfrom the held-out set. Supplementary Data S1 shows\nthat all 75 question IDs in the English-repair stage (S2)\nare the English rows of the held-out stage (S1), and all\n75 IDs in the Portuguese-repair stage (S3) are its\nPortuguese rows. The statement that 'the stages used\ndifferent evaluation sets' is therefore not accurate. The\nsystem was repaired against the held-out questions\nand re-scored on them, so the rise from 0.645 to 0.995\nis a paired before/after on the tuning set, not evidence\nof generalization. Please say so plainly here, in the\nFigure 3A and 3B legends, and in Supplementary\nTable S6, and stop calling S1 'held-out' once it became\nthe repair target.",
+      "verbatim_text": "The repair sets are not separate from the held-out set. Supplementary Data S1 shows that all 75 question IDs in the English-repair stage (S2) are the English rows of the held-out stage (S1), and all 75 IDs in the Portuguese-repair stage (S3) are its Portuguese rows. The statement that 'the stages used different evaluation sets' is therefore not accurate. The system was repaired against the held-out questions and re-scored on them, so the rise from 0.645 to 0.995 is a paired before/after on the tuning set, not evidence of generalization. Please say so plainly here, in the Figure 3A and 3B legends, and in Supplementary Table S6, and stop calling S1 'held-out' once it became the repair target.",
+      "response": "All 75 English and 75 Portuguese repair IDs match their respective internal-baseline subsets. The manuscript and Supplementary Section S2 identify paired descriptive development comparisons, with identical IDs and text. Historical development figures are omitted from the submission; their numerical data remain archived. No generalization claim follows from these repair scores.",
+      "location": "Revised clean manuscript, lines 139 to 151; 240 to 248. Supplementary Section S2; former development Figures 3A/3B are excluded rather than retained with misleading comparisons."
+    },
+    {
+      "comment_id": "DR24",
+      "source_page": 9,
+      "source_text_linebreaks": "Of the 10 unanswerable rows (5\nbilingual pairs), three scored 0: the SUSAR-form pair,\nand the Portuguese row of the patient-identification\nfalse-premise question. That last item is mislabeled;\nthe system answered it correctly (see my comment\nunder Direct article questions). Please re-adjudicate all\nunanswerable labels and report refusal results as\ncounts per pair, not only as means.",
+      "verbatim_text": "Of the 10 unanswerable rows (5 bilingual pairs), three scored 0: the SUSAR-form pair, and the Portuguese row of the patient-identification false-premise question. That last item is mislabeled; the system answered it correctly (see my comment under Direct article questions). Please re-adjudicate all unanswerable labels and report refusal results as counts per pair, not only as means.",
+      "response": "The reviewed labels and approved archived-corpus adjudications are retained separately. Refusal is reported as pair counts with small-sample intervals. In the new frozen test all 4/4 unanswerable pairs passed; this is distinct from the 0/4 partly answerable result.",
+      "location": "Revised clean manuscript, lines 256 to 262; 264 to 271. Supplementary Section S3; Table 2; Figure 3."
+    },
+    {
+      "comment_id": "DR25",
+      "source_page": 9,
+      "source_text_linebreaks": "Portuguese/English refusal gap\n(0.600 vs 0.800) is produced entirely by one item:\nidentical answers to the false-premise question were\nscored 0 in Portuguese and 1 in English. Please report\nand discuss this cross-language inconsistency in the\njudge rather than presenting it as a language effect.",
+      "verbatim_text": "Portuguese/English refusal gap (0.600 vs 0.800) is produced entirely by one item: identical answers to the false-premise question were scored 0 in Portuguese and 1 in English. Please report and discuss this cross-language inconsistency in the judge rather than presenting it as a language effect.",
+      "response": "The earlier Portuguese/English refusal difference is traced to an inconsistent judgment on the patient-identification pair and is not presented as evidence of an intrinsic language effect. Original scores remain available for audit.",
+      "location": "Revised clean manuscript, lines 250 to 262. The specific cross-language patient-identification discrepancy is in Supplementary Section S3 and historical review data; the main text gives agreement and adjudication summaries."
+    },
+    {
+      "comment_id": "DR26",
+      "source_page": 10,
+      "source_text_linebreaks": "The refusal-focused test (S6) is\nbuilt mostly from the categories this revision lists:\nphone numbers, URLs, current MedDRA version,\npetition codes, future AREE acceptance. The 0.944\nresult therefore shows the enumerated prompt list\nworks on items that match it; it does not show general\nimprovement in refusal. Please describe it more\ncompletely.",
+      "verbatim_text": "The refusal-focused test (S6) is built mostly from the categories this revision lists: phone numbers, URLs, current MedDRA version, petition codes, future AREE acceptance. The 0.944 result therefore shows the enumerated prompt list works on items that match it; it does not show general improvement in refusal. Please describe it more completely.",
+      "response": "The post-calibration set reused development categories. We retain the coauthor-reviewed 10/20 assessment, the partial-answer prompt conflict and the negative diagnostic controls. Earlier author-reviewed repair remains 14/20 versus 17/20 pairs (p = 0.375), including two persistent partial-answer failures and a citation-support loss. The separate common-prompt comparison now has coauthor-rated success of 19/20 hybrid, 18/20 BM25 and 4/20 model-only pairs. It uses a different content endpoint and does not erase earlier failures. Hybrid minus BM25 is +5 points (95% interval -10 to +20; exact p = 1.000). BM25 retains an English ruminant-documentation omission with missing Article 22 and a Portuguese manufacturer-checklist scope addition. Original AI ratings and human disagreements remain separate.",
+      "location": "Revised clean manuscript, lines 147 to 151; 209 to 232; 240 to 248; 272 to 283; 301 to 351; 360 to 377. Supplementary Sections S2, S7 and S8; Table 3."
+    },
+    {
+      "comment_id": "DR27",
+      "source_page": 10,
+      "source_text_linebreaks": "The single failure here is a\nquestion about penalties for inconsistent instructions\nfor use. The judge's own rationale states the answer is\nfactually correct and supported by RDC 751/2022, Art.\n36; the English twin refused. The reported 'remaining\nboundary failure' is a gold-label question, not a system\nerror. Answerable-control completeness (0.908) rests\non n = 12 and is not interpretable as a trade-off without\nintervals.",
+      "verbatim_text": "The single failure here is a question about penalties for inconsistent instructions for use. The judge's own rationale states the answer is factually correct and supported by RDC 751/2022, Art. 36; the English twin refused. The reported 'remaining boundary failure' is a gold-label question, not a system error. Answerable-control completeness (0.908) rests on n = 12 and is not interpretable as a trade-off without intervals.",
+      "response": "The disputed penalty item is treated as an answerability/reference issue within the separate adjudication records. The 12 answerable-control outputs and their uncertainty are reported without claiming a causal trade-off from unmatched sets.",
+      "location": "Revised clean manuscript, lines 240 to 248; 256 to 262. The specific penalty-item adjudication is in Supplementary Section S3 and the adjudication records; the main text reports the 12-control estimate and label-review approach."
+    },
+    {
+      "comment_id": "DR28",
+      "source_page": 11,
+      "source_text_linebreaks": "Please remove the sentence\nabout the figures 'serving only as decoration.' On the\nfigures themselves: Figure 3B uses bar charts with the\ny-axis starting at 0.55, which exaggerates differences;\nbars should start at zero, or dot plots with intervals\nshould be used. Figure 3A connects non-comparable\nsubsets with lines, implying a trend. Figure 1 labels the\nAI-authored sets 'External tests' and omits the query\nrewriting, anchors and evidence-classification step.\nSupplementary Figure 4 is low resolution and its first\nline is cropped. The Discussion also repeats the\nResults in several places and could be trimmed.",
+      "verbatim_text": "Please remove the sentence about the figures 'serving only as decoration.' On the figures themselves: Figure 3B uses bar charts with the y-axis starting at 0.55, which exaggerates differences; bars should start at zero, or dot plots with intervals should be used. Figure 3A connects non-comparable subsets with lines, implying a trend. Figure 1 labels the AI-authored sets 'External tests' and omits the query rewriting, anchors and evidence-classification step. Supplementary Figure 4 is low resolution and its first line is cropped. The Discussion also repeats the Results in several places and could be trimmed.",
+      "response": "All included assets are cited in the main manuscript: Figures 1 to 5, Tables 1 to 4, Supplementary Tables S1 to S22 and Supplementary Figure S1. Revised Figure 5 displays completed coauthor outcomes for hybrid, BM25 and model-only answers on the same 40 language-specific questions per condition. Topic and support panels partition those same questions; the retrieval panel uses the 32 positive-target items, excluding eight absent-detail questions. Appropriate abstention is explicitly included in content/evidence-boundary success. Omissions, material claim flags, citations and correction flags are separate, with no measured human editing effort claimed. S1 maps all six answers for each bilingual task. Table 4 and S21 use the same author ratings; original AI scores and secondary disagreements remain supplementary. Figure 4 and Table 3 preserve the earlier repair comparison; obsolete development and demonstration figures remain excluded.",
+      "location": "Revised clean manuscript, lines 116 to 125; 235 to 239; 322 to 351; 353 to 398. Figures 1 to 5, Tables 1 to 4, Supplementary Tables S1 to S22 and Supplementary Figure S1; obsolete development and demonstration figures excluded."
+    },
+    {
+      "comment_id": "DR29",
+      "source_page": 12,
+      "source_text_linebreaks": "Beyond the judge limitation\ndescribed here, see my comment on the AI judge\nsection: a blinded human review of a stratified sample,\ninvolving the second author, would address this\ndirectly.",
+      "verbatim_text": "Beyond the judge limitation described here, see my comment on the AI judge section: a blinded human review of a stratified sample, involving the second author, would address this directly.",
+      "response": "The historical 94-output review, 44 sibling outputs, 40-answer assessment and earlier 80-answer repair review retain their distinct dates and exposure/assistance histories. The new comparison additionally received Howard’s personal assessment of all 118 distinct answers, covering 120 condition records, on 2 November 2026. The corresponding author confirms that Howard drafted these ratings himself and approved all rows; truncated/contradictory returned provenance is retained with a separate clarification. Howard reports no prior AI-score, condition-key or result exposure for these outputs, while earlier project/question exposure and possible style-based unmasking are disclosed. Original AI ratings, returned human judgments and disagreements are preserved separately. This is coauthor assessment, not independent external validation.",
+      "location": "Revised clean manuscript, lines 160 to 179; 189 to 208; 385 to 392; 209 to 232; 322 to 351. Supplementary Sections S3, S6, S8 and S10; returned author ratings, normalized provenance and disagreement table in revision_data.zip."
+    },
+    {
+      "comment_id": "DR30",
+      "source_page": 12,
+      "source_text_linebreaks": "Suggest to include a statement\nthat the system does not handle amendments,\nrevocations or consolidated texts, and explain how a\nuser would know when a cited article has been\nsuperseded. This is a core requirement for regulatory\nuse and connects directly to the RDC 9/2015 issue.",
+      "verbatim_text": "Suggest to include a statement that the system does not handle amendments, revocations or consolidated texts, and explain how a user would know when a cited article has been superseded. This is a core requirement for regulatory use and connects directly to the RDC 9/2015 issue.",
+      "response": "The limitations explicitly state that the system does not automatically track amendments or revocations, assemble consolidated versions or reliably warn of superseded provisions. Users must check the official provision and applicable date. The source audit is research documentation, not an implemented current-law monitoring feature.",
+      "location": "Revised clean manuscript, lines 92 to 114; 378 to 398. Supplementary Section S4."
+    },
+    {
+      "comment_id": "DR31",
+      "source_page": 14,
+      "source_text_linebreaks": "Supplementary Table S5 states\nthat 'the project was performed by one researcher.'\nPlease reconcile this with the author contributions.",
+      "verbatim_text": "Supplementary Table S5 states that 'the project was performed by one researcher.' Please reconcile this with the author contributions.",
+      "response": "The contributions statement distinguishes the corresponding author’s software and analysis work from the coauthor’s regulatory framing, interpretation, question and answer review, and manuscript revision. Supplementary provenance no longer characterizes the entire study as one-researcher work.",
+      "location": "Revised clean manuscript, lines 411 to 415. Supplementary Section S1."
+    },
+    {
+      "comment_id": "DR32",
+      "source_page": 14,
+      "source_text_linebreaks": "The code repository is private until\nacceptance, so reviewers cannot verify the\nimplementation. Supplementary File 5 lists a checksum\nCSV and the cleaning script as included, but neither is\nin the submission package. Please provide an\nanonymized reviewer-access link or include the code.\nThe supplements also contain internal working notes\nthat should be removed or rewritten for readers: e.g.,\n'The 404 evaluated rows should not be described as a\n500-question evaluation'; 'Recommendation for\npublication' in Supplementary Data S2; Supplementary\nTable S4 (table revision history); local paths such as\nevidence_artifacts/code/ and /opt/anaconda3/envs; and\n'TIRS decision-rationale file.' Supplementary File 1\nnumbers its sections Files 1 to 7, while the package\ncontains Files 1 to 5.",
+      "verbatim_text": "The code repository is private until acceptance, so reviewers cannot verify the implementation. Supplementary File 5 lists a checksum CSV and the cleaning script as included, but neither is in the submission package. Please provide an anonymized reviewer-access link or include the code. The supplements also contain internal working notes that should be removed or rewritten for readers: e.g., 'The 404 evaluated rows should not be described as a 500-question evaluation'; 'Recommendation for publication' in Supplementary Data S2; Supplementary Table S4 (table revision history); local paths such as evidence_artifacts/code/ and /opt/anaconda3/envs; and 'TIRS decision-rationale file.' Supplementary File 1 numbers its sections Files 1 to 7, while the package contains Files 1 to 5.",
+      "response": "The current curated evidence and manuscript snapshot are published in GitHub release v0.2.0 (https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.2.0) and its linked Zenodo archive (https://doi.org/10.5281/zenodo.23909097). They include code, source checksums and official links, frozen question-level outputs, separate AI and author assessments, negative results, figures and supporting documents. Full raw source/index corpora, credentials and private coordination keys are excluded. Earlier versions remain available as history. The accompanying clean/tracked manuscripts and response add verified archival citations and refreshed line locations; scientific results are unchanged. The archive guide distinguishes original evidence, adjudications, review provenance and superseded status reports.",
+      "location": "Revised clean manuscript, lines 416 to 421. The data README, checksum manifest and reproducibility_code folder accompany the submission; removed working-note material has no replacement manuscript line."
+    },
+    {
+      "comment_id": "DR33",
+      "source_page": 15,
+      "source_text_linebreaks": "This regulation was revoked by\nRDC 945/2024 (in force 1 January 2025). The\nreference should state its revoked status.",
+      "verbatim_text": "This regulation was revoked by RDC 945/2024 (in force 1 January 2025). The reference should state its revoked status.",
+      "response": "The RDC 9/2015 reference states its revoked status and relationship to RDC 945/2024. It remains cited only where needed to identify historical corpus and benchmark evidence.",
+      "location": "Revised clean manuscript, lines 92 to 102; 438 to 440. Original Reference 8 is now Reference 2 after renumbering by first appearance."
+    },
+    {
+      "comment_id": "DR34",
+      "source_page": 15,
+      "source_text_linebreaks": "This cites Gemini 2.5 Flash-Lite,\nbut the model used was the unpinned alias\n'models/gemini-flash-lite-latest.' Please cite the\nresolved version actually used.",
+      "verbatim_text": "This cites Gemini 2.5 Flash-Lite, but the model used was the unpinned alias 'models/gemini-flash-lite-latest.' Please cite the resolved version actually used.",
+      "response": "The model reference no longer treats Gemini 2.5 Flash-Lite documentation as proof of the historical unpinned backend. Recorded later responses identify gemini-3.5-flash-lite; unavailable July version metadata remains explicitly unavailable.",
+      "location": "Revised clean manuscript, lines 133 to 137; 477 to 479. Original Reference 15 is now Reference 17 after renumbering by first appearance."
+    }
+  ]
+}

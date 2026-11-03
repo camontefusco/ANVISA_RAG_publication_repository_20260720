@@ -1,0 +1,15 @@
+{
+  "release_version": "v0.2.0",
+  "published_UTC": "2026-11-03T06:19:06Z",
+  "GitHub_release": "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.2.0",
+  "GitHub_archived_commit": "aabcf43029c9cd56f70e708ea696cd5c47ec833b",
+  "version_DOI": "10.5281/zenodo.23909097",
+  "Zenodo_record": "https://zenodo.org/records/23909097",
+  "concept_DOI": "10.5281/zenodo.21504181",
+  "previous_version_DOI": "10.5281/zenodo.21504214",
+  "original_release_submission_sha256": "c25c9ad7f135ce1fdd34191e81fde8a252b8cad7a269035e62800839fab97dc2",
+  "Zenodo_source_zip_md5": "072ceb0b7fc813c561a9ebaed92cb797",
+  "Zenodo_download_md5_verified": true,
+  "Zenodo_embedded_submission_matches_GitHub_release_asset": true,
+  "citation_linked_variant": "Post-archive DOI/release citations and response line-location update only; scientific outputs, ratings, figures and outcomes unchanged. Original v0.2.0 evidence snapshot and its release asset are not overwritten."
+}
