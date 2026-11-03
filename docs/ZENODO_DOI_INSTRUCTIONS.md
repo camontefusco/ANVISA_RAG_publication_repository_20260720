@@ -1,22 +1,3 @@
-# Zenodo DOI Instructions
+# Zenodo archival versioning
 
-The repository is ready for Zenodo archiving after GitHub-Zenodo integration is enabled.
-
-Steps:
-
-1. Log in to Zenodo with the GitHub-connected account.
-2. Go to GitHub integration in Zenodo.
-3. Enable archiving for `camontefusco/ANVISA_RAG_publication_repository_20260720`.
-4. Create or re-publish a GitHub release from the latest tag.
-5. Wait for Zenodo to archive the release.
-6. Copy the DOI from Zenodo.
-7. Add the DOI to `README.md` and `CITATION.cff`.
-8. Commit and push the DOI update.
-
-Recommended release for DOI:
-
-`v0.1.1`
-
-Reason:
-
-This release includes `.zenodo.json`, so Zenodo should import the correct title, creator, ORCID, license, keywords, contributor, and description.
+Automatic preservation is enabled for this repository and was verified on 3 November 2026. The prior v0.1.2 record is https://doi.org/10.5281/zenodo.21504214 and the all-versions DOI is https://doi.org/10.5281/zenodo.21504181. Publish the new tagged v0.2.0 release through the existing integration; do not create an unrelated duplicate deposit. Record the verified new version-specific DOI after archiving. Tagged evidence is immutable; later manuscript citation-only updates must be clearly identified.

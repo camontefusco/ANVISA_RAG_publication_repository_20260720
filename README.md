@@ -1,10 +1,14 @@
-## Current manuscript revision
+# Current revision and release
 
-The cumulative Reviewer 2 revision, clean and tracked manuscripts, response letter, supplements and selected data are in [the 30 October 2026 snapshot](revisions/reviewer_2_20261030/README.md). This is an ongoing revision: human review is AI-assisted and unblinded, the40-row author-led input set was frozen before generation and all40 answers are now saved with human outcome ratings pending, and independent validation and current-law verification remain open. A further clause-level DR8 audit identified partial-repeal and reference-completeness issues beyond the existing replacement drafts. A further clause-level DR8 audit identified partial-repeal and reference-completeness issues beyond the existing replacement drafts. Earlier release materials below retain their historical context.
+The current coauthor-reviewed revision is [3 November 2026](revisions/reviewer_2_20261103/README.md). It contains the clean and cumulative tracked manuscripts, full reviewer response, supporting documents, figures and curated evidence. The [complete package](revisions/reviewer_2_20261103/submission_ready_20261103.zip) also contains the high-resolution TIFF files. Earlier dated revisions are historical snapshots and may contain superseded scores or review-status descriptions.
+
+The new common-prompt study has 118 distinct coauthor-rated answers representing 120 condition records. Hybrid, BM25 and model-only content success is 39/40, 38/40 and 9/40 answers, or 19/20, 18/20 and 4/20 bilingual pairs. Hybrid superiority over BM25 is unproven (+5 percentage points; descriptive 95% paired interval -10 to +20; exact p = 1.000). Review date: 2 November; prior project/question exposure and limited condition masking are disclosed. Original AI scores and disagreements remain separate. Current-law accuracy and fresh independent validation are not established.
+
+This release is version v0.2.0. Prior version v0.1.2 is archived at https://doi.org/10.5281/zenodo.21504214; the all-versions DOI is https://doi.org/10.5281/zenodo.21504181. The new version-specific DOI will be recorded after the existing GitHub-Zenodo integration completes. Do not cite the prior version as containing these new results.
 
 # Bilingual ANVISA Regulatory RAG Prototype
 
-This repository contains an unpublished bilingual retrieval-augmented generation (RAG) prototype for Portuguese and English question answering over selected public ANVISA regulatory documents. The system was developed by Carlos Victor Montefusco-Pereira as the primary creator and developer, with manuscript and regulatory-science framing by Howard Lopes Ribeiro Junior.
+This repository contains a bilingual archived-corpus retrieval-augmented generation (RAG) prototype for Portuguese and English question answering over selected public ANVISA regulatory documents. The system was developed by Carlos Victor Montefusco-Pereira as the primary creator and developer, with manuscript and regulatory-science framing by Howard Lopes Ribeiro Junior.
 
 The project is intended as a technical demonstration and reproducibility package for a regulatory-science manuscript. It is not a regulatory decision system, legal opinion, or substitute for direct review of the official ANVISA text.
 
@@ -20,7 +24,7 @@ Appropriate uses:
 
 - Searching selected ANVISA regulations by practical regulatory question.
 - Comparing Portuguese and English questions against the same Portuguese source corpus.
-- Supporting early dossier planning, clinical-development orientation, medical-device regulatory review, biological-product registration review, and stability-document checks.
+- Supporting early dossier planning, clinical-development orientation, medical-device regulatory review, biological-product registration review, and archived regulatory-document checks; current applicability must be established separately.
 - Producing cited draft answers that must be verified against the official ANVISA source.
 
 Not appropriate uses:
@@ -132,20 +136,18 @@ Generated answer:
 
 This smoke test confirms local app loading and backend wiring. It is not counted as a benchmark row.
 
-## Evaluation Summary
+## Evaluation summary and provenance
 
-The manuscript package includes a 200-question bilingual article-level benchmark and later stress-test artifacts. Question categories included Portuguese answerable, English answerable, multi-article or exception questions, and unanswerable/adversarial questions.
+The constructed historical benchmark had 200 questions in 100 bilingual pairs; six overlapping evaluation stages produced 404 outputs with 254 distinct IDs. Repair and calibration reuse precludes independent generalization or a causal before/after calibration claim. The diagnostic stress set contained 50 outputs, not 500 questions. Original labels, problematic revoked-source references and historical Gemini-judge scores remain available as evidence, separately from corrections and author review.
 
-Key internal results reported in the manuscript evidence package:
-
-| Evaluation stage | Main finding |
+| Assessment | Main result |
 | --- | --- |
-| Prospective 500-question retrieval stress test | Source hit rate 1.000 and source MRR 0.988; article Recall@5 0.967. |
-| AI-judge answer-quality evaluation | Faithfulness 1.000, citation correctness 0.975, completeness 0.943, refusal correctness 0.700. |
-| Refusal-focused follow-up test | Refusal correctness improved to 0.944; answerable-control completeness was 0.908. |
-| Streamlit smoke test | App loaded and produced a cited answer from RDC 945/2024, Art. 1. |
+| Frozen 40-answer coauthor assessment | 10/20 bilingual pairs passed; 6/12 answerable, 0/4 partly answerable, 4/4 unanswerable. |
+| Earlier 80-answer repair comparison, completed author review | 14/20 baseline versus 17/20 repair; exact paired p = 0.375. Initial AI scores are separate. |
+| Common-prompt three-condition coauthor comparison | Hybrid 19/20, BM25 18/20, model-only 4/20 pairs; no established hybrid advantage over BM25. |
+| Matched retrieval coverage | BM25/hybrid all required articles at five: 30/32 versus 32/32. Structural coverage is not answer quality. |
 
-The internal 1.000 scores are treated as a warning sign, not proof of perfect reliability. They may reflect benchmark construction, closed-corpus constraints, source-level rather than article-level scoring, and proximity between development decisions and evaluation data. The manuscript therefore emphasizes article-level scoring, external/adversarial checks, refusal calibration, and full release of benchmark artifacts.
+Historical saturated faithfulness scores are not proof of reliability. Source validity, reference completeness, selected evidence, language and refusal behavior require separate checks. Regulatory status checks are targeted; the corpus is not maintained as consolidated current law. The older Streamlit demonstration is not bilingual deployment-validation evidence. No workflow time or decision benefit was measured. See the current revision, not older reports, for the active interpretation.
 
 ## Benchmark and Evidence Files
 
@@ -189,7 +191,7 @@ Code and repository-authored documentation are released under the MIT License. P
 
 ## Citation
 
-Please cite the repository metadata in `CITATION.cff`. A tagged GitHub release and Zenodo DOI should be created before using this repository as a formal technical-demo artifact.
+Please cite the specific tagged evidence release using `CITATION.cff`. The concept DOI identifies the complete version family; a version-specific DOI identifies the exact archived snapshot. See the release section above for current identifiers.
 
 ## Creator Statement
 

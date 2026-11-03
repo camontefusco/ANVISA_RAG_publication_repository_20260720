@@ -1,0 +1,609 @@
+{
+  "run_utc": "2026-11-03T00:20:56.240653+00:00",
+  "checks_passed": 85,
+  "checks": [
+    {
+      "check": "historical_denominators",
+      "pass": true,
+      "evidence": {
+        "outputs": 404,
+        "distinct_ids": 254
+      }
+    },
+    {
+      "check": "six_stage_sizes",
+      "pass": true,
+      "evidence": {
+        "S1_internal_heldout": 150,
+        "S2_english_completeness_repair": 75,
+        "S3_portuguese_residual_quality_repair": 75,
+        "S4_ai_authored_prospective_stress_test": 50,
+        "S5_refusal_calibration_development": 24,
+        "S6_refusal_focused_ai_authored_test": 30
+      }
+    },
+    {
+      "check": "coauthor_40_pair_outcomes",
+      "pass": true,
+      "evidence": {
+        "pairs": 20,
+        "successes": 10
+      }
+    },
+    {
+      "check": "coauthor_40_language_results",
+      "pass": true,
+      "evidence": {
+        "wrong_language": 5
+      }
+    },
+    {
+      "check": "author_review_original_baseline",
+      "pass": true,
+      "evidence": {
+        "answers": 40,
+        "pair_success": 14
+      }
+    },
+    {
+      "check": "author_review_integrated_repair",
+      "pass": true,
+      "evidence": {
+        "answers": 40,
+        "pair_success": 17
+      }
+    },
+    {
+      "check": "author_review_discordance",
+      "pass": true,
+      "evidence": {
+        "gains": 4,
+        "losses": 1
+      }
+    },
+    {
+      "check": "new_answer_analysis_rows",
+      "pass": true,
+      "evidence": {
+        "AI_ratings": 80,
+        "audit_rows": 80
+      }
+    },
+    {
+      "check": "common_prompt_RAG",
+      "pass": true,
+      "evidence": {
+        "answers": 40,
+        "success": 39,
+        "abstention_success": 8,
+        "pair_success": 19
+      }
+    },
+    {
+      "check": "common_prompt_NO_RETRIEVAL",
+      "pass": true,
+      "evidence": {
+        "answers": 40,
+        "success": 8,
+        "abstention_success": 8,
+        "pair_success": 4
+      }
+    },
+    {
+      "check": "retrieval_BM25_ONLY",
+      "pass": true,
+      "evidence": {
+        "eligible": 32,
+        "all_articles_at5": 30,
+        "full_after_completion": 31
+      }
+    },
+    {
+      "check": "retrieval_FROZEN_HYBRID_RERANKED",
+      "pass": true,
+      "evidence": {
+        "eligible": 32,
+        "all_articles_at5": 32,
+        "full_after_completion": 32
+      }
+    },
+    {
+      "check": "BM25_execution",
+      "pass": true,
+      "evidence": {
+        "records": 40,
+        "new_calls": 39
+      }
+    },
+    {
+      "check": "human_review_pending_not_invented",
+      "pass": true,
+      "evidence": {
+        "blank_rating_rows": 118,
+        "analysis_records": 120
+      }
+    },
+    {
+      "check": "abstract_word_limit",
+      "pass": true,
+      "evidence": 218
+    },
+    {
+      "check": "conservative_full_text_word_limit",
+      "pass": true,
+      "evidence": 4972
+    },
+    {
+      "check": "RAG_defined_in_abstract",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "ANVISA_defined_in_abstract",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "DPI_definition_matches_archived_source",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "ethics_human_review_disclosed",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "no_unrecorded_current_final_approval",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "reference_first_appearance_order",
+      "pass": true,
+      "evidence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "check": "reference_list_contiguous",
+      "pass": true,
+      "evidence": 21
+    },
+    {
+      "check": "tracked_accept_projection",
+      "pass": true,
+      "evidence": 105
+    },
+    {
+      "check": "tracked_reject_projection",
+      "pass": true,
+      "evidence": 111
+    },
+    {
+      "check": "tracked_revision_ids_unique",
+      "pass": true,
+      "evidence": 3079
+    },
+    {
+      "check": "no_stale_baseline_absence_manuscript_clean",
+      "pass": true,
+      "evidence": "manuscript_clean"
+    },
+    {
+      "check": "no_stale_baseline_absence_Supplementary_Information",
+      "pass": true,
+      "evidence": "Supplementary_Information"
+    },
+    {
+      "check": "no_stale_baseline_absence_Tables",
+      "pass": true,
+      "evidence": "Tables"
+    },
+    {
+      "check": "no_stale_baseline_absence_Figure_legends",
+      "pass": true,
+      "evidence": "Figure_legends"
+    },
+    {
+      "check": "supplement_no_broad_missing_baselines",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "no_unearned_new_human_claim",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "no_future_disclosure_placeholder",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "no_duplicate_section_crossref",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "actual_workflow_limit_explicit",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "independent_validation_limit_explicit",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "current_law_limit_explicit",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "local_package_availability_not_asserted_online",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "overall_success_includes_abstention",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "main_no_en_em_dashes",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "table4_values",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "table3_preserves_author_layer",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "line_map_matches_current_clean",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "callout_Figure 1",
+      "pass": true,
+      "evidence": [
+        26
+      ]
+    },
+    {
+      "check": "callout_Figure 2",
+      "pass": true,
+      "evidence": [
+        30
+      ]
+    },
+    {
+      "check": "callout_Figure 3",
+      "pass": true,
+      "evidence": [
+        53,
+        67
+      ]
+    },
+    {
+      "check": "callout_Figure 4",
+      "pass": true,
+      "evidence": [
+        59,
+        68
+      ]
+    },
+    {
+      "check": "callout_Figure 5",
+      "pass": true,
+      "evidence": [
+        63,
+        69
+      ]
+    },
+    {
+      "check": "callout_Table 1",
+      "pass": true,
+      "evidence": [
+        23,
+        47
+      ]
+    },
+    {
+      "check": "callout_Table 2",
+      "pass": true,
+      "evidence": [
+        53,
+        67
+      ]
+    },
+    {
+      "check": "callout_Table 3",
+      "pass": true,
+      "evidence": [
+        59
+      ]
+    },
+    {
+      "check": "callout_Table 4",
+      "pass": true,
+      "evidence": [
+        63,
+        69
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S1",
+      "pass": true,
+      "evidence": [
+        26,
+        63
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S2",
+      "pass": true,
+      "evidence": [
+        26
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S3",
+      "pass": true,
+      "evidence": [
+        26
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S4",
+      "pass": true,
+      "evidence": [
+        26
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S5",
+      "pass": true,
+      "evidence": [
+        27
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S6",
+      "pass": true,
+      "evidence": [
+        27
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S7",
+      "pass": true,
+      "evidence": [
+        30
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S8",
+      "pass": true,
+      "evidence": [
+        33
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S9",
+      "pass": true,
+      "evidence": [
+        33
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S10",
+      "pass": true,
+      "evidence": [
+        33
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S11",
+      "pass": true,
+      "evidence": [
+        48
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S12",
+      "pass": true,
+      "evidence": [
+        34
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S13",
+      "pass": true,
+      "evidence": [
+        34
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S14",
+      "pass": true,
+      "evidence": [
+        38,
+        56
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S15",
+      "pass": true,
+      "evidence": [
+        38,
+        56
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S16",
+      "pass": true,
+      "evidence": [
+        39
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S17",
+      "pass": true,
+      "evidence": [
+        39
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S18",
+      "pass": true,
+      "evidence": [
+        39
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S19",
+      "pass": true,
+      "evidence": [
+        59
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S20",
+      "pass": true,
+      "evidence": [
+        60
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S21",
+      "pass": true,
+      "evidence": [
+        63
+      ]
+    },
+    {
+      "check": "callout_Supplementary Table S22",
+      "pass": true,
+      "evidence": [
+        64
+      ]
+    },
+    {
+      "check": "callout_Supplementary Figure S1",
+      "pass": true,
+      "evidence": [
+        63
+      ]
+    },
+    {
+      "check": "all_reviewer_quotes_preserved",
+      "pass": true,
+      "evidence": 32
+    },
+    {
+      "check": "historical_judge_concern_not_falsely_resolved",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "response_reference_location_renumbered",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "response_no_stale_missing_baseline",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "author_layer_120_records",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "author_success_RAG",
+      "pass": true,
+      "evidence": 39
+    },
+    {
+      "check": "author_success_BM25",
+      "pass": true,
+      "evidence": 38
+    },
+    {
+      "check": "author_success_NO_RETRIEVAL",
+      "pass": true,
+      "evidence": 9
+    },
+    {
+      "check": "no_new_pending_review_narrative",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "check": "Howard_self_draft_distinct",
+      "pass": true,
+      "evidence": true
+    }
+  ],
+  "source_reconstructed_facts": {
+    "RAG": {
+      "success": 39,
+      "abstention_success": 8,
+      "omission_answers": 0,
+      "missing_reference_components": 0,
+      "claim_flags": 1,
+      "inappropriate_refusals": 0,
+      "citation_present": 39
+    },
+    "NO_RETRIEVAL": {
+      "success": 8,
+      "abstention_success": 8,
+      "omission_answers": 32,
+      "missing_reference_components": 100,
+      "claim_flags": 13,
+      "inappropriate_refusals": 20,
+      "citation_present": 0
+    }
+  },
+  "abstract_words": 218,
+  "conservative_pre_reference_words": 4972,
+  "new_API_calls_during_sweep": 0,
+  "unresolved_scientific_limits": [
+    "The 300-output embedding experiment still lacks complete human verification",
+    "Full current-law corpus rebuilding and reevaluation incomplete",
+    "Fresh independent validation absent",
+    "Measured human workflow benefit absent",
+    "Official-site search comparator absent",
+    "Multilingual encoder replacement comparison absent",
+    "Historical backend versions and some exact evidence contexts unavailable"
+  ]
+}
