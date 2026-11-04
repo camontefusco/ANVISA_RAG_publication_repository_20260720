@@ -1,7 +1,7 @@
 {
   "title": "Bilingual ANVISA Regulatory RAG Prototype",
   "upload_type": "software",
-  "description": "Finalized revision release of the archived ANVISA RAG manuscript and reproducibility evidence. Adds the dated 188-question corpus comparison and provisional AI output assessments, Figure 6, Supplementary Data S16 and source-dependency audit; S13 run-date ledger; S14 full rule audit; corrected historical score-exposure provenance; consolidated responses and seven 600-dpi TIFF figures. Historical/coauthor results and initial AI judgments remain separate. All supplied reviewer comments discussed and responses approved; this is not a journal submission. Current-law accuracy, fresh independent external validation and measured workflow benefit remain unestablished. See REVIEW_STATUS.md and the file inventory. No new model calls were made for release preparation.",
+  "description": "Organization-only patch to the finalized v0.3.0 ANVISA RAG reviewer revision. Reorganizes Supplementary Data S16 into protocol, inputs, results, source audit, provenance, reproduction code and explicitly historical validation. Adds read-first guides, a manuscript-to-data map, file index and original-path/hash map. A portable recalculation reproduces the unchanged counts and intervals. All scientific documents, figures, assessments and results remain unchanged from v0.3.0. No new model calls. Current-law accuracy, independent external validation and workflow benefit remain unestablished. See the package guide and original v0.3.0 scientific snapshot.",
   "creators": [
     {
       "name": "Montefusco-Pereira, Carlos Victor",
@@ -36,6 +36,6 @@
     }
   ],
   "notes": "Technical archived-corpus evaluation and evidence package. Earlier software and evaluation snapshots remain historical. This is not official ANVISA guidance or an autonomous regulatory decision system. The MIT license covers repository-authored code and documentation; third-party material is not relicensed.",
-  "version": "v0.3.0",
+  "version": "v0.3.1",
   "publication_date": "2026-11-04"
 }

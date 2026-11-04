@@ -1,0 +1,12 @@
+{
+  "change_type": "organization only",
+  "scientific_S16_files_byte_identical": 32,
+  "all_other_scientific_evidence_bytes_unchanged": true,
+  "S16_earlier_members_mapped": 34,
+  "S16_files_now": 38,
+  "master_archive_indexed_files": 1383,
+  "model_calls": 0,
+  "ratings_changed": false,
+  "outdated_results_guide_status_corrected": true,
+  "reproduction_entry_point": "Supplementary_Data_S16/06_Reproduction_code/recalculate_counts.py"
+}

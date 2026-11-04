@@ -1,0 +1,25 @@
+{
+  "answer_successes": {
+    "historical_corpus": 144,
+    "updated_corpus": 172
+  },
+  "denominator_per_condition": 188,
+  "bilingual_pair_successes": {
+    "historical_corpus": 69,
+    "updated_corpus": 83
+  },
+  "language_rate_difference": {
+    "difference": 0.14893617021276595,
+    "pair_bootstrap_95_percent_interval": [
+      0.07446808510638298,
+      0.22872340425531915
+    ]
+  },
+  "bilingual_difference": {
+    "difference": 0.14893617021276595,
+    "pair_bootstrap_95_percent_interval": [
+      0.06382978723404255,
+      0.24468085106382978
+    ]
+  }
+}

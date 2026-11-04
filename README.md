@@ -2,11 +2,13 @@
 
 ## Current review release
 
-**[v0.3.0](https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.0)** is the 4 November 2026 review snapshot. Download **ANVISA_RAG_v0.3.0_review_package.zip** from that release. It includes the updated clean and cumulative tracked manuscript, justified reviewer response, tables, supplementary material, seven 600-dpi TIFFs, curated implementation/data and inventories.
+**[v0.3.1](https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.1)** is the 4 November 2026 review snapshot. Download **ANVISA_RAG_v0.3.1_organized_supplementary_data.zip** from that release. It includes the updated clean and cumulative tracked manuscript, justified reviewer response, tables, supplementary material, seven 600-dpi TIFFs, curated implementation/data and inventories.
 
-Start with [the package guide](revisions/reviewer_2_20261104_final/README.md), [review status](revisions/reviewer_2_20261104_final/REVIEW_STATUS.md) and [file inventory](revisions/reviewer_2_20261104_final/inventory.csv). The [journal-upload candidates](revisions/reviewer_2_20261104_final/journal_upload/) are separated from [reproducibility evidence](revisions/reviewer_2_20261104_final/evidence/) and [release audit records](revisions/reviewer_2_20261104_final/release_audit/).
+Start with [the package guide](revisions/reviewer_2_20261104_data_organized/README.md), [review status](revisions/reviewer_2_20261104_data_organized/REVIEW_STATUS.md) and [file inventory](revisions/reviewer_2_20261104_data_organized/inventory.csv). The [journal-upload candidates](revisions/reviewer_2_20261104_data_organized/journal_upload/) are separated from [reproducibility evidence](revisions/reviewer_2_20261104_data_organized/evidence/) and [release audit records](revisions/reviewer_2_20261104_data_organized/release_audit/).
 
 This is the **finalized revision release; no journal submission has been made**. All supplied reviewer responses are approved. The repository is public; no reviewer-specific access is needed. Earlier release assets and tags remain unchanged and may contain superseded text, scores or review status. Do not mix their documents with this package.
+
+The v0.3.1 patch reorganizes supplementary data and adds navigation guides. Scientific documents, figure bytes and scores are unchanged from v0.3.0, which remains their cited evidence snapshot.
 
 ## Purpose and evidence
 
@@ -24,8 +26,8 @@ The historical 94-output review was AI-draft-assisted. The corresponding author 
 - [Cleaning script](scripts/clean_regulatory_texts.py).
 - [Historical benchmark](evaluation/publication_benchmark_200.jsonl).
 - [Historical official-source manifest and checksums](docs/ANVISA_SOURCE_LINKS_AND_CHECKSUMS_20260720.csv). These document a snapshot, not comprehensive current-law verification.
-- [Current curated evidence archive](revisions/reviewer_2_20261104_final/evidence/revision_data.zip): source checksums, frozen outputs, separate AI/author assessments, dated-corpus analysis, negative controls, S13 run-date ledger and S14 complete rule audit.
-- [Supplementary Data S16](revisions/reviewer_2_20261104_final/evidence/Supplementary_Data_S16.zip): dated-corpus experiment and first-level source-dependency audit.
+- [Current curated evidence archive](revisions/reviewer_2_20261104_data_organized/evidence/revision_data.zip): source checksums, frozen outputs, separate AI/author assessments, dated-corpus analysis, negative controls, S13 run-date ledger and S14 complete rule audit.
+- [Supplementary Data S16](revisions/reviewer_2_20261104_data_organized/evidence/Supplementary_Data_S16.zip): dated-corpus experiment and first-level source-dependency audit.
 - [Inventory audit](docs/GITHUB_PACKAGE_INVENTORY_20261104.md).
 
 The new package preserves the full 114-entry glossary, the separate Translator-mode distinction and existing glossary/rule-family ablations. It does not establish an effect for every individual rule or generalization to fresh independent questions.

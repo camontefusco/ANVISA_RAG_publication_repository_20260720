@@ -1,0 +1,12 @@
+topic,manuscript_assets,archive_paths
+Historical evaluation,S2; Table S10-S11; Figure 2,data/historical_S1_S2/
+Author ratings and corrected labels,S3; Tables S12-S13; Figure 3,data/historical_author_review/; data/current_adjudication/; data/Howard40_review/
+Retrieval and embedding diagnostics,S5-S6; Tables S14-S17,data/DR11/; data/DR12_retrieval_ablation_sources/; data/sibling_context/
+Rule glossary and activation audit,S14,data/DR13/rule_audit_restored_20261104/
+Mechanism and negative-result experiments,S6-S7; Tables S17-S18,data/combined_repair_comparison/; data/partial_mechanism_factorial/; data/automatic_evidence_followup/; data/residual_mechanisms/; data/partial_prompt_pilot/; data/four_question_context_controls/; data/ethics_length_and_prompt_controls/
+Frozen integrated repair and author review,S8; Tables S19-S20; Figure 4,data/integrated_validation_completed_20261101/; data/integrated_scope_resolved_20261101/; data/author_review_completion_80_20261101/
+Hybrid BM25 and model-only comparison,S10; Tables S21-S22; Figure 5; Figure S1,data/comparative_baselines_20261102/; data/author_review_completed_20261103/; data/results_display_20261101/
+Dated corpus and dependency audit,S12; Tables S23-S25; Figure 6,Supplementary_Data_S16/
+Code and source reconstruction,S1; S4,data/reproducibility_code/; data/source_provenance/; data/DR8_clause_audit/; data/current_law_targeted_check_20261101/
+Run dates and assistance provenance,S11; S13; Table S26,data/model_provenance/; data/AI_disclosure_attribution_20261103/
+Historical guides and internal quality records,Not a scientific result table,data/archive_history/; data/quality_sweep_20261102/; data/final_quality_review_20261103/; data/release_publication_20261103/
