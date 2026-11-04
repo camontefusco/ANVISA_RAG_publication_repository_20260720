@@ -2,11 +2,11 @@
 
 ## Current review release
 
-**[v0.3.0-rc.1](https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.0-rc.1)** is the 4 November 2026 review snapshot. Download **ANVISA_RAG_v0.3.0-rc.1_review_package.zip** from that release. It includes the updated clean and cumulative tracked manuscript, justified reviewer response, tables, supplementary material, seven 600-dpi TIFFs, curated implementation/data and inventories.
+**[v0.3.0](https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.0)** is the 4 November 2026 review snapshot. Download **ANVISA_RAG_v0.3.0_review_package.zip** from that release. It includes the updated clean and cumulative tracked manuscript, justified reviewer response, tables, supplementary material, seven 600-dpi TIFFs, curated implementation/data and inventories.
 
-Start with [the package guide](revisions/reviewer_2_20261104_rc1/README.md), [review status](revisions/reviewer_2_20261104_rc1/REVIEW_STATUS.md) and [file inventory](revisions/reviewer_2_20261104_rc1/inventory.csv). The [journal-upload candidates](revisions/reviewer_2_20261104_rc1/journal_upload/) are separated from [reproducibility evidence](revisions/reviewer_2_20261104_rc1/evidence/) and [release audit records](revisions/reviewer_2_20261104_rc1/release_audit/).
+Start with [the package guide](revisions/reviewer_2_20261104_final/README.md), [review status](revisions/reviewer_2_20261104_final/REVIEW_STATUS.md) and [file inventory](revisions/reviewer_2_20261104_final/inventory.csv). The [journal-upload candidates](revisions/reviewer_2_20261104_final/journal_upload/) are separated from [reproducibility evidence](revisions/reviewer_2_20261104_final/evidence/) and [release audit records](revisions/reviewer_2_20261104_final/release_audit/).
 
-This is a **prerelease, not a completed journal submission**. DR33-DR34 remain for author discussion. The repository is public; no reviewer-specific access is needed. Earlier release assets and tags remain unchanged and may contain superseded text, scores or review status. Do not mix their documents with this package.
+This is the **finalized revision release; no journal submission has been made**. All supplied reviewer responses are approved. The repository is public; no reviewer-specific access is needed. Earlier release assets and tags remain unchanged and may contain superseded text, scores or review status. Do not mix their documents with this package.
 
 ## Purpose and evidence
 
@@ -24,8 +24,8 @@ The historical 94-output review was AI-draft-assisted. The corresponding author 
 - [Cleaning script](scripts/clean_regulatory_texts.py).
 - [Historical benchmark](evaluation/publication_benchmark_200.jsonl).
 - [Historical official-source manifest and checksums](docs/ANVISA_SOURCE_LINKS_AND_CHECKSUMS_20260720.csv). These document a snapshot, not comprehensive current-law verification.
-- [Current curated evidence archive](revisions/reviewer_2_20261104_rc1/evidence/revision_data.zip): source checksums, frozen outputs, separate AI/author assessments, dated-corpus analysis, negative controls, S13 run-date ledger and S14 complete rule audit.
-- [Supplementary Data S16](revisions/reviewer_2_20261104_rc1/evidence/Supplementary_Data_S16.zip): dated-corpus experiment and first-level source-dependency audit.
+- [Current curated evidence archive](revisions/reviewer_2_20261104_final/evidence/revision_data.zip): source checksums, frozen outputs, separate AI/author assessments, dated-corpus analysis, negative controls, S13 run-date ledger and S14 complete rule audit.
+- [Supplementary Data S16](revisions/reviewer_2_20261104_final/evidence/Supplementary_Data_S16.zip): dated-corpus experiment and first-level source-dependency audit.
 - [Inventory audit](docs/GITHUB_PACKAGE_INVENTORY_20261104.md).
 
 The new package preserves the full 114-entry glossary, the separate Translator-mode distinction and existing glossary/rule-family ablations. It does not establish an effect for every individual rule or generalization to fresh independent questions.
