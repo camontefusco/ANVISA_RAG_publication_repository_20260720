@@ -1,0 +1,10 @@
+{
+  "status": "GitHub v0.3.2 evidence completion; original scientific results unchanged",
+  "original_archive_files": 1384,
+  "original_scientific_payload_unchanged": true,
+  "restored_original_files": 75,
+  "new_model_calls": 0,
+  "ratings_changed": false,
+  "publication_action": "Distributed with GitHub v0.3.2; earlier GitHub releases remain unchanged. No new Zenodo DOI claimed.",
+  "verification": "Run VERIFY_PACKAGE.py to check all payload hashes, final DR11 records and sibling original-to-derived agreement."
+}

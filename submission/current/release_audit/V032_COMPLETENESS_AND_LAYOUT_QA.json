@@ -1,0 +1,14 @@
+{
+  "version": "v0.3.2",
+  "base_commit": "c4dfb32c0cab95264cb2858e4ad1d13aa619be07",
+  "older_revision_packages_preserved": 8,
+  "restored_original_files": 75,
+  "archived_tracked_payload_bytes_unchanged": true,
+  "scientific_documents_figures_and_journal_files_unchanged": true,
+  "nested_evidence_files": 1475,
+  "evidence_hashes_and_DR11_sibling_checks_passed": true,
+  "credential_literal_scan_passed": true,
+  "new_model_calls": 0,
+  "human_ratings_changed": false,
+  "new_Zenodo_DOI_claimed": false
+}

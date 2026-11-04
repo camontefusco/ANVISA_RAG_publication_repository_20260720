@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.2 - 2026-11-04
+
+- Put the current package under submission/current and preserve older packages under archive/revisions.
+- Restore 75 original evidence files, including DR11 individual outputs, frozen inputs, sibling review records/evidence and original Howard returns.
+- Add study navigation, checksums and verification; preserve scientific documents, figures, results and ratings.
+- Keep existing GitHub releases unchanged; no new Zenodo DOI is claimed.
+
+
 ## v0.2.0, 3 November 2026
 
 - Integrate completed coauthor assessment across the archived-corpus manuscript, Figure 5, Table 4, Supplementary Table S21, Supplementary Figure S1 and full reviewer response.

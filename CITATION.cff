@@ -9,7 +9,7 @@ authors:
 abstract: "An archived-corpus bilingual retrieval-augmented generation prototype for article-level retrieval and cited question answering over selected public ANVISA regulatory documents."
 repository-code: "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720"
 license: MIT
-version: "0.3.1"
+version: "0.3.2"
 date-released: "2026-11-04"
 keywords:
   - retrieval-augmented generation
@@ -17,4 +17,4 @@ keywords:
   - ANVISA
   - pharmaceutical regulation
   - bilingual evaluation
-url: "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.1"
+url: "https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.2"

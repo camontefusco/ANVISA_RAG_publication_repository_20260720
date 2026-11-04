@@ -1,0 +1,11 @@
+order,study,folders
+01,Historical benchmark and 94-output human review,data/historical_S1_S2/; data/historical_author_review/
+02,DR11 tokenizer and 300-answer comparison,data/DR11/
+03,Retrieval and rule ablations,data/DR12_retrieval_ablation_sources/; data/DR13/
+04,Sibling-context experiment and 44 human ratings,data/sibling_context/
+05,Frozen 40-answer test and Howard review,data/Howard40_review/
+06,Mechanism and repair diagnostics,data/partial_prompt_pilot/; data/partial_mechanism_factorial/; data/combined_repair_comparison/; data/automatic_evidence_followup/; data/residual_mechanisms/; data/four_question_context_controls/; data/ethics_length_and_prompt_controls/
+07,Integrated validation and 80-answer author assessment,data/integrated_validation_completed_20261101/; data/integrated_scope_resolved_20261101/; data/author_review_completion_80_20261101/
+08,"Hybrid, BM25 and model-only comparison with 118 distinct human ratings",data/comparative_baselines_20261102/; data/author_review_completed_20261103/
+09,Dated-corpus comparison and regulatory dependencies,Supplementary_Data_S16/
+10,"Shared code, source provenance and run-date ledger",data/reproducibility_code/; data/source_provenance/; data/model_provenance/
