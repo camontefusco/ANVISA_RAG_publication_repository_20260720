@@ -1,0 +1,118 @@
+{
+  "tag": "v0.3.0-rc.1",
+  "all_32_reviewer_comments_verbatim": true,
+  "absent_comments": [
+    "DR21",
+    "DR23"
+  ],
+  "pending_author_discussion": [
+    "DR33",
+    "DR34"
+  ],
+  "main_words_before_references": 4993,
+  "tracked_accept_equals_clean": true,
+  "tracked_reject_equals_September_submission": true,
+  "figure_TIFFs": [
+    {
+      "file": "Figure_3_author_assessment.tif",
+      "pixels": [
+        4918,
+        2507
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "file": "Figure_4_author_comparison.tif",
+      "pixels": [
+        4856,
+        5134
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "file": "Figure_5_model_and_retrieval_comparison.tif",
+      "pixels": [
+        7800,
+        9600
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "file": "Figure_2_benchmark.tif",
+      "pixels": [
+        4232,
+        4209
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "file": "Supplementary_Figure_S1_task_map.tif",
+      "pixels": [
+        5700,
+        7050
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "file": "Figure_6.tiff",
+      "pixels": [
+        7440,
+        5700
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "file": "Figure_1_workflow.tif",
+      "pixels": [
+        4305,
+        4948
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    }
+  ],
+  "supplementary_tables": 26,
+  "required_evidence_files": [
+    "data/reproducibility_code/scripts/clean_regulatory_texts.py",
+    "data/source_provenance/historical_raw_and_clean_source_checksums.csv",
+    "data/source_provenance/official_sources_and_snapshot_checksums.csv",
+    "data/DR12_retrieval_ablation_sources/condition_summary.csv",
+    "data/DR12_retrieval_ablation_sources/paired_component_differences.csv",
+    "data/model_provenance/reported_stage_run_dates.csv",
+    "data/DR13/rule_audit_restored_20261104/complete_glossary_and_activation.csv",
+    "data/historical_author_review/CORRECTED_REVIEW_PROVENANCE.json"
+  ],
+  "evidence_files": 1377,
+  "credential_pattern_scan_passed": true,
+  "concealed_key_filename_scan_passed": true,
+  "no_new_model_calls": true,
+  "existing_ratings_unchanged": true,
+  "response_body_alignment": "justified",
+  "rendered_pages": {
+    "manuscript_clean": 12,
+    "manuscript_tracked": 20,
+    "Supplementary_Information": 38,
+    "response_to_reviewers": 23
+  },
+  "visual_QA": "Response pages reviewed; final pagination check completed separately; manuscript data-availability and cumulative tracked pages reviewed. Supplement text unchanged from reviewed provenance correction."
+}

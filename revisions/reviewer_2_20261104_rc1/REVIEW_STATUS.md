@@ -1,0 +1,5 @@
+# Review status
+
+This is a public review release, not a journal submission or a claim that every reviewer comment has final author approval. DR1-DR32 have been discussed, except DR21 and DR23, which are absent from the supplied PDF. Expanded approved responses through DR32 are consolidated. DR29 uses the corrected author-reported account: Howard had not seen automated judge scores before finalizing the 94 historical ratings. AI-draft assistance remains disclosed; full blinding is not inferred. DR33 and DR34 retain draft responses pending discussion. Reviewer 1 additional comments were not supplied beyond the quoted general message.
+
+Scientific limitations remain: current-law accuracy is not comprehensively established; dated-corpus output ratings remain provisional AI assessments; independent external validation and measured workflow benefit are absent. Earlier historical scores, original author ratings, corrections and new AI assessments remain distinct. No new model calls were made for this release.

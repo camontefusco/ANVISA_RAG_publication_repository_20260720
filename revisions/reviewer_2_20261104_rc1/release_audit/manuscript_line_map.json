@@ -1,0 +1,3167 @@
+{
+  "reference": "Rendered line-numbered clean manuscript, 4 November 2026; pagination may change if reflowed by another Word installation.",
+  "paragraphs": [
+    {
+      "paragraph": 0,
+      "start_line": 1,
+      "end_line": 2,
+      "text": "Bilingual retrieval augmented access to archived ANVISA regulatory documents"
+    },
+    {
+      "paragraph": 1,
+      "start_line": 3,
+      "end_line": 3,
+      "text": "Authors: Carlos Victor Montefusco-Pereira1,3*, Howard Lopes Ribeiro Junior2,3"
+    },
+    {
+      "paragraph": 2,
+      "start_line": 4,
+      "end_line": 5,
+      "text": "1 Independent Researcher in Data Science and Artificial Intelligence in Industrial Pharmaceutics, Berlin, Germany"
+    },
+    {
+      "paragraph": 3,
+      "start_line": 6,
+      "end_line": 11,
+      "text": "2 Center for Research and Drug Development (NPDM), Federal University of Ceará, Fortaleza 60430-275, Brazil; Post-Graduate Program in Pathology, Federal University of Ceará, Fortaleza, Brazil; Post-Graduate Program in Translational Medicine, Federal University of Ceará, Fortaleza, Brazil\n3 Member of Brazil-Africa Group for Scientific Research and Writing (GPEC), Portuguese-Speaking African Countries (PALOPs), Brazil"
+    },
+    {
+      "paragraph": 4,
+      "start_line": 12,
+      "end_line": 13,
+      "text": "ORCID: Carlos Victor Montefusco-Pereira, 0000-0003-4167-4653; Howard Lopes Ribeiro Junior, 0000-0003-2431-4779"
+    },
+    {
+      "paragraph": 5,
+      "start_line": 14,
+      "end_line": 15,
+      "text": "Corresponding author: Carlos Victor Montefusco-Pereira. Friedrich-Wilhelm 28, 12103 Berlin, Germany. Email: cmontefusco@gmail.com. Phone: +49 15168108538."
+    },
+    {
+      "paragraph": 6,
+      "start_line": 16,
+      "end_line": 17,
+      "text": "Keywords: regulatory science; ANVISA; retrieval-augmented generation; clinical trials; pharmacovigilance; biological products and medical devices"
+    },
+    {
+      "paragraph": 7,
+      "start_line": 18,
+      "end_line": 24,
+      "text": "Abbreviations: AI, artificial intelligence; ANVISA, Agência Nacional de Vigilância Sanitária; AREE, equivalent foreign regulatory authority; BM25, Best Matching 25; CI, confidence interval; CLS, classification token; DDCM, Clinical Drug Development Dossier; DPI, Dossiê do Produto sob Investigação; DSUR, Development Safety Update Report; FDA, U.S. Food and Drug Administration; GMP, good manufacturing practice; ICH, International Council for Harmonisation; MRR, mean reciprocal rank; RAG, retrieval-augmented generation; RRF, reciprocal rank fusion; SUSAR, suspected unexpected serious adverse reaction."
+    },
+    {
+      "paragraph": 8,
+      "start_line": 25,
+      "end_line": 25,
+      "text": "Abstract"
+    },
+    {
+      "paragraph": 9,
+      "start_line": 26,
+      "end_line": 27,
+      "text": "Background. Bilingual regulatory review requires complete source-supported answers, not merely citations."
+    },
+    {
+      "paragraph": 10,
+      "start_line": 28,
+      "end_line": 29,
+      "text": "Objective. To evaluate retrieval-augmented generation (RAG) against archived Agência Nacional de Vigilância Sanitária (ANVISA) documents."
+    },
+    {
+      "paragraph": 11,
+      "start_line": 30,
+      "end_line": 35,
+      "text": "Methods. Six overlapping historical stages produced 404 outputs (150 internal, 75 English repair, 75 Portuguese repair, 50 stress, 24 calibration, 30 post-calibration). Coauthor review covered 94 historical outputs, a separate 40-answer assessment and 120 common-prompt outputs with hybrid passages, BM25 passages or no retrieval. An 80-answer repair comparison received author review. A dated-corpus comparison generated 376 records on 188 revised questions, assessed provisionally by AI."
+    },
+    {
+      "paragraph": 12,
+      "start_line": 36,
+      "end_line": 41,
+      "text": "Results. The coauthor-reviewed assessment passed 10/20 pairs (exact 95% confidence interval [CI] 27.2 to 72.8%): 6/12 answerable, 0/4 partly answerable and 4/4 unanswerable. Separate coauthor-rated success was 19/20 hybrid pairs (95% CI 75.1 to 99.9%), 18/20 BM25 pairs (68.3 to 98.8%) and 4/20 model-only pairs (5.7 to 43.7%). Hybrid minus BM25 was +5 percentage points (95% pair-bootstrap interval -10 to +20). Dated-corpus AI-assessed success was 144/188 versus 172/188 answers: +14.9 points (paired 95% interval 7.4 to 22.9), pending human confirmation."
+    },
+    {
+      "paragraph": 13,
+      "start_line": 42,
+      "end_line": 45,
+      "text": "Conclusion. Retrieved evidence improved answers on the archived tasks, without establishing hybrid superiority over BM25. The dated-corpus comparison favored updated sources under provisional AI assessment. Citations did not ensure completeness or applicable law. Comprehensive current-law accuracy and fresh independent validation remain unestablished."
+    },
+    {
+      "paragraph": 14,
+      "start_line": 46,
+      "end_line": 46,
+      "text": "Introduction"
+    },
+    {
+      "paragraph": 15,
+      "start_line": 47,
+      "end_line": 54,
+      "text": "Regulatory document review requires complete provisions and exceptions for clinical-trial submissions, pharmacovigilance documentation and device labelling. A sponsor examining suspension of a Clinical Drug Development Dossier (DDCM), for example, needs the documentation, notification deadlines and implementation conditions in RDC 945/2024, Articles 85 and 89 [1]. Other tasks concern Development Safety Update Reports (DSURs), adverse-event notifications and non-printed device instructions. These examples motivate evaluation, not legal advice or operational accuracy claims. The suspension example uses RDC 945/2024 rather than the revoked RDC 9/2015 retained in archived benchmark answers [1,2]."
+    },
+    {
+      "paragraph": 16,
+      "start_line": 55,
+      "end_line": 59,
+      "text": "English questions may require Portuguese evidence. Reviewers need applicable articles, complete conditions and exceptions, the requested language and explicit evidence limits. An omitted notification category could leave a checklist incomplete; blanket refusal could suppress a supported requirement. These plausible consequences motivate evaluation but were not measured in submissions or patient outcomes."
+    },
+    {
+      "paragraph": 17,
+      "start_line": 60,
+      "end_line": 64,
+      "text": "Retrieval-augmented generation retrieves source passages before answering [3,4]. FDA-guidance research found that locating the correct source did not guarantee a complete, correct answer [5]. We examine whether article traceability supports complete bilingual task performance, including partly available information, and distinguish retrieval, citation support, language, evidence boundaries and legal applicability."
+    },
+    {
+      "paragraph": 18,
+      "start_line": 65,
+      "end_line": 68,
+      "text": "The prototype indexed six archived ANVISA documents. Evaluation examined provision retrieval, requested requirements and exceptions, response language, evidence limits, question overlap, human assessment and reference scope. A separate dated-corpus comparison tested source remediation. The study did not evaluate live legal monitoring or decisions in professional workflows."
+    },
+    {
+      "paragraph": 19,
+      "start_line": 69,
+      "end_line": 70,
+      "text": "The practical contribution is an auditable set of failures and evaluation checks for assisted document review. Faster review, fewer submission errors and autonomous readiness were not demonstrated."
+    },
+    {
+      "paragraph": 20,
+      "start_line": 71,
+      "end_line": 71,
+      "text": "Materials and Methods"
+    },
+    {
+      "paragraph": 21,
+      "start_line": 72,
+      "end_line": 76,
+      "text": "Study design. This technical evaluation used a closed-corpus bilingual RAG prototype without web search, live portals, private information or unindexed documents. Unavailable detail required an explicit limitation; the revised partial-answer endpoint also required supported information. The later model-only ablation supplied no passages or web-search tool and permitted stored knowledge under common instructions."
+    },
+    {
+      "paragraph": 22,
+      "start_line": 77,
+      "end_line": 79,
+      "text": "Development proceeded through corpus, retrieval, bilingual generation, citation, completeness and refusal repairs. Reporting separates the overlapping historical development stages, later author-led assessments and the dated-corpus comparison; none establishes independent external validation."
+    },
+    {
+      "paragraph": 23,
+      "start_line": 80,
+      "end_line": 85,
+      "text": "Regulatory corpus. Six archived ANVISA documents covered clinical trials, biological medicines, devices, pharmacovigilance and reliance: IN 338/2024 and RDCs 406/2020, 55/2010, 751/2022, 945/2024 and 9/2015 [1,2,6-9] (Table 1). Selection did not establish legal currency. RDC 9/2015 was already revoked by RDC 945/2024 Article 98, effective 1 January 2025. Its archived inclusion was a benchmark limitation, not a deliberate temporal-validity test. Article 90 contains submission-date transitions whose applicability requires relevant dates [1,2]."
+    },
+    {
+      "paragraph": 24,
+      "start_line": 86,
+      "end_line": 92,
+      "text": "Identifier and topic checks corrected a local-file metadata mismatch involving pharmacovigilance RDC 406/2020 but did not verify consolidated validity. The 23 October audit identified 18 constructed-benchmark rows citing wholly revoked RDC 55/2010 articles, alongside 28 citing RDC 9/2015: 46/200 rows in 23 pairs. RDCs 875/2024 and 948/2024 revoked those biological-product provisions [10,11]. IN 345/2025 and RDCs 777/2023 and 967/2025 amended other retained texts. Supplementary Section S4 records these checks; exposure counts do not certify remaining references. The separate 3 November remediation comparison is described below."
+    },
+    {
+      "paragraph": 25,
+      "start_line": 93,
+      "end_line": 93,
+      "text": "System and retrieval"
+    },
+    {
+      "paragraph": 26,
+      "start_line": 94,
+      "end_line": 103,
+      "text": "The Python implementation used LlamaIndex, sentence-transformers, BM25 and Streamlit [12-17]. Text cleaning retained document, chapter, section, article and citation metadata. Articles up to 500 cl100k_base tokens remained intact; longer articles were split with a 400-token target and 60-token overlap before heading context was added. Embeddings used all-MiniLM-L6-v2 with the recorded CLS-pooling wrapper and a 512-WordPiece limit. BM25 and dense retrieval each returned 100 candidates; reciprocal-rank fusion used k = 60. A multilingual cross-encoder reranked candidates, and the top five passages supplied answer context. Figure 1 summarizes the workflow; Supplementary Section S1 records settings, prompts and scoring definitions. Implementation files, chunking settings, index audit and retrieval settings are detailed in Supplementary Tables S1, S2, S3 and S4, respectively."
+    },
+    {
+      "paragraph": 27,
+      "start_line": 104,
+      "end_line": 112,
+      "text": "English queries used a deterministic 114-entry Portuguese glossary and question-specific query, document and article anchors. Conditional neighboring-article and sibling-chunk expansion added context before generation. These rules were developed with exposure to benchmark failures; their evaluation uses development data. Article identifiers do not establish that every required clause reached the generator. The original prompt required a same-language, article-cited answer from retrieved context and a fixed refusal when evidence was insufficient. Glossary examples and fixed refusal sentences are listed in Supplementary Tables S5 and S6. A separate model-based Translator mode was not recorded in the 31 inspected manifests. Supplementary Section S14 provides the complete glossary, triggers, activation records and mode inventory."
+    },
+    {
+      "paragraph": 28,
+      "start_line": 113,
+      "end_line": 117,
+      "text": "Historical generation and judging both requested the unpinned alias models/gemini-flash-lite-latest. Resolved July backend versions were not preserved and cannot be inferred from current documentation [17]. Later experimental responses recorded gemini-3.5-flash-lite. The existing run-date ledger is reproduced in Supplementary Section S13 and Table S26, with manifest evidence in the accompanying reported_stage_run_dates.csv. Sections S1 and S5 document token units."
+    },
+    {
+      "paragraph": 29,
+      "start_line": 118,
+      "end_line": 118,
+      "text": "Assessment sets and overlap"
+    },
+    {
+      "paragraph": 30,
+      "start_line": 119,
+      "end_line": 126,
+      "text": "The constructed benchmark contained 200 question rows in 100 bilingual pairs: 140 direct-article, 20 multi-article/exception and 40 unanswerable/adversarial questions (Figure 2). This construction total differs from the evaluated denominators. The internal assessment used 150 questions; each language-specific repair reused its 75-question internal subset with identical IDs and text. The other stages comprised 50 stress, 24 calibration and 30 post-calibration outputs. Together the six stages produced 404 outputs and 254 distinct question IDs, without semantic independence of those IDs (Supplementary Section S2). Constructed benchmark composition is detailed in Supplementary Table S7."
+    },
+    {
+      "paragraph": 31,
+      "start_line": 127,
+      "end_line": 131,
+      "text": "The stress findings informed refusal calibration. Three substantively equivalent bilingual pairs recurred between stress and calibration, covering the current SUSAR form, device-notification fee and patient-identification premise; four further pairs had related content with different framing. The repair, calibration and post-calibration results therefore describe development and cannot establish independent held-out performance or a causal calibration effect."
+    },
+    {
+      "paragraph": 32,
+      "start_line": 132,
+      "end_line": 132,
+      "text": "Historical scoring and coauthor review"
+    },
+    {
+      "paragraph": 33,
+      "start_line": 133,
+      "end_line": 139,
+      "text": "Automated metrics assessed evidence support, citation correctness, completeness and refusal, using continuous scores and archived labels [12,18,19]. Historical confidence intervals resampled bilingual pair IDs together with 2,000 percentile-bootstrap draws (seed 20260619). They are conditional on the archived labels, sources and judge and exclude uncertainty from legal-status or labeling errors. The same model family generated and judged answers, limiting independence. Audit flags, bootstrap settings, stage denominators and historical estimates are given in Supplementary Tables S8, S9, S10 and S11, respectively."
+    },
+    {
+      "paragraph": 34,
+      "start_line": 140,
+      "end_line": 147,
+      "text": "On 26 October 2026, H.L.R.J. reviewed and approved 94 selected historical outputs, including all 44 originally unanswerable stress/calibration/post-calibration outputs, 40 originally answerable outputs and ten unanswerable internal outputs. The ratings began as an AI-prepared draft. H.L.R.J. had not seen automated judge scores before finalizing the ratings, as confirmed by the corresponding author. The review was author-led and AI-draft-assisted. Completeness agreement used a judge threshold of 0.80, with 1.00 as sensitivity; refusal comparisons used the coauthor-defined unanswerable stratum. Original ratings and answerability adjudications remain separate (Supplementary Section S3). Sampling and agreement: Supplementary Tables S12-S13."
+    },
+    {
+      "paragraph": 35,
+      "start_line": 148,
+      "end_line": 148,
+      "text": "Frozen 40-answer author-led assessment"
+    },
+    {
+      "paragraph": 36,
+      "start_line": 149,
+      "end_line": 159,
+      "text": "Twenty bilingual pairs (40 questions: 12 answerable, four partly answerable and four unanswerable pairs), references and scoring rules were frozen before generation on 30 October 2026. The original six-document index and prompt produced one answer per question with gemini-3.5-flash-lite at temperature 0.2, without retries, repairs or new automated judging. H.L.R.J. rated every answer against the exact selected passages and frozen reference on 30 October, reporting no exposure to automated scores for this run. Pair success required both languages to meet the category rules and requested language. Partly answerable questions required supported information and identification of the unavailable detail; unanswerable items had no supported-content completeness endpoint. Exact 95% binomial intervals used pairs. The AI-authored, coauthor-approved questions followed earlier benchmark exposure; this is author-led assessment, not independent validation (Supplementary Section S3)."
+    },
+    {
+      "paragraph": 37,
+      "start_line": 160,
+      "end_line": 160,
+      "text": "Development diagnostics and exploratory repair"
+    },
+    {
+      "paragraph": 38,
+      "start_line": 161,
+      "end_line": 168,
+      "text": "Retrospective retrieval ablations used 160 answerable development questions in 80 bilingual pairs. They compared BM25, dense retrieval, fusion, reranking and rule removal on the fixed historical index. A window-pooling comparison changed only the embeddings of 35 overlength nodes; a targeted answer experiment used 30 affected questions and 20 seeded controls, three repeats per condition, totaling 300 generations and 300 same-model automated evaluations. Paired differences averaged repeats before resampling pairs with 10,000 draws. These reused-question analyses did not select a deployment setting (Supplementary Sections S5 and S6). Retrieval conditions and paired contrasts are specified in Supplementary Tables S14 and S15."
+    },
+    {
+      "paragraph": 39,
+      "start_line": 169,
+      "end_line": 175,
+      "text": "Following the 40-answer assessment, controlled development experiments varied source completeness, instructions, source headings, language cues and reference scope. Negative controls and failed repairs were retained. The coauthor separately reviewed 44 first-repeat sibling-context answers after exposure to scores and conditions. These experiments diagnose selected failures and do not create new independent test items (Supplementary Sections S6 and S7). Sibling-context outcomes, mechanism controls and archived-reference decisions are summarized in Supplementary Tables S16, S17 and S18, respectively."
+    },
+    {
+      "paragraph": 40,
+      "start_line": 176,
+      "end_line": 188,
+      "text": "A separate 482-node index and bundled repair were frozen before question authoring. The repair combined structural parsing corrections, source-occurrence article completion, English-to-Portuguese retrieval translation, a named-regulation filter, language cues, revised partial-answer instructions, an exact-subject evidence check and deterministic citation formatting. Twenty AI-authored bilingual pairs comprised 12 answerable, four partly answerable and four unanswerable pairs; screening against 452 historical questions replaced one semantic duplicate before freeze. Execution completed 20 translations and 80 answers by 1 November 2026 with gemini-3.5-flash-lite at temperature 0.2, without judge or repair calls. Pair success required content, evidence-boundary, language and citation-label criteria. Raw-output and common-formatter sensitivities were retained. All 80 outputs received personal author review on 1 November: 44 unblinded corresponding-author confirmations and 36 coauthor-reviewed AI-prepared ratings. The corresponding author reported that H.L.R.J. saw no separate scores, conditions or prior findings before finalizing those 36. Initial AI scores and author overlays remain separate (Supplementary Section S8)."
+    },
+    {
+      "paragraph": 41,
+      "start_line": 189,
+      "end_line": 192,
+      "text": "Pair success required both languages to satisfy the specified criteria. Exact binomial intervals used pairs. The repair comparison also used paired bootstrap differences and an exact discordant-pair test. All intervals are conditional on the selected questions and rubric and omit uncertainty from source dependence, review exposure and AI-draft assistance."
+    },
+    {
+      "paragraph": 42,
+      "start_line": 193,
+      "end_line": 193,
+      "text": "Post hoc common prompt and lexical baseline comparisons"
+    },
+    {
+      "paragraph": 43,
+      "start_line": 194,
+      "end_line": 206,
+      "text": "On 2 November 2026, the existing 40 FV questions were used for 80 new answers with gemini-3.5-flash-lite at temperature 0.2. Identical neutral instructions permitted stored knowledge without passages; only the evidence block differed. RAG used saved integrated-repair contexts. Neither condition used web search. Expanded FV_012 scope included archived Articles 17, 30 and 31 before generation. Content and evidence-boundary success required complete supported information, no material unsupported claim, appropriate handling of unavailable detail and the requested language; appropriate abstention passed absent-detail items. Citations were secondary. Codex assessed anonymized outputs with limited masking. On 2 November, H.L.R.J. personally drafted and approved ratings for all 118 distinct answers representing 120 condition records, including the subsequent BM25 extension. He reported no prior AI scores, condition identities or findings for these outputs, but had project/question exposure and answer style could reveal conditions. Ratings used common references rather than generator contexts. AI and author ratings remain separate. Whole-pair bootstrap intervals used 20,000 draws (seed 20261102)."
+    },
+    {
+      "paragraph": 44,
+      "start_line": 207,
+      "end_line": 212,
+      "text": "The separate lexical baseline used the same 482 chunks, saved Portuguese retrieval queries, named-regulation filter and five seed chunks as the frozen hybrid/reranked retriever. BM25 used k1 = 1.5, b = 0.75 and epsilon = 0.25, with no dense branch or reranker. Thirty-two answerable or partly answerable language items had positive gold article targets; eight absent-detail items were excluded from recall. Both methods used the same full-article and adjacent-article completion policy, with variable final context lengths (Supplementary Section S10)."
+    },
+    {
+      "paragraph": 45,
+      "start_line": 213,
+      "end_line": 213,
+      "text": "Dated corpus remediation comparison"
+    },
+    {
+      "paragraph": 46,
+      "start_line": 214,
+      "end_line": 226,
+      "text": "Dated corpus remediation. Official consolidated texts captured on 3 November 2026 supplied seven regulations, excluding RDC 9/2015 and revoked clauses and adding RDCs 875/2024 and 948/2024. The corresponding author approved revised source-grounded references; six unresolved bilingual pairs were excluded before generation, leaving 188 questions in 94 development-exposed pairs. The updated 469-node corpus and archived repaired 482-node comparator shared downstream settings and approved Portuguese retrieval queries for both response languages. With gemini-3.5-flash-lite at temperature 0.2, 366 distinct calls produced 376 records through ten exact-prompt reuses. Direct Codex assessment separated completeness, source support, dated applicability, evidence limits, language and citation format. Masked condition labels did not remove development involvement or possible source-based unmasking. These new output ratings were provisional AI judgments, not human approvals. Descriptive differences used 20,000 bilingual-pair bootstrap draws (seed 20261103), with shared-article-family sensitivity. Supplementary Section S12 and Data S16 retain the frozen design, sources, outputs and assessment provenance."
+    },
+    {
+      "paragraph": 47,
+      "start_line": 227,
+      "end_line": 227,
+      "text": "Results"
+    },
+    {
+      "paragraph": 48,
+      "start_line": 228,
+      "end_line": 228,
+      "text": "Historical development and diagnostic performance"
+    },
+    {
+      "paragraph": 49,
+      "start_line": 229,
+      "end_line": 233,
+      "text": "The six-document index contained 382 parsed source records, including six preambles and repeated labels, and 481 chunks; 359 records remained intact and 23 were split. The benchmark covered 78 unique gold article citations. RDC 9/2015 appeared in 28/200 question rows. An additional 18 rows cited wholly revoked RDC 55/2010 articles, giving 46/200 exposed rows in 23 bilingual pairs. These are exposure counts, not adjudicated current-law error rates (Table 1; Supplementary Section S4)."
+    },
+    {
+      "paragraph": 50,
+      "start_line": 234,
+      "end_line": 245,
+      "text": "Historical internal completeness averaged 0.808 across 120 originally answerable outputs. English completeness rose from 0.645 to 0.995 and Portuguese completeness from 0.970 to 0.995 on their reused repair subsets. Stress completeness was 0.943 (95% pair-bootstrap interval 0.873 to 0.990; 40 answerable outputs), with refusal correctness 7/10 (0.700; interval 0.300 to 1.000; five bilingual pairs) under the original judge and labels. Post-calibration refusal correctness was 17/18 (interval 0.833 to 1.000; nine pairs), with answerable-control completeness 0.908 (interval 0.792 to 1.000; 12 outputs). Development-linked sets preclude causal comparison (Supplementary Data S1-S2; Table S11). The post-calibration set largely tested categories listed in the revised refusal prompt: phone numbers, URLs, current MedDRA versions, petition codes and future AREE acceptance. The historical 17/18 result therefore describes these selected, prompt-aligned questions, not general improvement in refusal. Later answerability adjudication is reported separately and is not a new model run."
+    },
+    {
+      "paragraph": 51,
+      "start_line": 246,
+      "end_line": 246,
+      "text": "Human review and answerability adjudication"
+    },
+    {
+      "paragraph": 52,
+      "start_line": 247,
+      "end_line": 255,
+      "text": "At the 0.80 threshold, coauthor and automated completeness classifications agreed on 38/58 outputs (65.5%; pair-bootstrap 95% interval 48.2 to 80.9%): 37 both passed, one both failed, 16 passed only the judge and four passed only author review. Among 46 author-classified answerable outputs, agreement was 37/46 (80.4%; 63.8 to 93.6%). Citation agreement was 44/44, all-pass and non-discriminating. These AI-draft-assisted comparisons do not estimate independent accuracy. The judge marked 3/5 Portuguese responses and 4/5 English responses as correct refusals. For the patient-identification question, both answers correctly said no and cited Article 32; the judge scored Portuguese 0 and English 1. Both questions were subsequently classified as answerable and excluded from the adjudicated refusal denominator; original labels and scores remain preserved."
+    },
+    {
+      "paragraph": 53,
+      "start_line": 256,
+      "end_line": 262,
+      "text": "Archived-source adjudication reclassified six originally unanswerable outputs as answerable and twelve as partly answerable, preserving the original labels. Refusal of an unavailable detail was evaluated separately from completeness of supported information. In the retained stress, calibration and post-calibration unanswerable strata, author-rated appropriate refusals were 4/4, 10/10 and 12/12 outputs, or 2/2, 5/5 and 6/6 bilingual pairs. Exact pair-level 95% intervals were 15.8 to 100.0%, 47.8 to 100.0% and 54.1 to 100.0%. The twelve partly answerable outputs remained separate. These small, differently composed strata do not establish improvement (Supplementary Section S3)."
+    },
+    {
+      "paragraph": 54,
+      "start_line": 263,
+      "end_line": 263,
+      "text": "Frozen coauthor-reviewed answers"
+    },
+    {
+      "paragraph": 55,
+      "start_line": 264,
+      "end_line": 271,
+      "text": "In the frozen author-led assessment, 10/20 bilingual pairs met the full task criteria (50.0%; exact 95% CI 27.2 to 72.8%). Category results were 6/12 answerable pairs (50.0%; 21.1 to 78.9%), 0/4 partly answerable pairs (0%; 0 to 60.2%) and 4/4 unanswerable pairs (100%; 39.8 to 100%). At output level, 24/40 passed: 16/24 answerable, 0/8 partly answerable and 8/8 unanswerable. Full reference content was covered in 18/24 answerable outputs, but English language failures reduced complete-task success. Requested language was respected in 35/40 outputs: 15/20 English and 20/20 Portuguese. Table 2 and Figure 3 report the paired outcomes; Supplementary Section S3 provides all ratings and derived results."
+    },
+    {
+      "paragraph": 56,
+      "start_line": 272,
+      "end_line": 283,
+      "text": "The selected passages confirm missing list items in AV_004, AV_006 and AV_014, absence of the required Article 28 item in AV_013 Portuguese, and missing portions of the paired provisions in AV_016. AV_009 Portuguese correctly supplied the registration classes but could not supply the notification classes from its passages. All eight partly answerable outputs were blanket refusals. Five omitted information that the coauthor judged supported by the selected passages; three lacked the required supported content in those passages. None identified the unavailable detail explicitly. The frozen prompt required a blanket refusal for partial evidence, whereas the prespecified partly answerable endpoint required a supported partial answer. This instruction and endpoint mismatch is a documented design limitation. AV_008 English cited supported pharmacovigilance statements about risk minimization instead of answering the contingency-plan question. All 23 claim-bearing outputs had supported claims and citations according to the coauthor, illustrating why grounding alone is not task success. These failure categories overlap and do not identify causal effect sizes."
+    },
+    {
+      "paragraph": 57,
+      "start_line": 284,
+      "end_line": 284,
+      "text": "Retrieval and diagnostic findings"
+    },
+    {
+      "paragraph": 58,
+      "start_line": 285,
+      "end_line": 293,
+      "text": "On reused development questions, article Recall@5 was 0.6969 for citation-diversified BM25, 0.3344 for dense retrieval, 0.5687 for fusion and 0.9500 after reranking without anchors or neighbors. The full pipeline reached 0.9875. BM25 candidates with the full downstream rules also reached 0.9875, concealing one gain and one loss when dense candidates were added; the paired interval for that difference was -0.0187 to +0.0187. Thus, the comparison did not demonstrate an incremental mean benefit of the dense branch. These are retrieval endpoints, not answer-quality outcomes (Supplementary Section S5). Retrieval conditions and paired ablation contrasts are reported in Supplementary Tables S14 and S15. The glossary-off comparison is reported in Supplementary Section S14."
+    },
+    {
+      "paragraph": 59,
+      "start_line": 294,
+      "end_line": 298,
+      "text": "The 300-answer window-pooling experiment changed affected-stratum automated completeness from 0.590 to 0.617 (paired difference +0.027; 95% interval -0.027 to +0.099). Improvement remained unproven. Identical prompts received different scores; all 300 faithfulness scores were 1.000, including 89 refusals. Context expansion did not eliminate over-refusal; source, instruction, language and scope controls, including negative results, are in Supplementary Sections S6 and S7."
+    },
+    {
+      "paragraph": 60,
+      "start_line": 299,
+      "end_line": 299,
+      "text": "Exploratory repair on frozen author-led questions"
+    },
+    {
+      "paragraph": 61,
+      "start_line": 300,
+      "end_line": 308,
+      "text": "Completed personal author review passed 14/20 baseline pairs (70.0%; exact 95% CI 45.7 to 88.1%) and 17/20 repaired pairs (85.0%; 62.1 to 96.8%). Four pairs improved and one worsened: difference 15.0 percentage points (pair-bootstrap 95% interval -5.0 to +35.0), exact two-sided p = 0.375. The coauthor failed repaired FV_012 English (IRH_051) because the technical-report requirement is cited to Article 17 rather than Article 31 II. Expanded content coverage and citation support are distinct. Initial AI sensitivities remain separately reported (Table 3; Figure 4; Supplementary Section S8). Supplementary Table S19 separates initial AI assessments from completed author review. The four gains comprised two answerable and two partly answerable pairs; the citation-support regression occurred in one answerable pair."
+    },
+    {
+      "paragraph": 62,
+      "start_line": 309,
+      "end_line": 317,
+      "text": "Author-reviewed category results were 10/12 versus 11/12 answerable pairs, 0/4 versus 2/4 partly answerable pairs and 4/4 unanswerable pairs in both conditions. Staffing and ruminant-documentation answers still refused supported information despite complete reference passages. Both conditions selected complete frozen-reference wording in all 32 positive language rows, so no retrieval-coverage gain was demonstrated. Mean context length increased from 5,737 to 16,487 characters. AI-draft assistance and differing review exposure limit inference. Supplementary Table S20 separates initial AI-assessed category counts from completed author review. The repaired answerable count is 11/12 under author review, compared with the initial AI-assessed 12/12; the partly answerable and unanswerable counts are unchanged."
+    },
+    {
+      "paragraph": 63,
+      "start_line": 318,
+      "end_line": 323,
+      "text": "The corresponding author confirmed that broad FV_012 manufacturer/site and GMP scope requires archived Articles 17, 30 VIII-IX and 31 I-III of RDC 55/2010. Only repaired English supplied the expanded content, but it failed the specific citation above. Expanded-scope author review yields 13/20 versus 17/20 pairs. This output-informed sensitivity preserves original references and AI scores. Article 30 is revoked; the adjudication concerns the archived question (Supplementary Sections S4 and S8)."
+    },
+    {
+      "paragraph": 64,
+      "start_line": 324,
+      "end_line": 324,
+      "text": "Post hoc common prompt and lexical baseline results"
+    },
+    {
+      "paragraph": 65,
+      "start_line": 325,
+      "end_line": 334,
+      "text": "Coauthor-rated content and evidence-boundary success was 39/40 with hybrid passages, 38/40 with BM25 passages and 9/40 for the model alone, including eight appropriate abstentions per condition. Bilingual success was 19/20, 18/20 and 4/20 pairs (exact 95% intervals 75.1 to 99.9%, 68.3 to 98.8% and 5.7 to 43.7%). Hybrid minus model-only success was +75 percentage points (descriptive pair-bootstrap 95% interval +55 to +90; 15 gains, no losses; exact paired p = 0.000061); hybrid minus BM25 was +5 points (-10 to +20; two gains, one loss; p = 1.000). This content endpoint differs from the earlier full-pipeline endpoint. Omissions affected 0/40, 1/40 and 31/40 answers; material claim flags affected 1/40, 1/40 and 14/40. Author-rated citation presence was 39/40, 38/40 and 0/40, and correction flags were 1/40, 2/40 and 32/40, without measured editing effort. Topic results are in Supplementary Table S21 and Supplementary Figure S1 (Table 4; Figure 5)."
+    },
+    {
+      "paragraph": 66,
+      "start_line": 335,
+      "end_line": 340,
+      "text": "In the matched retrieval baseline, all required articles appeared within five chunks for BM25 30/32 versus hybrid 32/32; full required article text after completion was present for 31/32 versus 32/32. Mean article Recall@5 was 0.958 versus 1.000 and MRR@5 was 0.932 versus 0.964. Pair-bootstrap difference intervals included zero. BM25 original-English queries found all required articles for 5/16 English questions, compared with 15/16 using the saved Portuguese translations; this language sensitivity is separate from the matched primary comparison (Supplementary Table S22)."
+    },
+    {
+      "paragraph": 67,
+      "start_line": 341,
+      "end_line": 347,
+      "text": "The BM25 extension used 39 new first-attempt calls and one exact-prompt cached answer, with saved hybrid comparators. Its English FV_016 omission coincided with missing Article 22 in context; its Portuguese FV_012 answer added intermediate-product manufacturers to the explicit name/address list. The hybrid failure equated DPI with an Investigator's Brochure. Human and AI primary labels agreed on 117/118 distinct answers; one accepted model-only answer changed the AI count from 8/40 to 9/40 but not pair success. Secondary disagreements remain separate (Supplementary Section S10)."
+    },
+    {
+      "paragraph": 68,
+      "start_line": 348,
+      "end_line": 348,
+      "text": "Dated corpus comparison with provisional AI assessment"
+    },
+    {
+      "paragraph": 69,
+      "start_line": 349,
+      "end_line": 356,
+      "text": "AI-assessed full-task success was 144/188 historical-corpus answers versus 172/188 updated-corpus answers: +14.9 percentage points (paired 95% interval 7.4 to 22.9; shared-article-family sensitivity 7.1 to 23.1). Both languages passed in 69/94 versus 83/94 pairs. There were 31 answer gains and three losses. Shared-source questions yielded 118/148 versus 133/148 successes; newly added-source questions yielded 0/10 versus 10/10, reflecting evidence availability. Omissions fell from 29/188 to 11/188, while substantive correction flags fell from 44/188 to 16/188. Regressions concerned language, an omitted partial-data option and an unsupported ethical-review interpretation. Human confirmation remained pending (Figure 6; Supplementary Tables S23 and S24)."
+    },
+    {
+      "paragraph": 70,
+      "start_line": 357,
+      "end_line": 357,
+      "text": "Discussion"
+    },
+    {
+      "paragraph": 71,
+      "start_line": 358,
+      "end_line": 364,
+      "text": "Traceable citations and high retrieval scores did not ensure task success. The coauthor-reviewed assessment passed 10/20 bilingual pairs despite support for claims and citations in all claim-bearing outputs (Table 2; Figure 3). Reviewers still need to check lists, exceptions, language and task relevance. Missing notification classes and truncated items could leave a draft checklist incomplete; the wrong-plan answer supplied supported information about the wrong task, and five English questions received Portuguese answers. These are implications of benchmark failures, not observed effects on regulatory work."
+    },
+    {
+      "paragraph": 72,
+      "start_line": 365,
+      "end_line": 374,
+      "text": "Partly answerable questions require both supported information and an explicit boundary around unavailable detail. The original blanket-refusal instruction conflicted with that endpoint. Revised instructions and complete evidence improved selected development outcomes but retained failures and occasional task or formatting regressions. In the author-reviewed repair comparison, staffing and ruminant-documentation answers still withheld supported content. Four task-level gains coexisted with one citation-support loss and two persistent partial-answer failures (Figure 4). The difference was +15.0 points, with an interval from -5.0 to +35.0; reliable improvement was not established. Both conditions already selected complete frozen-reference wording, so retrieval-coverage gains cannot explain this comparison. Refusal assessment must address both invented claims and suppression of supported information."
+    },
+    {
+      "paragraph": 73,
+      "start_line": 375,
+      "end_line": 382,
+      "text": "The common-prompt comparison supports supplying evidence over stored knowledge alone on these tasks (Table 4; Figure 5). Its expanded reference, new outputs and content endpoint prevent direct comparison with earlier repair scores. Appropriate abstention counts as success on absent-detail questions. BM25 nearly matched hybrid retrieval coverage and answer quality; the paired interval does not establish superiority or equivalence. Different failures matter: BM25 omitted evidence and extended a checklist, while hybrid substituted the wrong dossier type. Coauthor confirmation strengthens assessment but does not remove development exposure. A strong lexical baseline is therefore necessary before attributing gains to retrieval complexity."
+    },
+    {
+      "paragraph": 74,
+      "start_line": 383,
+      "end_line": 394,
+      "text": "Corpus validity remains distinct from grounding. The retained staffing criterion is in RDC 406/2020 Article 18, whereas RDC 55/2010 Articles 22 and 30 were revoked [7,8,11]; the ruminant-documentation and FV_012 targets remain historical. The dated comparison improved provisional scores but bundled source updating with structural curation. Even its consolidated RDC 751 text retained obsolete external references that answers repeated as current. Missing second provisions, pathway overgeneralization and three regressions persisted (Figure 6; Supplementary Section S12). Thus source remediation can help these tasks without establishing comprehensive current-law accuracy. Product-specific dependencies and new output judgments still require human review. A subsequent first-level audit checked 111 linked instruments and identified nine operative or scope references to eight revoked instruments; ten catalogue endpoints remained unresolved. Repeal, amendment and transitional references were separated from answer errors. Supplementary Table S25 and Data S16 report the audit; frozen scores were unchanged."
+    },
+    {
+      "paragraph": 75,
+      "start_line": 395,
+      "end_line": 404,
+      "text": "AI-authored questions, development exposure, post hoc analyses, source dependence and single generations limit inference. Historical generation and judging shared an unresolved alias; window-pooling scores lack complete human verification. Coauthor common-prompt review had prior question exposure; dated-corpus ratings remain provisional, study-aware Codex judgments. Neither constitutes independent external validation. BM25 generation was sequential with saved hybrid comparators. No multilingual encoder replacement was tested [20,21]. Repeats do not create independent questions. The higher English refusal score was misleading. Equivalent correct answers received different scores, and the question was mislabeled unanswerable. These errors created the reported language gap. Refusal comparisons therefore require checking answerability and the underlying answers. The sample cannot establish a language difference."
+    },
+    {
+      "paragraph": 76,
+      "start_line": 405,
+      "end_line": 410,
+      "text": "A candidate workflow would present the question, answer, supporting passages and unavailable details for professional verification against the official current text. The prototype does not maintain consolidated law or reliably warn of superseded provisions. This study evaluates answers and retrieval, not web-search superiority or workflow benefit. No review time, correction effort, decision quality or operational safety was measured. Future workflow testing would require frozen current-law references and realistic tasks."
+    },
+    {
+      "paragraph": 77,
+      "start_line": 411,
+      "end_line": 411,
+      "text": "Conclusion"
+    },
+    {
+      "paragraph": 78,
+      "start_line": 412,
+      "end_line": 418,
+      "text": "This study identifies the gap between regulatory citations and complete bilingual document-review answers. Human review exposed omissions, language and task errors, and refusal of supported information. Coauthor-rated answers favored retrieved evidence over the model alone, without established hybrid advantage over BM25. A separate dated-corpus comparison favored updated sources under provisional AI assessment but retained failures. Complete provisions, scope, language, evidence limits and temporal applicability require separate checks. Comprehensive current-law accuracy, fresh independent validation and workflow benefit remain unestablished."
+    },
+    {
+      "paragraph": 79,
+      "start_line": 419,
+      "end_line": 419,
+      "text": "Declarations"
+    },
+    {
+      "paragraph": 80,
+      "start_line": 420,
+      "end_line": 420,
+      "text": "Funding: The authors received no specific funding for this work."
+    },
+    {
+      "paragraph": 81,
+      "start_line": 421,
+      "end_line": 421,
+      "text": "Conflict of Interest: The authors declare no competing financial interests."
+    },
+    {
+      "paragraph": 82,
+      "start_line": 422,
+      "end_line": 426,
+      "text": "Author Contributions: C.V.M.-P. conceived and designed the study, developed the software pipeline, prepared the corpus, constructed the benchmark, performed the analyses, interpreted the results, and drafted the manuscript. H.L.R.J. contributed to the regulatory and pharmaceutical framing, interpretation of results, author review of questions and generated answers, and critical revision of the manuscript."
+    },
+    {
+      "paragraph": 83,
+      "start_line": 427,
+      "end_line": 433,
+      "text": "Data Availability: Code, curated evidence and revised documents accompany GitHub review release v0.3.0-rc.1 at https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/releases/tag/v0.3.0-rc.1. The preceding v0.2.1 archive remains at https://doi.org/10.5281/zenodo.23925532 and does not contain subsequent additions. Supplementary Data S16 includes dated-corpus outputs, references, prompts, provisional assessments and source provenance. Historical outputs and author reviews remain separate from new AI assessments. Full source/index corpora, credentials and private coordination keys are excluded."
+    },
+    {
+      "paragraph": 84,
+      "start_line": 434,
+      "end_line": 436,
+      "text": "Ethics statement: The study used public regulatory documents and generated benchmark questions. Human assessment consisted of coauthor review of model outputs. No patient data, personal health data, animal experiments or clinical trials were involved."
+    },
+    {
+      "paragraph": 85,
+      "start_line": 437,
+      "end_line": 443,
+      "text": "AI assistance disclosure: OpenAI Codex (OpenAI) assisted coding, debugging, data audits, analyses, manuscript and reviewer-response drafting, and figure preparation from verifiable data. Claude (Anthropic) drafted selected questions, references and rating templates subsequently reviewed by authors. Gemini generated study answers and historical judge scores; Codex provided different-family assessment of later answers, not historical rescoring or independent validation. Supplementary Section S11 details tasks, recorded models, review provenance and unresolved version metadata. Authors retain responsibility for all content and interpretations."
+    },
+    {
+      "paragraph": 86,
+      "start_line": 444,
+      "end_line": 445,
+      "text": "Acknowledgments: The authors thank WBS Coding School, the DSAI02 class and especially Shenia Bosch for teaching, examples and discussions that informed this project."
+    },
+    {
+      "paragraph": 87,
+      "start_line": 446,
+      "end_line": 446,
+      "text": "Clinical Trial Registration: Not applicable."
+    },
+    {
+      "paragraph": 88,
+      "start_line": 447,
+      "end_line": 447,
+      "text": "References"
+    },
+    {
+      "paragraph": 89,
+      "start_line": 448,
+      "end_line": 450,
+      "text": "1. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada Anvisa No. 945, de 29 de novembro de 2024. Guidelines and procedures for clinical trials for later medicine registration. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "paragraph": 90,
+      "start_line": 451,
+      "end_line": 453,
+      "text": "2. Agência Nacional de Vigilância Sanitária. Resolução RDC No. 9, de 20 de fevereiro de 2015. Regulation for clinical trials with medicines in Brazil. Revoked by RDC 945/2024, Art. 98, effective 1 January 2025. Historical corpus source. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "paragraph": 91,
+      "start_line": 454,
+      "end_line": 455,
+      "text": "3. Lewis P, Perez E, Piktus A, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. Advances in Neural Information Processing Systems. 2020;33:9459-9474."
+    },
+    {
+      "paragraph": 92,
+      "start_line": 456,
+      "end_line": 457,
+      "text": "4. Gao Y, Xiong Y, Gao X, et al. Retrieval-Augmented Generation for Large Language Models: A Survey. arXiv. 2023. doi:10.48550/arXiv.2312.10997."
+    },
+    {
+      "paragraph": 93,
+      "start_line": 458,
+      "end_line": 459,
+      "text": "5. Proestel S, Jeng LJB, Smith C, et al. Semantic Search of FDA Guidance Documents Using Generative AI. Ther Innov Regul Sci. 2025;59(5):1148-1159. doi:10.1007/s43441-025-00798-8."
+    },
+    {
+      "paragraph": 94,
+      "start_line": 460,
+      "end_line": 462,
+      "text": "6. Agência Nacional de Vigilância Sanitária. Instrução Normativa - IN No. 338, de 29 de novembro de 2024. Establishes the list of equivalent foreign regulatory authorities and criteria for optimized review under RDC 945/2024. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "paragraph": 95,
+      "start_line": 463,
+      "end_line": 465,
+      "text": "7. Agência Nacional de Vigilância Sanitária. Resolução de Diretoria Colegiada - RDC No. 406, de 22 de julho de 2020. Good pharmacovigilance practices for holders of human medicine registrations. AnvisaLegis. Accessed 19 July 2026. Consolidated provisions checked 1 November 2026."
+    },
+    {
+      "paragraph": 96,
+      "start_line": 466,
+      "end_line": 468,
+      "text": "8. Agência Nacional de Vigilância Sanitária. Resolução - RDC No. 55, de 16 de dezembro de 2010. Registration of new biological products and biological products. AnvisaLegis. Accessed 19 July 2026. Consolidated provisions checked 1 November 2026."
+    },
+    {
+      "paragraph": 97,
+      "start_line": 469,
+      "end_line": 471,
+      "text": "9. Agência Nacional de Vigilância Sanitária. Resolução - RDC No. 751, de 15 de setembro de 2022. Medical-device risk classification, notification and registration regimes, labelling, and instructions for use. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "paragraph": 98,
+      "start_line": 472,
+      "end_line": 474,
+      "text": "10. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC No. 875, de 28 de maio de 2024. Complementary requirements for registration of biosimilars through comparability. AnvisaLegis. Accessed 23 October 2026."
+    },
+    {
+      "paragraph": 99,
+      "start_line": 475,
+      "end_line": 477,
+      "text": "11. Agência Nacional de Vigilância Sanitária. Resolução - RDC No. 948, de 12 de dezembro de 2024. General sanitary requirements for regularization of human medicines. Consolidated text. AnvisaLegis. Accessed 23 October 2026. Consolidated provisions checked 1 November 2026."
+    },
+    {
+      "paragraph": 100,
+      "start_line": 478,
+      "end_line": 479,
+      "text": "12. Es S, James J, Espinosa-Anke L, Schockaert S. RAGAS: Automated Evaluation of Retrieval Augmented Generation. arXiv. 2023. doi:10.48550/arXiv.2309.15217."
+    },
+    {
+      "paragraph": 101,
+      "start_line": 480,
+      "end_line": 482,
+      "text": "13. Reimers N, Gurevych I. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. In: Proceedings of EMNLP-IJCNLP. Association for Computational Linguistics; 2019:3982-3992. doi:10.18653/v1/D19-1410."
+    },
+    {
+      "paragraph": 102,
+      "start_line": 483,
+      "end_line": 484,
+      "text": "14. Robertson S, Zaragoza H. The Probabilistic Relevance Framework: BM25 and Beyond. Foundations and Trends in Information Retrieval. 2009;3(4):333-389. doi:10.1561/1500000019."
+    },
+    {
+      "paragraph": 103,
+      "start_line": 485,
+      "end_line": 487,
+      "text": "15. Bonifacio L, Jeronymo V, Abonizio HQ, Campiotti I, Fadaee M, Lotufo R, Nogueira R. mMARCO: A Multilingual Version of the MS MARCO Passage Ranking Dataset. arXiv. 2021. doi:10.48550/arXiv.2108.13897."
+    },
+    {
+      "paragraph": 104,
+      "start_line": 488,
+      "end_line": 489,
+      "text": "16. LlamaIndex. LlamaIndex: a data framework for LLM applications. GitHub repository. https://github.com/run-llama/llama_index. Accessed 21 July 2026."
+    },
+    {
+      "paragraph": 105,
+      "start_line": 490,
+      "end_line": 492,
+      "text": "17. Google AI for Developers. Gemini API models and GenerateContentResponse reference. https://ai.google.dev/gemini-api/docs/models; https://ai.google.dev/api/generate-content. Accessed 24 October 2026."
+    },
+    {
+      "paragraph": 106,
+      "start_line": 493,
+      "end_line": 494,
+      "text": "18. Chang Y, Wang X, Wang J, et al. A Survey on Evaluation of Large Language Models. ACM Transactions on Intelligent Systems and Technology. 2024;15(3). doi:10.1145/3641289."
+    },
+    {
+      "paragraph": 107,
+      "start_line": 495,
+      "end_line": 496,
+      "text": "19. Zheng L, Chiang WL, Sheng Y, et al. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. Advances in Neural Information Processing Systems. 2023;36."
+    },
+    {
+      "paragraph": 108,
+      "start_line": 497,
+      "end_line": 498,
+      "text": "20. Sentence Transformers. all-MiniLM-L6-v2 model card. https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2. Accessed 25 October 2026."
+    },
+    {
+      "paragraph": 109,
+      "start_line": 499,
+      "end_line": 500,
+      "text": "21. Sentence Transformers. Pretrained models and multilingual models. https://sbert.net/docs/sentence_transformer/pretrained_models.html. Accessed 25 October 2026."
+    }
+  ],
+  "lines": [
+    {
+      "page": 1,
+      "line": 1,
+      "text": "Bilingual retrieval augmented access to archived ANVISA"
+    },
+    {
+      "page": 1,
+      "line": 2,
+      "text": "regulatory documents"
+    },
+    {
+      "page": 1,
+      "line": 3,
+      "text": "Authors: Carlos Victor Montefusco-Pereira1,3*, Howard Lopes Ribeiro Junior2,3"
+    },
+    {
+      "page": 1,
+      "line": 4,
+      "text": "1 Independent Researcher in Data Science and Artificial Intelligence in Industrial Pharmaceutics,"
+    },
+    {
+      "page": 1,
+      "line": 5,
+      "text": "Berlin, Germany"
+    },
+    {
+      "page": 1,
+      "line": 6,
+      "text": "2 Center for Research and Drug Development (NPDM), Federal University of Ceará, Fortaleza"
+    },
+    {
+      "page": 1,
+      "line": 7,
+      "text": "60430-275, Brazil; Post-Graduate Program in Pathology, Federal University of Ceará, Fortaleza,"
+    },
+    {
+      "page": 1,
+      "line": 8,
+      "text": "Brazil; Post-Graduate Program in Translational Medicine, Federal University of Ceará, Fortaleza,"
+    },
+    {
+      "page": 1,
+      "line": 9,
+      "text": "Brazil"
+    },
+    {
+      "page": 1,
+      "line": 10,
+      "text": "3 Member of Brazil-Africa Group for Scientific Research and Writing (GPEC), Portuguese-Speaking"
+    },
+    {
+      "page": 1,
+      "line": 11,
+      "text": "African Countries (PALOPs), Brazil"
+    },
+    {
+      "page": 1,
+      "line": 12,
+      "text": "ORCID: Carlos Victor Montefusco-Pereira, 0000-0003-4167-4653; Howard Lopes Ribeiro Junior,"
+    },
+    {
+      "page": 1,
+      "line": 13,
+      "text": "0000-0003-2431-4779"
+    },
+    {
+      "page": 1,
+      "line": 14,
+      "text": "Corresponding author: Carlos Victor Montefusco-Pereira. Friedrich-Wilhelm 28, 12103 Berlin,"
+    },
+    {
+      "page": 1,
+      "line": 15,
+      "text": "Germany. Email: cmontefusco@gmail.com. Phone: +49 15168108538."
+    },
+    {
+      "page": 1,
+      "line": 16,
+      "text": "Keywords: regulatory science; ANVISA; retrieval-augmented generation; clinical trials;"
+    },
+    {
+      "page": 1,
+      "line": 17,
+      "text": "pharmacovigilance; biological products and medical devices"
+    },
+    {
+      "page": 1,
+      "line": 18,
+      "text": "Abbreviations: AI, artificial intelligence; ANVISA, Agência Nacional de Vigilância Sanitária; AREE,"
+    },
+    {
+      "page": 1,
+      "line": 19,
+      "text": "equivalent foreign regulatory authority; BM25, Best Matching 25; CI, confidence interval; CLS,"
+    },
+    {
+      "page": 1,
+      "line": 20,
+      "text": "classification token; DDCM, Clinical Drug Development Dossier; DPI, Dossiê do Produto sob"
+    },
+    {
+      "page": 1,
+      "line": 21,
+      "text": "Investigação; DSUR, Development Safety Update Report; FDA, U.S. Food and Drug Administration;"
+    },
+    {
+      "page": 1,
+      "line": 22,
+      "text": "GMP, good manufacturing practice; ICH, International Council for Harmonisation; MRR, mean"
+    },
+    {
+      "page": 1,
+      "line": 23,
+      "text": "reciprocal rank; RAG, retrieval-augmented generation; RRF, reciprocal rank fusion; SUSAR,"
+    },
+    {
+      "page": 1,
+      "line": 24,
+      "text": "suspected unexpected serious adverse reaction."
+    },
+    {
+      "page": 2,
+      "line": 25,
+      "text": "Abstract"
+    },
+    {
+      "page": 2,
+      "line": 26,
+      "text": "Background. Bilingual regulatory review requires complete source-supported answers, not merely"
+    },
+    {
+      "page": 2,
+      "line": 27,
+      "text": "citations."
+    },
+    {
+      "page": 2,
+      "line": 28,
+      "text": "Objective. To evaluate retrieval-augmented generation (RAG) against archived Agência Nacional de"
+    },
+    {
+      "page": 2,
+      "line": 29,
+      "text": "Vigilância Sanitária (ANVISA) documents."
+    },
+    {
+      "page": 2,
+      "line": 30,
+      "text": "Methods. Six overlapping historical stages produced 404 outputs (150 internal, 75 English repair, 75"
+    },
+    {
+      "page": 2,
+      "line": 31,
+      "text": "Portuguese repair, 50 stress, 24 calibration, 30 post-calibration). Coauthor review covered 94"
+    },
+    {
+      "page": 2,
+      "line": 32,
+      "text": "historical outputs, a separate 40-answer assessment and 120 common-prompt outputs with hybrid"
+    },
+    {
+      "page": 2,
+      "line": 33,
+      "text": "passages, BM25 passages or no retrieval. An 80-answer repair comparison received author review. A"
+    },
+    {
+      "page": 2,
+      "line": 34,
+      "text": "dated-corpus comparison generated 376 records on 188 revised questions, assessed provisionally by"
+    },
+    {
+      "page": 2,
+      "line": 35,
+      "text": "AI."
+    },
+    {
+      "page": 2,
+      "line": 36,
+      "text": "Results. The coauthor-reviewed assessment passed 10/20 pairs (exact 95% confidence interval [CI]"
+    },
+    {
+      "page": 2,
+      "line": 37,
+      "text": "27.2 to 72.8%): 6/12 answerable, 0/4 partly answerable and 4/4 unanswerable. Separate coauthor-"
+    },
+    {
+      "page": 2,
+      "line": 38,
+      "text": "rated success was 19/20 hybrid pairs (95% CI 75.1 to 99.9%), 18/20 BM25 pairs (68.3 to 98.8%) and"
+    },
+    {
+      "page": 2,
+      "line": 39,
+      "text": "4/20 model-only pairs (5.7 to 43.7%). Hybrid minus BM25 was +5 percentage points (95% pair-"
+    },
+    {
+      "page": 2,
+      "line": 40,
+      "text": "bootstrap interval -10 to +20). Dated-corpus AI-assessed success was 144/188 versus 172/188"
+    },
+    {
+      "page": 2,
+      "line": 41,
+      "text": "answers: +14.9 points (paired 95% interval 7.4 to 22.9), pending human confirmation."
+    },
+    {
+      "page": 2,
+      "line": 42,
+      "text": "Conclusion. Retrieved evidence improved answers on the archived tasks, without establishing hybrid"
+    },
+    {
+      "page": 2,
+      "line": 43,
+      "text": "superiority over BM25. The dated-corpus comparison favored updated sources under provisional AI"
+    },
+    {
+      "page": 2,
+      "line": 44,
+      "text": "assessment. Citations did not ensure completeness or applicable law. Comprehensive current-law"
+    },
+    {
+      "page": 2,
+      "line": 45,
+      "text": "accuracy and fresh independent validation remain unestablished."
+    },
+    {
+      "page": 3,
+      "line": 46,
+      "text": "Introduction"
+    },
+    {
+      "page": 3,
+      "line": 47,
+      "text": "Regulatory document review requires complete provisions and exceptions for clinical-trial"
+    },
+    {
+      "page": 3,
+      "line": 48,
+      "text": "submissions, pharmacovigilance documentation and device labelling. A sponsor examining"
+    },
+    {
+      "page": 3,
+      "line": 49,
+      "text": "suspension of a Clinical Drug Development Dossier (DDCM), for example, needs the documentation,"
+    },
+    {
+      "page": 3,
+      "line": 50,
+      "text": "notification deadlines and implementation conditions in RDC 945/2024, Articles 85 and 89 [1]. Other"
+    },
+    {
+      "page": 3,
+      "line": 51,
+      "text": "tasks concern Development Safety Update Reports (DSURs), adverse-event notifications and non-"
+    },
+    {
+      "page": 3,
+      "line": 52,
+      "text": "printed device instructions. These examples motivate evaluation, not legal advice or operational"
+    },
+    {
+      "page": 3,
+      "line": 53,
+      "text": "accuracy claims. The suspension example uses RDC 945/2024 rather than the revoked RDC 9/2015"
+    },
+    {
+      "page": 3,
+      "line": 54,
+      "text": "retained in archived benchmark answers [1,2]."
+    },
+    {
+      "page": 3,
+      "line": 55,
+      "text": "English questions may require Portuguese evidence. Reviewers need applicable articles, complete"
+    },
+    {
+      "page": 3,
+      "line": 56,
+      "text": "conditions and exceptions, the requested language and explicit evidence limits. An omitted"
+    },
+    {
+      "page": 3,
+      "line": 57,
+      "text": "notification category could leave a checklist incomplete; blanket refusal could suppress a supported"
+    },
+    {
+      "page": 3,
+      "line": 58,
+      "text": "requirement. These plausible consequences motivate evaluation but were not measured in"
+    },
+    {
+      "page": 3,
+      "line": 59,
+      "text": "submissions or patient outcomes."
+    },
+    {
+      "page": 3,
+      "line": 60,
+      "text": "Retrieval-augmented generation retrieves source passages before answering [3,4]. FDA-guidance"
+    },
+    {
+      "page": 3,
+      "line": 61,
+      "text": "research found that locating the correct source did not guarantee a complete, correct answer [5]. We"
+    },
+    {
+      "page": 3,
+      "line": 62,
+      "text": "examine whether article traceability supports complete bilingual task performance, including partly"
+    },
+    {
+      "page": 3,
+      "line": 63,
+      "text": "available information, and distinguish retrieval, citation support, language, evidence boundaries and"
+    },
+    {
+      "page": 3,
+      "line": 64,
+      "text": "legal applicability."
+    },
+    {
+      "page": 3,
+      "line": 65,
+      "text": "The prototype indexed six archived ANVISA documents. Evaluation examined provision retrieval,"
+    },
+    {
+      "page": 3,
+      "line": 66,
+      "text": "requested requirements and exceptions, response language, evidence limits, question overlap,"
+    },
+    {
+      "page": 3,
+      "line": 67,
+      "text": "human assessment and reference scope. A separate dated-corpus comparison tested source"
+    },
+    {
+      "page": 3,
+      "line": 68,
+      "text": "remediation. The study did not evaluate live legal monitoring or decisions in professional workflows."
+    },
+    {
+      "page": 3,
+      "line": 69,
+      "text": "The practical contribution is an auditable set of failures and evaluation checks for assisted document"
+    },
+    {
+      "page": 3,
+      "line": 70,
+      "text": "review. Faster review, fewer submission errors and autonomous readiness were not demonstrated."
+    },
+    {
+      "page": 3,
+      "line": 71,
+      "text": "Materials and Methods"
+    },
+    {
+      "page": 3,
+      "line": 72,
+      "text": "Study design. This technical evaluation used a closed-corpus bilingual RAG prototype without web"
+    },
+    {
+      "page": 3,
+      "line": 73,
+      "text": "search, live portals, private information or unindexed documents. Unavailable detail required an"
+    },
+    {
+      "page": 3,
+      "line": 74,
+      "text": "explicit limitation; the revised partial-answer endpoint also required supported information. The later"
+    },
+    {
+      "page": 3,
+      "line": 75,
+      "text": "model-only ablation supplied no passages or web-search tool and permitted stored knowledge under"
+    },
+    {
+      "page": 3,
+      "line": 76,
+      "text": "common instructions."
+    },
+    {
+      "page": 3,
+      "line": 77,
+      "text": "Development proceeded through corpus, retrieval, bilingual generation, citation, completeness and"
+    },
+    {
+      "page": 3,
+      "line": 78,
+      "text": "refusal repairs. Reporting separates the overlapping historical development stages, later author-led"
+    },
+    {
+      "page": 3,
+      "line": 79,
+      "text": "assessments and the dated-corpus comparison; none establishes independent external validation."
+    },
+    {
+      "page": 3,
+      "line": 80,
+      "text": "Regulatory corpus. Six archived ANVISA documents covered clinical trials, biological medicines,"
+    },
+    {
+      "page": 3,
+      "line": 81,
+      "text": "devices, pharmacovigilance and reliance: IN 338/2024 and RDCs 406/2020, 55/2010, 751/2022,"
+    },
+    {
+      "page": 3,
+      "line": 82,
+      "text": "945/2024 and 9/2015 [1,2,6-9] (Table 1). Selection did not establish legal currency. RDC 9/2015 was"
+    },
+    {
+      "page": 3,
+      "line": 83,
+      "text": "already revoked by RDC 945/2024 Article 98, effective 1 January 2025. Its archived inclusion was a"
+    },
+    {
+      "page": 3,
+      "line": 84,
+      "text": "benchmark limitation, not a deliberate temporal-validity test. Article 90 contains submission-date"
+    },
+    {
+      "page": 3,
+      "line": 85,
+      "text": "transitions whose applicability requires relevant dates [1,2]."
+    },
+    {
+      "page": 3,
+      "line": 86,
+      "text": "Identifier and topic checks corrected a local-file metadata mismatch involving pharmacovigilance RDC"
+    },
+    {
+      "page": 3,
+      "line": 87,
+      "text": "406/2020 but did not verify consolidated validity. The 23 October audit identified 18 constructed-"
+    },
+    {
+      "page": 3,
+      "line": 88,
+      "text": "benchmark rows citing wholly revoked RDC 55/2010 articles, alongside 28 citing RDC 9/2015: 46/200"
+    },
+    {
+      "page": 3,
+      "line": 89,
+      "text": "rows in 23 pairs. RDCs 875/2024 and 948/2024 revoked those biological-product provisions [10,11]."
+    },
+    {
+      "page": 3,
+      "line": 90,
+      "text": "IN 345/2025 and RDCs 777/2023 and 967/2025 amended other retained texts. Supplementary"
+    },
+    {
+      "page": 3,
+      "line": 91,
+      "text": "Section S4 records these checks; exposure counts do not certify remaining references. The separate"
+    },
+    {
+      "page": 3,
+      "line": 92,
+      "text": "3 November remediation comparison is described below."
+    },
+    {
+      "page": 4,
+      "line": 93,
+      "text": "System and retrieval"
+    },
+    {
+      "page": 4,
+      "line": 94,
+      "text": "The Python implementation used LlamaIndex, sentence-transformers, BM25 and Streamlit [12-17]."
+    },
+    {
+      "page": 4,
+      "line": 95,
+      "text": "Text cleaning retained document, chapter, section, article and citation metadata. Articles up to 500"
+    },
+    {
+      "page": 4,
+      "line": 96,
+      "text": "cl100k_base tokens remained intact; longer articles were split with a 400-token target and 60-token"
+    },
+    {
+      "page": 4,
+      "line": 97,
+      "text": "overlap before heading context was added. Embeddings used all-MiniLM-L6-v2 with the recorded"
+    },
+    {
+      "page": 4,
+      "line": 98,
+      "text": "CLS-pooling wrapper and a 512-WordPiece limit. BM25 and dense retrieval each returned 100"
+    },
+    {
+      "page": 4,
+      "line": 99,
+      "text": "candidates; reciprocal-rank fusion used k = 60. A multilingual cross-encoder reranked candidates,"
+    },
+    {
+      "page": 4,
+      "line": 100,
+      "text": "and the top five passages supplied answer context. Figure 1 summarizes the workflow;"
+    },
+    {
+      "page": 4,
+      "line": 101,
+      "text": "Supplementary Section S1 records settings, prompts and scoring definitions. Implementation files,"
+    },
+    {
+      "page": 4,
+      "line": 102,
+      "text": "chunking settings, index audit and retrieval settings are detailed in Supplementary Tables S1, S2, S3"
+    },
+    {
+      "page": 4,
+      "line": 103,
+      "text": "and S4, respectively."
+    },
+    {
+      "page": 4,
+      "line": 104,
+      "text": "English queries used a deterministic 114-entry Portuguese glossary and question-specific query,"
+    },
+    {
+      "page": 4,
+      "line": 105,
+      "text": "document and article anchors. Conditional neighboring-article and sibling-chunk expansion added"
+    },
+    {
+      "page": 4,
+      "line": 106,
+      "text": "context before generation. These rules were developed with exposure to benchmark failures; their"
+    },
+    {
+      "page": 4,
+      "line": 107,
+      "text": "evaluation uses development data. Article identifiers do not establish that every required clause"
+    },
+    {
+      "page": 4,
+      "line": 108,
+      "text": "reached the generator. The original prompt required a same-language, article-cited answer from"
+    },
+    {
+      "page": 4,
+      "line": 109,
+      "text": "retrieved context and a fixed refusal when evidence was insufficient. Glossary examples and fixed"
+    },
+    {
+      "page": 4,
+      "line": 110,
+      "text": "refusal sentences are listed in Supplementary Tables S5 and S6. A separate model-based Translator"
+    },
+    {
+      "page": 4,
+      "line": 111,
+      "text": "mode was not recorded in the 31 inspected manifests. Supplementary Section S14 provides the"
+    },
+    {
+      "page": 4,
+      "line": 112,
+      "text": "complete glossary, triggers, activation records and mode inventory."
+    },
+    {
+      "page": 4,
+      "line": 113,
+      "text": "Historical generation and judging both requested the unpinned alias models/gemini-flash-lite-latest."
+    },
+    {
+      "page": 4,
+      "line": 114,
+      "text": "Resolved July backend versions were not preserved and cannot be inferred from current"
+    },
+    {
+      "page": 4,
+      "line": 115,
+      "text": "documentation [17]. Later experimental responses recorded gemini-3.5-flash-lite. The existing run-"
+    },
+    {
+      "page": 4,
+      "line": 116,
+      "text": "date ledger is reproduced in Supplementary Section S13 and Table S26, with manifest evidence in"
+    },
+    {
+      "page": 4,
+      "line": 117,
+      "text": "the accompanying reported_stage_run_dates.csv. Sections S1 and S5 document token units."
+    },
+    {
+      "page": 4,
+      "line": 118,
+      "text": "Assessment sets and overlap"
+    },
+    {
+      "page": 4,
+      "line": 119,
+      "text": "The constructed benchmark contained 200 question rows in 100 bilingual pairs: 140 direct-article, 20"
+    },
+    {
+      "page": 4,
+      "line": 120,
+      "text": "multi-article/exception and 40 unanswerable/adversarial questions (Figure 2). This construction total"
+    },
+    {
+      "page": 4,
+      "line": 121,
+      "text": "differs from the evaluated denominators. The internal assessment used 150 questions; each"
+    },
+    {
+      "page": 4,
+      "line": 122,
+      "text": "language-specific repair reused its 75-question internal subset with identical IDs and text. The other"
+    },
+    {
+      "page": 4,
+      "line": 123,
+      "text": "stages comprised 50 stress, 24 calibration and 30 post-calibration outputs. Together the six stages"
+    },
+    {
+      "page": 4,
+      "line": 124,
+      "text": "produced 404 outputs and 254 distinct question IDs, without semantic independence of those IDs"
+    },
+    {
+      "page": 4,
+      "line": 125,
+      "text": "(Supplementary Section S2). Constructed benchmark composition is detailed in Supplementary Table"
+    },
+    {
+      "page": 4,
+      "line": 126,
+      "text": "S7."
+    },
+    {
+      "page": 4,
+      "line": 127,
+      "text": "The stress findings informed refusal calibration. Three substantively equivalent bilingual pairs"
+    },
+    {
+      "page": 4,
+      "line": 128,
+      "text": "recurred between stress and calibration, covering the current SUSAR form, device-notification fee"
+    },
+    {
+      "page": 4,
+      "line": 129,
+      "text": "and patient-identification premise; four further pairs had related content with different framing. The"
+    },
+    {
+      "page": 4,
+      "line": 130,
+      "text": "repair, calibration and post-calibration results therefore describe development and cannot establish"
+    },
+    {
+      "page": 4,
+      "line": 131,
+      "text": "independent held-out performance or a causal calibration effect."
+    },
+    {
+      "page": 4,
+      "line": 132,
+      "text": "Historical scoring and coauthor review"
+    },
+    {
+      "page": 4,
+      "line": 133,
+      "text": "Automated metrics assessed evidence support, citation correctness, completeness and refusal, using"
+    },
+    {
+      "page": 4,
+      "line": 134,
+      "text": "continuous scores and archived labels [12,18,19]. Historical confidence intervals resampled bilingual"
+    },
+    {
+      "page": 4,
+      "line": 135,
+      "text": "pair IDs together with 2,000 percentile-bootstrap draws (seed 20260619). They are conditional on the"
+    },
+    {
+      "page": 4,
+      "line": 136,
+      "text": "archived labels, sources and judge and exclude uncertainty from legal-status or labeling errors. The"
+    },
+    {
+      "page": 4,
+      "line": 137,
+      "text": "same model family generated and judged answers, limiting independence. Audit flags, bootstrap"
+    },
+    {
+      "page": 4,
+      "line": 138,
+      "text": "settings, stage denominators and historical estimates are given in Supplementary Tables S8, S9, S10"
+    },
+    {
+      "page": 4,
+      "line": 139,
+      "text": "and S11, respectively."
+    },
+    {
+      "page": 4,
+      "line": 140,
+      "text": "On 26 October 2026, H.L.R.J. reviewed and approved 94 selected historical outputs, including all 44"
+    },
+    {
+      "page": 4,
+      "line": 141,
+      "text": "originally unanswerable stress/calibration/post-calibration outputs, 40 originally answerable outputs"
+    },
+    {
+      "page": 4,
+      "line": 142,
+      "text": "and ten unanswerable internal outputs. The ratings began as an AI-prepared draft. H.L.R.J. had not"
+    },
+    {
+      "page": 5,
+      "line": 143,
+      "text": "seen automated judge scores before finalizing the ratings, as confirmed by the corresponding author."
+    },
+    {
+      "page": 5,
+      "line": 144,
+      "text": "The review was author-led and AI-draft-assisted. Completeness agreement used a judge threshold of"
+    },
+    {
+      "page": 5,
+      "line": 145,
+      "text": "0.80, with 1.00 as sensitivity; refusal comparisons used the coauthor-defined unanswerable stratum."
+    },
+    {
+      "page": 5,
+      "line": 146,
+      "text": "Original ratings and answerability adjudications remain separate (Supplementary Section S3)."
+    },
+    {
+      "page": 5,
+      "line": 147,
+      "text": "Sampling and agreement: Supplementary Tables S12-S13."
+    },
+    {
+      "page": 5,
+      "line": 148,
+      "text": "Frozen 40-answer author-led assessment"
+    },
+    {
+      "page": 5,
+      "line": 149,
+      "text": "Twenty bilingual pairs (40 questions: 12 answerable, four partly answerable and four unanswerable"
+    },
+    {
+      "page": 5,
+      "line": 150,
+      "text": "pairs), references and scoring rules were frozen before generation on 30 October 2026. The original"
+    },
+    {
+      "page": 5,
+      "line": 151,
+      "text": "six-document index and prompt produced one answer per question with gemini-3.5-flash-lite at"
+    },
+    {
+      "page": 5,
+      "line": 152,
+      "text": "temperature 0.2, without retries, repairs or new automated judging. H.L.R.J. rated every answer"
+    },
+    {
+      "page": 5,
+      "line": 153,
+      "text": "against the exact selected passages and frozen reference on 30 October, reporting no exposure to"
+    },
+    {
+      "page": 5,
+      "line": 154,
+      "text": "automated scores for this run. Pair success required both languages to meet the category rules and"
+    },
+    {
+      "page": 5,
+      "line": 155,
+      "text": "requested language. Partly answerable questions required supported information and identification of"
+    },
+    {
+      "page": 5,
+      "line": 156,
+      "text": "the unavailable detail; unanswerable items had no supported-content completeness endpoint. Exact"
+    },
+    {
+      "page": 5,
+      "line": 157,
+      "text": "95% binomial intervals used pairs. The AI-authored, coauthor-approved questions followed earlier"
+    },
+    {
+      "page": 5,
+      "line": 158,
+      "text": "benchmark exposure; this is author-led assessment, not independent validation (Supplementary"
+    },
+    {
+      "page": 5,
+      "line": 159,
+      "text": "Section S3)."
+    },
+    {
+      "page": 5,
+      "line": 160,
+      "text": "Development diagnostics and exploratory repair"
+    },
+    {
+      "page": 5,
+      "line": 161,
+      "text": "Retrospective retrieval ablations used 160 answerable development questions in 80 bilingual pairs."
+    },
+    {
+      "page": 5,
+      "line": 162,
+      "text": "They compared BM25, dense retrieval, fusion, reranking and rule removal on the fixed historical"
+    },
+    {
+      "page": 5,
+      "line": 163,
+      "text": "index. A window-pooling comparison changed only the embeddings of 35 overlength nodes; a"
+    },
+    {
+      "page": 5,
+      "line": 164,
+      "text": "targeted answer experiment used 30 affected questions and 20 seeded controls, three repeats per"
+    },
+    {
+      "page": 5,
+      "line": 165,
+      "text": "condition, totaling 300 generations and 300 same-model automated evaluations. Paired differences"
+    },
+    {
+      "page": 5,
+      "line": 166,
+      "text": "averaged repeats before resampling pairs with 10,000 draws. These reused-question analyses did"
+    },
+    {
+      "page": 5,
+      "line": 167,
+      "text": "not select a deployment setting (Supplementary Sections S5 and S6). Retrieval conditions and paired"
+    },
+    {
+      "page": 5,
+      "line": 168,
+      "text": "contrasts are specified in Supplementary Tables S14 and S15."
+    },
+    {
+      "page": 5,
+      "line": 169,
+      "text": "Following the 40-answer assessment, controlled development experiments varied source"
+    },
+    {
+      "page": 5,
+      "line": 170,
+      "text": "completeness, instructions, source headings, language cues and reference scope. Negative controls"
+    },
+    {
+      "page": 5,
+      "line": 171,
+      "text": "and failed repairs were retained. The coauthor separately reviewed 44 first-repeat sibling-context"
+    },
+    {
+      "page": 5,
+      "line": 172,
+      "text": "answers after exposure to scores and conditions. These experiments diagnose selected failures and"
+    },
+    {
+      "page": 5,
+      "line": 173,
+      "text": "do not create new independent test items (Supplementary Sections S6 and S7). Sibling-context"
+    },
+    {
+      "page": 5,
+      "line": 174,
+      "text": "outcomes, mechanism controls and archived-reference decisions are summarized in Supplementary"
+    },
+    {
+      "page": 5,
+      "line": 175,
+      "text": "Tables S16, S17 and S18, respectively."
+    },
+    {
+      "page": 5,
+      "line": 176,
+      "text": "A separate 482-node index and bundled repair were frozen before question authoring. The repair"
+    },
+    {
+      "page": 5,
+      "line": 177,
+      "text": "combined structural parsing corrections, source-occurrence article completion, English-to-Portuguese"
+    },
+    {
+      "page": 5,
+      "line": 178,
+      "text": "retrieval translation, a named-regulation filter, language cues, revised partial-answer instructions, an"
+    },
+    {
+      "page": 5,
+      "line": 179,
+      "text": "exact-subject evidence check and deterministic citation formatting. Twenty AI-authored bilingual pairs"
+    },
+    {
+      "page": 5,
+      "line": 180,
+      "text": "comprised 12 answerable, four partly answerable and four unanswerable pairs; screening against 452"
+    },
+    {
+      "page": 5,
+      "line": 181,
+      "text": "historical questions replaced one semantic duplicate before freeze. Execution completed 20"
+    },
+    {
+      "page": 5,
+      "line": 182,
+      "text": "translations and 80 answers by 1 November 2026 with gemini-3.5-flash-lite at temperature 0.2,"
+    },
+    {
+      "page": 5,
+      "line": 183,
+      "text": "without judge or repair calls. Pair success required content, evidence-boundary, language and"
+    },
+    {
+      "page": 5,
+      "line": 184,
+      "text": "citation-label criteria. Raw-output and common-formatter sensitivities were retained. All 80 outputs"
+    },
+    {
+      "page": 5,
+      "line": 185,
+      "text": "received personal author review on 1 November: 44 unblinded corresponding-author confirmations"
+    },
+    {
+      "page": 5,
+      "line": 186,
+      "text": "and 36 coauthor-reviewed AI-prepared ratings. The corresponding author reported that H.L.R.J. saw"
+    },
+    {
+      "page": 5,
+      "line": 187,
+      "text": "no separate scores, conditions or prior findings before finalizing those 36. Initial AI scores and author"
+    },
+    {
+      "page": 5,
+      "line": 188,
+      "text": "overlays remain separate (Supplementary Section S8)."
+    },
+    {
+      "page": 5,
+      "line": 189,
+      "text": "Pair success required both languages to satisfy the specified criteria. Exact binomial intervals used"
+    },
+    {
+      "page": 5,
+      "line": 190,
+      "text": "pairs. The repair comparison also used paired bootstrap differences and an exact discordant-pair test."
+    },
+    {
+      "page": 5,
+      "line": 191,
+      "text": "All intervals are conditional on the selected questions and rubric and omit uncertainty from source"
+    },
+    {
+      "page": 5,
+      "line": 192,
+      "text": "dependence, review exposure and AI-draft assistance."
+    },
+    {
+      "page": 6,
+      "line": 193,
+      "text": "Post hoc common prompt and lexical baseline comparisons"
+    },
+    {
+      "page": 6,
+      "line": 194,
+      "text": "On 2 November 2026, the existing 40 FV questions were used for 80 new answers with gemini-3.5-"
+    },
+    {
+      "page": 6,
+      "line": 195,
+      "text": "flash-lite at temperature 0.2. Identical neutral instructions permitted stored knowledge without"
+    },
+    {
+      "page": 6,
+      "line": 196,
+      "text": "passages; only the evidence block differed. RAG used saved integrated-repair contexts. Neither"
+    },
+    {
+      "page": 6,
+      "line": 197,
+      "text": "condition used web search. Expanded FV_012 scope included archived Articles 17, 30 and 31 before"
+    },
+    {
+      "page": 6,
+      "line": 198,
+      "text": "generation. Content and evidence-boundary success required complete supported information, no"
+    },
+    {
+      "page": 6,
+      "line": 199,
+      "text": "material unsupported claim, appropriate handling of unavailable detail and the requested language;"
+    },
+    {
+      "page": 6,
+      "line": 200,
+      "text": "appropriate abstention passed absent-detail items. Citations were secondary. Codex assessed"
+    },
+    {
+      "page": 6,
+      "line": 201,
+      "text": "anonymized outputs with limited masking. On 2 November, H.L.R.J. personally drafted and approved"
+    },
+    {
+      "page": 6,
+      "line": 202,
+      "text": "ratings for all 118 distinct answers representing 120 condition records, including the subsequent"
+    },
+    {
+      "page": 6,
+      "line": 203,
+      "text": "BM25 extension. He reported no prior AI scores, condition identities or findings for these outputs, but"
+    },
+    {
+      "page": 6,
+      "line": 204,
+      "text": "had project/question exposure and answer style could reveal conditions. Ratings used common"
+    },
+    {
+      "page": 6,
+      "line": 205,
+      "text": "references rather than generator contexts. AI and author ratings remain separate. Whole-pair"
+    },
+    {
+      "page": 6,
+      "line": 206,
+      "text": "bootstrap intervals used 20,000 draws (seed 20261102)."
+    },
+    {
+      "page": 6,
+      "line": 207,
+      "text": "The separate lexical baseline used the same 482 chunks, saved Portuguese retrieval queries,"
+    },
+    {
+      "page": 6,
+      "line": 208,
+      "text": "named-regulation filter and five seed chunks as the frozen hybrid/reranked retriever. BM25 used k1 ="
+    },
+    {
+      "page": 6,
+      "line": 209,
+      "text": "1.5, b = 0.75 and epsilon = 0.25, with no dense branch or reranker. Thirty-two answerable or partly"
+    },
+    {
+      "page": 6,
+      "line": 210,
+      "text": "answerable language items had positive gold article targets; eight absent-detail items were excluded"
+    },
+    {
+      "page": 6,
+      "line": 211,
+      "text": "from recall. Both methods used the same full-article and adjacent-article completion policy, with"
+    },
+    {
+      "page": 6,
+      "line": 212,
+      "text": "variable final context lengths (Supplementary Section S10)."
+    },
+    {
+      "page": 6,
+      "line": 213,
+      "text": "Dated corpus remediation comparison"
+    },
+    {
+      "page": 6,
+      "line": 214,
+      "text": "Dated corpus remediation. Official consolidated texts captured on 3 November 2026 supplied seven"
+    },
+    {
+      "page": 6,
+      "line": 215,
+      "text": "regulations, excluding RDC 9/2015 and revoked clauses and adding RDCs 875/2024 and 948/2024."
+    },
+    {
+      "page": 6,
+      "line": 216,
+      "text": "The corresponding author approved revised source-grounded references; six unresolved bilingual"
+    },
+    {
+      "page": 6,
+      "line": 217,
+      "text": "pairs were excluded before generation, leaving 188 questions in 94 development-exposed pairs. The"
+    },
+    {
+      "page": 6,
+      "line": 218,
+      "text": "updated 469-node corpus and archived repaired 482-node comparator shared downstream settings"
+    },
+    {
+      "page": 6,
+      "line": 219,
+      "text": "and approved Portuguese retrieval queries for both response languages. With gemini-3.5-flash-lite at"
+    },
+    {
+      "page": 6,
+      "line": 220,
+      "text": "temperature 0.2, 366 distinct calls produced 376 records through ten exact-prompt reuses. Direct"
+    },
+    {
+      "page": 6,
+      "line": 221,
+      "text": "Codex assessment separated completeness, source support, dated applicability, evidence limits,"
+    },
+    {
+      "page": 6,
+      "line": 222,
+      "text": "language and citation format. Masked condition labels did not remove development involvement or"
+    },
+    {
+      "page": 6,
+      "line": 223,
+      "text": "possible source-based unmasking. These new output ratings were provisional AI judgments, not"
+    },
+    {
+      "page": 6,
+      "line": 224,
+      "text": "human approvals. Descriptive differences used 20,000 bilingual-pair bootstrap draws (seed"
+    },
+    {
+      "page": 6,
+      "line": 225,
+      "text": "20261103), with shared-article-family sensitivity. Supplementary Section S12 and Data S16 retain the"
+    },
+    {
+      "page": 6,
+      "line": 226,
+      "text": "frozen design, sources, outputs and assessment provenance."
+    },
+    {
+      "page": 6,
+      "line": 227,
+      "text": "Results"
+    },
+    {
+      "page": 6,
+      "line": 228,
+      "text": "Historical development and diagnostic performance"
+    },
+    {
+      "page": 6,
+      "line": 229,
+      "text": "The six-document index contained 382 parsed source records, including six preambles and repeated"
+    },
+    {
+      "page": 6,
+      "line": 230,
+      "text": "labels, and 481 chunks; 359 records remained intact and 23 were split. The benchmark covered 78"
+    },
+    {
+      "page": 6,
+      "line": 231,
+      "text": "unique gold article citations. RDC 9/2015 appeared in 28/200 question rows. An additional 18 rows"
+    },
+    {
+      "page": 6,
+      "line": 232,
+      "text": "cited wholly revoked RDC 55/2010 articles, giving 46/200 exposed rows in 23 bilingual pairs. These"
+    },
+    {
+      "page": 6,
+      "line": 233,
+      "text": "are exposure counts, not adjudicated current-law error rates (Table 1; Supplementary Section S4)."
+    },
+    {
+      "page": 6,
+      "line": 234,
+      "text": "Historical internal completeness averaged 0.808 across 120 originally answerable outputs. English"
+    },
+    {
+      "page": 6,
+      "line": 235,
+      "text": "completeness rose from 0.645 to 0.995 and Portuguese completeness from 0.970 to 0.995 on their"
+    },
+    {
+      "page": 6,
+      "line": 236,
+      "text": "reused repair subsets. Stress completeness was 0.943 (95% pair-bootstrap interval 0.873 to 0.990;"
+    },
+    {
+      "page": 6,
+      "line": 237,
+      "text": "40 answerable outputs), with refusal correctness 7/10 (0.700; interval 0.300 to 1.000; five bilingual"
+    },
+    {
+      "page": 6,
+      "line": 238,
+      "text": "pairs) under the original judge and labels. Post-calibration refusal correctness was 17/18 (interval"
+    },
+    {
+      "page": 6,
+      "line": 239,
+      "text": "0.833 to 1.000; nine pairs), with answerable-control completeness 0.908 (interval 0.792 to 1.000; 12"
+    },
+    {
+      "page": 6,
+      "line": 240,
+      "text": "outputs). Development-linked sets preclude causal comparison (Supplementary Data S1-S2; Table"
+    },
+    {
+      "page": 6,
+      "line": 241,
+      "text": "S11). The post-calibration set largely tested categories listed in the revised refusal prompt: phone"
+    },
+    {
+      "page": 7,
+      "line": 242,
+      "text": "numbers, URLs, current MedDRA versions, petition codes and future AREE acceptance. The"
+    },
+    {
+      "page": 7,
+      "line": 243,
+      "text": "historical 17/18 result therefore describes these selected, prompt-aligned questions, not general"
+    },
+    {
+      "page": 7,
+      "line": 244,
+      "text": "improvement in refusal. Later answerability adjudication is reported separately and is not a new"
+    },
+    {
+      "page": 7,
+      "line": 245,
+      "text": "model run."
+    },
+    {
+      "page": 7,
+      "line": 246,
+      "text": "Human review and answerability adjudication"
+    },
+    {
+      "page": 7,
+      "line": 247,
+      "text": "At the 0.80 threshold, coauthor and automated completeness classifications agreed on 38/58 outputs"
+    },
+    {
+      "page": 7,
+      "line": 248,
+      "text": "(65.5%; pair-bootstrap 95% interval 48.2 to 80.9%): 37 both passed, one both failed, 16 passed only"
+    },
+    {
+      "page": 7,
+      "line": 249,
+      "text": "the judge and four passed only author review. Among 46 author-classified answerable outputs,"
+    },
+    {
+      "page": 7,
+      "line": 250,
+      "text": "agreement was 37/46 (80.4%; 63.8 to 93.6%). Citation agreement was 44/44, all-pass and non-"
+    },
+    {
+      "page": 7,
+      "line": 251,
+      "text": "discriminating. These AI-draft-assisted comparisons do not estimate independent accuracy. The"
+    },
+    {
+      "page": 7,
+      "line": 252,
+      "text": "judge marked 3/5 Portuguese responses and 4/5 English responses as correct refusals. For the"
+    },
+    {
+      "page": 7,
+      "line": 253,
+      "text": "patient-identification question, both answers correctly said no and cited Article 32; the judge scored"
+    },
+    {
+      "page": 7,
+      "line": 254,
+      "text": "Portuguese 0 and English 1. Both questions were subsequently classified as answerable and"
+    },
+    {
+      "page": 7,
+      "line": 255,
+      "text": "excluded from the adjudicated refusal denominator; original labels and scores remain preserved."
+    },
+    {
+      "page": 7,
+      "line": 256,
+      "text": "Archived-source adjudication reclassified six originally unanswerable outputs as answerable and"
+    },
+    {
+      "page": 7,
+      "line": 257,
+      "text": "twelve as partly answerable, preserving the original labels. Refusal of an unavailable detail was"
+    },
+    {
+      "page": 7,
+      "line": 258,
+      "text": "evaluated separately from completeness of supported information. In the retained stress, calibration"
+    },
+    {
+      "page": 7,
+      "line": 259,
+      "text": "and post-calibration unanswerable strata, author-rated appropriate refusals were 4/4, 10/10 and 12/12"
+    },
+    {
+      "page": 7,
+      "line": 260,
+      "text": "outputs, or 2/2, 5/5 and 6/6 bilingual pairs. Exact pair-level 95% intervals were 15.8 to 100.0%, 47.8"
+    },
+    {
+      "page": 7,
+      "line": 261,
+      "text": "to 100.0% and 54.1 to 100.0%. The twelve partly answerable outputs remained separate. These"
+    },
+    {
+      "page": 7,
+      "line": 262,
+      "text": "small, differently composed strata do not establish improvement (Supplementary Section S3)."
+    },
+    {
+      "page": 7,
+      "line": 263,
+      "text": "Frozen coauthor-reviewed answers"
+    },
+    {
+      "page": 7,
+      "line": 264,
+      "text": "In the frozen author-led assessment, 10/20 bilingual pairs met the full task criteria (50.0%; exact 95%"
+    },
+    {
+      "page": 7,
+      "line": 265,
+      "text": "CI 27.2 to 72.8%). Category results were 6/12 answerable pairs (50.0%; 21.1 to 78.9%), 0/4 partly"
+    },
+    {
+      "page": 7,
+      "line": 266,
+      "text": "answerable pairs (0%; 0 to 60.2%) and 4/4 unanswerable pairs (100%; 39.8 to 100%). At output level,"
+    },
+    {
+      "page": 7,
+      "line": 267,
+      "text": "24/40 passed: 16/24 answerable, 0/8 partly answerable and 8/8 unanswerable. Full reference content"
+    },
+    {
+      "page": 7,
+      "line": 268,
+      "text": "was covered in 18/24 answerable outputs, but English language failures reduced complete-task"
+    },
+    {
+      "page": 7,
+      "line": 269,
+      "text": "success. Requested language was respected in 35/40 outputs: 15/20 English and 20/20 Portuguese."
+    },
+    {
+      "page": 7,
+      "line": 270,
+      "text": "Table 2 and Figure 3 report the paired outcomes; Supplementary Section S3 provides all ratings and"
+    },
+    {
+      "page": 7,
+      "line": 271,
+      "text": "derived results."
+    },
+    {
+      "page": 7,
+      "line": 272,
+      "text": "The selected passages confirm missing list items in AV_004, AV_006 and AV_014, absence of the"
+    },
+    {
+      "page": 7,
+      "line": 273,
+      "text": "required Article 28 item in AV_013 Portuguese, and missing portions of the paired provisions in"
+    },
+    {
+      "page": 7,
+      "line": 274,
+      "text": "AV_016. AV_009 Portuguese correctly supplied the registration classes but could not supply the"
+    },
+    {
+      "page": 7,
+      "line": 275,
+      "text": "notification classes from its passages. All eight partly answerable outputs were blanket refusals. Five"
+    },
+    {
+      "page": 7,
+      "line": 276,
+      "text": "omitted information that the coauthor judged supported by the selected passages; three lacked the"
+    },
+    {
+      "page": 7,
+      "line": 277,
+      "text": "required supported content in those passages. None identified the unavailable detail explicitly. The"
+    },
+    {
+      "page": 7,
+      "line": 278,
+      "text": "frozen prompt required a blanket refusal for partial evidence, whereas the prespecified partly"
+    },
+    {
+      "page": 7,
+      "line": 279,
+      "text": "answerable endpoint required a supported partial answer. This instruction and endpoint mismatch is a"
+    },
+    {
+      "page": 7,
+      "line": 280,
+      "text": "documented design limitation. AV_008 English cited supported pharmacovigilance statements about"
+    },
+    {
+      "page": 7,
+      "line": 281,
+      "text": "risk minimization instead of answering the contingency-plan question. All 23 claim-bearing outputs"
+    },
+    {
+      "page": 7,
+      "line": 282,
+      "text": "had supported claims and citations according to the coauthor, illustrating why grounding alone is not"
+    },
+    {
+      "page": 7,
+      "line": 283,
+      "text": "task success. These failure categories overlap and do not identify causal effect sizes."
+    },
+    {
+      "page": 7,
+      "line": 284,
+      "text": "Retrieval and diagnostic findings"
+    },
+    {
+      "page": 7,
+      "line": 285,
+      "text": "On reused development questions, article Recall@5 was 0.6969 for citation-diversified BM25, 0.3344"
+    },
+    {
+      "page": 7,
+      "line": 286,
+      "text": "for dense retrieval, 0.5687 for fusion and 0.9500 after reranking without anchors or neighbors. The full"
+    },
+    {
+      "page": 7,
+      "line": 287,
+      "text": "pipeline reached 0.9875. BM25 candidates with the full downstream rules also reached 0.9875,"
+    },
+    {
+      "page": 7,
+      "line": 288,
+      "text": "concealing one gain and one loss when dense candidates were added; the paired interval for that"
+    },
+    {
+      "page": 7,
+      "line": 289,
+      "text": "difference was -0.0187 to +0.0187. Thus, the comparison did not demonstrate an incremental mean"
+    },
+    {
+      "page": 7,
+      "line": 290,
+      "text": "benefit of the dense branch. These are retrieval endpoints, not answer-quality outcomes"
+    },
+    {
+      "page": 7,
+      "line": 291,
+      "text": "(Supplementary Section S5). Retrieval conditions and paired ablation contrasts are reported in"
+    },
+    {
+      "page": 8,
+      "line": 292,
+      "text": "Supplementary Tables S14 and S15. The glossary-off comparison is reported in Supplementary"
+    },
+    {
+      "page": 8,
+      "line": 293,
+      "text": "Section S14."
+    },
+    {
+      "page": 8,
+      "line": 294,
+      "text": "The 300-answer window-pooling experiment changed affected-stratum automated completeness from"
+    },
+    {
+      "page": 8,
+      "line": 295,
+      "text": "0.590 to 0.617 (paired difference +0.027; 95% interval -0.027 to +0.099). Improvement remained"
+    },
+    {
+      "page": 8,
+      "line": 296,
+      "text": "unproven. Identical prompts received different scores; all 300 faithfulness scores were 1.000,"
+    },
+    {
+      "page": 8,
+      "line": 297,
+      "text": "including 89 refusals. Context expansion did not eliminate over-refusal; source, instruction, language"
+    },
+    {
+      "page": 8,
+      "line": 298,
+      "text": "and scope controls, including negative results, are in Supplementary Sections S6 and S7."
+    },
+    {
+      "page": 8,
+      "line": 299,
+      "text": "Exploratory repair on frozen author-led questions"
+    },
+    {
+      "page": 8,
+      "line": 300,
+      "text": "Completed personal author review passed 14/20 baseline pairs (70.0%; exact 95% CI 45.7 to 88.1%)"
+    },
+    {
+      "page": 8,
+      "line": 301,
+      "text": "and 17/20 repaired pairs (85.0%; 62.1 to 96.8%). Four pairs improved and one worsened: difference"
+    },
+    {
+      "page": 8,
+      "line": 302,
+      "text": "15.0 percentage points (pair-bootstrap 95% interval -5.0 to +35.0), exact two-sided p = 0.375. The"
+    },
+    {
+      "page": 8,
+      "line": 303,
+      "text": "coauthor failed repaired FV_012 English (IRH_051) because the technical-report requirement is cited"
+    },
+    {
+      "page": 8,
+      "line": 304,
+      "text": "to Article 17 rather than Article 31 II. Expanded content coverage and citation support are distinct."
+    },
+    {
+      "page": 8,
+      "line": 305,
+      "text": "Initial AI sensitivities remain separately reported (Table 3; Figure 4; Supplementary Section S8)."
+    },
+    {
+      "page": 8,
+      "line": 306,
+      "text": "Supplementary Table S19 separates initial AI assessments from completed author review. The four"
+    },
+    {
+      "page": 8,
+      "line": 307,
+      "text": "gains comprised two answerable and two partly answerable pairs; the citation-support regression"
+    },
+    {
+      "page": 8,
+      "line": 308,
+      "text": "occurred in one answerable pair."
+    },
+    {
+      "page": 8,
+      "line": 309,
+      "text": "Author-reviewed category results were 10/12 versus 11/12 answerable pairs, 0/4 versus 2/4 partly"
+    },
+    {
+      "page": 8,
+      "line": 310,
+      "text": "answerable pairs and 4/4 unanswerable pairs in both conditions. Staffing and ruminant-"
+    },
+    {
+      "page": 8,
+      "line": 311,
+      "text": "documentation answers still refused supported information despite complete reference passages."
+    },
+    {
+      "page": 8,
+      "line": 312,
+      "text": "Both conditions selected complete frozen-reference wording in all 32 positive language rows, so no"
+    },
+    {
+      "page": 8,
+      "line": 313,
+      "text": "retrieval-coverage gain was demonstrated. Mean context length increased from 5,737 to 16,487"
+    },
+    {
+      "page": 8,
+      "line": 314,
+      "text": "characters. AI-draft assistance and differing review exposure limit inference. Supplementary Table"
+    },
+    {
+      "page": 8,
+      "line": 315,
+      "text": "S20 separates initial AI-assessed category counts from completed author review. The repaired"
+    },
+    {
+      "page": 8,
+      "line": 316,
+      "text": "answerable count is 11/12 under author review, compared with the initial AI-assessed 12/12; the"
+    },
+    {
+      "page": 8,
+      "line": 317,
+      "text": "partly answerable and unanswerable counts are unchanged."
+    },
+    {
+      "page": 8,
+      "line": 318,
+      "text": "The corresponding author confirmed that broad FV_012 manufacturer/site and GMP scope requires"
+    },
+    {
+      "page": 8,
+      "line": 319,
+      "text": "archived Articles 17, 30 VIII-IX and 31 I-III of RDC 55/2010. Only repaired English supplied the"
+    },
+    {
+      "page": 8,
+      "line": 320,
+      "text": "expanded content, but it failed the specific citation above. Expanded-scope author review yields 13/20"
+    },
+    {
+      "page": 8,
+      "line": 321,
+      "text": "versus 17/20 pairs. This output-informed sensitivity preserves original references and AI scores."
+    },
+    {
+      "page": 8,
+      "line": 322,
+      "text": "Article 30 is revoked; the adjudication concerns the archived question (Supplementary Sections S4"
+    },
+    {
+      "page": 8,
+      "line": 323,
+      "text": "and S8)."
+    },
+    {
+      "page": 8,
+      "line": 324,
+      "text": "Post hoc common prompt and lexical baseline results"
+    },
+    {
+      "page": 8,
+      "line": 325,
+      "text": "Coauthor-rated content and evidence-boundary success was 39/40 with hybrid passages, 38/40 with"
+    },
+    {
+      "page": 8,
+      "line": 326,
+      "text": "BM25 passages and 9/40 for the model alone, including eight appropriate abstentions per condition."
+    },
+    {
+      "page": 8,
+      "line": 327,
+      "text": "Bilingual success was 19/20, 18/20 and 4/20 pairs (exact 95% intervals 75.1 to 99.9%, 68.3 to 98.8%"
+    },
+    {
+      "page": 8,
+      "line": 328,
+      "text": "and 5.7 to 43.7%). Hybrid minus model-only success was +75 percentage points (descriptive pair-"
+    },
+    {
+      "page": 8,
+      "line": 329,
+      "text": "bootstrap 95% interval +55 to +90; 15 gains, no losses; exact paired p = 0.000061); hybrid minus"
+    },
+    {
+      "page": 8,
+      "line": 330,
+      "text": "BM25 was +5 points (-10 to +20; two gains, one loss; p = 1.000). This content endpoint differs from"
+    },
+    {
+      "page": 8,
+      "line": 331,
+      "text": "the earlier full-pipeline endpoint. Omissions affected 0/40, 1/40 and 31/40 answers; material claim"
+    },
+    {
+      "page": 8,
+      "line": 332,
+      "text": "flags affected 1/40, 1/40 and 14/40. Author-rated citation presence was 39/40, 38/40 and 0/40, and"
+    },
+    {
+      "page": 8,
+      "line": 333,
+      "text": "correction flags were 1/40, 2/40 and 32/40, without measured editing effort. Topic results are in"
+    },
+    {
+      "page": 8,
+      "line": 334,
+      "text": "Supplementary Table S21 and Supplementary Figure S1 (Table 4; Figure 5)."
+    },
+    {
+      "page": 8,
+      "line": 335,
+      "text": "In the matched retrieval baseline, all required articles appeared within five chunks for BM25 30/32"
+    },
+    {
+      "page": 8,
+      "line": 336,
+      "text": "versus hybrid 32/32; full required article text after completion was present for 31/32 versus 32/32."
+    },
+    {
+      "page": 8,
+      "line": 337,
+      "text": "Mean article Recall@5 was 0.958 versus 1.000 and MRR@5 was 0.932 versus 0.964. Pair-bootstrap"
+    },
+    {
+      "page": 8,
+      "line": 338,
+      "text": "difference intervals included zero. BM25 original-English queries found all required articles for 5/16"
+    },
+    {
+      "page": 8,
+      "line": 339,
+      "text": "English questions, compared with 15/16 using the saved Portuguese translations; this language"
+    },
+    {
+      "page": 8,
+      "line": 340,
+      "text": "sensitivity is separate from the matched primary comparison (Supplementary Table S22)."
+    },
+    {
+      "page": 9,
+      "line": 341,
+      "text": "The BM25 extension used 39 new first-attempt calls and one exact-prompt cached answer, with"
+    },
+    {
+      "page": 9,
+      "line": 342,
+      "text": "saved hybrid comparators. Its English FV_016 omission coincided with missing Article 22 in context;"
+    },
+    {
+      "page": 9,
+      "line": 343,
+      "text": "its Portuguese FV_012 answer added intermediate-product manufacturers to the explicit"
+    },
+    {
+      "page": 9,
+      "line": 344,
+      "text": "name/address list. The hybrid failure equated DPI with an Investigator's Brochure. Human and AI"
+    },
+    {
+      "page": 9,
+      "line": 345,
+      "text": "primary labels agreed on 117/118 distinct answers; one accepted model-only answer changed the AI"
+    },
+    {
+      "page": 9,
+      "line": 346,
+      "text": "count from 8/40 to 9/40 but not pair success. Secondary disagreements remain separate"
+    },
+    {
+      "page": 9,
+      "line": 347,
+      "text": "(Supplementary Section S10)."
+    },
+    {
+      "page": 9,
+      "line": 348,
+      "text": "Dated corpus comparison with provisional AI assessment"
+    },
+    {
+      "page": 9,
+      "line": 349,
+      "text": "AI-assessed full-task success was 144/188 historical-corpus answers versus 172/188 updated-corpus"
+    },
+    {
+      "page": 9,
+      "line": 350,
+      "text": "answers: +14.9 percentage points (paired 95% interval 7.4 to 22.9; shared-article-family sensitivity"
+    },
+    {
+      "page": 9,
+      "line": 351,
+      "text": "7.1 to 23.1). Both languages passed in 69/94 versus 83/94 pairs. There were 31 answer gains and"
+    },
+    {
+      "page": 9,
+      "line": 352,
+      "text": "three losses. Shared-source questions yielded 118/148 versus 133/148 successes; newly added-"
+    },
+    {
+      "page": 9,
+      "line": 353,
+      "text": "source questions yielded 0/10 versus 10/10, reflecting evidence availability. Omissions fell from"
+    },
+    {
+      "page": 9,
+      "line": 354,
+      "text": "29/188 to 11/188, while substantive correction flags fell from 44/188 to 16/188. Regressions"
+    },
+    {
+      "page": 9,
+      "line": 355,
+      "text": "concerned language, an omitted partial-data option and an unsupported ethical-review interpretation."
+    },
+    {
+      "page": 9,
+      "line": 356,
+      "text": "Human confirmation remained pending (Figure 6; Supplementary Tables S23 and S24)."
+    },
+    {
+      "page": 9,
+      "line": 357,
+      "text": "Discussion"
+    },
+    {
+      "page": 9,
+      "line": 358,
+      "text": "Traceable citations and high retrieval scores did not ensure task success. The coauthor-reviewed"
+    },
+    {
+      "page": 9,
+      "line": 359,
+      "text": "assessment passed 10/20 bilingual pairs despite support for claims and citations in all claim-bearing"
+    },
+    {
+      "page": 9,
+      "line": 360,
+      "text": "outputs (Table 2; Figure 3). Reviewers still need to check lists, exceptions, language and task"
+    },
+    {
+      "page": 9,
+      "line": 361,
+      "text": "relevance. Missing notification classes and truncated items could leave a draft checklist incomplete;"
+    },
+    {
+      "page": 9,
+      "line": 362,
+      "text": "the wrong-plan answer supplied supported information about the wrong task, and five English"
+    },
+    {
+      "page": 9,
+      "line": 363,
+      "text": "questions received Portuguese answers. These are implications of benchmark failures, not observed"
+    },
+    {
+      "page": 9,
+      "line": 364,
+      "text": "effects on regulatory work."
+    },
+    {
+      "page": 9,
+      "line": 365,
+      "text": "Partly answerable questions require both supported information and an explicit boundary around"
+    },
+    {
+      "page": 9,
+      "line": 366,
+      "text": "unavailable detail. The original blanket-refusal instruction conflicted with that endpoint. Revised"
+    },
+    {
+      "page": 9,
+      "line": 367,
+      "text": "instructions and complete evidence improved selected development outcomes but retained failures"
+    },
+    {
+      "page": 9,
+      "line": 368,
+      "text": "and occasional task or formatting regressions. In the author-reviewed repair comparison, staffing and"
+    },
+    {
+      "page": 9,
+      "line": 369,
+      "text": "ruminant-documentation answers still withheld supported content. Four task-level gains coexisted"
+    },
+    {
+      "page": 9,
+      "line": 370,
+      "text": "with one citation-support loss and two persistent partial-answer failures (Figure 4). The difference was"
+    },
+    {
+      "page": 9,
+      "line": 371,
+      "text": "+15.0 points, with an interval from -5.0 to +35.0; reliable improvement was not established. Both"
+    },
+    {
+      "page": 9,
+      "line": 372,
+      "text": "conditions already selected complete frozen-reference wording, so retrieval-coverage gains cannot"
+    },
+    {
+      "page": 9,
+      "line": 373,
+      "text": "explain this comparison. Refusal assessment must address both invented claims and suppression of"
+    },
+    {
+      "page": 9,
+      "line": 374,
+      "text": "supported information."
+    },
+    {
+      "page": 9,
+      "line": 375,
+      "text": "The common-prompt comparison supports supplying evidence over stored knowledge alone on these"
+    },
+    {
+      "page": 9,
+      "line": 376,
+      "text": "tasks (Table 4; Figure 5). Its expanded reference, new outputs and content endpoint prevent direct"
+    },
+    {
+      "page": 9,
+      "line": 377,
+      "text": "comparison with earlier repair scores. Appropriate abstention counts as success on absent-detail"
+    },
+    {
+      "page": 9,
+      "line": 378,
+      "text": "questions. BM25 nearly matched hybrid retrieval coverage and answer quality; the paired interval"
+    },
+    {
+      "page": 9,
+      "line": 379,
+      "text": "does not establish superiority or equivalence. Different failures matter: BM25 omitted evidence and"
+    },
+    {
+      "page": 9,
+      "line": 380,
+      "text": "extended a checklist, while hybrid substituted the wrong dossier type. Coauthor confirmation"
+    },
+    {
+      "page": 9,
+      "line": 381,
+      "text": "strengthens assessment but does not remove development exposure. A strong lexical baseline is"
+    },
+    {
+      "page": 9,
+      "line": 382,
+      "text": "therefore necessary before attributing gains to retrieval complexity."
+    },
+    {
+      "page": 9,
+      "line": 383,
+      "text": "Corpus validity remains distinct from grounding. The retained staffing criterion is in RDC 406/2020"
+    },
+    {
+      "page": 9,
+      "line": 384,
+      "text": "Article 18, whereas RDC 55/2010 Articles 22 and 30 were revoked [7,8,11]; the ruminant-"
+    },
+    {
+      "page": 9,
+      "line": 385,
+      "text": "documentation and FV_012 targets remain historical. The dated comparison improved provisional"
+    },
+    {
+      "page": 9,
+      "line": 386,
+      "text": "scores but bundled source updating with structural curation. Even its consolidated RDC 751 text"
+    },
+    {
+      "page": 9,
+      "line": 387,
+      "text": "retained obsolete external references that answers repeated as current. Missing second provisions,"
+    },
+    {
+      "page": 9,
+      "line": 388,
+      "text": "pathway overgeneralization and three regressions persisted (Figure 6; Supplementary Section S12)."
+    },
+    {
+      "page": 9,
+      "line": 389,
+      "text": "Thus source remediation can help these tasks without establishing comprehensive current-law"
+    },
+    {
+      "page": 10,
+      "line": 390,
+      "text": "accuracy. Product-specific dependencies and new output judgments still require human review. A"
+    },
+    {
+      "page": 10,
+      "line": 391,
+      "text": "subsequent first-level audit checked 111 linked instruments and identified nine operative or scope"
+    },
+    {
+      "page": 10,
+      "line": 392,
+      "text": "references to eight revoked instruments; ten catalogue endpoints remained unresolved. Repeal,"
+    },
+    {
+      "page": 10,
+      "line": 393,
+      "text": "amendment and transitional references were separated from answer errors. Supplementary Table"
+    },
+    {
+      "page": 10,
+      "line": 394,
+      "text": "S25 and Data S16 report the audit; frozen scores were unchanged."
+    },
+    {
+      "page": 10,
+      "line": 395,
+      "text": "AI-authored questions, development exposure, post hoc analyses, source dependence and single"
+    },
+    {
+      "page": 10,
+      "line": 396,
+      "text": "generations limit inference. Historical generation and judging shared an unresolved alias; window-"
+    },
+    {
+      "page": 10,
+      "line": 397,
+      "text": "pooling scores lack complete human verification. Coauthor common-prompt review had prior question"
+    },
+    {
+      "page": 10,
+      "line": 398,
+      "text": "exposure; dated-corpus ratings remain provisional, study-aware Codex judgments. Neither"
+    },
+    {
+      "page": 10,
+      "line": 399,
+      "text": "constitutes independent external validation. BM25 generation was sequential with saved hybrid"
+    },
+    {
+      "page": 10,
+      "line": 400,
+      "text": "comparators. No multilingual encoder replacement was tested [20,21]. Repeats do not create"
+    },
+    {
+      "page": 10,
+      "line": 401,
+      "text": "independent questions. The higher English refusal score was misleading. Equivalent correct answers"
+    },
+    {
+      "page": 10,
+      "line": 402,
+      "text": "received different scores, and the question was mislabeled unanswerable. These errors created the"
+    },
+    {
+      "page": 10,
+      "line": 403,
+      "text": "reported language gap. Refusal comparisons therefore require checking answerability and the"
+    },
+    {
+      "page": 10,
+      "line": 404,
+      "text": "underlying answers. The sample cannot establish a language difference."
+    },
+    {
+      "page": 10,
+      "line": 405,
+      "text": "A candidate workflow would present the question, answer, supporting passages and unavailable"
+    },
+    {
+      "page": 10,
+      "line": 406,
+      "text": "details for professional verification against the official current text. The prototype does not maintain"
+    },
+    {
+      "page": 10,
+      "line": 407,
+      "text": "consolidated law or reliably warn of superseded provisions. This study evaluates answers and"
+    },
+    {
+      "page": 10,
+      "line": 408,
+      "text": "retrieval, not web-search superiority or workflow benefit. No review time, correction effort, decision"
+    },
+    {
+      "page": 10,
+      "line": 409,
+      "text": "quality or operational safety was measured. Future workflow testing would require frozen current-law"
+    },
+    {
+      "page": 10,
+      "line": 410,
+      "text": "references and realistic tasks."
+    },
+    {
+      "page": 10,
+      "line": 411,
+      "text": "Conclusion"
+    },
+    {
+      "page": 10,
+      "line": 412,
+      "text": "This study identifies the gap between regulatory citations and complete bilingual document-review"
+    },
+    {
+      "page": 10,
+      "line": 413,
+      "text": "answers. Human review exposed omissions, language and task errors, and refusal of supported"
+    },
+    {
+      "page": 10,
+      "line": 414,
+      "text": "information. Coauthor-rated answers favored retrieved evidence over the model alone, without"
+    },
+    {
+      "page": 10,
+      "line": 415,
+      "text": "established hybrid advantage over BM25. A separate dated-corpus comparison favored updated"
+    },
+    {
+      "page": 10,
+      "line": 416,
+      "text": "sources under provisional AI assessment but retained failures. Complete provisions, scope,"
+    },
+    {
+      "page": 10,
+      "line": 417,
+      "text": "language, evidence limits and temporal applicability require separate checks. Comprehensive current-"
+    },
+    {
+      "page": 10,
+      "line": 418,
+      "text": "law accuracy, fresh independent validation and workflow benefit remain unestablished."
+    },
+    {
+      "page": 11,
+      "line": 419,
+      "text": "Declarations"
+    },
+    {
+      "page": 11,
+      "line": 420,
+      "text": "Funding: The authors received no specific funding for this work."
+    },
+    {
+      "page": 11,
+      "line": 421,
+      "text": "Conflict of Interest: The authors declare no competing financial interests."
+    },
+    {
+      "page": 11,
+      "line": 422,
+      "text": "Author Contributions: C.V.M.-P. conceived and designed the study, developed the software pipeline,"
+    },
+    {
+      "page": 11,
+      "line": 423,
+      "text": "prepared the corpus, constructed the benchmark, performed the analyses, interpreted the results, and"
+    },
+    {
+      "page": 11,
+      "line": 424,
+      "text": "drafted the manuscript. H.L.R.J. contributed to the regulatory and pharmaceutical framing,"
+    },
+    {
+      "page": 11,
+      "line": 425,
+      "text": "interpretation of results, author review of questions and generated answers, and critical revision of the"
+    },
+    {
+      "page": 11,
+      "line": 426,
+      "text": "manuscript."
+    },
+    {
+      "page": 11,
+      "line": 427,
+      "text": "Data Availability: Code, curated evidence and revised documents accompany GitHub review release"
+    },
+    {
+      "page": 11,
+      "line": 428,
+      "text": "v0.3.0-rc.1 at https://github.com/camontefusco/ANVISA_RAG_publication_repository_20260720/"
+    },
+    {
+      "page": 11,
+      "line": 429,
+      "text": "releases/tag/v0.3.0-rc.1. The preceding v0.2.1 archive remains at"
+    },
+    {
+      "page": 11,
+      "line": 430,
+      "text": "https://doi.org/10.5281/zenodo.23925532 and does not contain subsequent additions. Supplementary"
+    },
+    {
+      "page": 11,
+      "line": 431,
+      "text": "Data S16 includes dated-corpus outputs, references, prompts, provisional assessments and source"
+    },
+    {
+      "page": 11,
+      "line": 432,
+      "text": "provenance. Historical outputs and author reviews remain separate from new AI assessments. Full"
+    },
+    {
+      "page": 11,
+      "line": 433,
+      "text": "source/index corpora, credentials and private coordination keys are excluded."
+    },
+    {
+      "page": 11,
+      "line": 434,
+      "text": "Ethics statement: The study used public regulatory documents and generated benchmark questions."
+    },
+    {
+      "page": 11,
+      "line": 435,
+      "text": "Human assessment consisted of coauthor review of model outputs. No patient data, personal health"
+    },
+    {
+      "page": 11,
+      "line": 436,
+      "text": "data, animal experiments or clinical trials were involved."
+    },
+    {
+      "page": 11,
+      "line": 437,
+      "text": "AI assistance disclosure: OpenAI Codex (OpenAI) assisted coding, debugging, data audits, analyses,"
+    },
+    {
+      "page": 11,
+      "line": 438,
+      "text": "manuscript and reviewer-response drafting, and figure preparation from verifiable data. Claude"
+    },
+    {
+      "page": 11,
+      "line": 439,
+      "text": "(Anthropic) drafted selected questions, references and rating templates subsequently reviewed by"
+    },
+    {
+      "page": 11,
+      "line": 440,
+      "text": "authors. Gemini generated study answers and historical judge scores; Codex provided different-family"
+    },
+    {
+      "page": 11,
+      "line": 441,
+      "text": "assessment of later answers, not historical rescoring or independent validation. Supplementary"
+    },
+    {
+      "page": 11,
+      "line": 442,
+      "text": "Section S11 details tasks, recorded models, review provenance and unresolved version metadata."
+    },
+    {
+      "page": 11,
+      "line": 443,
+      "text": "Authors retain responsibility for all content and interpretations."
+    },
+    {
+      "page": 11,
+      "line": 444,
+      "text": "Acknowledgments: The authors thank WBS Coding School, the DSAI02 class and especially Shenia"
+    },
+    {
+      "page": 11,
+      "line": 445,
+      "text": "Bosch for teaching, examples and discussions that informed this project."
+    },
+    {
+      "page": 11,
+      "line": 446,
+      "text": "Clinical Trial Registration: Not applicable."
+    },
+    {
+      "page": 12,
+      "line": 447,
+      "text": "References"
+    },
+    {
+      "page": 12,
+      "line": 448,
+      "text": "1. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada Anvisa No. 945, de 29"
+    },
+    {
+      "page": 12,
+      "line": 449,
+      "text": "de novembro de 2024. Guidelines and procedures for clinical trials for later medicine registration."
+    },
+    {
+      "page": 12,
+      "line": 450,
+      "text": "AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "page": 12,
+      "line": 451,
+      "text": "2. Agência Nacional de Vigilância Sanitária. Resolução RDC No. 9, de 20 de fevereiro de 2015."
+    },
+    {
+      "page": 12,
+      "line": 452,
+      "text": "Regulation for clinical trials with medicines in Brazil. Revoked by RDC 945/2024, Art. 98, effective 1"
+    },
+    {
+      "page": 12,
+      "line": 453,
+      "text": "January 2025. Historical corpus source. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "page": 12,
+      "line": 454,
+      "text": "3. Lewis P, Perez E, Piktus A, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP"
+    },
+    {
+      "page": 12,
+      "line": 455,
+      "text": "Tasks. Advances in Neural Information Processing Systems. 2020;33:9459-9474."
+    },
+    {
+      "page": 12,
+      "line": 456,
+      "text": "4. Gao Y, Xiong Y, Gao X, et al. Retrieval-Augmented Generation for Large Language Models: A"
+    },
+    {
+      "page": 12,
+      "line": 457,
+      "text": "Survey. arXiv. 2023. doi:10.48550/arXiv.2312.10997."
+    },
+    {
+      "page": 12,
+      "line": 458,
+      "text": "5. Proestel S, Jeng LJB, Smith C, et al. Semantic Search of FDA Guidance Documents Using"
+    },
+    {
+      "page": 12,
+      "line": 459,
+      "text": "Generative AI. Ther Innov Regul Sci. 2025;59(5):1148-1159. doi:10.1007/s43441-025-00798-8."
+    },
+    {
+      "page": 12,
+      "line": 460,
+      "text": "6. Agência Nacional de Vigilância Sanitária. Instrução Normativa - IN No. 338, de 29 de novembro de"
+    },
+    {
+      "page": 12,
+      "line": 461,
+      "text": "2024. Establishes the list of equivalent foreign regulatory authorities and criteria for optimized review"
+    },
+    {
+      "page": 12,
+      "line": 462,
+      "text": "under RDC 945/2024. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "page": 12,
+      "line": 463,
+      "text": "7. Agência Nacional de Vigilância Sanitária. Resolução de Diretoria Colegiada - RDC No. 406, de 22"
+    },
+    {
+      "page": 12,
+      "line": 464,
+      "text": "de julho de 2020. Good pharmacovigilance practices for holders of human medicine registrations."
+    },
+    {
+      "page": 12,
+      "line": 465,
+      "text": "AnvisaLegis. Accessed 19 July 2026. Consolidated provisions checked 1 November 2026."
+    },
+    {
+      "page": 12,
+      "line": 466,
+      "text": "8. Agência Nacional de Vigilância Sanitária. Resolução - RDC No. 55, de 16 de dezembro de 2010."
+    },
+    {
+      "page": 12,
+      "line": 467,
+      "text": "Registration of new biological products and biological products. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "page": 12,
+      "line": 468,
+      "text": "Consolidated provisions checked 1 November 2026."
+    },
+    {
+      "page": 12,
+      "line": 469,
+      "text": "9. Agência Nacional de Vigilância Sanitária. Resolução - RDC No. 751, de 15 de setembro de 2022."
+    },
+    {
+      "page": 12,
+      "line": 470,
+      "text": "Medical-device risk classification, notification and registration regimes, labelling, and instructions for"
+    },
+    {
+      "page": 12,
+      "line": 471,
+      "text": "use. AnvisaLegis. Accessed 19 July 2026."
+    },
+    {
+      "page": 12,
+      "line": 472,
+      "text": "10. Agência Nacional de Vigilância Sanitária. Resolução da Diretoria Colegiada - RDC No. 875, de 28"
+    },
+    {
+      "page": 12,
+      "line": 473,
+      "text": "de maio de 2024. Complementary requirements for registration of biosimilars through comparability."
+    },
+    {
+      "page": 12,
+      "line": 474,
+      "text": "AnvisaLegis. Accessed 23 October 2026."
+    },
+    {
+      "page": 12,
+      "line": 475,
+      "text": "11. Agência Nacional de Vigilância Sanitária. Resolução - RDC No. 948, de 12 de dezembro de"
+    },
+    {
+      "page": 12,
+      "line": 476,
+      "text": "2024. General sanitary requirements for regularization of human medicines. Consolidated text."
+    },
+    {
+      "page": 12,
+      "line": 477,
+      "text": "AnvisaLegis. Accessed 23 October 2026. Consolidated provisions checked 1 November 2026."
+    },
+    {
+      "page": 12,
+      "line": 478,
+      "text": "12. Es S, James J, Espinosa-Anke L, Schockaert S. RAGAS: Automated Evaluation of Retrieval"
+    },
+    {
+      "page": 12,
+      "line": 479,
+      "text": "Augmented Generation. arXiv. 2023. doi:10.48550/arXiv.2309.15217."
+    },
+    {
+      "page": 12,
+      "line": 480,
+      "text": "13. Reimers N, Gurevych I. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks."
+    },
+    {
+      "page": 12,
+      "line": 481,
+      "text": "In: Proceedings of EMNLP-IJCNLP. Association for Computational Linguistics; 2019:3982-3992."
+    },
+    {
+      "page": 12,
+      "line": 482,
+      "text": "doi:10.18653/v1/D19-1410."
+    },
+    {
+      "page": 12,
+      "line": 483,
+      "text": "14. Robertson S, Zaragoza H. The Probabilistic Relevance Framework: BM25 and Beyond."
+    },
+    {
+      "page": 12,
+      "line": 484,
+      "text": "Foundations and Trends in Information Retrieval. 2009;3(4):333-389. doi:10.1561/1500000019."
+    },
+    {
+      "page": 12,
+      "line": 485,
+      "text": "15. Bonifacio L, Jeronymo V, Abonizio HQ, Campiotti I, Fadaee M, Lotufo R, Nogueira R. mMARCO:"
+    },
+    {
+      "page": 12,
+      "line": 486,
+      "text": "A Multilingual Version of the MS MARCO Passage Ranking Dataset. arXiv. 2021."
+    },
+    {
+      "page": 12,
+      "line": 487,
+      "text": "doi:10.48550/arXiv.2108.13897."
+    },
+    {
+      "page": 12,
+      "line": 488,
+      "text": "16. LlamaIndex. LlamaIndex: a data framework for LLM applications. GitHub repository."
+    },
+    {
+      "page": 12,
+      "line": 489,
+      "text": "https://github.com/run-llama/llama_index. Accessed 21 July 2026."
+    },
+    {
+      "page": 12,
+      "line": 490,
+      "text": "17. Google AI for Developers. Gemini API models and GenerateContentResponse reference."
+    },
+    {
+      "page": 12,
+      "line": 491,
+      "text": "https://ai.google.dev/gemini-api/docs/models; https://ai.google.dev/api/generate-content. Accessed 24"
+    },
+    {
+      "page": 12,
+      "line": 492,
+      "text": "October 2026."
+    },
+    {
+      "page": 12,
+      "line": 493,
+      "text": "18. Chang Y, Wang X, Wang J, et al. A Survey on Evaluation of Large Language Models. ACM"
+    },
+    {
+      "page": 12,
+      "line": 494,
+      "text": "Transactions on Intelligent Systems and Technology. 2024;15(3). doi:10.1145/3641289."
+    },
+    {
+      "page": 12,
+      "line": 495,
+      "text": "19. Zheng L, Chiang WL, Sheng Y, et al. Judging LLM-as-a-Judge with MT-Bench and Chatbot"
+    },
+    {
+      "page": 12,
+      "line": 496,
+      "text": "Arena. Advances in Neural Information Processing Systems. 2023;36."
+    },
+    {
+      "page": 12,
+      "line": 497,
+      "text": "20. Sentence Transformers. all-MiniLM-L6-v2 model card. https://huggingface.co/sentence-"
+    },
+    {
+      "page": 12,
+      "line": 498,
+      "text": "transformers/all-MiniLM-L6-v2. Accessed 25 October 2026."
+    },
+    {
+      "page": 12,
+      "line": 499,
+      "text": "21. Sentence Transformers. Pretrained models and multilingual models."
+    },
+    {
+      "page": 12,
+      "line": 500,
+      "text": "https://sbert.net/docs/sentence_transformer/pretrained_models.html. Accessed 25 October 2026."
+    }
+  ]
+}
